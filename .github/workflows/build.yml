@@ -32,7 +32,9 @@ jobs:
           import build_simple
           from pathlib import Path
 
-          themes = build_simple.load_themes(Path('themes'))
+          # Echte Build-Daten: in themes/ stehen nur die Autorendaten, die
+          # Bilder kommen erst beim Export nach selected-themes/ dazu.
+          themes = build_simple.load_themes(Path('selected-themes'))
           # CI tests HTML assembly only. Real builds MUST pass the strict
           # Piper probe and use the actual voice and the real MP3 encoder.
           build_simple.probe = lambda: (True, 'CI mock')

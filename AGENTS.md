@@ -29,7 +29,9 @@ python3 -m py_compile bilder_waehlen.py build_simple.py tools/tts_piper.py \
 
 `.github/workflows/build.yml` is the reference for what CI runs. It mocks
 `build_simple.probe`/`build_simple.synthesize_mp3` so CI validates templating
-**without** the Piper environment or the voice model.
+**without** the Piper environment or the voice model, and it assembles the demo from
+`selected-themes/` (not `themes/`): the authoring data in `themes/` carries no
+`imageSvg`, the pictures are added on export.
 
 ## Architecture
 

@@ -287,11 +287,19 @@ html,body{
   display:flex;
   min-width:0;
   min-height:0;
-  container-type:size;
 }
+/*
+  Die Grundschrift der Karte rechnet der Aufbau aus der Zellgröße aus und legt
+  sie als --karten-schrift in **Millimetern** ab (setzeKartenSchrift).
+  Bewusst **keine** Container-Abfrage (cqw/cqh): im Drucklayout von Firefox
+  lösen diese Einheiten falsch auf, dann kommt beim Ausdruck nichts Sinnvolles
+  heraus (leere Karten, riesige Bildfetzen). Blatt und Zellen haben feste
+  Millimeter-Maße, deshalb ist derselbe mm-Wert für Bildschirm und Ausdruck
+  richtig. 1.634mm ist die Entwurfsgröße (4×4) und nur der Ersatz, solange der
+  Aufbau die Schrift noch nicht gesetzt hat.
+*/
 .zelle > .card{
-  font-size:1.634mm;
-  font-size:min(2.755cqh,3.53cqw);
+  font-size:var(--karten-schrift,1.634mm);
   margin:auto;
 }
 .card{
@@ -1618,6 +1626,24 @@ function spriteSrc(theme){
 }
 
 /*
+  Die Karte ist 28,27em breit und 36,29em hoch und muss in ihre Zelle passen.
+  Daraus ergibt sich die Grundschrift - in Millimetern, damit Bildschirm und
+  Ausdruck dieselbe Größe bekommen und kein Browser im Druck etwas anderes
+  rechnet (siehe Kommentar bei .zelle im CSS).
+*/
+function setzeKartenSchrift(){
+  const zelle=document.querySelector("#pages .zelle");
+  const flaeche=document.querySelector("#pages");
+  if(!zelle || !flaeche) return;
+  const box=zelle.getBoundingClientRect();
+  if(!(box.width>0) || !(box.height>0)) return;
+  const mm=px=>px*25.4/96;
+  const schrift=Math.min(mm(box.width)/28.27, mm(box.height)/36.29);
+  /* Ein Haar kleiner, damit die Karte nicht an der Zellkante klemmt. */
+  flaeche.style.setProperty("--karten-schrift",(schrift*0.998).toFixed(3)+"mm");
+}
+
+/*
   Karten messen sich selbst: passt der Inhalt nicht in die Karte (sehr lange
   Wörter wie „Schraubenschlüssel“, lange Sätze, andere Schriften), wird er
   stufenweise kleiner - statt vom Rahmen abgeschnitten zu werden. Die Karten
@@ -2271,6 +2297,9 @@ async function generate(){
   /* Noch leere Bilder (nur bei frisch gebauten Karten) einsetzen. */
   setzeBilder(bildAuftrag);
   bildAuftrag=[];
+
+  /* Grundschrift der Karten aus der neuen Zellgröße setzen. */
+  setzeKartenSchrift();
 
   passeKartenAn();
 

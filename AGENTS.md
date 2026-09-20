@@ -198,9 +198,15 @@ themes/*.json  →  [editor edits, image-library/selections.json]  →  selected
   all 40). `kartenFertig()` resolves when that queue is empty and `#print` awaits it before
   `window.print()` — anything that prints or screenshots must do the same.
 - **The card scales with the grid, never clips.** The card is laid out in `em` relative to a
-  base font that each cell of the grid computes itself (`container-type:size` +
-  `font-size:min(2.755cqh,3.53cqw)`, mm fallback), so 3×3 gives big pictures and 8×8 small
-  ones. `passeKartenAn()` measures every card after rendering (sheet by sheet, see above) and
+  base font that `setzeKartenSchrift()` computes from the measured grid cell and writes into
+  `--karten-schrift` **in millimetres** (`min(cellWidth/28.27, cellHeight/36.29)`), so 3×3
+  gives big pictures and 8×8 small ones. Never go back to container queries for this
+  (`container-type:size` + `font-size:min(2.755cqh,3.53cqw)`): **Firefox's print layout
+  mishandles `cqw/cqh`**, the declaration is dropped there and the cards print as empty
+  frames with huge picture fragments (Chromium prints them fine — measured against a real
+  Firefox PDF). Sheet and cells have fixed mm sizes, so one mm value is right for screen and
+  print alike. `passeKartenAn()` measures every card after rendering (sheet by sheet, see
+  above) and
   shrinks `.word`/`.sentence` in steps (`mittel`, `klein`) if content would be cut off.
   Answer dots are **self-drawn**
   (`appearance:none`) because a native radio ignores the inherited font and would stay ~18 px

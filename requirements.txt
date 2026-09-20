@@ -1,3 +1,3 @@
-# Lernkarten-Werkstatt 0.4 benötigt keine zusätzlichen Python-Pakete.
+# Lernkarten-Werkstatt 0.1 benötigt keine zusätzlichen Python-Pakete.
 # Externe Pflichtprogramme für TTS: Piper mit der Stimme de_DE-thorsten-high
 # (im eigenen venv, siehe README „Feste Aussprache“) und ffmpeg mit libmp3lame.

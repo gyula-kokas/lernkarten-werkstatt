@@ -1,6 +1,6 @@
 # Project Guidelines
 
-Lernkarten-Werkstatt 0.4 – local visual editor for German learning cards.
+Lernkarten-Werkstatt 0.1 – local visual editor for German learning cards.
 **The deliverable for learners is always exactly one self-contained HTML file.**
 
 User-facing docs (German): [README.md](README.md) ·

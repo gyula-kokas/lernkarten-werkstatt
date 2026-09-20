@@ -25,7 +25,7 @@ TTS_CACHE=ROOT/'tts-cache'; TTS_CACHE.mkdir(exist_ok=True)
 def fetch(url):
     host=urllib.parse.urlsplit(url).hostname or ''
     if host not in ALLOWED_HOSTS:raise ValueError('Unzulässige Downloadquelle')
-    req=urllib.request.Request(url,headers={'User-Agent':'Lernkarten-Werkstatt/0.4'})
+    req=urllib.request.Request(url,headers={'User-Agent':'Lernkarten-Werkstatt/0.1'})
     with urllib.request.urlopen(req,timeout=45) as response:
         if (urllib.parse.urlsplit(response.url).hostname or '') not in ALLOWED_HOSTS:raise ValueError('Unzulässige Weiterleitung')
         data=response.read(8*1024*1024+1)
@@ -36,7 +36,7 @@ def fetch(url):
 def fetch_public_json(url):
     host=urllib.parse.urlsplit(url).hostname or ''
     if host not in {'www.wikidata.org','de.wiktionary.org'}:raise ValueError('Unzulässige Wörterbuchquelle')
-    req=urllib.request.Request(url,headers={'User-Agent':'Lernkarten-Werkstatt/0.4 (local editor)'})
+    req=urllib.request.Request(url,headers={'User-Agent':'Lernkarten-Werkstatt/0.1 (local editor)'})
     with urllib.request.urlopen(req,timeout=12) as response:
         return json.loads(response.read(2*1024*1024).decode('utf-8'))
 

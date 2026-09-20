@@ -81,7 +81,7 @@ Die Werkstatt speichert sie nur technisch im Projekt. Wer solche Bilder
 veröffentlicht, muss selbst sicherstellen, dass die nötigen Nutzungsrechte
 vorliegen.
 
-## Editor-Wörterbuch 0.4
+## Editor-Wörterbuch 0.1
 
 `tools/update_dictionary.py` kann den aktuellen Kaikki/Wiktextract-Rohdump der
 deutschen Wiktionary-Ausgabe herunterladen und auf Artikel/Plural-Daten für

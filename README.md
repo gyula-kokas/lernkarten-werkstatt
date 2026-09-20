@@ -1,4 +1,4 @@
-# DER · DIE · DAS – Lernkarten-Werkstatt 0.4
+# DER · DIE · DAS – Lernkarten-Werkstatt 0.1
 
 [![Build und Tests](https://github.com/gyula-kokas/lernkarten-werkstatt/actions/workflows/build.yml/badge.svg)](https://github.com/gyula-kokas/lernkarten-werkstatt/actions/workflows/build.yml)
 [![Lizenz: GPL-3.0](https://img.shields.io/badge/Lizenz-GPL--3.0-blue.svg)](LICENSE)
@@ -55,7 +55,7 @@ Danach öffnet sich normalerweise:
 http://127.0.0.1:8765/
 ```
 
-## Was 0.4 kann
+## Was 0.1 kann
 
 - Themes visuell anlegen und bearbeiten
 - neue Nomen zuerst gegen das deutsche Wörterbuch prüfen

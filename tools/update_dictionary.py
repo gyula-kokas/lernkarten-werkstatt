@@ -18,7 +18,7 @@ URL = "https://kaikki.org/dewiktionary/raw-wiktextract-data.jsonl.gz"
 def download(url: str, dst: Path) -> None:
     dst.parent.mkdir(parents=True, exist_ok=True)
     tmp = dst.with_suffix(dst.suffix + ".part")
-    req = urllib.request.Request(url, headers={"User-Agent": "Lernkarten-Werkstatt/0.4 dictionary updater"})
+    req = urllib.request.Request(url, headers={"User-Agent": "Lernkarten-Werkstatt/0.1 dictionary updater"})
     with urllib.request.urlopen(req, timeout=120) as r, tmp.open("wb") as f:
         total = int(r.headers.get("Content-Length") or 0)
         got = 0

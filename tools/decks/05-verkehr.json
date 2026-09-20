@@ -204,16 +204,8 @@
           "warning strip"
         ],
         [
-          "Bauarbeiter",
-          "construction worker"
-        ],
-        [
           "Bauleuchte",
           "led"
-        ],
-        [
-          "Maurer",
-          "trowel"
         ],
         [
           "Dübel",
@@ -559,6 +551,9 @@
     "Schnellboot": "Artikel richtet sich nach „Boot“ – die Verbindung davor ist beliebig",
     "Pflasterstein": "doppelt: „Ziegelstein“ hat dasselbe Bild (brick) – nur ein Wort pro Bild",
     "Schach": "kein eigenes Bild: „chess pawn“ gehört zur Schachfigur",
-    "Sicherheitsweste": "doppelt: „Warnweste“ zeigt dasselbe Kleidungsstück"
+    "Sicherheitsweste": "doppelt: „Warnweste“ zeigt dasselbe Kleidungsstück",
+    "Bauarbeiter": "Beruf: der Artikel hängt an der Person (Mann/Frau), nicht am Beruf",
+    "Maurer": "Beruf: der Artikel hängt an der Person (Mann/Frau), nicht am Beruf",
+    "Bäcker": "Beruf: der Artikel hängt an der Person (Mann/Frau), nicht am Beruf"
   }
 }

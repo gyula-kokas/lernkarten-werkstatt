@@ -3,7 +3,7 @@
   "themeName": "Süßes und Backen",
   "language": "de",
   "version": 1,
-  "entryCount": 18,
+  "entryCount": 19,
   "imageMode": "per-entry-svg",
   "entries": [
     {
@@ -97,13 +97,23 @@
       "editorType": "food"
     },
     {
+      "word": "Waffel",
+      "article": "die",
+      "plural": "Waffeln",
+      "pluralWithArticle": "die Waffeln",
+      "accusativeSentence": "Das Kind backt die Waffel.",
+      "dativeSentence": "Der Puderzucker liegt auf der Waffel.",
+      "imageIndex": 9,
+      "editorType": "food"
+    },
+    {
       "word": "Pfannkuchen",
       "article": "der",
       "plural": "Pfannkuchen",
       "pluralWithArticle": "die Pfannkuchen",
       "accusativeSentence": "Das Kind isst den Pfannkuchen.",
       "dativeSentence": "Die Marmelade liegt auf dem Pfannkuchen.",
-      "imageIndex": 9,
+      "imageIndex": 10,
       "editorType": "food"
     },
     {
@@ -113,7 +123,7 @@
       "pluralWithArticle": "die Croissants",
       "accusativeSentence": "Das Kind kauft das Croissant.",
       "dativeSentence": "Die Krümel liegen auf dem Croissant.",
-      "imageIndex": 10,
+      "imageIndex": 11,
       "editorType": "food"
     },
     {
@@ -123,7 +133,7 @@
       "pluralWithArticle": "",
       "accusativeSentence": "Das Kind schleckt das Softeis.",
       "dativeSentence": "Die Waffel gehört zu dem Softeis.",
-      "imageIndex": 11,
+      "imageIndex": 12,
       "editorType": "food"
     },
     {
@@ -133,7 +143,7 @@
       "pluralWithArticle": "die Kuchen",
       "accusativeSentence": "Das Kind isst den Kuchen.",
       "dativeSentence": "Die Sahne liegt auf dem Kuchen.",
-      "imageIndex": 12,
+      "imageIndex": 13,
       "editorType": "food"
     },
     {
@@ -143,7 +153,7 @@
       "pluralWithArticle": "die Marmeladen",
       "accusativeSentence": "Das Kind öffnet die Marmelade.",
       "dativeSentence": "Das Brot schmeckt mit der Marmelade.",
-      "imageIndex": 13,
+      "imageIndex": 14,
       "editorType": "food"
     },
     {
@@ -153,7 +163,7 @@
       "pluralWithArticle": "",
       "accusativeSentence": "Das Kind löffelt den Honig.",
       "dativeSentence": "Der Tee schmeckt mit dem Honig.",
-      "imageIndex": 14,
+      "imageIndex": 15,
       "editorType": "food"
     },
     {
@@ -163,7 +173,7 @@
       "pluralWithArticle": "die Puddinge",
       "accusativeSentence": "Das Kind mag den Pudding.",
       "dativeSentence": "Der Löffel steckt in dem Pudding.",
-      "imageIndex": 15,
+      "imageIndex": 16,
       "editorType": "food"
     },
     {
@@ -173,7 +183,7 @@
       "pluralWithArticle": "die Glückskekse",
       "accusativeSentence": "Das Kind öffnet den Glückskeks.",
       "dativeSentence": "Der Zettel steckt in dem Glückskeks.",
-      "imageIndex": 16,
+      "imageIndex": 17,
       "editorType": "food"
     },
     {
@@ -183,7 +193,7 @@
       "pluralWithArticle": "die Obstkuchen",
       "accusativeSentence": "Das Kind backt den Obstkuchen.",
       "dativeSentence": "Der Zucker liegt auf dem Obstkuchen.",
-      "imageIndex": 17,
+      "imageIndex": 18,
       "editorType": "food"
     }
   ]

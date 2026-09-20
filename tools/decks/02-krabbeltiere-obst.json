@@ -447,6 +447,12 @@
           "popcorn"
         ],
         [
+          "Waffel",
+          "waffle",
+          null,
+          "fluent"
+        ],
+        [
           "Pfannkuchen",
           "o8671-crepes",
           null,
@@ -544,7 +550,6 @@
     "Krankenschwester": "Beruf: der Artikel hängt an der Person (Mann/Frau), nicht am Beruf",
     "Krankenpfleger": "Beruf: der Artikel hängt an der Person (Mann/Frau), nicht am Beruf",
     "Hagel": "Bild zeigte kein eindeutiges Motiv, kein passendes Bild gefunden",
-    "Waffel": "Bild zeigte kein eindeutiges Motiv, kein passendes Bild gefunden",
     "Diesellok": "nur eine Lokomotive nötig (Prüferwunsch)",
     "Schnorchel": "Bild war mit dem der Taucherbrille identisch",
     "Motorboot": "Artikel richtet sich nach „Boot“ – die Verbindung davor ist beliebig",

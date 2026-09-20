@@ -71,6 +71,7 @@ python3 build_simple.py --themes selected-themes --output lernkarten.html
 python3 -m py_compile bilder_waehlen.py build_simple.py tools/tts_piper.py \
     tools/piper_worker.py tools/check_tts.py tools/image_providers.py \
     tools/import_kaikki_dictionary.py tools/update_dictionary.py \
+    tools/import_fluent_emoji.py \
     tools/audit_words.py tools/build_decks.py tools/shrink_svg.py \
     tools/word_overview.py tools/artikel_balance.py tools/stoffnamen.py   # syntax check (CI)
 ```
@@ -195,7 +196,7 @@ themes/*.json  →  [editor edits, image-library/selections.json]  →  selected
   `localStorage` (`ded-druck-v1`).
 - **One word = one card.** 50 words exist in two decks (Ameise in *Wald und Wiese* **and**
   *Insekten und Kriechtiere*, Sonne in *Wetter* and *Flugzeuge und Weltall*, Traktor in
-  *Bauernhof* and *Fahrzeuge* …) — 629 entries, but only **579 distinct words**. The mixed
+  *Bauernhof* and *Fahrzeuge* …) — 630 entries, but only **580 distinct words**. The mixed
   print and the game therefore draw from `gemischteWoerter(ids)`, which keeps the first
   occurrence per case-folded `word`; the same helper feeds the counters
   (`begriffsZahl()`, `auswahlText()`, `gedrucktText()`, `updatePageCountDefault()`), so
@@ -221,7 +222,7 @@ themes/*.json  →  [editor edits, image-library/selections.json]  →  selected
   - pictures live in `bildPool` and are attached by `setzeBilder()` to the `.pic`
     placeholders (`data-bild` is deleted once filled) — a card that already carries its
     picture is skipped, so pictures are parsed once per session.
-  Moving 579 cards plus laying out the visible sheets now costs ~0.2–0.4 s of blocking work
+  Moving 580 cards plus laying out the visible sheets now costs ~0.2–0.4 s of blocking work
   (was ~2 s, one long task). Never go back to `pagesElement.innerHTML = worksheet(...)` for
   the mixed order.
 - **Only visible sheets are computed.** `.page` uses `content-visibility:auto`
@@ -330,14 +331,17 @@ themes/*.json  →  [editor edits, image-library/selections.json]  →  selected
   `audit_theme` is intentionally local-only to stay fast and deterministic;
   `tools/audit_words.py` is the offline grammar check over all themes.
 - **Image catalogs:** search terms come from `tools/image-sources/catalog.json`
-  (OpenMoji + Twemoji emoji, pinned commits) and `tools/image-sources/mdi.json`
+  (OpenMoji + Twemoji emoji, pinned commits), `tools/image-sources/fluent.json`
+  (Fluent Emoji, MIT, third drawing of the same motif, index written by
+  `tools/import_fluent_emoji.py`) and `tools/image-sources/mdi.json`
   (Material Design Icons, Apache 2.0, for objects without an emoji). Respect the
   license notes in [tools/image-sources/README.md](tools/image-sources/README.md) —
   attribution fields are copied into exported entries, so don't drop them.
 - **Picture choice** in `tools/build_decks.py`: the plan's picture term may be a list
-  (main + fallbacks) and its 4th element picks the source (`mdi`, `twemoji`,
+  (main + fallbacks) and its 4th element picks the source (`mdi`, `twemoji`, `fluent`,
   `clipsafari`; default OpenMoji). A taken OpenMoji picture falls back to the *Twemoji
-  drawing of the same motif* (a different picture, not a copy) before the next term.
+  drawing of the same motif* and then to the *Fluent Emoji drawing* (different pictures,
+  not copies) before the next term is tried.
   MDI icons are monochrome; the plan uses the exact icon name as term (e.g. `radiator`).
 - **Oversized pictures** (photo tracings with thousands of tiny filled areas) are shrunk
   with `tools/shrink_svg.py`: `--round` lowers the coordinate precision without touching

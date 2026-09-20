@@ -2514,5 +2514,9 @@
   "theme-67-menschen.json::Engel": {
     "slug": "openmoji--1F47C",
     "query": "angel"
+  },
+  "theme-59-suesses.json::Waffel": {
+    "slug": "fluent--1F9C7",
+    "query": "fluent--1F9C7"
   }
 }

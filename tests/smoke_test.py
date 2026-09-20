@@ -265,6 +265,31 @@ def check_werkstatt_bilder():
     return f'{unangetastet} Werkstatt-Bilder unangetastet'
 
 
+def check_bildquellen():
+    """Die Suchkataloge der Bildquellen prüfen - vollständig, auflösbar, offline.
+
+    Jede Zeichnung einer Sammlung muss über ihren Slug zu einer Quelle mit
+    Lizenzangabe führen; die Indizes halten fest, aus welchem Commit sie kommen.
+    """
+    sys.path.insert(0,str(ROOT/'tools'))
+    import image_providers
+    kataloge=ROOT/'tools'/'image-sources'
+    for name,mindest in (('catalog.json',1000),('mdi.json',1000),('fluent.json',1000)):
+        items=json.loads((kataloge/name).read_text(encoding='utf-8')).get('items') or []
+        assert len(items)>=mindest, f'{name}: nur {len(items)} Einträge'
+    fluent=json.loads((kataloge/'fluent.json').read_text(encoding='utf-8'))
+    assert len(str(fluent.get('ref') or ''))>=7, 'Fluent-Index braucht einen festgehaltenen Commit'
+    for row in fluent['items']:
+        assert str(row['slug']).startswith('fluent--'), row
+        assert str(row['file']).startswith('assets/') and str(row['file']).endswith('.svg'), row
+    waffel=image_providers.resolve('fluent--1F9C7')
+    assert waffel['license']=='MIT' and waffel['download'].startswith('https://'), waffel
+    treffer=[t['slug'] for t in image_providers.search('fluent','waffle')]
+    assert 'fluent--1F9C7' in treffer, f'Fluent-Suche findet die Waffel nicht: {treffer[:5]}'
+    return (f"3 Kataloge · Fluent {len(fluent['items'])} Zeichnungen, "
+            f"Stand {str(fluent['ref'])[:10]}")
+
+
 def main():
     check_audio()
     check_parallel_audio()
@@ -272,6 +297,7 @@ def main():
     check_build_audio()
     check_decks()
     bildhinweis=check_werkstatt_bilder()
+    quellen=check_bildquellen()
     hinweis=check_dictionary()
     vorlage=check_vorlage_aufbau()
     z=editor.dictionary_lookup('Zebra')
@@ -286,6 +312,7 @@ def main():
     assert themes
     print(f'OK: Audio-Aufbereitung, Satzmuster, MP3-Build-Eingabe, Wörterbuch, Audit, Export '
           f'und Bildschutz geprüft. ({hinweis}, {bildhinweis})')
+    print(f'OK: {quellen}')
     print(f'OK: {vorlage}')
 
 

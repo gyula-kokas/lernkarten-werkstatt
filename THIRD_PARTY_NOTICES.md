@@ -25,6 +25,17 @@ Wald, Schneeflocke, Sprungseil …), kann der Editor SVGs aus
 `tools/image-sources/mdi.json` festgehalten. Quelle, Autor und Lizenz wandern in
 jeden exportierten Eintrag und in die Quellenliste der Lern-HTML.
 
+## Fluent Emoji (Microsoft)
+
+Als **dritte Zeichnung** eines Motivs kann der Editor SVGs aus
+[Fluent Emoji](https://github.com/microsoft/fluentui-emoji) übernehmen (Color-Variante,
+z. B. die eckige Waffel oder die Rückansicht des Körpers). Die Grafiken stehen unter
+**MIT**, Copyright (c) Microsoft Corporation. Der verwendete Commit ist in
+`tools/image-sources/fluent.json` festgehalten, neu erzeugt wird der Index mit
+`python3 tools/import_fluent_emoji.py`. Der Lizenztext liegt unter
+`tools/image-sources/LICENSE-FluentEmoji.txt` bei. Quelle, Autor und Lizenz wandern in
+jeden exportierten Eintrag und in die Quellenliste der Lern-HTML.
+
 ## ClipSafari
 
 Der Editor übernimmt nur ClipSafari-Treffer, bei denen die lokale Prüfung eine

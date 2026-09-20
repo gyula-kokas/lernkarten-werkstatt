@@ -16,7 +16,7 @@ TRANSLATIONS=json.loads((ROOT/'tools/image-search-en.json').read_text(encoding='
 from tools import image_providers
 from tools.stoffnamen import STOFFNAMEN
 from tools.tts_piper import VOICE as TTS_VOICE, ENGINE as TTS_ENGINE, MP3_BITRATE as TTS_BITRATE, probe as tts_probe, synthesize_mp3
-SOURCES={'clipsafari','openmoji','twemoji'}
+SOURCES={'clipsafari','openmoji','twemoji','fluent'}
 ALLOWED_HOSTS={'www.clipsafari.com','images.clipsafari.com','spaces-cdn.clipsafari.com','raw.githubusercontent.com'}
 _DICT_CACHE={}; _DICT_MTIME=None
 TTS_CACHE=ROOT/'tts-cache'; TTS_CACHE.mkdir(exist_ok=True)
@@ -68,7 +68,7 @@ def search(query,page=1):
 
 def search_sources(query,page=1,provider='all'):
     from concurrent.futures import ThreadPoolExecutor
-    providers=['clipsafari','openmoji','twemoji'] if provider=='all' else [provider]
+    providers=['clipsafari','openmoji','twemoji','fluent'] if provider=='all' else [provider]
     if not set(providers)<=SOURCES:raise ValueError('Unbekannte Bildquelle')
     def one(source):
         try:return source,search(query,page) if source=='clipsafari' else image_providers.search(source,query,page),None
@@ -124,7 +124,7 @@ def download(slug):
     if not re.fullmatch('[a-zA-Z0-9-]+',slug):raise ValueError('Ungültige Bildkennung')
     cache=DATA/(slug+'.json')
     if cache.exists():return json.loads(cache.read_text(encoding='utf-8'))
-    if slug.startswith(('openmoji--','twemoji--','mdi--')):
+    if slug.startswith(('openmoji--','twemoji--','mdi--','fluent--')):
         item=image_providers.resolve(slug)
         svg=clean_svg(fetch(item['download']),'asset-'+slug+'-')
         value={k:item[k] for k in ('slug','provider','source','author','license','licenseUrl','title')}

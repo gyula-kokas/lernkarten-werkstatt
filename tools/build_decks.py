@@ -179,10 +179,12 @@ def mdi_passt(name: str, query: str) -> bool:
 def bild_kandidaten(queries: list[str], provider: str, allow_tags: bool) -> list[tuple[str, str]]:
     """Bildkandidaten als ``(slug, Suchbegriff)``, bester Treffer zuerst.
 
-    Standard ist OpenMoji. Für dasselbe Emoji gibt es Twemoji als **zweite
-    Zeichnung** – sie steht direkt hinter ihrem OpenMoji-Bild und wird genommen,
-    wenn das OpenMoji-Bild schon ein anderes Wort zeigt. Mit ``provider='mdi'``
-    kommen Objekt-Icons aus Material Design statt Emoji-Bilder.
+    Standard ist OpenMoji. Für dasselbe Emoji gibt es Twemoji als **zweite**
+    Zeichnung und Fluent Emoji als **dritte** - sie stehen direkt hinter ihrem
+    OpenMoji-Bild und werden genommen, wenn die vorherige Zeichnung schon ein
+    anderes Wort zeigt. Mit ``provider='mdi'`` kommen Objekt-Icons aus Material
+    Design statt Emoji-Bilder, mit ``provider='fluent'`` steht die Fluent-Zeichnung
+    vorn.
     """
     gesehen: list[str] = []
     out: list[tuple[str, str]] = []
@@ -202,9 +204,13 @@ def bild_kandidaten(queries: list[str], provider: str, allow_tags: bool) -> list
             continue
         for code in catalog_images(query, allow_tags):
             zweit = twemoji_von_code().get(code)
-            wunsch = ([f"twemoji--{zweit}", f"openmoji--{code}"] if provider == "twemoji" and zweit
-                      else [f"openmoji--{code}"] + ([f"twemoji--{zweit}"] if zweit else []))
-            for slug in wunsch:
+            dritt = f"fluent--{code}" if image_providers.fluent_by_code().get(code) else ""
+            moeglich = [f"openmoji--{code}"] + ([f"twemoji--{zweit}"] if zweit else []) + ([dritt] if dritt else [])
+            if provider == "twemoji" and zweit:
+                moeglich = [f"twemoji--{zweit}", f"openmoji--{code}"] + ([dritt] if dritt else [])
+            elif provider == "fluent" and dritt:
+                moeglich = [dritt, f"openmoji--{code}"] + ([f"twemoji--{zweit}"] if zweit else [])
+            for slug in moeglich:
                 if slug not in gesehen:
                     gesehen.append(slug)
                     out.append((slug, query))

@@ -154,8 +154,8 @@ nicht kaputtmachen darf:
   Druck `visible`). `passeKartenAn()` misst Blatt für Blatt, die sichtbaren sofort,
   den Rest in `requestIdleCallback`; `kartenFertig()` muss vor `window.print()`
   abgewartet werden.
-- **Ein Wort = eine Karte.** 50 Wörter stehen in zwei Themen (629 Einträge, aber
-  nur 579 verschiedene Wörter); `gemischteWoerter()` entdoppelt.
+- **Ein Wort = eine Karte.** 50 Wörter stehen in zwei Themen (630 Einträge, aber
+  nur 580 verschiedene Wörter); `gemischteWoerter()` entdoppelt.
 - **Rückmeldung** (✓/✗) sitzt als Plakette *neben* der Karte in der Zelle, damit
   sie in jedem Raster 11 px bleibt; im Druck gibt es sie nicht.
 - Die Info-Box (`#about`) ist für Lernende, Eltern und Lehrer geschrieben — keine

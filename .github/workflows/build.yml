@@ -18,6 +18,7 @@ jobs:
           python3 -m py_compile bilder_waehlen.py build_simple.py tools/tts_piper.py \
               tools/piper_worker.py tools/check_tts.py tools/image_providers.py \
               tools/import_kaikki_dictionary.py tools/update_dictionary.py \
+              tools/import_fluent_emoji.py \
               tools/audit_words.py tools/build_decks.py tools/shrink_svg.py \
               tools/word_overview.py tools/artikel_balance.py tools/stoffnamen.py
 

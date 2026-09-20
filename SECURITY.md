@@ -12,7 +12,7 @@ Werkstatt erzeugten SVG-Rahmen eingebettet. Uploads sind auf 6 MB begrenzt.
 Der Editor kann für Bildsuche, Wiktionary-Wörterbuch-Fallback und
 Wikidata-Klassifikation auf das Internet zugreifen. Die **fertig exportierte
 HTML-Datei** enthält diese Editor-Funktionen nicht und ist offline nutzbar.
-Audio ist dort ausschließlich vorgerendertes MP3 (Piper `de_DE-kerstin-low`,
+Audio ist dort ausschließlich vorgerendertes MP3 (Piper `de_DE-thorsten-high`,
 48 kbit/s, 44,1 kHz) — kein Fremdprogramm und keine Netzwerkverbindung.
 
 Theme-Dateien und Bilder aus unbekannten Quellen sollten trotzdem nur aus

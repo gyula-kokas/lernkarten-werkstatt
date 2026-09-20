@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Check the mandatory TTS chain: Piper de_DE-kerstin-low -> MP3 48k/44.1 kHz."""
+"""Check the mandatory TTS chain: Piper de_DE-thorsten-high -> MP3 48k/44.1 kHz."""
 from __future__ import annotations
 
 import shutil

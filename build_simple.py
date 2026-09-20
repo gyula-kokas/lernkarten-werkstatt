@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Build one self-contained learning-card HTML with mandatory Piper audio.
 
-Speech is rendered during export with Piper (de_DE-kerstin-low, CC0 1.0) and
+Speech is rendered during export with Piper (de_DE-thorsten-high, CC0 1.0) and
 embedded as MP3 data URIs (48 kbit/s, 44.1 kHz, MPEG-1 Layer III). The
 generated HTML therefore needs no system TTS, no network and no browser voice.
 There is deliberately no fallback synthesizer.

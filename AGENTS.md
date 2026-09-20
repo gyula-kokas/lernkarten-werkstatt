@@ -6,11 +6,26 @@ Lernkarten-Werkstatt 0.1 – local visual editor for German learning cards.
 User-facing docs (German): [README.md](README.md) ·
 security model [SECURITY.md](SECURITY.md) · licenses [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)
 
+## Release
+
+Every published version touches **six** places — keep them in sync:
+
+1. `WERKSTATT_VERSION` in `der_die_das_template.html` (shown in the Info box),
+2. the title and the `## Was X kann` heading in `README.md`,
+3. the first line of `AGENTS.md` (this file),
+4. `requirements.txt`,
+5. `## Editor-Wörterbuch X` in `THIRD_PARTY_NOTICES.md`,
+6. the git tag + the GitHub release (`gh release create vX.Y output-selected/lernkarten-alle-themes.html`
+   with the built file attached — learners download that file instead of building it).
+
+Build the release file with `python3 build_simple.py --themes selected-themes
+--output output-selected/lernkarten-alle-themes.html` and run `tests/smoke_test.py` first.
+
 ## Build and Test
 
 No Python packages are needed in the project itself — **standard library only**. The only
 external requirements are the TTS toolchain (Piper in its own virtualenv with the CC0
-voice `de_DE-kerstin-low`) and `ffmpeg` with `libmp3lame`.
+voice `de_DE-thorsten-high`) and `ffmpeg` with `libmp3lame`.
 
 ```bash
 python3 tools/check_tts.py                  # verify mandatory TTS before anything else

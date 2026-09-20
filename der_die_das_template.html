@@ -1012,6 +1012,9 @@ body.mode-game .game-view{display:flex}
     helfen beim Auswählen, die Auswahl bleibt beim nächsten Mal gespeichert.
     <br><br>
     Der Ton steckt in dieser Datei: Lautsprecher einschalten, Internet ist nicht nötig.
+    <br><br>
+    <small>Lernkarten-Werkstatt <b id="werkstattVersion"></b> · Diese Angabe hilft,
+    wenn du eine Frage zu deiner Datei hast.</small>
   </div>
 
 </div>
@@ -1028,6 +1031,12 @@ body.mode-game .game-view{display:flex}
 
 <script>
 "use strict";
+
+/*
+  Versionsnummer der Werkstatt. Bei einer neuen Veröffentlichung **hier** und in
+  der Release-Beschreibung ändern (README-Titel und AGENTS.md ebenso).
+*/
+const WERKSTATT_VERSION="0.1";
 
 /*
   Themes und Audioclips werden beim Build von build_simple.py direkt hier eingebettet.
@@ -1492,6 +1501,12 @@ function tonText(){
 
 function updateStatus(){
   document.querySelector("#status").textContent=`${auswahlText()}${gedrucktText()} · ${tonText()}`;
+}
+
+/* Die Info-Box nennt die Version - so lässt sich eine Datei zuordnen. */
+function zeigeVersion(){
+  const ziel=document.querySelector("#werkstattVersion");
+  if(ziel) ziel.textContent=WERKSTATT_VERSION;
 }
 
 function updateScore(){
@@ -3006,6 +3021,7 @@ for(const builtIn of BUILTIN_THEMES){
    Seitenberechnung anwenden. */
 ladeDruck();
 buildThemeMenu("*");
+zeigeVersion();
 
 
 document.querySelector("#printModeButton").addEventListener("click",()=>setViewMode("print"));

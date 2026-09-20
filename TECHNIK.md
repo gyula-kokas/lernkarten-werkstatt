@@ -118,7 +118,8 @@ python3 tools/build_decks.py --verworfen        # gestrichene Wörter protokolli
 
 Weitere Werkzeuge: `tools/audit_words.py` (Artikel/Mehrzahl aller Themen),
 `tools/artikel_balance.py` (der/die/das-Verteilung je Bereich + Vorschläge aus
-`themen-reserve/verworfen.md`), `tools/word_overview.py` (Kontrollblatt),
+`themen-reserve/verworfen.md`), `tools/word_overview.py` (Kontrollblatt für jede
+Inhaltsprüfung: alle Wörter mit Bild, Artikel, Mehrzahl und beiden Sätzen),
 `tools/shrink_svg.py` (zu große Bilder).
 
 ## Wörterbuch
@@ -153,8 +154,8 @@ nicht kaputtmachen darf:
   Druck `visible`). `passeKartenAn()` misst Blatt für Blatt, die sichtbaren sofort,
   den Rest in `requestIdleCallback`; `kartenFertig()` muss vor `window.print()`
   abgewartet werden.
-- **Ein Wort = eine Karte.** 53 Wörter stehen in zwei Themen (692 Einträge, aber
-  nur 639 verschiedene Wörter); `gemischteWoerter()` entdoppelt.
+- **Ein Wort = eine Karte.** 53 Wörter stehen in zwei Themen (686 Einträge, aber
+  nur 633 verschiedene Wörter); `gemischteWoerter()` entdoppelt.
 - **Rückmeldung** (✓/✗) sitzt als Plakette *neben* der Karte in der Zelle, damit
   sie in jedem Raster 11 px bleibt; im Druck gibt es sie nicht.
 - Die Info-Box (`#about`) ist für Lernende, Eltern und Lehrer geschrieben — keine

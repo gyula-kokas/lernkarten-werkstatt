@@ -3,7 +3,7 @@
   "themeName": "Flugzeuge und Weltall",
   "language": "de",
   "version": 1,
-  "entryCount": 24,
+  "entryCount": 21,
   "imageMode": "per-entry-svg",
   "entries": [
     {
@@ -17,33 +17,13 @@
       "editorType": "vehicle"
     },
     {
-      "word": "Kleinflugzeug",
-      "article": "das",
-      "plural": "Kleinflugzeuge",
-      "pluralWithArticle": "die Kleinflugzeuge",
-      "accusativeSentence": "Der Pilot startet das Kleinflugzeug.",
-      "dativeSentence": "Der Pilot fliegt mit dem Kleinflugzeug.",
-      "imageIndex": 1,
-      "editorType": "vehicle"
-    },
-    {
-      "word": "Privatjet",
-      "article": "der",
-      "plural": "Privatjets",
-      "pluralWithArticle": "die Privatjets",
-      "accusativeSentence": "Die Familie mietet den Privatjet.",
-      "dativeSentence": "Der Mann fliegt mit dem Privatjet.",
-      "imageIndex": 2,
-      "editorType": "vehicle"
-    },
-    {
       "word": "Hubschrauber",
       "article": "der",
       "plural": "Hubschrauber",
       "pluralWithArticle": "die Hubschrauber",
       "accusativeSentence": "Das Kind hört den Hubschrauber.",
       "dativeSentence": "Der Pilot fliegt mit dem Hubschrauber.",
-      "imageIndex": 3,
+      "imageIndex": 1,
       "editorType": "vehicle"
     },
     {
@@ -53,7 +33,7 @@
       "pluralWithArticle": "die Heißluftballons",
       "accusativeSentence": "Die Familie sieht den Heißluftballon.",
       "dativeSentence": "Die Familie fliegt mit dem Heißluftballon.",
-      "imageIndex": 4,
+      "imageIndex": 2,
       "editorType": "vehicle"
     },
     {
@@ -63,7 +43,7 @@
       "pluralWithArticle": "die Fallschirme",
       "accusativeSentence": "Der Mann öffnet den Fallschirm.",
       "dativeSentence": "Der Mann springt mit dem Fallschirm.",
-      "imageIndex": 5,
+      "imageIndex": 3,
       "editorType": "vehicle"
     },
     {
@@ -73,7 +53,7 @@
       "pluralWithArticle": "die Raketen",
       "accusativeSentence": "Das Kind malt die Rakete.",
       "dativeSentence": "Die Astronauten fliegen mit der Rakete.",
-      "imageIndex": 6,
+      "imageIndex": 4,
       "editorType": "vehicle"
     },
     {
@@ -83,7 +63,7 @@
       "pluralWithArticle": "die Raumfähren",
       "accusativeSentence": "Das Kind sieht die Raumfähre.",
       "dativeSentence": "Die Astronauten fliegen mit der Raumfähre.",
-      "imageIndex": 7,
+      "imageIndex": 5,
       "editorType": "vehicle"
     },
     {
@@ -93,7 +73,7 @@
       "pluralWithArticle": "die Satelliten",
       "accusativeSentence": "Der Techniker steuert den Satelliten.",
       "dativeSentence": "Das Signal kommt von dem Satelliten.",
-      "imageIndex": 8,
+      "imageIndex": 6,
       "editorType": "vehicle"
     },
     {
@@ -103,7 +83,7 @@
       "pluralWithArticle": "die Raumanzüge",
       "accusativeSentence": "Der Astronaut trägt den Raumanzug.",
       "dativeSentence": "Der Astronaut arbeitet in dem Raumanzug.",
-      "imageIndex": 9,
+      "imageIndex": 7,
       "editorType": "vehicle"
     },
     {
@@ -113,7 +93,7 @@
       "pluralWithArticle": "die Sterne",
       "accusativeSentence": "Das Kind beobachtet den Stern.",
       "dativeSentence": "Das Licht kommt von dem Stern.",
-      "imageIndex": 10,
+      "imageIndex": 8,
       "editorType": "vehicle"
     },
     {
@@ -123,7 +103,7 @@
       "pluralWithArticle": "die Monde",
       "accusativeSentence": "Das Kind sieht den Mond.",
       "dativeSentence": "Das Licht kommt von dem Mond.",
-      "imageIndex": 11,
+      "imageIndex": 9,
       "editorType": "vehicle"
     },
     {
@@ -133,7 +113,7 @@
       "pluralWithArticle": "die Sonnen",
       "accusativeSentence": "Das Kind malt die Sonne.",
       "dativeSentence": "Die Wärme kommt von der Sonne.",
-      "imageIndex": 12,
+      "imageIndex": 10,
       "editorType": "vehicle"
     },
     {
@@ -143,7 +123,7 @@
       "pluralWithArticle": "die Planeten",
       "accusativeSentence": "Das Kind findet den Planeten.",
       "dativeSentence": "Die Reise geht zu dem Planeten.",
-      "imageIndex": 13,
+      "imageIndex": 11,
       "editorType": "vehicle"
     },
     {
@@ -153,7 +133,7 @@
       "pluralWithArticle": "die Erden",
       "accusativeSentence": "Der Astronaut sieht die Erde.",
       "dativeSentence": "Wir leben auf der Erde.",
-      "imageIndex": 14,
+      "imageIndex": 12,
       "editorType": "vehicle"
     },
     {
@@ -163,7 +143,7 @@
       "pluralWithArticle": "",
       "accusativeSentence": "Das Kind betrachtet die Milchstraße.",
       "dativeSentence": "Die Sterne leuchten in der Milchstraße.",
-      "imageIndex": 15,
+      "imageIndex": 13,
       "editorType": "vehicle"
     },
     {
@@ -173,7 +153,7 @@
       "pluralWithArticle": "die Kometen",
       "accusativeSentence": "Das Kind entdeckt den Kometen.",
       "dativeSentence": "Der Schweif gehört dem Kometen.",
-      "imageIndex": 16,
+      "imageIndex": 14,
       "editorType": "vehicle"
     },
     {
@@ -183,7 +163,7 @@
       "pluralWithArticle": "die Teleskope",
       "accusativeSentence": "Der Forscher benutzt das Teleskop.",
       "dativeSentence": "Der Mond ist in dem Teleskop zu sehen.",
-      "imageIndex": 17,
+      "imageIndex": 15,
       "editorType": "vehicle"
     },
     {
@@ -193,7 +173,7 @@
       "pluralWithArticle": "die Ufos",
       "accusativeSentence": "Das Kind malt das Ufo.",
       "dativeSentence": "Das Kind träumt von dem Ufo.",
-      "imageIndex": 18,
+      "imageIndex": 16,
       "editorType": "vehicle"
     },
     {
@@ -203,7 +183,7 @@
       "pluralWithArticle": "die Drohnen",
       "accusativeSentence": "Der Mann steuert die Drohne.",
       "dativeSentence": "Der Mann filmt mit der Drohne.",
-      "imageIndex": 19,
+      "imageIndex": 17,
       "editorType": "vehicle"
     },
     {
@@ -213,7 +193,7 @@
       "pluralWithArticle": "die Piloten",
       "accusativeSentence": "Das Kind grüßt den Piloten.",
       "dativeSentence": "Das Flugzeug gehört dem Piloten.",
-      "imageIndex": 20,
+      "imageIndex": 18,
       "editorType": "vehicle"
     },
     {
@@ -223,7 +203,7 @@
       "pluralWithArticle": "die Abflüge",
       "accusativeSentence": "Die Familie wartet auf den Abflug.",
       "dativeSentence": "Die Familie ist aufgeregt bei dem Abflug.",
-      "imageIndex": 21,
+      "imageIndex": 19,
       "editorType": "vehicle"
     },
     {
@@ -233,17 +213,7 @@
       "pluralWithArticle": "die Militärflugzeuge",
       "accusativeSentence": "Der Mann fotografiert das Militärflugzeug.",
       "dativeSentence": "Der Pilot fliegt mit dem Militärflugzeug.",
-      "imageIndex": 22,
-      "editorType": "vehicle"
-    },
-    {
-      "word": "Segelflugzeug",
-      "article": "das",
-      "plural": "Segelflugzeuge",
-      "pluralWithArticle": "die Segelflugzeuge",
-      "accusativeSentence": "Der Pilot startet das Segelflugzeug.",
-      "dativeSentence": "Der Pilot fliegt mit dem Segelflugzeug.",
-      "imageIndex": 23,
+      "imageIndex": 20,
       "editorType": "vehicle"
     }
   ]

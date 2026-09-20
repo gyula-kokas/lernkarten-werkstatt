@@ -582,14 +582,6 @@
           "oyster"
         ],
         [
-          "Schweinswal",
-          "porpoise"
-        ],
-        [
-          "Narwal",
-          "narwhal"
-        ],
-        [
           "Beluga",
           "beluga"
         ],
@@ -599,5 +591,9 @@
         ]
       ]
     }
-  ]
+  ],
+  "_gestrichen": {
+    "Narwal": "Prüfung 2026-09: Wort zu selten für die Grundschule",
+    "Schweinswal": "Prüfung 2026-09: Wort zu selten, leicht mit Delfin zu verwechseln"
+  }
 }

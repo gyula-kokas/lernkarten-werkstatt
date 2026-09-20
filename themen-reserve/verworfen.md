@@ -26,7 +26,7 @@ Thema das Bild schon, braucht das Wort ein eigenes Bild.
 kein eigenes Bild –), `Blumenkohl` (kein Satz geschrieben), `Kohl` (cabbage: kein eigenes Bild
 –), `Sellerie` (celery: kein eigenes Bild –), `Spargel` (asparagus: kein eigenes Bild –)
 
-### Küche und Geschirr – 23 Wörter im Deck, 3 gestrichen
+### Küche und Geschirr – 22 Wörter im Deck, 3 gestrichen
 
 `Vorratsdose` (nicht im Wörterbuch), `Servierplatte` (nicht im Wörterbuch), `Serviette` (napkin:
 kein eigenes Bild –)
@@ -77,7 +77,7 @@ geschrieben), `Mikroskop` (kein Satz geschrieben), `Taschenlampe` (kein Satz ges
 
 `Titanic` (nicht im Wörterbuch), `Yacht` (kein Satz geschrieben)
 
-### Flugzeuge und Weltall – 24 Wörter im Deck, 4 gestrichen
+### Flugzeuge und Weltall – 21 Wörter im Deck, 4 gestrichen
 
 `Propellerflugzeug` (propeller plane: kein eigenes Bild –), `Zeppelin` (airship: kein eigenes
 Bild –), `Startendes Flugzeug` (nicht im Wörterbuch), `Landendes Flugzeug` (nicht im Wörterbuch)

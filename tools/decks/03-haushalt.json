@@ -70,10 +70,6 @@
           "wine glass"
         ],
         [
-          "Espressokanne",
-          "moka pot"
-        ],
-        [
           "Trinkhalm",
           "cup with straw"
         ],
@@ -573,5 +569,8 @@
         ]
       ]
     }
-  ]
+  ],
+  "_gestrichen": {
+    "Espressokanne": "Prüfung 2026-09: Gerät kaum bekannt, Wort zu selten"
+  }
 }

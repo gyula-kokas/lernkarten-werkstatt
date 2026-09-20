@@ -51,10 +51,12 @@ MIN_WOERTER = 15
 ARTIKEL_UEBLICH = {
     "butter": "die", "radio": "das", "taxi": "das", "baguette": "das",
     "trikot": "das", "bonbon": "das", "zwiebel": "die", "kiwi": "die",
-    "leiter": "die", "frisbee": "der",
+    "leiter": "die", "frisbee": "das", "paprika": "die",
     # Das Kaikki-Dump führt zu vielen Wörtern regionale/veraltete Varianten mit
     # ("Thermometer: der/das"). Hier stehen die Fälle, in denen die *übliche*
-    # Form nicht die erste im Wörterbuch ist - Duden kennt nur "das Thermometer".
+    # Form nicht die erste im Wörterbuch ist - Duden kennt nur "das Thermometer",
+    # "die Paprika" (der Paprika ist österreichisch) und "das Frisbee" (der
+    # Frisbee steht nur als Nebenform im Duden).
     "thermometer": "das",
 }
 

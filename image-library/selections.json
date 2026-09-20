@@ -443,14 +443,6 @@
     "slug": "openmoji--1F9AA",
     "query": "oyster"
   },
-  "theme-54-wassertiere.json::Schweinswal": {
-    "slug": "openmoji--E008",
-    "query": "porpoise"
-  },
-  "theme-54-wassertiere.json::Narwal": {
-    "slug": "openmoji--E006",
-    "query": "narwhal"
-  },
   "theme-54-wassertiere.json::Beluga": {
     "slug": "openmoji--E007",
     "query": "beluga"
@@ -907,10 +899,6 @@
     "slug": "openmoji--1F377",
     "query": "wine glass"
   },
-  "theme-60-kueche.json::Espressokanne": {
-    "slug": "openmoji--E152",
-    "query": "moka pot"
-  },
   "theme-60-kueche.json::Trinkhalm": {
     "slug": "openmoji--1F964",
     "query": "cup with straw"
@@ -1308,8 +1296,8 @@
     "query": "stomach"
   },
   "theme-65-koerper.json::Rücken": {
-    "slug": "openmoji--E321",
-    "query": "backache"
+    "slug": "o14572-male-body-silhouette-back",
+    "query": "o14572-male-body-silhouette-back"
   },
   "theme-65-koerper.json::Muskel": {
     "slug": "openmoji--1F4AA",
@@ -1923,10 +1911,6 @@
     "slug": "openmoji--2708",
     "query": "airplane"
   },
-  "theme-73-flugzeuge.json::Kleinflugzeug": {
-    "slug": "openmoji--1F6E9",
-    "query": "small airplane"
-  },
   "theme-73-flugzeuge.json::Hubschrauber": {
     "slug": "openmoji--1F681",
     "query": "helicopter"
@@ -2006,10 +1990,6 @@
   "theme-73-flugzeuge.json::Militärflugzeug": {
     "slug": "openmoji--1F6E6",
     "query": "up-pointing military airplane"
-  },
-  "theme-73-flugzeuge.json::Segelflugzeug": {
-    "slug": "openmoji--1F6E8",
-    "query": "up-pointing small airplane"
   },
   "theme-74-wetter.json::Sonne": {
     "slug": "openmoji--2600",
@@ -2320,16 +2300,16 @@
     "query": "volleyball"
   },
   "theme-78-sport.json::Tennis": {
-    "slug": "openmoji--1F3BE",
-    "query": "tennis"
+    "slug": "o232909-tennis-racquet-outline",
+    "query": "o232909-tennis-racquet-outline"
   },
   "theme-78-sport.json::Badminton": {
     "slug": "openmoji--1F3F8",
     "query": "badminton"
   },
   "theme-78-sport.json::Tennisball": {
-    "slug": "openmoji--1F94E",
-    "query": "softball"
+    "slug": "o181597-yellow-tennis-ball",
+    "query": "o181597-yellow-tennis-ball"
   },
   "theme-78-sport.json::Tor": {
     "slug": "openmoji--1F945",
@@ -2571,10 +2551,6 @@
     "slug": "o202273-brown-coal-wagon",
     "query": "train"
   },
-  "theme-73-flugzeuge.json::Privatjet": {
-    "slug": "o16693-private-jet",
-    "query": "Privatjet"
-  },
   "theme-75-natur.json::Wasserfall": {
     "slug": "o235720-waterfall",
     "query": "waterfall"
@@ -2616,8 +2592,8 @@
     "query": "stop sign"
   },
   "theme-75-natur.json::See": {
-    "slug": "twemoji--1f30a",
-    "query": "water wave"
+    "slug": "o237396-lake-scenery",
+    "query": "o237396-lake-scenery"
   },
   "theme-78-sport.json::Boxen": {
     "slug": "openmoji--1F94A",
@@ -2628,8 +2604,8 @@
     "query": "crayon"
   },
   "theme-79-spielzeug.json::Papierflieger": {
-    "slug": "openmoji--1F4CE",
-    "query": "paperclip"
+    "slug": "o21982-paper-plane",
+    "query": "o21982-paper-plane"
   },
   "theme-57-gemuese.json::Lauch": {
     "slug": "mdi--leek",

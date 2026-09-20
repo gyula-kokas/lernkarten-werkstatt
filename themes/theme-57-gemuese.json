@@ -28,11 +28,11 @@
     },
     {
       "word": "Paprika",
-      "article": "der",
+      "article": "die",
       "plural": "Paprika",
       "pluralWithArticle": "die Paprika",
-      "accusativeSentence": "Das Kind schneidet den Paprika.",
-      "dativeSentence": "Der Auflauf schmeckt mit dem Paprika.",
+      "accusativeSentence": "Das Kind schneidet die Paprika.",
+      "dativeSentence": "Der Auflauf schmeckt mit der Paprika.",
       "imageIndex": 2,
       "editorType": "food"
     },

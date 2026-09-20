@@ -228,10 +228,10 @@
     },
     {
       "word": "Frisbee",
-      "article": "der",
+      "article": "das",
       "plural": "Frisbees",
       "pluralWithArticle": "die Frisbees",
-      "accusativeSentence": "Das Kind wirft den Frisbee.",
+      "accusativeSentence": "Das Kind wirft das Frisbee.",
       "dativeSentence": "Das Kind spielt mit dem Frisbee.",
       "imageIndex": 22,
       "editorType": "object"

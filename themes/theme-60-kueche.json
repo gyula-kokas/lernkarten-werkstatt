@@ -3,7 +3,7 @@
   "themeName": "Küche und Geschirr",
   "language": "de",
   "version": 1,
-  "entryCount": 23,
+  "entryCount": 22,
   "imageMode": "per-entry-svg",
   "entries": [
     {
@@ -157,23 +157,13 @@
       "editorType": "object"
     },
     {
-      "word": "Espressokanne",
-      "article": "die",
-      "plural": "Espressokannen",
-      "pluralWithArticle": "die Espressokannen",
-      "accusativeSentence": "Das Kind stellt die Espressokanne hin.",
-      "dativeSentence": "Der Kaffee kocht in der Espressokanne.",
-      "imageIndex": 15,
-      "editorType": "object"
-    },
-    {
       "word": "Trinkhalm",
       "article": "der",
       "plural": "Trinkhalme",
       "pluralWithArticle": "die Trinkhalme",
       "accusativeSentence": "Das Kind nimmt den Trinkhalm.",
       "dativeSentence": "Das Kind trinkt mit dem Trinkhalm.",
-      "imageIndex": 16,
+      "imageIndex": 15,
       "editorType": "object"
     },
     {
@@ -183,7 +173,7 @@
       "pluralWithArticle": "die Kessel",
       "accusativeSentence": "Das Kind stellt den Kessel auf den Herd.",
       "dativeSentence": "Das Wasser kocht in dem Kessel.",
-      "imageIndex": 17,
+      "imageIndex": 16,
       "editorType": "object"
     },
     {
@@ -193,7 +183,7 @@
       "pluralWithArticle": "die Mixer",
       "accusativeSentence": "Die Mutter benutzt den Mixer.",
       "dativeSentence": "Die Mutter mixt den Saft mit dem Mixer.",
-      "imageIndex": 18,
+      "imageIndex": 17,
       "editorType": "object"
     },
     {
@@ -203,7 +193,7 @@
       "pluralWithArticle": "die Toaster",
       "accusativeSentence": "Der Vater benutzt den Toaster.",
       "dativeSentence": "Das Brot wird in dem Toaster warm.",
-      "imageIndex": 19,
+      "imageIndex": 18,
       "editorType": "object"
     },
     {
@@ -213,7 +203,7 @@
       "pluralWithArticle": "die Kühlschränke",
       "accusativeSentence": "Der Vater öffnet den Kühlschrank.",
       "dativeSentence": "Die Milch steht in dem Kühlschrank.",
-      "imageIndex": 20,
+      "imageIndex": 19,
       "editorType": "object"
     },
     {
@@ -223,7 +213,7 @@
       "pluralWithArticle": "die Mikrowellen",
       "accusativeSentence": "Das Kind benutzt die Mikrowelle.",
       "dativeSentence": "Das Essen wird in der Mikrowelle warm.",
-      "imageIndex": 21,
+      "imageIndex": 20,
       "editorType": "object"
     },
     {
@@ -233,7 +223,7 @@
       "pluralWithArticle": "die Backöfen",
       "accusativeSentence": "Die Mutter schaltet den Backofen ein.",
       "dativeSentence": "Der Kuchen backt in dem Backofen.",
-      "imageIndex": 22,
+      "imageIndex": 21,
       "editorType": "object"
     }
   ]

@@ -429,10 +429,6 @@
       "Das Kind sieht das Flugzeug.",
       "Die Familie fliegt mit dem Flugzeug."
     ],
-    "Kleinflugzeug": [
-      "Der Pilot startet das Kleinflugzeug.",
-      "Der Pilot fliegt mit dem Kleinflugzeug."
-    ],
     "Hubschrauber": [
       "Das Kind hört den Hubschrauber.",
       "Der Pilot fliegt mit dem Hubschrauber."
@@ -516,14 +512,6 @@
     "Militärflugzeug": [
       "Der Mann fotografiert das Militärflugzeug.",
       "Der Pilot fliegt mit dem Militärflugzeug."
-    ],
-    "Segelflugzeug": [
-      "Der Pilot startet das Segelflugzeug.",
-      "Der Pilot fliegt mit dem Segelflugzeug."
-    ],
-    "Privatjet": [
-      "Die Familie mietet den Privatjet.",
-      "Der Mann fliegt mit dem Privatjet."
     ]
   }
 }

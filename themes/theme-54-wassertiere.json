@@ -3,7 +3,7 @@
   "themeName": "Tiere im Wasser",
   "language": "de",
   "version": 1,
-  "entryCount": 21,
+  "entryCount": 19,
   "imageMode": "per-entry-svg",
   "entries": [
     {
@@ -177,33 +177,13 @@
       "editorType": "animal"
     },
     {
-      "word": "Schweinswal",
-      "article": "der",
-      "plural": "Schweinswale",
-      "pluralWithArticle": "die Schweinswale",
-      "accusativeSentence": "Das Kind entdeckt den Schweinswal.",
-      "dativeSentence": "Die Flosse gehört dem Schweinswal.",
-      "imageIndex": 17,
-      "editorType": "animal"
-    },
-    {
-      "word": "Narwal",
-      "article": "der",
-      "plural": "Narwale",
-      "pluralWithArticle": "die Narwale",
-      "accusativeSentence": "Das Kind malt den Narwal.",
-      "dativeSentence": "Der lange Zahn gehört dem Narwal.",
-      "imageIndex": 18,
-      "editorType": "animal"
-    },
-    {
       "word": "Beluga",
       "article": "die",
       "plural": "Belugas",
       "pluralWithArticle": "die Belugas",
       "accusativeSentence": "Das Kind sieht die Beluga.",
       "dativeSentence": "Die Flosse gehört der Beluga.",
-      "imageIndex": 19,
+      "imageIndex": 17,
       "editorType": "animal"
     },
     {
@@ -213,7 +193,7 @@
       "pluralWithArticle": "die Pottwale",
       "accusativeSentence": "Das Kind bestaunt den Pottwal.",
       "dativeSentence": "Die Flosse gehört dem Pottwal.",
-      "imageIndex": 20,
+      "imageIndex": 18,
       "editorType": "animal"
     }
   ]

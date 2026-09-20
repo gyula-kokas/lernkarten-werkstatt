@@ -487,16 +487,6 @@
           "airplane"
         ],
         [
-          "Kleinflugzeug",
-          "small airplane"
-        ],
-        [
-          "Privatjet",
-          "airplane",
-          null,
-          "mdi"
-        ],
-        [
           "Propellerflugzeug",
           "propeller plane"
         ],
@@ -593,12 +583,13 @@
         [
           "Militärflugzeug",
           "up-pointing military airplane"
-        ],
-        [
-          "Segelflugzeug",
-          "up-pointing small airplane"
         ]
       ]
     }
-  ]
+  ],
+  "_gestrichen": {
+    "Privatjet": "Prüfung 2026-09: kein Grundschulwort, Bild war ein Verkehrsflugzeug",
+    "Kleinflugzeug": "Prüfung 2026-09: zu ähnlich zu „Flugzeug“, Wort zu selten",
+    "Segelflugzeug": "Prüfung 2026-09: zu ähnlich zu „Flugzeug“, Wort zu selten"
+  }
 }

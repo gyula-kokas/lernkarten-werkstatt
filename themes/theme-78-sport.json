@@ -1,0 +1,260 @@
+{
+  "themeId": "theme-78-sport",
+  "themeName": "Spiel und Sport",
+  "language": "de",
+  "version": 1,
+  "entryCount": 25,
+  "imageMode": "per-entry-svg",
+  "entries": [
+    {
+      "word": "Ball",
+      "article": "der",
+      "plural": "Bälle",
+      "pluralWithArticle": "die Bälle",
+      "accusativeSentence": "Das Kind wirft den Ball.",
+      "dativeSentence": "Das Kind spielt mit dem Ball.",
+      "imageIndex": 0,
+      "editorType": "object"
+    },
+    {
+      "word": "Basketball",
+      "article": "der",
+      "plural": "Basketbälle",
+      "pluralWithArticle": "die Basketbälle",
+      "accusativeSentence": "Das Kind dribbelt den Basketball.",
+      "dativeSentence": "Das Kind spielt mit dem Basketball.",
+      "imageIndex": 1,
+      "editorType": "object"
+    },
+    {
+      "word": "Volleyball",
+      "article": "der",
+      "plural": "Volleybälle",
+      "pluralWithArticle": "die Volleybälle",
+      "accusativeSentence": "Das Kind schlägt den Volleyball.",
+      "dativeSentence": "Das Kind spielt mit dem Volleyball.",
+      "imageIndex": 2,
+      "editorType": "object"
+    },
+    {
+      "word": "Tennis",
+      "article": "das",
+      "plural": "",
+      "pluralWithArticle": "",
+      "accusativeSentence": "Das Kind lernt das Tennis.",
+      "dativeSentence": "Das Kind erzählt von dem Tennis.",
+      "imageIndex": 3,
+      "editorType": "object"
+    },
+    {
+      "word": "Badminton",
+      "article": "das",
+      "plural": "",
+      "pluralWithArticle": "",
+      "accusativeSentence": "Das Kind probiert das Badminton.",
+      "dativeSentence": "Das Kind erzählt von dem Badminton.",
+      "imageIndex": 4,
+      "editorType": "object"
+    },
+    {
+      "word": "Schläger",
+      "article": "der",
+      "plural": "Schläger",
+      "pluralWithArticle": "die Schläger",
+      "accusativeSentence": "Das Kind nimmt den Schläger.",
+      "dativeSentence": "Das Kind schlägt mit dem Schläger.",
+      "imageIndex": 5,
+      "editorType": "object"
+    },
+    {
+      "word": "Tennisball",
+      "article": "der",
+      "plural": "Tennisbälle",
+      "pluralWithArticle": "die Tennisbälle",
+      "accusativeSentence": "Das Kind wirft den Tennisball.",
+      "dativeSentence": "Das Kind spielt mit dem Tennisball.",
+      "imageIndex": 6,
+      "editorType": "object"
+    },
+    {
+      "word": "Tor",
+      "article": "das",
+      "plural": "Tore",
+      "pluralWithArticle": "die Tore",
+      "accusativeSentence": "Der Stürmer trifft das Tor.",
+      "dativeSentence": "Der Ball liegt in dem Tor.",
+      "imageIndex": 7,
+      "editorType": "object"
+    },
+    {
+      "word": "Trikot",
+      "article": "das",
+      "plural": "Trikots",
+      "pluralWithArticle": "die Trikots",
+      "accusativeSentence": "Der Spieler trägt das Trikot.",
+      "dativeSentence": "Der Name steht auf dem Trikot.",
+      "imageIndex": 8,
+      "editorType": "object"
+    },
+    {
+      "word": "Turnschuh",
+      "article": "der",
+      "plural": "Turnschuhe",
+      "pluralWithArticle": "die Turnschuhe",
+      "accusativeSentence": "Das Kind bindet den Turnschuh.",
+      "dativeSentence": "Das Kind rennt mit dem Turnschuh.",
+      "imageIndex": 9,
+      "editorType": "object"
+    },
+    {
+      "word": "Fahrrad",
+      "article": "das",
+      "plural": "Fahrräder",
+      "pluralWithArticle": "die Fahrräder",
+      "accusativeSentence": "Das Kind putzt das Fahrrad.",
+      "dativeSentence": "Das Kind fährt mit dem Fahrrad.",
+      "imageIndex": 10,
+      "editorType": "object"
+    },
+    {
+      "word": "Skateboard",
+      "article": "das",
+      "plural": "Skateboards",
+      "pluralWithArticle": "die Skateboards",
+      "accusativeSentence": "Das Kind probiert das Skateboard.",
+      "dativeSentence": "Das Kind fährt mit dem Skateboard.",
+      "imageIndex": 11,
+      "editorType": "object"
+    },
+    {
+      "word": "Rollschuh",
+      "article": "der",
+      "plural": "Rollschuhe",
+      "pluralWithArticle": "die Rollschuhe",
+      "accusativeSentence": "Das Kind sucht den Rollschuh.",
+      "dativeSentence": "Das Kind fährt mit dem Rollschuh.",
+      "imageIndex": 12,
+      "editorType": "object"
+    },
+    {
+      "word": "Schlittschuh",
+      "article": "der",
+      "plural": "Schlittschuhe",
+      "pluralWithArticle": "die Schlittschuhe",
+      "accusativeSentence": "Das Kind schnallt den Schlittschuh an.",
+      "dativeSentence": "Das Kind läuft mit dem Schlittschuh.",
+      "imageIndex": 13,
+      "editorType": "object"
+    },
+    {
+      "word": "Ski",
+      "article": "der",
+      "plural": "Ski",
+      "pluralWithArticle": "die Ski",
+      "accusativeSentence": "Das Kind trägt den Ski.",
+      "dativeSentence": "Das Kind fährt mit dem Ski.",
+      "imageIndex": 14,
+      "editorType": "object"
+    },
+    {
+      "word": "Schlitten",
+      "article": "der",
+      "plural": "Schlitten",
+      "pluralWithArticle": "die Schlitten",
+      "accusativeSentence": "Das Kind zieht den Schlitten.",
+      "dativeSentence": "Das Kind fährt mit dem Schlitten.",
+      "imageIndex": 15,
+      "editorType": "object"
+    },
+    {
+      "word": "Snowboard",
+      "article": "das",
+      "plural": "Snowboards",
+      "pluralWithArticle": "die Snowboards",
+      "accusativeSentence": "Das Kind probiert das Snowboard.",
+      "dativeSentence": "Das Kind fährt mit dem Snowboard.",
+      "imageIndex": 16,
+      "editorType": "object"
+    },
+    {
+      "word": "Schwimmbrille",
+      "article": "die",
+      "plural": "Schwimmbrillen",
+      "pluralWithArticle": "die Schwimmbrillen",
+      "accusativeSentence": "Das Kind setzt die Schwimmbrille auf.",
+      "dativeSentence": "Das Kind schwimmt mit der Schwimmbrille.",
+      "imageIndex": 17,
+      "editorType": "object"
+    },
+    {
+      "word": "Badehose",
+      "article": "die",
+      "plural": "Badehosen",
+      "pluralWithArticle": "die Badehosen",
+      "accusativeSentence": "Das Kind sucht die Badehose.",
+      "dativeSentence": "Das Kind schwimmt in der Badehose.",
+      "imageIndex": 18,
+      "editorType": "object"
+    },
+    {
+      "word": "Pokal",
+      "article": "der",
+      "plural": "Pokale",
+      "pluralWithArticle": "die Pokale",
+      "accusativeSentence": "Die Mannschaft bekommt den Pokal.",
+      "dativeSentence": "Die Mannschaft jubelt mit dem Pokal.",
+      "imageIndex": 19,
+      "editorType": "object"
+    },
+    {
+      "word": "Medaille",
+      "article": "die",
+      "plural": "Medaillen",
+      "pluralWithArticle": "die Medaillen",
+      "accusativeSentence": "Die Läuferin bekommt die Medaille.",
+      "dativeSentence": "Die Läuferin strahlt mit der Medaille.",
+      "imageIndex": 20,
+      "editorType": "object"
+    },
+    {
+      "word": "Sprungseil",
+      "article": "das",
+      "plural": "Sprungseile",
+      "pluralWithArticle": "die Sprungseile",
+      "accusativeSentence": "Das Kind nimmt das Sprungseil.",
+      "dativeSentence": "Das Kind springt mit dem Sprungseil.",
+      "imageIndex": 21,
+      "editorType": "object"
+    },
+    {
+      "word": "Frisbee",
+      "article": "der",
+      "plural": "Frisbees",
+      "pluralWithArticle": "die Frisbees",
+      "accusativeSentence": "Das Kind wirft den Frisbee.",
+      "dativeSentence": "Das Kind spielt mit dem Frisbee.",
+      "imageIndex": 22,
+      "editorType": "object"
+    },
+    {
+      "word": "Bogenschießen",
+      "article": "das",
+      "plural": "Bogenschießen",
+      "pluralWithArticle": "die Bogenschießen",
+      "accusativeSentence": "Das Kind lernt das Bogenschießen.",
+      "dativeSentence": "Das Kind erzählt von dem Bogenschießen.",
+      "imageIndex": 23,
+      "editorType": "object"
+    },
+    {
+      "word": "Boxen",
+      "article": "das",
+      "plural": "",
+      "pluralWithArticle": "",
+      "accusativeSentence": "Der Junge lernt das Boxen.",
+      "dativeSentence": "Der Junge erzählt von dem Boxen.",
+      "imageIndex": 24,
+      "editorType": "object"
+    }
+  ]
+}

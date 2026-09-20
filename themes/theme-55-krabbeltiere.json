@@ -1,0 +1,210 @@
+{
+  "themeId": "theme-55-krabbeltiere",
+  "themeName": "Insekten und Kriechtiere",
+  "language": "de",
+  "version": 1,
+  "entryCount": 20,
+  "imageMode": "per-entry-svg",
+  "entries": [
+    {
+      "word": "Ameise",
+      "article": "die",
+      "plural": "Ameisen",
+      "pluralWithArticle": "die Ameisen",
+      "accusativeSentence": "Das Kind beobachtet die Ameise auf dem Stein.",
+      "dativeSentence": "Der Krümel gehört der Ameise.",
+      "imageIndex": 0,
+      "editorType": "animal"
+    },
+    {
+      "word": "Biene",
+      "article": "die",
+      "plural": "Bienen",
+      "pluralWithArticle": "die Bienen",
+      "accusativeSentence": "Das Kind fürchtet die Biene.",
+      "dativeSentence": "Die Blüte gehört der Biene.",
+      "imageIndex": 1,
+      "editorType": "animal"
+    },
+    {
+      "word": "Käfer",
+      "article": "der",
+      "plural": "Käfer",
+      "pluralWithArticle": "die Käfer",
+      "accusativeSentence": "Das Kind findet den Käfer.",
+      "dativeSentence": "Der Panzer gehört dem Käfer.",
+      "imageIndex": 2,
+      "editorType": "animal"
+    },
+    {
+      "word": "Schmetterling",
+      "article": "der",
+      "plural": "Schmetterlinge",
+      "pluralWithArticle": "die Schmetterlinge",
+      "accusativeSentence": "Das Kind malt den Schmetterling.",
+      "dativeSentence": "Das Kind schaut dem Schmetterling zu.",
+      "imageIndex": 3,
+      "editorType": "animal"
+    },
+    {
+      "word": "Marienkäfer",
+      "article": "der",
+      "plural": "Marienkäfer",
+      "pluralWithArticle": "die Marienkäfer",
+      "accusativeSentence": "Das Kind zeigt den Marienkäfer.",
+      "dativeSentence": "Das Kind schaut dem Marienkäfer zu.",
+      "imageIndex": 4,
+      "editorType": "animal"
+    },
+    {
+      "word": "Grille",
+      "article": "die",
+      "plural": "Grillen",
+      "pluralWithArticle": "die Grillen",
+      "accusativeSentence": "Das Kind hört die Grille zirpen.",
+      "dativeSentence": "Der Garten gehört der Grille.",
+      "imageIndex": 5,
+      "editorType": "animal"
+    },
+    {
+      "word": "Spinne",
+      "article": "die",
+      "plural": "Spinnen",
+      "pluralWithArticle": "die Spinnen",
+      "accusativeSentence": "Das Kind entdeckt die Spinne in der Ecke.",
+      "dativeSentence": "Das Netz gehört der Spinne.",
+      "imageIndex": 6,
+      "editorType": "animal"
+    },
+    {
+      "word": "Spinnennetz",
+      "article": "das",
+      "plural": "Spinnennetze",
+      "pluralWithArticle": "die Spinnennetze",
+      "accusativeSentence": "Das Kind betrachtet das Spinnennetz.",
+      "dativeSentence": "Die Spinne sitzt in dem Spinnennetz.",
+      "imageIndex": 7,
+      "editorType": "animal"
+    },
+    {
+      "word": "Schnecke",
+      "article": "die",
+      "plural": "Schnecken",
+      "pluralWithArticle": "die Schnecken",
+      "accusativeSentence": "Das Kind sammelt die Schnecke ein.",
+      "dativeSentence": "Das Haus gehört der Schnecke.",
+      "imageIndex": 8,
+      "editorType": "animal"
+    },
+    {
+      "word": "Mücke",
+      "article": "die",
+      "plural": "Mücken",
+      "pluralWithArticle": "die Mücken",
+      "accusativeSentence": "Das Kind fängt die Mücke.",
+      "dativeSentence": "Das Kind läuft vor der Mücke weg.",
+      "imageIndex": 9,
+      "editorType": "animal"
+    },
+    {
+      "word": "Fliege",
+      "article": "die",
+      "plural": "Fliegen",
+      "pluralWithArticle": "die Fliegen",
+      "accusativeSentence": "Das Kind verscheucht die Fliege.",
+      "dativeSentence": "Das Kind läuft vor der Fliege weg.",
+      "imageIndex": 10,
+      "editorType": "animal"
+    },
+    {
+      "word": "Kakerlake",
+      "article": "die",
+      "plural": "Kakerlaken",
+      "pluralWithArticle": "die Kakerlaken",
+      "accusativeSentence": "Das Kind sieht die Kakerlake in der Küche.",
+      "dativeSentence": "Das Kind läuft vor der Kakerlake weg.",
+      "imageIndex": 11,
+      "editorType": "animal"
+    },
+    {
+      "word": "Skorpion",
+      "article": "der",
+      "plural": "Skorpione",
+      "pluralWithArticle": "die Skorpione",
+      "accusativeSentence": "Das Kind fürchtet den Skorpion.",
+      "dativeSentence": "Der Stachel gehört dem Skorpion.",
+      "imageIndex": 12,
+      "editorType": "animal"
+    },
+    {
+      "word": "Wurm",
+      "article": "der",
+      "plural": "Würmer",
+      "pluralWithArticle": "die Würmer",
+      "accusativeSentence": "Das Kind findet den Wurm im Boden.",
+      "dativeSentence": "Der Vogel pickt nach dem Wurm.",
+      "imageIndex": 13,
+      "editorType": "animal"
+    },
+    {
+      "word": "Eidechse",
+      "article": "die",
+      "plural": "Eidechsen",
+      "pluralWithArticle": "die Eidechsen",
+      "accusativeSentence": "Das Kind beobachtet die Eidechse auf der Mauer.",
+      "dativeSentence": "Der Schwanz gehört der Eidechse.",
+      "imageIndex": 14,
+      "editorType": "animal"
+    },
+    {
+      "word": "Schlange",
+      "article": "die",
+      "plural": "Schlangen",
+      "pluralWithArticle": "die Schlangen",
+      "accusativeSentence": "Das Kind sieht die Schlange im Gras.",
+      "dativeSentence": "Das Kind läuft vor der Schlange weg.",
+      "imageIndex": 15,
+      "editorType": "animal"
+    },
+    {
+      "word": "Frosch",
+      "article": "der",
+      "plural": "Frösche",
+      "pluralWithArticle": "die Frösche",
+      "accusativeSentence": "Das Kind hört den Frosch quaken.",
+      "dativeSentence": "Der Teich gehört dem Frosch.",
+      "imageIndex": 16,
+      "editorType": "animal"
+    },
+    {
+      "word": "Schildkröte",
+      "article": "die",
+      "plural": "Schildkröten",
+      "pluralWithArticle": "die Schildkröten",
+      "accusativeSentence": "Das Kind beobachtet die Schildkröte im Garten.",
+      "dativeSentence": "Der Panzer gehört der Schildkröte.",
+      "imageIndex": 17,
+      "editorType": "animal"
+    },
+    {
+      "word": "Raupe",
+      "article": "die",
+      "plural": "Raupen",
+      "pluralWithArticle": "die Raupen",
+      "accusativeSentence": "Das Kind entdeckt die Raupe auf dem Blatt.",
+      "dativeSentence": "Aus der Raupe wird ein Schmetterling.",
+      "imageIndex": 18,
+      "editorType": "animal"
+    },
+    {
+      "word": "Monarchfalter",
+      "article": "der",
+      "plural": "Monarchfalter",
+      "pluralWithArticle": "die Monarchfalter",
+      "accusativeSentence": "Das Kind fotografiert den Monarchfalter.",
+      "dativeSentence": "Das Kind schaut dem Monarchfalter zu.",
+      "imageIndex": 19,
+      "editorType": "animal"
+    }
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "themeId": "theme-57-gemuese",
+  "themeName": "Gemüse",
+  "language": "de",
+  "version": 1,
+  "entryCount": 17,
+  "imageMode": "per-entry-svg",
+  "entries": [
+    {
+      "word": "Karotte",
+      "article": "die",
+      "plural": "Karotten",
+      "pluralWithArticle": "die Karotten",
+      "accusativeSentence": "Das Kind schält die Karotte.",
+      "dativeSentence": "Das Kaninchen nascht von der Karotte.",
+      "imageIndex": 0,
+      "editorType": "food"
+    },
+    {
+      "word": "Gurke",
+      "article": "die",
+      "plural": "Gurken",
+      "pluralWithArticle": "die Gurken",
+      "accusativeSentence": "Das Kind schneidet die Gurke.",
+      "dativeSentence": "Der Salat schmeckt mit der Gurke.",
+      "imageIndex": 1,
+      "editorType": "food"
+    },
+    {
+      "word": "Paprika",
+      "article": "der",
+      "plural": "Paprika",
+      "pluralWithArticle": "die Paprika",
+      "accusativeSentence": "Das Kind schneidet den Paprika.",
+      "dativeSentence": "Der Auflauf schmeckt mit dem Paprika.",
+      "imageIndex": 2,
+      "editorType": "food"
+    },
+    {
+      "word": "Zwiebel",
+      "article": "die",
+      "plural": "Zwiebeln",
+      "pluralWithArticle": "die Zwiebeln",
+      "accusativeSentence": "Das Kind schneidet die Zwiebel.",
+      "dativeSentence": "Die Suppe riecht nach der Zwiebel.",
+      "imageIndex": 3,
+      "editorType": "food"
+    },
+    {
+      "word": "Kartoffel",
+      "article": "die",
+      "plural": "Kartoffeln",
+      "pluralWithArticle": "die Kartoffeln",
+      "accusativeSentence": "Das Kind schält die Kartoffel.",
+      "dativeSentence": "Das Kind kocht mit der Kartoffel.",
+      "imageIndex": 4,
+      "editorType": "food"
+    },
+    {
+      "word": "Knoblauch",
+      "article": "der",
+      "plural": "",
+      "pluralWithArticle": "",
+      "accusativeSentence": "Das Kind riecht den Knoblauch.",
+      "dativeSentence": "Die Soße schmeckt nach dem Knoblauch.",
+      "imageIndex": 5,
+      "editorType": "food"
+    },
+    {
+      "word": "Mais",
+      "article": "der",
+      "plural": "Maise",
+      "pluralWithArticle": "die Maise",
+      "accusativeSentence": "Das Kind isst den Mais.",
+      "dativeSentence": "Aus dem Mais macht man Popcorn.",
+      "imageIndex": 6,
+      "editorType": "food"
+    },
+    {
+      "word": "Erbse",
+      "article": "die",
+      "plural": "Erbsen",
+      "pluralWithArticle": "die Erbsen",
+      "accusativeSentence": "Das Kind isst die Erbse.",
+      "dativeSentence": "Die Suppe schmeckt mit der Erbse.",
+      "imageIndex": 7,
+      "editorType": "food"
+    },
+    {
+      "word": "Champignon",
+      "article": "der",
+      "plural": "Champignons",
+      "pluralWithArticle": "die Champignons",
+      "accusativeSentence": "Das Kind putzt den Champignon.",
+      "dativeSentence": "Die Pfanne ist voll mit dem Champignon.",
+      "imageIndex": 8,
+      "editorType": "food"
+    },
+    {
+      "word": "Brokkoli",
+      "article": "der",
+      "plural": "Brokkoli",
+      "pluralWithArticle": "die Brokkoli",
+      "accusativeSentence": "Das Kind isst den Brokkoli.",
+      "dativeSentence": "Der Auflauf schmeckt mit dem Brokkoli.",
+      "imageIndex": 9,
+      "editorType": "food"
+    },
+    {
+      "word": "Salat",
+      "article": "der",
+      "plural": "Salate",
+      "pluralWithArticle": "die Salate",
+      "accusativeSentence": "Das Kind wäscht den Salat.",
+      "dativeSentence": "Die Schüssel ist voll mit dem Salat.",
+      "imageIndex": 10,
+      "editorType": "food"
+    },
+    {
+      "word": "Spinat",
+      "article": "der",
+      "plural": "Spinate",
+      "pluralWithArticle": "die Spinate",
+      "accusativeSentence": "Das Kind probiert den Spinat.",
+      "dativeSentence": "Die Nudeln schmecken mit dem Spinat.",
+      "imageIndex": 11,
+      "editorType": "food"
+    },
+    {
+      "word": "Aubergine",
+      "article": "die",
+      "plural": "Auberginen",
+      "pluralWithArticle": "die Auberginen",
+      "accusativeSentence": "Das Kind schneidet die Aubergine.",
+      "dativeSentence": "Der Ofen ist heiß mit der Aubergine.",
+      "imageIndex": 12,
+      "editorType": "food"
+    },
+    {
+      "word": "Tomate",
+      "article": "die",
+      "plural": "Tomaten",
+      "pluralWithArticle": "die Tomaten",
+      "accusativeSentence": "Das Kind isst die Tomate.",
+      "dativeSentence": "Der Salat schmeckt mit der Tomate.",
+      "imageIndex": 13,
+      "editorType": "food"
+    },
+    {
+      "word": "Bohne",
+      "article": "die",
+      "plural": "Bohnen",
+      "pluralWithArticle": "die Bohnen",
+      "accusativeSentence": "Das Kind pflückt die Bohne.",
+      "dativeSentence": "Das Kind kocht mit der Bohne.",
+      "imageIndex": 14,
+      "editorType": "food"
+    },
+    {
+      "word": "Kürbis",
+      "article": "der",
+      "plural": "Kürbisse",
+      "pluralWithArticle": "die Kürbisse",
+      "accusativeSentence": "Das Kind schnitzt den Kürbis.",
+      "dativeSentence": "Die Suppe schmeckt nach dem Kürbis.",
+      "imageIndex": 15,
+      "editorType": "food"
+    },
+    {
+      "word": "Lauch",
+      "article": "der",
+      "plural": "Lauche",
+      "pluralWithArticle": "die Lauche",
+      "accusativeSentence": "Die Mutter schneidet den Lauch.",
+      "dativeSentence": "Die Suppe schmeckt mit dem Lauch.",
+      "imageIndex": 16,
+      "editorType": "food"
+    }
+  ]
+}

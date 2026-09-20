@@ -1,0 +1,240 @@
+{
+  "themeId": "theme-60-kueche",
+  "themeName": "Küche und Geschirr",
+  "language": "de",
+  "version": 1,
+  "entryCount": 23,
+  "imageMode": "per-entry-svg",
+  "entries": [
+    {
+      "word": "Gabel",
+      "article": "die",
+      "plural": "Gabeln",
+      "pluralWithArticle": "die Gabeln",
+      "accusativeSentence": "Das Kind nimmt die Gabel.",
+      "dativeSentence": "Das Kind isst mit der Gabel.",
+      "imageIndex": 0,
+      "editorType": "object"
+    },
+    {
+      "word": "Messer",
+      "article": "das",
+      "plural": "Messer",
+      "pluralWithArticle": "die Messer",
+      "accusativeSentence": "Das Kind benutzt das Messer.",
+      "dativeSentence": "Das Kind schneidet mit dem Messer.",
+      "imageIndex": 1,
+      "editorType": "object"
+    },
+    {
+      "word": "Löffel",
+      "article": "der",
+      "plural": "Löffel",
+      "pluralWithArticle": "die Löffel",
+      "accusativeSentence": "Das Kind holt den Löffel.",
+      "dativeSentence": "Das Kind isst mit dem Löffel.",
+      "imageIndex": 2,
+      "editorType": "object"
+    },
+    {
+      "word": "Glas",
+      "article": "das",
+      "plural": "Gläser",
+      "pluralWithArticle": "die Gläser",
+      "accusativeSentence": "Das Kind füllt das Glas.",
+      "dativeSentence": "Das Wasser ist in dem Glas.",
+      "imageIndex": 3,
+      "editorType": "object"
+    },
+    {
+      "word": "Schüssel",
+      "article": "die",
+      "plural": "Schüsseln",
+      "pluralWithArticle": "die Schüsseln",
+      "accusativeSentence": "Das Kind wäscht die Schüssel.",
+      "dativeSentence": "Der Salat ist in der Schüssel.",
+      "imageIndex": 4,
+      "editorType": "object"
+    },
+    {
+      "word": "Topf",
+      "article": "der",
+      "plural": "Töpfe",
+      "pluralWithArticle": "die Töpfe",
+      "accusativeSentence": "Das Kind rührt den Topf um.",
+      "dativeSentence": "Die Suppe kocht in dem Topf.",
+      "imageIndex": 5,
+      "editorType": "object"
+    },
+    {
+      "word": "Pfanne",
+      "article": "die",
+      "plural": "Pfannen",
+      "pluralWithArticle": "die Pfannen",
+      "accusativeSentence": "Das Kind hält die Pfanne.",
+      "dativeSentence": "Das Ei brät in der Pfanne.",
+      "imageIndex": 6,
+      "editorType": "object"
+    },
+    {
+      "word": "Kanne",
+      "article": "die",
+      "plural": "Kannen",
+      "pluralWithArticle": "die Kannen",
+      "accusativeSentence": "Das Kind trägt die Kanne.",
+      "dativeSentence": "Der Tee ist in der Kanne.",
+      "imageIndex": 7,
+      "editorType": "object"
+    },
+    {
+      "word": "Waage",
+      "article": "die",
+      "plural": "Waagen",
+      "pluralWithArticle": "die Waagen",
+      "accusativeSentence": "Das Kind benutzt die Waage.",
+      "dativeSentence": "Das Mehl liegt auf der Waage.",
+      "imageIndex": 8,
+      "editorType": "object"
+    },
+    {
+      "word": "Kaffeemaschine",
+      "article": "die",
+      "plural": "Kaffeemaschinen",
+      "pluralWithArticle": "die Kaffeemaschinen",
+      "accusativeSentence": "Das Kind schaltet die Kaffeemaschine ein.",
+      "dativeSentence": "Der Kaffee läuft in der Kaffeemaschine.",
+      "imageIndex": 9,
+      "editorType": "object"
+    },
+    {
+      "word": "Schwamm",
+      "article": "der",
+      "plural": "Schwämme",
+      "pluralWithArticle": "die Schwämme",
+      "accusativeSentence": "Das Kind drückt den Schwamm aus.",
+      "dativeSentence": "Das Wasser ist in dem Schwamm.",
+      "imageIndex": 10,
+      "editorType": "object"
+    },
+    {
+      "word": "Flasche",
+      "article": "die",
+      "plural": "Flaschen",
+      "pluralWithArticle": "die Flaschen",
+      "accusativeSentence": "Das Kind öffnet die Flasche.",
+      "dativeSentence": "Das Wasser ist in der Flasche.",
+      "imageIndex": 11,
+      "editorType": "object"
+    },
+    {
+      "word": "Konserve",
+      "article": "die",
+      "plural": "Konserven",
+      "pluralWithArticle": "die Konserven",
+      "accusativeSentence": "Das Kind öffnet die Konserve.",
+      "dativeSentence": "Die Bohnen sind in der Konserve.",
+      "imageIndex": 12,
+      "editorType": "object"
+    },
+    {
+      "word": "Essstäbchen",
+      "article": "das",
+      "plural": "Essstäbchen",
+      "pluralWithArticle": "die Essstäbchen",
+      "accusativeSentence": "Das Kind nimmt das Essstäbchen.",
+      "dativeSentence": "Das Kind isst mit dem Essstäbchen.",
+      "imageIndex": 13,
+      "editorType": "object"
+    },
+    {
+      "word": "Weinglas",
+      "article": "das",
+      "plural": "Weingläser",
+      "pluralWithArticle": "die Weingläser",
+      "accusativeSentence": "Das Kind trocknet das Weinglas ab.",
+      "dativeSentence": "Der Saft ist in dem Weinglas.",
+      "imageIndex": 14,
+      "editorType": "object"
+    },
+    {
+      "word": "Espressokanne",
+      "article": "die",
+      "plural": "Espressokannen",
+      "pluralWithArticle": "die Espressokannen",
+      "accusativeSentence": "Das Kind stellt die Espressokanne hin.",
+      "dativeSentence": "Der Kaffee kocht in der Espressokanne.",
+      "imageIndex": 15,
+      "editorType": "object"
+    },
+    {
+      "word": "Trinkhalm",
+      "article": "der",
+      "plural": "Trinkhalme",
+      "pluralWithArticle": "die Trinkhalme",
+      "accusativeSentence": "Das Kind nimmt den Trinkhalm.",
+      "dativeSentence": "Das Kind trinkt mit dem Trinkhalm.",
+      "imageIndex": 16,
+      "editorType": "object"
+    },
+    {
+      "word": "Kessel",
+      "article": "der",
+      "plural": "Kessel",
+      "pluralWithArticle": "die Kessel",
+      "accusativeSentence": "Das Kind stellt den Kessel auf den Herd.",
+      "dativeSentence": "Das Wasser kocht in dem Kessel.",
+      "imageIndex": 17,
+      "editorType": "object"
+    },
+    {
+      "word": "Mixer",
+      "article": "der",
+      "plural": "Mixer",
+      "pluralWithArticle": "die Mixer",
+      "accusativeSentence": "Die Mutter benutzt den Mixer.",
+      "dativeSentence": "Die Mutter mixt den Saft mit dem Mixer.",
+      "imageIndex": 18,
+      "editorType": "object"
+    },
+    {
+      "word": "Toaster",
+      "article": "der",
+      "plural": "Toaster",
+      "pluralWithArticle": "die Toaster",
+      "accusativeSentence": "Der Vater benutzt den Toaster.",
+      "dativeSentence": "Das Brot wird in dem Toaster warm.",
+      "imageIndex": 19,
+      "editorType": "object"
+    },
+    {
+      "word": "Kühlschrank",
+      "article": "der",
+      "plural": "Kühlschränke",
+      "pluralWithArticle": "die Kühlschränke",
+      "accusativeSentence": "Der Vater öffnet den Kühlschrank.",
+      "dativeSentence": "Die Milch steht in dem Kühlschrank.",
+      "imageIndex": 20,
+      "editorType": "object"
+    },
+    {
+      "word": "Mikrowelle",
+      "article": "die",
+      "plural": "Mikrowellen",
+      "pluralWithArticle": "die Mikrowellen",
+      "accusativeSentence": "Das Kind benutzt die Mikrowelle.",
+      "dativeSentence": "Das Essen wird in der Mikrowelle warm.",
+      "imageIndex": 21,
+      "editorType": "object"
+    },
+    {
+      "word": "Backofen",
+      "article": "der",
+      "plural": "Backöfen",
+      "pluralWithArticle": "die Backöfen",
+      "accusativeSentence": "Die Mutter schaltet den Backofen ein.",
+      "dativeSentence": "Der Kuchen backt in dem Backofen.",
+      "imageIndex": 22,
+      "editorType": "object"
+    }
+  ]
+}

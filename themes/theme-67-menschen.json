@@ -1,0 +1,260 @@
+{
+  "themeId": "theme-67-menschen",
+  "themeName": "Menschen und Familie",
+  "language": "de",
+  "version": 1,
+  "entryCount": 25,
+  "imageMode": "per-entry-svg",
+  "entries": [
+    {
+      "word": "Kind",
+      "article": "das",
+      "plural": "Kinder",
+      "pluralWithArticle": "die Kinder",
+      "accusativeSentence": "Die Mutter tröstet das Kind.",
+      "dativeSentence": "Das Spielzeug gehört dem Kind.",
+      "imageIndex": 0,
+      "editorType": "person"
+    },
+    {
+      "word": "Baby",
+      "article": "das",
+      "plural": "Babys",
+      "pluralWithArticle": "die Babys",
+      "accusativeSentence": "Die Mutter füttert das Baby.",
+      "dativeSentence": "Die Windel gehört dem Baby.",
+      "imageIndex": 1,
+      "editorType": "person"
+    },
+    {
+      "word": "Schüler",
+      "article": "der",
+      "plural": "Schüler",
+      "pluralWithArticle": "die Schüler",
+      "accusativeSentence": "Die Lehrerin lobt den Schüler.",
+      "dativeSentence": "Die Aufgabe gefällt dem Schüler.",
+      "imageIndex": 2,
+      "editorType": "person"
+    },
+    {
+      "word": "Lehrer",
+      "article": "der",
+      "plural": "Lehrer",
+      "pluralWithArticle": "die Lehrer",
+      "accusativeSentence": "Die Klasse fragt den Lehrer.",
+      "dativeSentence": "Die Kreide gehört dem Lehrer.",
+      "imageIndex": 3,
+      "editorType": "person"
+    },
+    {
+      "word": "Familie",
+      "article": "die",
+      "plural": "Familien",
+      "pluralWithArticle": "die Familien",
+      "accusativeSentence": "Das Kind liebt die Familie.",
+      "dativeSentence": "Das Haus gehört der Familie.",
+      "imageIndex": 4,
+      "editorType": "person"
+    },
+    {
+      "word": "Freund",
+      "article": "der",
+      "plural": "Freunde",
+      "pluralWithArticle": "die Freunde",
+      "accusativeSentence": "Das Kind besucht den Freund.",
+      "dativeSentence": "Das Kind hilft dem Freund.",
+      "imageIndex": 5,
+      "editorType": "person"
+    },
+    {
+      "word": "Polizist",
+      "article": "der",
+      "plural": "Polizisten",
+      "pluralWithArticle": "die Polizisten",
+      "accusativeSentence": "Das Kind fragt den Polizisten.",
+      "dativeSentence": "Das Kind dankt dem Polizisten.",
+      "imageIndex": 6,
+      "editorType": "person"
+    },
+    {
+      "word": "Feuerwehrmann",
+      "article": "der",
+      "plural": "Feuerwehrmänner",
+      "pluralWithArticle": "die Feuerwehrmänner",
+      "accusativeSentence": "Das Kind ruft den Feuerwehrmann.",
+      "dativeSentence": "Das Kind winkt dem Feuerwehrmann zu.",
+      "imageIndex": 7,
+      "editorType": "person"
+    },
+    {
+      "word": "Koch",
+      "article": "der",
+      "plural": "Köche",
+      "pluralWithArticle": "die Köche",
+      "accusativeSentence": "Das Kind sieht den Koch in der Küche.",
+      "dativeSentence": "Die Suppe schmeckt dem Koch.",
+      "imageIndex": 8,
+      "editorType": "person"
+    },
+    {
+      "word": "Friseur",
+      "article": "der",
+      "plural": "Friseure",
+      "pluralWithArticle": "die Friseure",
+      "accusativeSentence": "Der Mann besucht den Friseur.",
+      "dativeSentence": "Das Kind winkt dem Friseur zu.",
+      "imageIndex": 9,
+      "editorType": "person"
+    },
+    {
+      "word": "Maler",
+      "article": "der",
+      "plural": "Maler",
+      "pluralWithArticle": "die Maler",
+      "accusativeSentence": "Das Kind beobachtet den Maler.",
+      "dativeSentence": "Der Pinsel gehört dem Maler.",
+      "imageIndex": 10,
+      "editorType": "person"
+    },
+    {
+      "word": "Sänger",
+      "article": "der",
+      "plural": "Sänger",
+      "pluralWithArticle": "die Sänger",
+      "accusativeSentence": "Das Publikum hört den Sänger.",
+      "dativeSentence": "Das Lied gefällt dem Sänger.",
+      "imageIndex": 11,
+      "editorType": "person"
+    },
+    {
+      "word": "Wissenschaftler",
+      "article": "der",
+      "plural": "Wissenschaftler",
+      "pluralWithArticle": "die Wissenschaftler",
+      "accusativeSentence": "Das Kind besucht den Wissenschaftler.",
+      "dativeSentence": "Das Experiment gelingt dem Wissenschaftler.",
+      "imageIndex": 12,
+      "editorType": "person"
+    },
+    {
+      "word": "Techniker",
+      "article": "der",
+      "plural": "Techniker",
+      "pluralWithArticle": "die Techniker",
+      "accusativeSentence": "Die Firma ruft den Techniker.",
+      "dativeSentence": "Der Koffer gehört dem Techniker.",
+      "imageIndex": 13,
+      "editorType": "person"
+    },
+    {
+      "word": "Richter",
+      "article": "der",
+      "plural": "Richter",
+      "pluralWithArticle": "die Richter",
+      "accusativeSentence": "Das Gericht hört den Richter.",
+      "dativeSentence": "Der Hammer gehört dem Richter.",
+      "imageIndex": 14,
+      "editorType": "person"
+    },
+    {
+      "word": "Detektiv",
+      "article": "der",
+      "plural": "Detektive",
+      "pluralWithArticle": "die Detektive",
+      "accusativeSentence": "Das Kind bewundert den Detektiv.",
+      "dativeSentence": "Der Fall gefällt dem Detektiv.",
+      "imageIndex": 15,
+      "editorType": "person"
+    },
+    {
+      "word": "Astronaut",
+      "article": "der",
+      "plural": "Astronauten",
+      "pluralWithArticle": "die Astronauten",
+      "accusativeSentence": "Das Kind fotografiert den Astronauten.",
+      "dativeSentence": "Die Rakete gehört dem Astronauten.",
+      "imageIndex": 16,
+      "editorType": "person"
+    },
+    {
+      "word": "Pilot",
+      "article": "der",
+      "plural": "Piloten",
+      "pluralWithArticle": "die Piloten",
+      "accusativeSentence": "Das Kind grüßt den Piloten.",
+      "dativeSentence": "Das Flugzeug gehört dem Piloten.",
+      "imageIndex": 17,
+      "editorType": "person"
+    },
+    {
+      "word": "Bauer",
+      "article": "der",
+      "plural": "Bauern",
+      "pluralWithArticle": "die Bauern",
+      "accusativeSentence": "Das Kind besucht den Bauern.",
+      "dativeSentence": "Der Traktor gehört dem Bauern.",
+      "imageIndex": 18,
+      "editorType": "person"
+    },
+    {
+      "word": "Mechaniker",
+      "article": "der",
+      "plural": "Mechaniker",
+      "pluralWithArticle": "die Mechaniker",
+      "accusativeSentence": "Der Mann holt den Mechaniker.",
+      "dativeSentence": "Das Werkzeug gehört dem Mechaniker.",
+      "imageIndex": 19,
+      "editorType": "person"
+    },
+    {
+      "word": "Kellner",
+      "article": "der",
+      "plural": "Kellner",
+      "pluralWithArticle": "die Kellner",
+      "accusativeSentence": "Das Kind ruft den Kellner.",
+      "dativeSentence": "Das Trinkgeld gehört dem Kellner.",
+      "imageIndex": 20,
+      "editorType": "person"
+    },
+    {
+      "word": "Wächter",
+      "article": "der",
+      "plural": "Wächter",
+      "pluralWithArticle": "die Wächter",
+      "accusativeSentence": "Der Hund begleitet den Wächter.",
+      "dativeSentence": "Der Schlüssel gehört dem Wächter.",
+      "imageIndex": 21,
+      "editorType": "person"
+    },
+    {
+      "word": "Zauberer",
+      "article": "der",
+      "plural": "Zauberer",
+      "pluralWithArticle": "die Zauberer",
+      "accusativeSentence": "Das Publikum bejubelt den Zauberer.",
+      "dativeSentence": "Der Zauberstab gehört dem Zauberer.",
+      "imageIndex": 22,
+      "editorType": "person"
+    },
+    {
+      "word": "Hexe",
+      "article": "die",
+      "plural": "Hexen",
+      "pluralWithArticle": "die Hexen",
+      "accusativeSentence": "Das Kind malt die Hexe.",
+      "dativeSentence": "Das Kind erzählt von der Hexe.",
+      "imageIndex": 23,
+      "editorType": "person"
+    },
+    {
+      "word": "Ritter",
+      "article": "der",
+      "plural": "Ritter",
+      "pluralWithArticle": "die Ritter",
+      "accusativeSentence": "Das Kind malt den Ritter.",
+      "dativeSentence": "Das Schwert gehört dem Ritter.",
+      "imageIndex": 24,
+      "editorType": "person"
+    }
+  ]
+}

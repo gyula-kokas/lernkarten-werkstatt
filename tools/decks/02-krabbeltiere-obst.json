@@ -1,0 +1,496 @@
+{
+  "themes": [
+    {
+      "id": "krabbeltiere",
+      "name": "Insekten und Kriechtiere",
+      "type": "animal",
+      "words": [
+        [
+          "Ameise",
+          "ant"
+        ],
+        [
+          "Biene",
+          "honeybee"
+        ],
+        [
+          "Käfer",
+          "beetle"
+        ],
+        [
+          "Schmetterling",
+          "butterfly"
+        ],
+        [
+          "Marienkäfer",
+          "lady beetle"
+        ],
+        [
+          "Grille",
+          "cricket"
+        ],
+        [
+          "Spinne",
+          "spider"
+        ],
+        [
+          "Spinnennetz",
+          "spider web"
+        ],
+        [
+          "Schnecke",
+          "snail"
+        ],
+        [
+          "Mücke",
+          "mosquito"
+        ],
+        [
+          "Fliege",
+          "fly"
+        ],
+        [
+          "Kakerlake",
+          "cockroach"
+        ],
+        [
+          "Skorpion",
+          "scorpion"
+        ],
+        [
+          "Wurm",
+          "worm"
+        ],
+        [
+          "Eidechse",
+          "lizard"
+        ],
+        [
+          "Schlange",
+          "snake"
+        ],
+        [
+          "Frosch",
+          "frog"
+        ],
+        [
+          "Schildkröte",
+          "turtle"
+        ],
+        [
+          "Raupe",
+          "bug"
+        ],
+        [
+          "Monarchfalter",
+          "monarch butterfly"
+        ],
+        [
+          "Krabbenspinne",
+          "spider web"
+        ]
+      ]
+    },
+    {
+      "id": "obst",
+      "name": "Obst",
+      "type": "food",
+      "words": [
+        [
+          "Apfel",
+          "red apple"
+        ],
+        [
+          "Grüner Apfel",
+          "green apple"
+        ],
+        [
+          "Banane",
+          "banana"
+        ],
+        [
+          "Orange",
+          "tangerine"
+        ],
+        [
+          "Birne",
+          "pear"
+        ],
+        [
+          "Erdbeere",
+          "strawberry"
+        ],
+        [
+          "Traube",
+          "grapes"
+        ],
+        [
+          "Kirsche",
+          "cherries"
+        ],
+        [
+          "Zitrone",
+          "lemon"
+        ],
+        [
+          "Limette",
+          "lime"
+        ],
+        [
+          "Pfirsich",
+          "peach"
+        ],
+        [
+          "Wassermelone",
+          "watermelon"
+        ],
+        [
+          "Melone",
+          "melon"
+        ],
+        [
+          "Kiwi",
+          "kiwi fruit"
+        ],
+        [
+          "Heidelbeere",
+          "blueberries"
+        ],
+        [
+          "Avocado",
+          "avocado"
+        ],
+        [
+          "Kokosnuss",
+          "coconut"
+        ],
+        [
+          "Granatapfel",
+          "pomegranate"
+        ],
+        [
+          "Olive",
+          "olive"
+        ],
+        [
+          "Tomate",
+          "tomato"
+        ],
+        [
+          "Ananas",
+          "pineapple"
+        ],
+        [
+          "Mango",
+          "mango"
+        ],
+        [
+          "Mandarine",
+          "tangerine"
+        ]
+      ]
+    },
+    {
+      "id": "gemuese",
+      "name": "Gemüse",
+      "type": "food",
+      "words": [
+        [
+          "Karotte",
+          "carrot"
+        ],
+        [
+          "Gurke",
+          "cucumber"
+        ],
+        [
+          "Paprika",
+          "bell pepper"
+        ],
+        [
+          "Zwiebel",
+          "onion"
+        ],
+        [
+          "Kartoffel",
+          "potato"
+        ],
+        [
+          "Knoblauch",
+          "garlic"
+        ],
+        [
+          "Mais",
+          "ear of corn"
+        ],
+        [
+          "Erbse",
+          "pea pod"
+        ],
+        [
+          "Champignon",
+          "champignon white"
+        ],
+        [
+          "Brokkoli",
+          "broccoli"
+        ],
+        [
+          "Salat",
+          "green salad"
+        ],
+        [
+          "Spinat",
+          "leafy green"
+        ],
+        [
+          "Aubergine",
+          "eggplant"
+        ],
+        [
+          "Rote Bete",
+          "root vegetable"
+        ],
+        [
+          "Tomate",
+          "tomato"
+        ],
+        [
+          "Bohne",
+          "beans"
+        ],
+        [
+          "Kürbis",
+          "jack-o-lantern"
+        ],
+        [
+          "Zucchini",
+          "cucumber"
+        ],
+        [
+          "Radieschen",
+          "radish"
+        ],
+        [
+          "Blumenkohl",
+          "leafy green"
+        ],
+        [
+          "Kohl",
+          "cabbage"
+        ],
+        [
+          "Sellerie",
+          "celery"
+        ],
+        [
+          "Spargel",
+          "asparagus"
+        ],
+        [
+          "Lauch",
+          "leek",
+          null,
+          "mdi"
+        ]
+      ]
+    },
+    {
+      "id": "essen-trinken",
+      "name": "Essen und Trinken",
+      "type": "food",
+      "words": [
+        [
+          "Brot",
+          "bread"
+        ],
+        [
+          "Brezel",
+          "pretzel"
+        ],
+        [
+          "Käse",
+          "cheese wedge"
+        ],
+        [
+          "Butter",
+          "butter"
+        ],
+        [
+          "Milch",
+          "glass of milk"
+        ],
+        [
+          "Ei",
+          [
+            "egg",
+            "cooking"
+          ]
+        ],
+        [
+          "Fleisch",
+          "cut of meat"
+        ],
+        [
+          "Fisch",
+          "fish"
+        ],
+        [
+          "Reis",
+          "cooked rice"
+        ],
+        [
+          "Nudeln",
+          "spaghetti"
+        ],
+        [
+          "Pizza",
+          "pizza"
+        ],
+        [
+          "Hamburger",
+          "hamburger"
+        ],
+        [
+          "Pommes",
+          "french fries"
+        ],
+        [
+          "Suppe",
+          "steaming bowl"
+        ],
+        [
+          "Schokolade",
+          "chocolate bar"
+        ],
+        [
+          "Honig",
+          "honey pot"
+        ],
+        [
+          "Salz",
+          "salt"
+        ],
+        [
+          "Wasser",
+          "potable water"
+        ],
+        [
+          "Tee",
+          "hot beverage"
+        ],
+        [
+          "Kaffee",
+          "latte macchiato"
+        ],
+        [
+          "Baguette",
+          "baguette bread"
+        ],
+        [
+          "Saft",
+          "beverage box"
+        ],
+        [
+          "Müsli",
+          "bowl",
+          null,
+          "mdi"
+        ],
+        [
+          "Pasta",
+          "pasta",
+          null,
+          "mdi"
+        ]
+      ]
+    },
+    {
+      "id": "suesses",
+      "name": "Süßes und Backen",
+      "type": "food",
+      "words": [
+        [
+          "Keks",
+          "cookie"
+        ],
+        [
+          "Torte",
+          "birthday cake"
+        ],
+        [
+          "Cupcake",
+          "cupcake"
+        ],
+        [
+          "Donut",
+          "doughnut"
+        ],
+        [
+          "Eis",
+          "ice cream"
+        ],
+        [
+          "Schokolade",
+          "chocolate bar"
+        ],
+        [
+          "Bonbon",
+          "candy"
+        ],
+        [
+          "Lutscher",
+          "lollipop"
+        ],
+        [
+          "Popcorn",
+          "popcorn"
+        ],
+        [
+          "Waffel",
+          "waffle"
+        ],
+        [
+          "Pfannkuchen",
+          "pancakes"
+        ],
+        [
+          "Croissant",
+          "croissant"
+        ],
+        [
+          "Softeis",
+          "soft ice cream"
+        ],
+        [
+          "Kuchen",
+          "shortcake"
+        ],
+        [
+          "Marmelade",
+          "jar with red content"
+        ],
+        [
+          "Honig",
+          "honey pot"
+        ],
+        [
+          "Pudding",
+          "custard"
+        ],
+        [
+          "Bagel",
+          "bagel"
+        ],
+        [
+          "Glückskeks",
+          "fortune cookie"
+        ],
+        [
+          "Obstkuchen",
+          "pie"
+        ]
+      ]
+    }
+  ]
+}

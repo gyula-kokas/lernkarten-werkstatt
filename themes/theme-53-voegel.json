@@ -1,0 +1,210 @@
+{
+  "themeId": "theme-53-voegel",
+  "themeName": "Vögel",
+  "language": "de",
+  "version": 1,
+  "entryCount": 20,
+  "imageMode": "per-entry-svg",
+  "entries": [
+    {
+      "word": "Vogel",
+      "article": "der",
+      "plural": "Vögel",
+      "pluralWithArticle": "die Vögel",
+      "accusativeSentence": "Das Kind beobachtet den Vogel.",
+      "dativeSentence": "Das Nest gehört dem Vogel.",
+      "imageIndex": 0,
+      "editorType": "animal"
+    },
+    {
+      "word": "Eule",
+      "article": "die",
+      "plural": "Eulen",
+      "pluralWithArticle": "die Eulen",
+      "accusativeSentence": "Das Kind erkennt die Eule im Baum.",
+      "dativeSentence": "Der Ast gehört der Eule.",
+      "imageIndex": 1,
+      "editorType": "animal"
+    },
+    {
+      "word": "Adler",
+      "article": "der",
+      "plural": "Adler",
+      "pluralWithArticle": "die Adler",
+      "accusativeSentence": "Das Kind malt den Adler.",
+      "dativeSentence": "Der Horst gehört dem Adler.",
+      "imageIndex": 2,
+      "editorType": "animal"
+    },
+    {
+      "word": "Papagei",
+      "article": "der",
+      "plural": "Papageien",
+      "pluralWithArticle": "die Papageien",
+      "accusativeSentence": "Das Kind hört den Papageien sprechen.",
+      "dativeSentence": "Das Obst gehört dem Papageien.",
+      "imageIndex": 3,
+      "editorType": "animal"
+    },
+    {
+      "word": "Ara",
+      "article": "der",
+      "plural": "Aras",
+      "pluralWithArticle": "die Aras",
+      "accusativeSentence": "Das Kind bewundert den Ara.",
+      "dativeSentence": "Die Feder gehört dem Ara.",
+      "imageIndex": 4,
+      "editorType": "animal"
+    },
+    {
+      "word": "Pinguin",
+      "article": "der",
+      "plural": "Pinguine",
+      "pluralWithArticle": "die Pinguine",
+      "accusativeSentence": "Das Kind sieht den Pinguin.",
+      "dativeSentence": "Der Fisch gehört dem Pinguin.",
+      "imageIndex": 5,
+      "editorType": "animal"
+    },
+    {
+      "word": "Schwan",
+      "article": "der",
+      "plural": "Schwäne",
+      "pluralWithArticle": "die Schwäne",
+      "accusativeSentence": "Das Kind füttert den Schwan.",
+      "dativeSentence": "Das Kind schaut dem Schwan zu.",
+      "imageIndex": 6,
+      "editorType": "animal"
+    },
+    {
+      "word": "Ente",
+      "article": "die",
+      "plural": "Enten",
+      "pluralWithArticle": "die Enten",
+      "accusativeSentence": "Das Kind beobachtet die Ente.",
+      "dativeSentence": "Das Brot gehört der Ente.",
+      "imageIndex": 7,
+      "editorType": "animal"
+    },
+    {
+      "word": "Gans",
+      "article": "die",
+      "plural": "Gänse",
+      "pluralWithArticle": "die Gänse",
+      "accusativeSentence": "Das Kind hört die Gans schnattern.",
+      "dativeSentence": "Der Teich gehört der Gans.",
+      "imageIndex": 8,
+      "editorType": "animal"
+    },
+    {
+      "word": "Taube",
+      "article": "die",
+      "plural": "Tauben",
+      "pluralWithArticle": "die Tauben",
+      "accusativeSentence": "Das Kind füttert die Taube.",
+      "dativeSentence": "Das Brot gehört der Taube.",
+      "imageIndex": 9,
+      "editorType": "animal"
+    },
+    {
+      "word": "Pfau",
+      "article": "der",
+      "plural": "Pfauen",
+      "pluralWithArticle": "die Pfauen",
+      "accusativeSentence": "Das Kind fotografiert den Pfau.",
+      "dativeSentence": "Die Feder gehört dem Pfau.",
+      "imageIndex": 10,
+      "editorType": "animal"
+    },
+    {
+      "word": "Flamingo",
+      "article": "der",
+      "plural": "Flamingos",
+      "pluralWithArticle": "die Flamingos",
+      "accusativeSentence": "Das Kind malt den Flamingo.",
+      "dativeSentence": "Das Bein gehört dem Flamingo.",
+      "imageIndex": 11,
+      "editorType": "animal"
+    },
+    {
+      "word": "Hahn",
+      "article": "der",
+      "plural": "Hähne",
+      "pluralWithArticle": "die Hähne",
+      "accusativeSentence": "Das Kind hört den Hahn am Morgen.",
+      "dativeSentence": "Der Hof gehört dem Hahn.",
+      "imageIndex": 12,
+      "editorType": "animal"
+    },
+    {
+      "word": "Küken",
+      "article": "das",
+      "plural": "Küken",
+      "pluralWithArticle": "die Küken",
+      "accusativeSentence": "Das Kind hält das Küken.",
+      "dativeSentence": "Die Körner gehören dem Küken.",
+      "imageIndex": 13,
+      "editorType": "animal"
+    },
+    {
+      "word": "Truthahn",
+      "article": "der",
+      "plural": "Truthähne",
+      "pluralWithArticle": "die Truthähne",
+      "accusativeSentence": "Das Kind sieht den Truthahn auf dem Hof.",
+      "dativeSentence": "Der Fächer gehört dem Truthahn.",
+      "imageIndex": 14,
+      "editorType": "animal"
+    },
+    {
+      "word": "Krähe",
+      "article": "die",
+      "plural": "Krähen",
+      "pluralWithArticle": "die Krähen",
+      "accusativeSentence": "Das Kind beobachtet die Krähe.",
+      "dativeSentence": "Das Nest gehört der Krähe.",
+      "imageIndex": 15,
+      "editorType": "animal"
+    },
+    {
+      "word": "Feder",
+      "article": "die",
+      "plural": "Federn",
+      "pluralWithArticle": "die Federn",
+      "accusativeSentence": "Das Kind findet die Feder.",
+      "dativeSentence": "Das Kind schreibt mit der Feder.",
+      "imageIndex": 16,
+      "editorType": "animal"
+    },
+    {
+      "word": "Nest",
+      "article": "das",
+      "plural": "Nester",
+      "pluralWithArticle": "die Nester",
+      "accusativeSentence": "Das Kind entdeckt das Nest.",
+      "dativeSentence": "Die Eier liegen in dem Nest.",
+      "imageIndex": 17,
+      "editorType": "animal"
+    },
+    {
+      "word": "Flügel",
+      "article": "der",
+      "plural": "Flügel",
+      "pluralWithArticle": "die Flügel",
+      "accusativeSentence": "Das Kind bewegt den Flügel.",
+      "dativeSentence": "Das Kind winkt mit dem Flügel.",
+      "imageIndex": 18,
+      "editorType": "animal"
+    },
+    {
+      "word": "Hühnerei",
+      "article": "das",
+      "plural": "Hühnereier",
+      "pluralWithArticle": "die Hühnereier",
+      "accusativeSentence": "Das Kind isst das Hühnerei.",
+      "dativeSentence": "Das Küken wächst in dem Hühnerei.",
+      "imageIndex": 19,
+      "editorType": "animal"
+    }
+  ]
+}

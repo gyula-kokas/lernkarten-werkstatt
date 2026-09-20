@@ -1,0 +1,577 @@
+{
+  "themes": [
+    {
+      "id": "kueche",
+      "name": "Küche und Geschirr",
+      "type": "object",
+      "words": [
+        [
+          "Gabel",
+          "fork and knife"
+        ],
+        [
+          "Messer",
+          "kitchen knife"
+        ],
+        [
+          "Löffel",
+          "spoon"
+        ],
+        [
+          "Glas",
+          "tumbler glass"
+        ],
+        [
+          "Schüssel",
+          "bowl with spoon"
+        ],
+        [
+          "Topf",
+          "pot of food"
+        ],
+        [
+          "Pfanne",
+          "shallow pan of food"
+        ],
+        [
+          "Kanne",
+          "teapot"
+        ],
+        [
+          "Waage",
+          "balance scale"
+        ],
+        [
+          "Kaffeemaschine",
+          "drip coffee maker"
+        ],
+        [
+          "Schwamm",
+          "sponge"
+        ],
+        [
+          "Flasche",
+          "glass bottle"
+        ],
+        [
+          "Konserve",
+          "canned food"
+        ],
+        [
+          "Vorratsdose",
+          "jar"
+        ],
+        [
+          "Essstäbchen",
+          "chopsticks"
+        ],
+        [
+          "Weinglas",
+          "wine glass"
+        ],
+        [
+          "Espressokanne",
+          "moka pot"
+        ],
+        [
+          "Trinkhalm",
+          "cup with straw"
+        ],
+        [
+          "Servierplatte",
+          "plate"
+        ],
+        [
+          "Kessel",
+          "kettle",
+          null,
+          "mdi"
+        ],
+        [
+          "Mixer",
+          "blender",
+          null,
+          "mdi"
+        ],
+        [
+          "Serviette",
+          "napkin"
+        ],
+        [
+          "Toaster",
+          "toaster",
+          null,
+          "mdi"
+        ],
+        [
+          "Kühlschrank",
+          "fridge",
+          null,
+          "mdi"
+        ],
+        [
+          "Mikrowelle",
+          "microwave",
+          null,
+          "mdi"
+        ],
+        [
+          "Backofen",
+          "stove",
+          null,
+          "mdi"
+        ]
+      ]
+    },
+    {
+      "id": "wohnen",
+      "name": "Wohnung und Möbel",
+      "type": "object",
+      "words": [
+        [
+          "Stuhl",
+          "chair"
+        ],
+        [
+          "Sofa",
+          "couch and lamp"
+        ],
+        [
+          "Sessel",
+          "armchair"
+        ],
+        [
+          "Bett",
+          "bed"
+        ],
+        [
+          "Lampe",
+          "desk lamp"
+        ],
+        [
+          "Spiegel",
+          "mirror"
+        ],
+        [
+          "Bild",
+          "framed picture"
+        ],
+        [
+          "Fenster",
+          "window"
+        ],
+        [
+          "Tür",
+          "door"
+        ],
+        [
+          "Treppe",
+          "stairway"
+        ],
+        [
+          "Bettwäsche",
+          "bed linen"
+        ],
+        [
+          "Hocker",
+          "ulmer hocker"
+        ],
+        [
+          "Uhr",
+          "watch"
+        ],
+        [
+          "Topfpflanze",
+          "potted plant"
+        ],
+        [
+          "Fernseher",
+          "television"
+        ],
+        [
+          "Telefon",
+          "telephone"
+        ],
+        [
+          "Teppich",
+          "rug",
+          null,
+          "mdi"
+        ],
+        [
+          "Regal",
+          "bookshelf",
+          null,
+          "mdi"
+        ],
+        [
+          "Schrank",
+          "cupboard",
+          null,
+          "mdi"
+        ],
+        [
+          "Kissen",
+          "pillow"
+        ],
+        [
+          "Sitzbank",
+          "seat"
+        ],
+        [
+          "Heizung",
+          "radiator"
+        ],
+        [
+          "Kerze",
+          "candle"
+        ],
+        [
+          "Vorhang",
+          "curtains",
+          null,
+          "mdi"
+        ],
+        [
+          "Steckdose",
+          "power-socket",
+          null,
+          "mdi"
+        ]
+      ]
+    },
+    {
+      "id": "bad",
+      "name": "Bad und Körperpflege",
+      "type": "object",
+      "words": [
+        [
+          "Badewanne",
+          "bathtub"
+        ],
+        [
+          "Dusche",
+          "shower"
+        ],
+        [
+          "Toilette",
+          "toilet"
+        ],
+        [
+          "Zahnbürste",
+          "toothbrush"
+        ],
+        [
+          "Seife",
+          "soap"
+        ],
+        [
+          "Shampoo",
+          "lotion bottle"
+        ],
+        [
+          "Kamm",
+          "hair pick"
+        ],
+        [
+          "Rasierer",
+          "razor"
+        ],
+        [
+          "Handschuhe",
+          "gloves"
+        ],
+        [
+          "Waschmaschine",
+          "washing machine"
+        ],
+        [
+          "Wäschekorb",
+          "basket"
+        ],
+        [
+          "Badelatschen",
+          "adilette"
+        ],
+        [
+          "Badeschuhe",
+          "crocs"
+        ],
+        [
+          "Wäscheklammer",
+          "clamp"
+        ],
+        [
+          "Waschbecken",
+          "sink"
+        ],
+        [
+          "Handtuch",
+          "towel"
+        ],
+        [
+          "Zahnpasta",
+          "toothbrush-paste",
+          null,
+          "mdi"
+        ],
+        [
+          "Seifenspender",
+          "sanitizer spray"
+        ],
+        [
+          "Pflaster",
+          "adhesive bandage"
+        ],
+        [
+          "Wasserhahn",
+          "faucet",
+          null,
+          "mdi"
+        ],
+        [
+          "Föhn",
+          "hair-dryer",
+          null,
+          "mdi"
+        ]
+      ]
+    },
+    {
+      "id": "werkzeug",
+      "name": "Werkzeug und Garten",
+      "type": "object",
+      "words": [
+        [
+          "Hammer",
+          "hammer"
+        ],
+        [
+          "Säge",
+          "saw"
+        ],
+        [
+          "Schraubenzieher",
+          "screwdriver"
+        ],
+        [
+          "Schraubenschlüssel",
+          "wrench"
+        ],
+        [
+          "Schraube",
+          "nut and bolt"
+        ],
+        [
+          "Leiter",
+          "ladder"
+        ],
+        [
+          "Eimer",
+          "bucket"
+        ],
+        [
+          "Schaufel",
+          "shovel"
+        ],
+        [
+          "Besen",
+          "broom"
+        ],
+        [
+          "Werkzeugkasten",
+          "toolbox"
+        ],
+        [
+          "Rasenmäher",
+          "lawn mower"
+        ],
+        [
+          "Gartenhandschuhe",
+          "gardening gloves"
+        ],
+        [
+          "Kelle",
+          "trowel"
+        ],
+        [
+          "Axt",
+          "axe"
+        ],
+        [
+          "Draht",
+          "wire"
+        ],
+        [
+          "Seil",
+          "knot"
+        ],
+        [
+          "Kette",
+          "chains"
+        ],
+        [
+          "Magnet",
+          "magnet"
+        ],
+        [
+          "Lupe",
+          "magnifying glass tilted left"
+        ],
+        [
+          "Taschenlampe",
+          "flashlight"
+        ],
+        [
+          "Batterie",
+          "battery"
+        ],
+        [
+          "Stecker",
+          "electric plug"
+        ],
+        [
+          "Pinsel",
+          "paintbrush"
+        ],
+        [
+          "Gießkanne",
+          "watering-can",
+          null,
+          "mdi"
+        ],
+        [
+          "Zange",
+          "pliers"
+        ],
+        [
+          "Feile",
+          "file"
+        ],
+        [
+          "Wasserwaage",
+          "spirit level"
+        ],
+        [
+          "Pflasterstein",
+          "brick"
+        ]
+      ]
+    },
+    {
+      "id": "kleidung",
+      "name": "Kleidung",
+      "type": "object",
+      "words": [
+        [
+          "T-Shirt",
+          "t-shirt"
+        ],
+        [
+          "Hose",
+          "jeans"
+        ],
+        [
+          "Jacke",
+          "coat"
+        ],
+        [
+          "Kleid",
+          "dress"
+        ],
+        [
+          "Unterhose",
+          "briefs"
+        ],
+        [
+          "Socke",
+          "socks"
+        ],
+        [
+          "Schuh",
+          "sneaker"
+        ],
+        [
+          "Stiefel",
+          "hiking boot"
+        ],
+        [
+          "Sandale",
+          "thong sandal"
+        ],
+        [
+          "Turnschuh",
+          "running shoe"
+        ],
+        [
+          "Hausschuh",
+          "adilette"
+        ],
+        [
+          "Mütze",
+          "billed cap"
+        ],
+        [
+          "Hut",
+          "top hat"
+        ],
+        [
+          "Schal",
+          "scarf"
+        ],
+        [
+          "Handschuh",
+          "gloves"
+        ],
+        [
+          "Krawatte",
+          "necktie"
+        ],
+        [
+          "Schleife",
+          "ribbon"
+        ],
+        [
+          "Sonnenbrille",
+          "sunglasses"
+        ],
+        [
+          "Brille",
+          "glasses"
+        ],
+        [
+          "Badeanzug",
+          "one-piece swimsuit"
+        ],
+        [
+          "Bikini",
+          "bikini"
+        ],
+        [
+          "Kimono",
+          "kimono"
+        ],
+        [
+          "Shorts",
+          "shorts"
+        ],
+        [
+          "Weste",
+          "safety vest"
+        ],
+        [
+          "Rock",
+          "skirt"
+        ],
+        [
+          "Overall",
+          "overall"
+        ],
+        [
+          "Stirnband",
+          "headband"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "slug": "mdi--store",
+  "provider": "mdi",
+  "source": "https://github.com/Templarian/MaterialDesign/blob/2424e748e0cc63ab7b9c095a099b9fe239b737c0/svg/store.svg",
+  "author": "Pictogrammers (Material Design Icons)",
+  "license": "Apache-2.0",
+  "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+  "title": "store",
+  "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" id=\"asset-mdi--store-mdi-store\" viewBox=\"0 0 24 24\"><path d=\"M12,18H6V14H12M21,14V12L20,7H4L3,12V14H4V20H14V14H18V20H20V14M20,4H4V6H20V4Z\" /></svg>"
+}

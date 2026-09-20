@@ -1,0 +1,250 @@
+{
+  "themeId": "theme-79-spielzeug",
+  "themeName": "Spielzeug",
+  "language": "de",
+  "version": 1,
+  "entryCount": 24,
+  "imageMode": "per-entry-svg",
+  "entries": [
+    {
+      "word": "Teddybär",
+      "article": "der",
+      "plural": "Teddybären",
+      "pluralWithArticle": "die Teddybären",
+      "accusativeSentence": "Das Kind drückt den Teddybären.",
+      "dativeSentence": "Das Kind schläft mit dem Teddybären.",
+      "imageIndex": 0,
+      "editorType": "object"
+    },
+    {
+      "word": "Puppe",
+      "article": "die",
+      "plural": "Puppen",
+      "pluralWithArticle": "die Puppen",
+      "accusativeSentence": "Das Mädchen kämmt die Puppe.",
+      "dativeSentence": "Das Mädchen spielt mit der Puppe.",
+      "imageIndex": 1,
+      "editorType": "object"
+    },
+    {
+      "word": "Luftballon",
+      "article": "der",
+      "plural": "Luftballons",
+      "pluralWithArticle": "die Luftballons",
+      "accusativeSentence": "Das Kind pumpt den Luftballon auf.",
+      "dativeSentence": "Das Kind spielt mit dem Luftballon.",
+      "imageIndex": 2,
+      "editorType": "object"
+    },
+    {
+      "word": "Roboter",
+      "article": "der",
+      "plural": "Roboter",
+      "pluralWithArticle": "die Roboter",
+      "accusativeSentence": "Das Kind programmiert den Roboter.",
+      "dativeSentence": "Das Kind spielt mit dem Roboter.",
+      "imageIndex": 3,
+      "editorType": "object"
+    },
+    {
+      "word": "Drache",
+      "article": "der",
+      "plural": "Drachen",
+      "pluralWithArticle": "die Drachen",
+      "accusativeSentence": "Das Kind malt den Drachen.",
+      "dativeSentence": "Das Kind erzählt von dem Drachen.",
+      "imageIndex": 4,
+      "editorType": "object"
+    },
+    {
+      "word": "Dinosaurier",
+      "article": "der",
+      "plural": "Dinosaurier",
+      "pluralWithArticle": "die Dinosaurier",
+      "accusativeSentence": "Das Kind kennt den Dinosaurier.",
+      "dativeSentence": "Das Kind träumt von dem Dinosaurier.",
+      "imageIndex": 5,
+      "editorType": "object"
+    },
+    {
+      "word": "Baukasten",
+      "article": "der",
+      "plural": "Baukästen",
+      "pluralWithArticle": "die Baukästen",
+      "accusativeSentence": "Das Kind öffnet den Baukasten.",
+      "dativeSentence": "Die Steine liegen in dem Baukasten.",
+      "imageIndex": 6,
+      "editorType": "object"
+    },
+    {
+      "word": "Puzzle",
+      "article": "das",
+      "plural": "Puzzles",
+      "pluralWithArticle": "die Puzzles",
+      "accusativeSentence": "Das Kind legt das Puzzle.",
+      "dativeSentence": "Die Teile stecken in dem Puzzle.",
+      "imageIndex": 7,
+      "editorType": "object"
+    },
+    {
+      "word": "Würfel",
+      "article": "der",
+      "plural": "Würfel",
+      "pluralWithArticle": "die Würfel",
+      "accusativeSentence": "Das Kind wirft den Würfel.",
+      "dativeSentence": "Das Kind spielt mit dem Würfel.",
+      "imageIndex": 8,
+      "editorType": "object"
+    },
+    {
+      "word": "Jo-Jo",
+      "article": "das",
+      "plural": "Jo-Jos",
+      "pluralWithArticle": "die Jo-Jos",
+      "accusativeSentence": "Das Kind probiert das Jo-Jo.",
+      "dativeSentence": "Das Kind spielt mit dem Jo-Jo.",
+      "imageIndex": 9,
+      "editorType": "object"
+    },
+    {
+      "word": "Kreisel",
+      "article": "der",
+      "plural": "Kreisel",
+      "pluralWithArticle": "die Kreisel",
+      "accusativeSentence": "Das Kind dreht den Kreisel.",
+      "dativeSentence": "Das Kind spielt mit dem Kreisel.",
+      "imageIndex": 10,
+      "editorType": "object"
+    },
+    {
+      "word": "Murmel",
+      "article": "die",
+      "plural": "Murmeln",
+      "pluralWithArticle": "die Murmeln",
+      "accusativeSentence": "Das Kind rollt die Murmel.",
+      "dativeSentence": "Das Kind spielt mit der Murmel.",
+      "imageIndex": 11,
+      "editorType": "object"
+    },
+    {
+      "word": "Bilderbuch",
+      "article": "das",
+      "plural": "Bilderbücher",
+      "pluralWithArticle": "die Bilderbücher",
+      "accusativeSentence": "Das Kind liest das Bilderbuch.",
+      "dativeSentence": "Das Kind blättert in dem Bilderbuch.",
+      "imageIndex": 12,
+      "editorType": "object"
+    },
+    {
+      "word": "Rutsche",
+      "article": "die",
+      "plural": "Rutschen",
+      "pluralWithArticle": "die Rutschen",
+      "accusativeSentence": "Das Kind rutscht die Rutsche hinunter.",
+      "dativeSentence": "Das Kind wartet an der Rutsche.",
+      "imageIndex": 13,
+      "editorType": "object"
+    },
+    {
+      "word": "Schaukel",
+      "article": "die",
+      "plural": "Schaukeln",
+      "pluralWithArticle": "die Schaukeln",
+      "accusativeSentence": "Das Kind benutzt die Schaukel.",
+      "dativeSentence": "Das Kind wartet an der Schaukel.",
+      "imageIndex": 14,
+      "editorType": "object"
+    },
+    {
+      "word": "Spielkarte",
+      "article": "die",
+      "plural": "Spielkarten",
+      "pluralWithArticle": "die Spielkarten",
+      "accusativeSentence": "Das Kind mischt die Spielkarte.",
+      "dativeSentence": "Das Kind spielt mit der Spielkarte.",
+      "imageIndex": 15,
+      "editorType": "object"
+    },
+    {
+      "word": "Schachfigur",
+      "article": "die",
+      "plural": "Schachfiguren",
+      "pluralWithArticle": "die Schachfiguren",
+      "accusativeSentence": "Der Opa stellt die Schachfigur um.",
+      "dativeSentence": "Die Dame steht neben der Schachfigur.",
+      "imageIndex": 16,
+      "editorType": "object"
+    },
+    {
+      "word": "Krone",
+      "article": "die",
+      "plural": "Kronen",
+      "pluralWithArticle": "die Kronen",
+      "accusativeSentence": "Das Kind bastelt die Krone.",
+      "dativeSentence": "Das Kind spielt mit der Krone.",
+      "imageIndex": 17,
+      "editorType": "object"
+    },
+    {
+      "word": "Zauberstab",
+      "article": "der",
+      "plural": "Zauberstäbe",
+      "pluralWithArticle": "die Zauberstäbe",
+      "accusativeSentence": "Der Zauberer schwingt den Zauberstab.",
+      "dativeSentence": "Der Zauberer zaubert mit dem Zauberstab.",
+      "imageIndex": 18,
+      "editorType": "object"
+    },
+    {
+      "word": "Schatzkiste",
+      "article": "die",
+      "plural": "Schatzkisten",
+      "pluralWithArticle": "die Schatzkisten",
+      "accusativeSentence": "Das Kind öffnet die Schatzkiste.",
+      "dativeSentence": "Der Schatz liegt in der Schatzkiste.",
+      "imageIndex": 19,
+      "editorType": "object"
+    },
+    {
+      "word": "Maske",
+      "article": "die",
+      "plural": "Masken",
+      "pluralWithArticle": "die Masken",
+      "accusativeSentence": "Das Kind bastelt die Maske.",
+      "dativeSentence": "Das Kind spielt mit der Maske.",
+      "imageIndex": 20,
+      "editorType": "object"
+    },
+    {
+      "word": "Malkasten",
+      "article": "der",
+      "plural": "Malkästen",
+      "pluralWithArticle": "die Malkästen",
+      "accusativeSentence": "Das Kind öffnet den Malkasten.",
+      "dativeSentence": "Die Farbe liegt in dem Malkasten.",
+      "imageIndex": 21,
+      "editorType": "object"
+    },
+    {
+      "word": "Buntstift",
+      "article": "der",
+      "plural": "Buntstifte",
+      "pluralWithArticle": "die Buntstifte",
+      "accusativeSentence": "Das Kind spitzt den Buntstift.",
+      "dativeSentence": "Das Kind malt mit dem Buntstift.",
+      "imageIndex": 22,
+      "editorType": "object"
+    },
+    {
+      "word": "Papierflieger",
+      "article": "der",
+      "plural": "Papierflieger",
+      "pluralWithArticle": "die Papierflieger",
+      "accusativeSentence": "Das Kind faltet den Papierflieger.",
+      "dativeSentence": "Das Kind spielt mit dem Papierflieger.",
+      "imageIndex": 23,
+      "editorType": "object"
+    }
+  ]
+}

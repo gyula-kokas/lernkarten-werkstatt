@@ -1,0 +1,220 @@
+{
+  "themeId": "theme-56-obst",
+  "themeName": "Obst",
+  "language": "de",
+  "version": 1,
+  "entryCount": 21,
+  "imageMode": "per-entry-svg",
+  "entries": [
+    {
+      "word": "Apfel",
+      "article": "der",
+      "plural": "Äpfel",
+      "pluralWithArticle": "die Äpfel",
+      "accusativeSentence": "Das Kind isst den Apfel.",
+      "dativeSentence": "Der Wurm sitzt in dem Apfel.",
+      "imageIndex": 0,
+      "editorType": "food"
+    },
+    {
+      "word": "Banane",
+      "article": "die",
+      "plural": "Bananen",
+      "pluralWithArticle": "die Bananen",
+      "accusativeSentence": "Das Kind schält die Banane.",
+      "dativeSentence": "Die Schale gehört der Banane.",
+      "imageIndex": 1,
+      "editorType": "food"
+    },
+    {
+      "word": "Orange",
+      "article": "die",
+      "plural": "Orangen",
+      "pluralWithArticle": "die Orangen",
+      "accusativeSentence": "Das Kind pellt die Orange.",
+      "dativeSentence": "Der Saft läuft aus der Orange.",
+      "imageIndex": 2,
+      "editorType": "food"
+    },
+    {
+      "word": "Birne",
+      "article": "die",
+      "plural": "Birnen",
+      "pluralWithArticle": "die Birnen",
+      "accusativeSentence": "Das Kind wäscht die Birne.",
+      "dativeSentence": "Der Stiel hängt an der Birne.",
+      "imageIndex": 3,
+      "editorType": "food"
+    },
+    {
+      "word": "Erdbeere",
+      "article": "die",
+      "plural": "Erdbeeren",
+      "pluralWithArticle": "die Erdbeeren",
+      "accusativeSentence": "Das Kind pflückt die Erdbeere.",
+      "dativeSentence": "Das Kind nascht von der Erdbeere.",
+      "imageIndex": 4,
+      "editorType": "food"
+    },
+    {
+      "word": "Traube",
+      "article": "die",
+      "plural": "Trauben",
+      "pluralWithArticle": "die Trauben",
+      "accusativeSentence": "Das Kind probiert die Traube.",
+      "dativeSentence": "Der Saft läuft aus der Traube.",
+      "imageIndex": 5,
+      "editorType": "food"
+    },
+    {
+      "word": "Kirsche",
+      "article": "die",
+      "plural": "Kirschen",
+      "pluralWithArticle": "die Kirschen",
+      "accusativeSentence": "Das Kind isst die Kirsche.",
+      "dativeSentence": "Der Stiel hängt an der Kirsche.",
+      "imageIndex": 6,
+      "editorType": "food"
+    },
+    {
+      "word": "Zitrone",
+      "article": "die",
+      "plural": "Zitronen",
+      "pluralWithArticle": "die Zitronen",
+      "accusativeSentence": "Das Kind schneidet die Zitrone auf.",
+      "dativeSentence": "Der Saft tropft aus der Zitrone.",
+      "imageIndex": 7,
+      "editorType": "food"
+    },
+    {
+      "word": "Limette",
+      "article": "die",
+      "plural": "Limetten",
+      "pluralWithArticle": "die Limetten",
+      "accusativeSentence": "Das Kind probiert die Limette.",
+      "dativeSentence": "Der Saft kommt aus der Limette.",
+      "imageIndex": 8,
+      "editorType": "food"
+    },
+    {
+      "word": "Pfirsich",
+      "article": "der",
+      "plural": "Pfirsiche",
+      "pluralWithArticle": "die Pfirsiche",
+      "accusativeSentence": "Das Kind beißt in den Pfirsich.",
+      "dativeSentence": "Der Kern steckt in dem Pfirsich.",
+      "imageIndex": 9,
+      "editorType": "food"
+    },
+    {
+      "word": "Wassermelone",
+      "article": "die",
+      "plural": "Wassermelonen",
+      "pluralWithArticle": "die Wassermelonen",
+      "accusativeSentence": "Das Kind schneidet die Wassermelone auf.",
+      "dativeSentence": "Die Kerne stecken in der Wassermelone.",
+      "imageIndex": 10,
+      "editorType": "food"
+    },
+    {
+      "word": "Melone",
+      "article": "die",
+      "plural": "Melonen",
+      "pluralWithArticle": "die Melonen",
+      "accusativeSentence": "Das Kind probiert die Melone.",
+      "dativeSentence": "Der Saft läuft aus der Melone.",
+      "imageIndex": 11,
+      "editorType": "food"
+    },
+    {
+      "word": "Kiwi",
+      "article": "die",
+      "plural": "Kiwis",
+      "pluralWithArticle": "die Kiwis",
+      "accusativeSentence": "Das Kind schält die Kiwi.",
+      "dativeSentence": "Das Fruchtfleisch ist grün bei der Kiwi.",
+      "imageIndex": 12,
+      "editorType": "food"
+    },
+    {
+      "word": "Heidelbeere",
+      "article": "die",
+      "plural": "Heidelbeeren",
+      "pluralWithArticle": "die Heidelbeeren",
+      "accusativeSentence": "Das Kind sammelt die Heidelbeere.",
+      "dativeSentence": "Der Kuchen schmeckt nach der Heidelbeere.",
+      "imageIndex": 13,
+      "editorType": "food"
+    },
+    {
+      "word": "Avocado",
+      "article": "die",
+      "plural": "Avocados",
+      "pluralWithArticle": "die Avocados",
+      "accusativeSentence": "Das Kind halbiert die Avocado.",
+      "dativeSentence": "Der Kern steckt in der Avocado.",
+      "imageIndex": 14,
+      "editorType": "food"
+    },
+    {
+      "word": "Kokosnuss",
+      "article": "die",
+      "plural": "Kokosnüsse",
+      "pluralWithArticle": "die Kokosnüsse",
+      "accusativeSentence": "Das Kind öffnet die Kokosnuss.",
+      "dativeSentence": "Das Wasser schwimmt in der Kokosnuss.",
+      "imageIndex": 15,
+      "editorType": "food"
+    },
+    {
+      "word": "Granatapfel",
+      "article": "der",
+      "plural": "Granatäpfel",
+      "pluralWithArticle": "die Granatäpfel",
+      "accusativeSentence": "Das Kind öffnet den Granatapfel.",
+      "dativeSentence": "Die Kerne leuchten in dem Granatapfel.",
+      "imageIndex": 16,
+      "editorType": "food"
+    },
+    {
+      "word": "Olive",
+      "article": "die",
+      "plural": "Oliven",
+      "pluralWithArticle": "die Oliven",
+      "accusativeSentence": "Das Kind probiert die Olive.",
+      "dativeSentence": "Das Öl kommt von der Olive.",
+      "imageIndex": 17,
+      "editorType": "food"
+    },
+    {
+      "word": "Tomate",
+      "article": "die",
+      "plural": "Tomaten",
+      "pluralWithArticle": "die Tomaten",
+      "accusativeSentence": "Das Kind wäscht die Tomate.",
+      "dativeSentence": "Der Salat schmeckt mit der Tomate besser.",
+      "imageIndex": 18,
+      "editorType": "food"
+    },
+    {
+      "word": "Ananas",
+      "article": "die",
+      "plural": "Ananas",
+      "pluralWithArticle": "die Ananas",
+      "accusativeSentence": "Das Kind schneidet die Ananas.",
+      "dativeSentence": "Die Blätter sitzen oben an der Ananas.",
+      "imageIndex": 19,
+      "editorType": "food"
+    },
+    {
+      "word": "Mango",
+      "article": "die",
+      "plural": "Mangos",
+      "pluralWithArticle": "die Mangos",
+      "accusativeSentence": "Das Kind schält die Mango.",
+      "dativeSentence": "Der Saft läuft aus der Mango.",
+      "imageIndex": 20,
+      "editorType": "food"
+    }
+  ]
+}

@@ -1,0 +1,604 @@
+{
+  "themes": [
+    {
+      "id": "fahrzeuge-strasse",
+      "name": "Fahrzeuge auf der Straße",
+      "type": "vehicle",
+      "words": [
+        [
+          "Auto",
+          "automobile"
+        ],
+        [
+          "Lastwagen",
+          "articulated lorry"
+        ],
+        [
+          "Lieferwagen",
+          "delivery truck"
+        ],
+        [
+          "Bus",
+          "bus"
+        ],
+        [
+          "Schulbus",
+          "bus",
+          null,
+          "mdi"
+        ],
+        [
+          "Taxi",
+          "taxi"
+        ],
+        [
+          "Polizeiauto",
+          "police car"
+        ],
+        [
+          "Feuerwehrauto",
+          "fire engine"
+        ],
+        [
+          "Krankenwagen",
+          "ambulance"
+        ],
+        [
+          "Motorrad",
+          "motorcycle"
+        ],
+        [
+          "Motorroller",
+          "motor scooter"
+        ],
+        [
+          "Fahrrad",
+          "bicycle"
+        ],
+        [
+          "Lastenrad",
+          "cargo bike"
+        ],
+        [
+          "Tretroller",
+          "kick scooter"
+        ],
+        [
+          "Skateboard",
+          "skateboard"
+        ],
+        [
+          "Rollschuh",
+          "roller skate"
+        ],
+        [
+          "Jeep",
+          "sport utility vehicle"
+        ],
+        [
+          "Pick-up",
+          "pickup truck"
+        ],
+        [
+          "Wohnmobil",
+          "minibus"
+        ],
+        [
+          "Kutsche",
+          "o261054-carriage",
+          null,
+          "clipsafari"
+        ],
+        [
+          "Schneepflug",
+          "snow plow"
+        ],
+        [
+          "Traktor",
+          "tractor"
+        ],
+        [
+          "Quad",
+          "atv",
+          null,
+          "mdi"
+        ],
+        [
+          "Einkaufswagen",
+          "shopping cart"
+        ],
+        [
+          "Autobahn",
+          "motorway"
+        ],
+        [
+          "Ampel",
+          "vertical traffic light"
+        ],
+        [
+          "Verkehrsschild",
+          "stop sign"
+        ],
+        [
+          "Parkplatz",
+          "parking garage"
+        ],
+        [
+          "Tunnel",
+          "tunnel"
+        ]
+      ]
+    },
+    {
+      "id": "baustelle",
+      "name": "Baustelle und Werkzeug",
+      "type": "object",
+      "words": [
+        [
+          "Baustelle",
+          "construction"
+        ],
+        [
+          "Kran",
+          "building construction"
+        ],
+        [
+          "Ziegelstein",
+          "brick"
+        ],
+        [
+          "Schubkarre",
+          "wheelbarrow"
+        ],
+        [
+          "Kelle",
+          "trowel"
+        ],
+        [
+          "Leiter",
+          "ladder"
+        ],
+        [
+          "Spitzhacke",
+          "pick"
+        ],
+        [
+          "Schaufel",
+          "shovel"
+        ],
+        [
+          "Hammer",
+          "hammer"
+        ],
+        [
+          "Bauhelm",
+          "rescue worker’s helmet"
+        ],
+        [
+          "Kabel",
+          "cable"
+        ],
+        [
+          "Ölfass",
+          "oil drum"
+        ],
+        [
+          "Zahnrad",
+          "gear"
+        ],
+        [
+          "Rad",
+          "wheel"
+        ],
+        [
+          "Schraube",
+          "nut and bolt"
+        ],
+        [
+          "Haken",
+          "hook"
+        ],
+        [
+          "Kette",
+          "chains"
+        ],
+        [
+          "Magnet",
+          "magnet"
+        ],
+        [
+          "Taschenlampe",
+          "flashlight"
+        ],
+        [
+          "Batterie",
+          "battery"
+        ],
+        [
+          "Stecker",
+          "electric plug"
+        ],
+        [
+          "Draht",
+          "wire"
+        ],
+        [
+          "Werkzeugkasten",
+          "toolbox"
+        ],
+        [
+          "Warnweste",
+          [
+            "safety vest",
+            "construction worker"
+          ]
+        ],
+        [
+          "Warnschild",
+          "warning strip"
+        ],
+        [
+          "Bauarbeiter",
+          "construction worker"
+        ],
+        [
+          "Sicherheitsweste",
+          "safety"
+        ],
+        [
+          "Bauleuchte",
+          "led"
+        ],
+        [
+          "Maurer",
+          "trowel"
+        ],
+        [
+          "Dübel",
+          "nut and bolt"
+        ]
+      ]
+    },
+    {
+      "id": "zuege",
+      "name": "Züge und Bahnen",
+      "type": "vehicle",
+      "words": [
+        [
+          "Zug",
+          "train"
+        ],
+        [
+          "Schnellzug",
+          "high-speed train"
+        ],
+        [
+          "Dampflok",
+          "locomotive"
+        ],
+        [
+          "Diesellok",
+          "diesel locomotive"
+        ],
+        [
+          "Straßenbahn",
+          "tram"
+        ],
+        [
+          "U-Bahn",
+          "metro"
+        ],
+        [
+          "Hochbahn",
+          "light rail"
+        ],
+        [
+          "Einschienenbahn",
+          "monorail"
+        ],
+        [
+          "Seilbahn",
+          "aerial tramway"
+        ],
+        [
+          "Bergbahn",
+          "mountain railway"
+        ],
+        [
+          "Bahnhof",
+          "station"
+        ],
+        [
+          "Gleis",
+          "railway track"
+        ],
+        [
+          "Waggon",
+          "railway car"
+        ],
+        [
+          "Güterzug",
+          "train",
+          null,
+          "mdi"
+        ],
+        [
+          "Schaffner",
+          "conductor"
+        ],
+        [
+          "Fahrkarte",
+          "ticket"
+        ],
+        [
+          "Koffer",
+          "luggage"
+        ],
+        [
+          "Aufzug",
+          "elevator"
+        ],
+        [
+          "Signal",
+          "traffic light"
+        ],
+        [
+          "Brücke",
+          "bridge"
+        ],
+        [
+          "Schwebebahn",
+          "suspension railway"
+        ],
+        [
+          "Straßenbahnwagen",
+          "tram car"
+        ],
+        [
+          "Drahtseilbahn",
+          "mountain cableway"
+        ],
+        [
+          "Tunnel",
+          "tunnel",
+          null,
+          "mdi"
+        ],
+        [
+          "Fahrplan",
+          "timetable",
+          null,
+          "mdi"
+        ]
+      ]
+    },
+    {
+      "id": "schiffe",
+      "name": "Schiffe und Boote",
+      "type": "vehicle",
+      "words": [
+        [
+          "Schiff",
+          "ship"
+        ],
+        [
+          "Segelboot",
+          "sailboat"
+        ],
+        [
+          "Motorboot",
+          "motor boat"
+        ],
+        [
+          "Kanu",
+          "canoe"
+        ],
+        [
+          "Ruderboot",
+          "person rowing boat"
+        ],
+        [
+          "Fähre",
+          "ferry"
+        ],
+        [
+          "Passagierschiff",
+          "passenger ship"
+        ],
+        [
+          "U-Boot",
+          "submarine"
+        ],
+        [
+          "Anker",
+          "anchor"
+        ],
+        [
+          "Leuchtturm",
+          "lighthouse"
+        ],
+        [
+          "Rettungsring",
+          "ring buoy"
+        ],
+        [
+          "Schnellboot",
+          "speedboat"
+        ],
+        [
+          "Windsurfen",
+          "windsurfing"
+        ],
+        [
+          "Angelrute",
+          "fishing pole"
+        ],
+        [
+          "Angelhaken",
+          "hook"
+        ],
+        [
+          "Eisberg",
+          "iceberg"
+        ],
+        [
+          "Titanic",
+          "titanic"
+        ],
+        [
+          "Taucherbrille",
+          "diving mask"
+        ],
+        [
+          "Schnorchel",
+          "snorkling"
+        ],
+        [
+          "Hafenbecken",
+          "water wave"
+        ],
+        [
+          "Muschel",
+          "spiral shell"
+        ],
+        [
+          "Yacht",
+          "sailboat"
+        ],
+        [
+          "Kompass",
+          "compass"
+        ],
+        [
+          "Steuerrad",
+          "ship-wheel",
+          null,
+          "mdi"
+        ]
+      ]
+    },
+    {
+      "id": "flugzeuge",
+      "name": "Flugzeuge und Weltall",
+      "type": "vehicle",
+      "words": [
+        [
+          "Flugzeug",
+          "airplane"
+        ],
+        [
+          "Kleinflugzeug",
+          "small airplane"
+        ],
+        [
+          "Privatjet",
+          "airplane",
+          null,
+          "mdi"
+        ],
+        [
+          "Propellerflugzeug",
+          "propeller plane"
+        ],
+        [
+          "Hubschrauber",
+          "helicopter"
+        ],
+        [
+          "Heißluftballon",
+          "airballoon",
+          null,
+          "mdi"
+        ],
+        [
+          "Fallschirm",
+          "parachute"
+        ],
+        [
+          "Zeppelin",
+          "airship"
+        ],
+        [
+          "Rakete",
+          "rocket"
+        ],
+        [
+          "Raumfähre",
+          "space shuttle"
+        ],
+        [
+          "Satellit",
+          "satellite"
+        ],
+        [
+          "Raumanzug",
+          "astronaut"
+        ],
+        [
+          "Stern",
+          "star"
+        ],
+        [
+          "Mond",
+          "crescent moon"
+        ],
+        [
+          "Sonne",
+          "sun"
+        ],
+        [
+          "Planet",
+          "ringed planet"
+        ],
+        [
+          "Erde",
+          "globe showing Europe-Africa"
+        ],
+        [
+          "Milchstraße",
+          "milky way"
+        ],
+        [
+          "Komet",
+          "comet"
+        ],
+        [
+          "Teleskop",
+          "telescope"
+        ],
+        [
+          "Ufo",
+          "flying saucer"
+        ],
+        [
+          "Drohne",
+          "drone"
+        ],
+        [
+          "Pilot",
+          "pilot"
+        ],
+        [
+          "Startendes Flugzeug",
+          "up-pointing airplane"
+        ],
+        [
+          "Landendes Flugzeug",
+          "airplane arrival"
+        ],
+        [
+          "Abflug",
+          "airplane departure"
+        ],
+        [
+          "Militärflugzeug",
+          "up-pointing military airplane"
+        ],
+        [
+          "Segelflugzeug",
+          "up-pointing small airplane"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "slug": "openmoji--E1CB",
+  "provider": "openmoji",
+  "source": "https://openmoji.org/library/emoji-E1CB/",
+  "author": "Baris Camli / OpenMoji contributors",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "title": "cable",
+  "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" id=\"asset-openmoji--E1CB-emoji\" viewBox=\"0 0 72 72\" version=\"1.1\">\n  <g id=\"asset-openmoji--E1CB-color\">\n    <rect x=\"10.25\" y=\"50.8568\" width=\"10.625\" height=\"4.2312\" fill=\"#9B9B9A\" />\n    <rect x=\"51\" y=\"17.0845\" width=\"10.625\" height=\"4.2312\" fill=\"#D0CFCE\" />\n  </g>\n  <g id=\"asset-openmoji--E1CB-hair\" />\n  <g id=\"asset-openmoji--E1CB-skin\" />\n  <g id=\"asset-openmoji--E1CB-skin-shadow\" />\n  <g id=\"asset-openmoji--E1CB-line\">\n    <path fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" stroke-width=\"2\" d=\"M21,53.2763h35.5642c0,0,6.4358,0,6.4358-9.1931S56.8847,34.89,56.8847,34.89H17.5768c0,0-5.8499,0-5.8499-8.3035 s5.8499-7.3535,5.8499-7.3535H50.796\" />\n    <rect x=\"10.25\" y=\"50.8568\" width=\"10.625\" height=\"4.2312\" fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" stroke-width=\"2\" />\n    <rect x=\"51\" y=\"17.0845\" width=\"10.625\" height=\"4.2312\" fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" stroke-width=\"2\" />\n  </g>\n</svg>"
+}

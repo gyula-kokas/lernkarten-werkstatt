@@ -1,0 +1,10 @@
+{
+  "slug": "mdi--bowl",
+  "provider": "mdi",
+  "source": "https://github.com/Templarian/MaterialDesign/blob/2424e748e0cc63ab7b9c095a099b9fe239b737c0/svg/bowl.svg",
+  "author": "Pictogrammers (Material Design Icons)",
+  "license": "Apache-2.0",
+  "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+  "title": "bowl",
+  "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" id=\"asset-mdi--bowl-mdi-bowl\" viewBox=\"0 0 24 24\"><path d=\"M22 15C22 18.9 18.9 22 15 22H9C5.1 22 2 18.9 2 15V12H22V15Z\" /></svg>"
+}

@@ -1,0 +1,240 @@
+{
+  "themeId": "theme-61-wohnen",
+  "themeName": "Wohnung und Möbel",
+  "language": "de",
+  "version": 1,
+  "entryCount": 23,
+  "imageMode": "per-entry-svg",
+  "entries": [
+    {
+      "word": "Stuhl",
+      "article": "der",
+      "plural": "Stühle",
+      "pluralWithArticle": "die Stühle",
+      "accusativeSentence": "Das Kind zieht den Stuhl heran.",
+      "dativeSentence": "Das Kind sitzt auf dem Stuhl.",
+      "imageIndex": 0,
+      "editorType": "object"
+    },
+    {
+      "word": "Sofa",
+      "article": "das",
+      "plural": "Sofas",
+      "pluralWithArticle": "die Sofas",
+      "accusativeSentence": "Das Kind setzt sich auf das Sofa.",
+      "dativeSentence": "Die Katze schläft auf dem Sofa.",
+      "imageIndex": 1,
+      "editorType": "object"
+    },
+    {
+      "word": "Sessel",
+      "article": "der",
+      "plural": "Sessel",
+      "pluralWithArticle": "die Sessel",
+      "accusativeSentence": "Der Opa setzt sich in den Sessel.",
+      "dativeSentence": "Der Opa sitzt in dem Sessel.",
+      "imageIndex": 2,
+      "editorType": "object"
+    },
+    {
+      "word": "Bett",
+      "article": "das",
+      "plural": "Betten",
+      "pluralWithArticle": "die Betten",
+      "accusativeSentence": "Das Kind macht das Bett.",
+      "dativeSentence": "Die Puppe liegt in dem Bett.",
+      "imageIndex": 3,
+      "editorType": "object"
+    },
+    {
+      "word": "Lampe",
+      "article": "die",
+      "plural": "Lampen",
+      "pluralWithArticle": "die Lampen",
+      "accusativeSentence": "Das Kind schaltet die Lampe an.",
+      "dativeSentence": "Das Licht kommt aus der Lampe.",
+      "imageIndex": 4,
+      "editorType": "object"
+    },
+    {
+      "word": "Spiegel",
+      "article": "der",
+      "plural": "Spiegel",
+      "pluralWithArticle": "die Spiegel",
+      "accusativeSentence": "Das Kind putzt den Spiegel.",
+      "dativeSentence": "Das Kind steht vor dem Spiegel.",
+      "imageIndex": 5,
+      "editorType": "object"
+    },
+    {
+      "word": "Bild",
+      "article": "das",
+      "plural": "Bilder",
+      "pluralWithArticle": "die Bilder",
+      "accusativeSentence": "Das Kind malt das Bild.",
+      "dativeSentence": "Das Kind steht vor dem Bild.",
+      "imageIndex": 6,
+      "editorType": "object"
+    },
+    {
+      "word": "Fenster",
+      "article": "das",
+      "plural": "Fenster",
+      "pluralWithArticle": "die Fenster",
+      "accusativeSentence": "Das Kind öffnet das Fenster.",
+      "dativeSentence": "Die Blume steht an dem Fenster.",
+      "imageIndex": 7,
+      "editorType": "object"
+    },
+    {
+      "word": "Tür",
+      "article": "die",
+      "plural": "Türen",
+      "pluralWithArticle": "die Türen",
+      "accusativeSentence": "Das Kind schließt die Tür.",
+      "dativeSentence": "Der Schlüssel steckt in der Tür.",
+      "imageIndex": 8,
+      "editorType": "object"
+    },
+    {
+      "word": "Treppe",
+      "article": "die",
+      "plural": "Treppen",
+      "pluralWithArticle": "die Treppen",
+      "accusativeSentence": "Das Kind putzt die Treppe.",
+      "dativeSentence": "Das Kind läuft auf der Treppe.",
+      "imageIndex": 9,
+      "editorType": "object"
+    },
+    {
+      "word": "Bettwäsche",
+      "article": "die",
+      "plural": "Bettwäschen",
+      "pluralWithArticle": "die Bettwäschen",
+      "accusativeSentence": "Das Kind wäscht die Bettwäsche.",
+      "dativeSentence": "Das Kind schläft in der Bettwäsche.",
+      "imageIndex": 10,
+      "editorType": "object"
+    },
+    {
+      "word": "Hocker",
+      "article": "der",
+      "plural": "Hocker",
+      "pluralWithArticle": "die Hocker",
+      "accusativeSentence": "Das Kind trägt den Hocker.",
+      "dativeSentence": "Das Kind sitzt auf dem Hocker.",
+      "imageIndex": 11,
+      "editorType": "object"
+    },
+    {
+      "word": "Uhr",
+      "article": "die",
+      "plural": "Uhren",
+      "pluralWithArticle": "die Uhren",
+      "accusativeSentence": "Das Kind stellt die Uhr.",
+      "dativeSentence": "Die Zeiger stehen auf der Uhr.",
+      "imageIndex": 12,
+      "editorType": "object"
+    },
+    {
+      "word": "Topfpflanze",
+      "article": "die",
+      "plural": "Topfpflanzen",
+      "pluralWithArticle": "die Topfpflanzen",
+      "accusativeSentence": "Das Kind gießt die Topfpflanze.",
+      "dativeSentence": "Das Wasser läuft aus der Topfpflanze.",
+      "imageIndex": 13,
+      "editorType": "object"
+    },
+    {
+      "word": "Fernseher",
+      "article": "der",
+      "plural": "Fernseher",
+      "pluralWithArticle": "die Fernseher",
+      "accusativeSentence": "Das Kind schaltet den Fernseher aus.",
+      "dativeSentence": "Der Film läuft auf dem Fernseher.",
+      "imageIndex": 14,
+      "editorType": "object"
+    },
+    {
+      "word": "Telefon",
+      "article": "das",
+      "plural": "Telefone",
+      "pluralWithArticle": "die Telefone",
+      "accusativeSentence": "Das Kind nimmt das Telefon.",
+      "dativeSentence": "Das Kind spricht mit dem Telefon.",
+      "imageIndex": 15,
+      "editorType": "object"
+    },
+    {
+      "word": "Teppich",
+      "article": "der",
+      "plural": "Teppiche",
+      "pluralWithArticle": "die Teppiche",
+      "accusativeSentence": "Das Kind rollt den Teppich aus.",
+      "dativeSentence": "Die Katze liegt auf dem Teppich.",
+      "imageIndex": 16,
+      "editorType": "object"
+    },
+    {
+      "word": "Regal",
+      "article": "das",
+      "plural": "Regale",
+      "pluralWithArticle": "die Regale",
+      "accusativeSentence": "Das Kind baut das Regal auf.",
+      "dativeSentence": "Die Bücher stehen in dem Regal.",
+      "imageIndex": 17,
+      "editorType": "object"
+    },
+    {
+      "word": "Schrank",
+      "article": "der",
+      "plural": "Schränke",
+      "pluralWithArticle": "die Schränke",
+      "accusativeSentence": "Die Mutter öffnet den Schrank.",
+      "dativeSentence": "Die Kleidung hängt in dem Schrank.",
+      "imageIndex": 18,
+      "editorType": "object"
+    },
+    {
+      "word": "Sitzbank",
+      "article": "die",
+      "plural": "Sitzbänke",
+      "pluralWithArticle": "die Sitzbänke",
+      "accusativeSentence": "Das Kind setzt sich auf die Sitzbank.",
+      "dativeSentence": "Das Kind wartet auf der Sitzbank.",
+      "imageIndex": 19,
+      "editorType": "object"
+    },
+    {
+      "word": "Kerze",
+      "article": "die",
+      "plural": "Kerzen",
+      "pluralWithArticle": "die Kerzen",
+      "accusativeSentence": "Das Kind zündet die Kerze an.",
+      "dativeSentence": "Die Flamme brennt an der Kerze.",
+      "imageIndex": 20,
+      "editorType": "object"
+    },
+    {
+      "word": "Vorhang",
+      "article": "der",
+      "plural": "Vorhänge",
+      "pluralWithArticle": "die Vorhänge",
+      "accusativeSentence": "Die Mutter näht den Vorhang.",
+      "dativeSentence": "Die Katze sitzt hinter dem Vorhang.",
+      "imageIndex": 21,
+      "editorType": "object"
+    },
+    {
+      "word": "Steckdose",
+      "article": "die",
+      "plural": "Steckdosen",
+      "pluralWithArticle": "die Steckdosen",
+      "accusativeSentence": "Das Kind sucht die Steckdose.",
+      "dativeSentence": "Das Kabel steckt in der Steckdose.",
+      "imageIndex": 22,
+      "editorType": "object"
+    }
+  ]
+}

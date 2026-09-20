@@ -1,0 +1,10 @@
+{
+  "slug": "mdi--power-socket",
+  "provider": "mdi",
+  "source": "https://github.com/Templarian/MaterialDesign/blob/2424e748e0cc63ab7b9c095a099b9fe239b737c0/svg/power-socket.svg",
+  "author": "Pictogrammers (Material Design Icons)",
+  "license": "Apache-2.0",
+  "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+  "title": "power socket",
+  "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" id=\"asset-mdi--power-socket-mdi-power-socket\" viewBox=\"0 0 24 24\"><path d=\"M15,15H17V11H15M7,15H9V11H7M11,13H13V9H11M8.83,7H15.2L19,10.8V17H5V10.8M8,5L3,10V19H21V10L16,5H8Z\" /></svg>"
+}

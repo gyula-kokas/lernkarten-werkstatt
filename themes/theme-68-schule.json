@@ -1,0 +1,250 @@
+{
+  "themeId": "theme-68-schule",
+  "themeName": "Schule",
+  "language": "de",
+  "version": 1,
+  "entryCount": 24,
+  "imageMode": "per-entry-svg",
+  "entries": [
+    {
+      "word": "Schule",
+      "article": "die",
+      "plural": "Schulen",
+      "pluralWithArticle": "die Schulen",
+      "accusativeSentence": "Das Kind liebt die Schule.",
+      "dativeSentence": "Die Klasse lernt in der Schule.",
+      "imageIndex": 0,
+      "editorType": "place"
+    },
+    {
+      "word": "Buch",
+      "article": "das",
+      "plural": "Bücher",
+      "pluralWithArticle": "die Bücher",
+      "accusativeSentence": "Das Kind liest das Buch.",
+      "dativeSentence": "Das Kind blättert in dem Buch.",
+      "imageIndex": 1,
+      "editorType": "place"
+    },
+    {
+      "word": "Heft",
+      "article": "das",
+      "plural": "Hefte",
+      "pluralWithArticle": "die Hefte",
+      "accusativeSentence": "Das Kind beschreibt das Heft.",
+      "dativeSentence": "Die Hausaufgabe steht in dem Heft.",
+      "imageIndex": 2,
+      "editorType": "place"
+    },
+    {
+      "word": "Notizbuch",
+      "article": "das",
+      "plural": "Notizbücher",
+      "pluralWithArticle": "die Notizbücher",
+      "accusativeSentence": "Das Kind öffnet das Notizbuch.",
+      "dativeSentence": "Das Kind schreibt in dem Notizbuch.",
+      "imageIndex": 3,
+      "editorType": "place"
+    },
+    {
+      "word": "Bleistift",
+      "article": "der",
+      "plural": "Bleistifte",
+      "pluralWithArticle": "die Bleistifte",
+      "accusativeSentence": "Das Kind spitzt den Bleistift.",
+      "dativeSentence": "Das Kind schreibt mit dem Bleistift.",
+      "imageIndex": 4,
+      "editorType": "place"
+    },
+    {
+      "word": "Stift",
+      "article": "der",
+      "plural": "Stifte",
+      "pluralWithArticle": "die Stifte",
+      "accusativeSentence": "Das Kind sucht den Stift.",
+      "dativeSentence": "Das Kind schreibt mit dem Stift.",
+      "imageIndex": 5,
+      "editorType": "place"
+    },
+    {
+      "word": "Füller",
+      "article": "der",
+      "plural": "Füller",
+      "pluralWithArticle": "die Füller",
+      "accusativeSentence": "Das Kind füllt den Füller.",
+      "dativeSentence": "Das Kind schreibt mit dem Füller.",
+      "imageIndex": 6,
+      "editorType": "place"
+    },
+    {
+      "word": "Radiergummi",
+      "article": "der",
+      "plural": "Radiergummis",
+      "pluralWithArticle": "die Radiergummis",
+      "accusativeSentence": "Das Kind benutzt den Radiergummi.",
+      "dativeSentence": "Das Kind radiert mit dem Radiergummi.",
+      "imageIndex": 7,
+      "editorType": "place"
+    },
+    {
+      "word": "Lineal",
+      "article": "das",
+      "plural": "Lineale",
+      "pluralWithArticle": "die Lineale",
+      "accusativeSentence": "Das Kind nimmt das Lineal.",
+      "dativeSentence": "Das Kind zeichnet mit dem Lineal.",
+      "imageIndex": 8,
+      "editorType": "place"
+    },
+    {
+      "word": "Geodreieck",
+      "article": "das",
+      "plural": "Geodreiecke",
+      "pluralWithArticle": "die Geodreiecke",
+      "accusativeSentence": "Das Kind holt das Geodreieck.",
+      "dativeSentence": "Das Kind zeichnet mit dem Geodreieck.",
+      "imageIndex": 9,
+      "editorType": "place"
+    },
+    {
+      "word": "Schere",
+      "article": "die",
+      "plural": "Scheren",
+      "pluralWithArticle": "die Scheren",
+      "accusativeSentence": "Das Kind braucht die Schere.",
+      "dativeSentence": "Das Kind schneidet mit der Schere.",
+      "imageIndex": 10,
+      "editorType": "place"
+    },
+    {
+      "word": "Taschenrechner",
+      "article": "der",
+      "plural": "Taschenrechner",
+      "pluralWithArticle": "die Taschenrechner",
+      "accusativeSentence": "Das Kind benutzt den Taschenrechner.",
+      "dativeSentence": "Das Kind rechnet mit dem Taschenrechner.",
+      "imageIndex": 11,
+      "editorType": "place"
+    },
+    {
+      "word": "Computer",
+      "article": "der",
+      "plural": "Computer",
+      "pluralWithArticle": "die Computer",
+      "accusativeSentence": "Das Kind startet den Computer.",
+      "dativeSentence": "Das Kind arbeitet mit dem Computer.",
+      "imageIndex": 12,
+      "editorType": "place"
+    },
+    {
+      "word": "Laptop",
+      "article": "der",
+      "plural": "Laptops",
+      "pluralWithArticle": "die Laptops",
+      "accusativeSentence": "Das Kind klappt den Laptop auf.",
+      "dativeSentence": "Die Hausaufgabe ist auf dem Laptop.",
+      "imageIndex": 13,
+      "editorType": "place"
+    },
+    {
+      "word": "Tastatur",
+      "article": "die",
+      "plural": "Tastaturen",
+      "pluralWithArticle": "die Tastaturen",
+      "accusativeSentence": "Das Kind putzt die Tastatur.",
+      "dativeSentence": "Das Kind tippt auf der Tastatur.",
+      "imageIndex": 14,
+      "editorType": "place"
+    },
+    {
+      "word": "Computermaus",
+      "article": "die",
+      "plural": "Computermäuse",
+      "pluralWithArticle": "die Computermäuse",
+      "accusativeSentence": "Das Kind bewegt die Computermaus.",
+      "dativeSentence": "Das Kind klickt mit der Computermaus.",
+      "imageIndex": 15,
+      "editorType": "place"
+    },
+    {
+      "word": "Globus",
+      "article": "der",
+      "plural": "Globen",
+      "pluralWithArticle": "die Globen",
+      "accusativeSentence": "Das Kind dreht den Globus.",
+      "dativeSentence": "Das Land liegt auf dem Globus.",
+      "imageIndex": 16,
+      "editorType": "place"
+    },
+    {
+      "word": "Weltkarte",
+      "article": "die",
+      "plural": "Weltkarten",
+      "pluralWithArticle": "die Weltkarten",
+      "accusativeSentence": "Das Kind betrachtet die Weltkarte.",
+      "dativeSentence": "Das Meer ist auf der Weltkarte blau.",
+      "imageIndex": 17,
+      "editorType": "place"
+    },
+    {
+      "word": "Landkarte",
+      "article": "die",
+      "plural": "Landkarten",
+      "pluralWithArticle": "die Landkarten",
+      "accusativeSentence": "Das Kind faltet die Landkarte auf.",
+      "dativeSentence": "Der Weg steht auf der Landkarte.",
+      "imageIndex": 18,
+      "editorType": "place"
+    },
+    {
+      "word": "Aktentasche",
+      "article": "die",
+      "plural": "Aktentaschen",
+      "pluralWithArticle": "die Aktentaschen",
+      "accusativeSentence": "Der Lehrer trägt die Aktentasche.",
+      "dativeSentence": "Die Hefte sind in der Aktentasche.",
+      "imageIndex": 19,
+      "editorType": "place"
+    },
+    {
+      "word": "Rucksack",
+      "article": "der",
+      "plural": "Rucksäcke",
+      "pluralWithArticle": "die Rucksäcke",
+      "accusativeSentence": "Das Kind packt den Rucksack.",
+      "dativeSentence": "Die Brotdose ist in dem Rucksack.",
+      "imageIndex": 20,
+      "editorType": "place"
+    },
+    {
+      "word": "Kalender",
+      "article": "der",
+      "plural": "Kalender",
+      "pluralWithArticle": "die Kalender",
+      "accusativeSentence": "Das Kind blättert den Kalender um.",
+      "dativeSentence": "Das Datum steht auf dem Kalender.",
+      "imageIndex": 21,
+      "editorType": "place"
+    },
+    {
+      "word": "Papier",
+      "article": "das",
+      "plural": "Papiere",
+      "pluralWithArticle": "die Papiere",
+      "accusativeSentence": "Das Kind knüllt das Papier.",
+      "dativeSentence": "Das Kind schreibt auf dem Papier.",
+      "imageIndex": 22,
+      "editorType": "place"
+    },
+    {
+      "word": "Ordner",
+      "article": "der",
+      "plural": "Ordner",
+      "pluralWithArticle": "die Ordner",
+      "accusativeSentence": "Das Kind heftet den Ordner ab.",
+      "dativeSentence": "Die Blätter liegen in dem Ordner.",
+      "imageIndex": 23,
+      "editorType": "place"
+    }
+  ]
+}

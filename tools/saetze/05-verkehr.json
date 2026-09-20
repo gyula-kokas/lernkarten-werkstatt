@@ -1,0 +1,529 @@
+{
+  "_hinweis": "Geschriebene Sätze je Thema und Wort: [Akkusativsatz, Dativsatz]. Bewusst schlichte, sichere Satzrahmen; kein Baukasten-Rotieren.",
+  "fahrzeuge-strasse": {
+    "Auto": [
+      "Das Kind sieht das Auto.",
+      "Das Kind fährt mit dem Auto."
+    ],
+    "Lastwagen": [
+      "Das Kind beobachtet den Lastwagen.",
+      "Der Fahrer fährt mit dem Lastwagen."
+    ],
+    "Lieferwagen": [
+      "Der Mann belädt den Lieferwagen.",
+      "Die Pakete sind in dem Lieferwagen."
+    ],
+    "Bus": [
+      "Das Kind nimmt den Bus.",
+      "Das Kind fährt mit dem Bus."
+    ],
+    "Taxi": [
+      "Die Frau ruft das Taxi.",
+      "Die Frau fährt mit dem Taxi."
+    ],
+    "Polizeiauto": [
+      "Das Kind sieht das Polizeiauto.",
+      "Die Polizei fährt mit dem Polizeiauto."
+    ],
+    "Feuerwehrauto": [
+      "Das Kind hört das Feuerwehrauto.",
+      "Die Feuerwehr fährt mit dem Feuerwehrauto."
+    ],
+    "Krankenwagen": [
+      "Das Kind sieht den Krankenwagen.",
+      "Der Arzt fährt mit dem Krankenwagen."
+    ],
+    "Motorrad": [
+      "Der Mann fährt das Motorrad.",
+      "Der Mann fährt mit dem Motorrad."
+    ],
+    "Motorroller": [
+      "Das Mädchen sieht den Motorroller.",
+      "Das Mädchen fährt mit dem Motorroller."
+    ],
+    "Fahrrad": [
+      "Das Kind putzt das Fahrrad.",
+      "Das Kind fährt mit dem Fahrrad."
+    ],
+    "Tretroller": [
+      "Das Kind nimmt den Tretroller.",
+      "Das Kind fährt mit dem Tretroller."
+    ],
+    "Skateboard": [
+      "Das Kind probiert das Skateboard.",
+      "Das Kind fährt mit dem Skateboard."
+    ],
+    "Rollschuh": [
+      "Das Kind sucht den Rollschuh.",
+      "Das Kind fährt mit dem Rollschuh."
+    ],
+    "Rollstuhl": [
+      "Der Pfleger schiebt den Rollstuhl.",
+      "Der Opa fährt mit dem Rollstuhl."
+    ],
+    "Jeep": [
+      "Der Mann wäscht den Jeep.",
+      "Der Mann fährt mit dem Jeep."
+    ],
+    "Pick-up": [
+      "Der Mann belädt den Pick-up.",
+      "Das Holz liegt auf dem Pick-up."
+    ],
+    "Wohnmobil": [
+      "Die Familie packt das Wohnmobil.",
+      "Die Familie fährt mit dem Wohnmobil."
+    ],
+    "Kutsche": [
+      "Das Kind sieht die Kutsche.",
+      "Die Familie fährt mit der Kutsche."
+    ],
+    "Traktor": [
+      "Der Bauer fährt den Traktor.",
+      "Der Bauer fährt mit dem Traktor."
+    ],
+    "Einkaufswagen": [
+      "Die Frau schiebt den Einkaufswagen.",
+      "Die Milch liegt in dem Einkaufswagen."
+    ],
+    "Schubkarre": [
+      "Der Gärtner schiebt die Schubkarre.",
+      "Die Erde liegt in der Schubkarre."
+    ],
+    "Tankstelle": [
+      "Der Fahrer sucht die Tankstelle.",
+      "Der Fahrer wartet bei der Tankstelle."
+    ],
+    "Autobahn": [
+      "Der Fahrer kennt die Autobahn.",
+      "Der Fahrer wartet auf der Autobahn."
+    ],
+    "Ampel": [
+      "Der Fahrer sieht die Ampel.",
+      "Der Fahrer wartet bei der Ampel."
+    ],
+    "Verkehrsschild": [
+      "Der Fahrer sieht das Verkehrsschild.",
+      "Der Fahrer wartet bei dem Verkehrsschild."
+    ],
+    "Parkplatz": [
+      "Der Fahrer sucht den Parkplatz.",
+      "Das Auto steht auf dem Parkplatz."
+    ],
+    "Schulbus": [
+      "Das Kind sieht den Schulbus.",
+      "Der Rucksack liegt in dem Schulbus."
+    ],
+    "Quad": [
+      "Der Mann fährt das Quad.",
+      "Der Mann fährt mit dem Quad."
+    ]
+  },
+  "baustelle": {
+    "Baustelle": [
+      "Das Kind sieht die Baustelle.",
+      "Der Bauarbeiter arbeitet auf der Baustelle."
+    ],
+    "Kran": [
+      "Der Arbeiter bedient den Kran.",
+      "Die Last hängt an dem Kran."
+    ],
+    "Ziegelstein": [
+      "Der Maurer nimmt den Ziegelstein.",
+      "Der Mörtel klebt an dem Ziegelstein."
+    ],
+    "Schubkarre": [
+      "Der Maurer schiebt die Schubkarre.",
+      "Der Sand liegt in der Schubkarre."
+    ],
+    "Kelle": [
+      "Der Maurer nimmt die Kelle.",
+      "Der Maurer arbeitet mit der Kelle."
+    ],
+    "Leiter": [
+      "Der Maler trägt die Leiter.",
+      "Der Maler steht auf der Leiter."
+    ],
+    "Spitzhacke": [
+      "Der Arbeiter schwingt die Spitzhacke.",
+      "Der Arbeiter hackt mit der Spitzhacke."
+    ],
+    "Schaufel": [
+      "Der Arbeiter nimmt die Schaufel.",
+      "Der Arbeiter gräbt mit der Schaufel."
+    ],
+    "Hammer": [
+      "Der Arbeiter holt den Hammer.",
+      "Der Arbeiter schlägt mit dem Hammer."
+    ],
+    "Bauhelm": [
+      "Der Arbeiter setzt den Bauhelm auf.",
+      "Der Kopf steckt in dem Bauhelm."
+    ],
+    "Kabel": [
+      "Der Elektriker verlegt das Kabel.",
+      "Der Strom fließt in dem Kabel."
+    ],
+    "Ölfass": [
+      "Der Arbeiter rollt das Ölfass.",
+      "Das Öl ist in dem Ölfass."
+    ],
+    "Zahnrad": [
+      "Der Mechaniker dreht das Zahnrad.",
+      "Die Maschine läuft mit dem Zahnrad."
+    ],
+    "Rad": [
+      "Der Mann wechselt das Rad.",
+      "Das Auto fährt mit dem Rad."
+    ],
+    "Schraube": [
+      "Der Mann dreht die Schraube.",
+      "Der Deckel sitzt auf der Schraube."
+    ],
+    "Haken": [
+      "Der Mann hängt den Haken auf.",
+      "Die Jacke hängt an dem Haken."
+    ],
+    "Kette": [
+      "Der Mann ölt die Kette.",
+      "Der Anhänger hängt an der Kette."
+    ],
+    "Magnet": [
+      "Das Kind nimmt den Magneten.",
+      "Die Schraube klebt an dem Magneten."
+    ],
+    "Taschenlampe": [
+      "Der Arbeiter nimmt die Taschenlampe.",
+      "Der Arbeiter leuchtet mit der Taschenlampe."
+    ],
+    "Batterie": [
+      "Der Arbeiter wechselt die Batterie.",
+      "Der Strom kommt aus der Batterie."
+    ],
+    "Stecker": [
+      "Der Elektriker zieht den Stecker.",
+      "Der Strom kommt aus dem Stecker."
+    ],
+    "Draht": [
+      "Der Elektriker biegt den Draht.",
+      "Der Strom fließt in dem Draht."
+    ],
+    "Werkzeugkasten": [
+      "Der Arbeiter öffnet den Werkzeugkasten.",
+      "Die Zange liegt in dem Werkzeugkasten."
+    ],
+    "Warnweste": [
+      "Der Arbeiter zieht die Warnweste an.",
+      "Der Arbeiter ist gut sichtbar in der Warnweste."
+    ],
+    "Warnschild": [
+      "Der Arbeiter stellt das Warnschild auf.",
+      "Der Weg endet an dem Warnschild."
+    ],
+    "Bauarbeiter": [
+      "Das Kind sieht den Bauarbeiter.",
+      "Der Helm gehört dem Bauarbeiter."
+    ],
+    "Sicherheitsweste": [
+      "Der Bauarbeiter trägt die Sicherheitsweste.",
+      "Der Bauarbeiter arbeitet mit der Sicherheitsweste."
+    ],
+    "Dübel": [
+      "Der Mann nimmt den Dübel.",
+      "Die Schraube steckt in dem Dübel."
+    ]
+  },
+  "zuege": {
+    "Zug": [
+      "Das Kind sieht den Zug.",
+      "Das Kind fährt mit dem Zug."
+    ],
+    "Schnellzug": [
+      "Der Mann nimmt den Schnellzug.",
+      "Der Mann fährt mit dem Schnellzug."
+    ],
+    "Dampflok": [
+      "Das Kind fotografiert die Dampflok.",
+      "Der Rauch kommt aus der Dampflok."
+    ],
+    "Diesellok": [
+      "Das Kind hört die Diesellok.",
+      "Der Lärm kommt von der Diesellok."
+    ],
+    "Straßenbahn": [
+      "Die Frau nimmt die Straßenbahn.",
+      "Die Frau fährt mit der Straßenbahn."
+    ],
+    "U-Bahn": [
+      "Der Mann nimmt die U-Bahn.",
+      "Der Mann fährt mit der U-Bahn."
+    ],
+    "Hochbahn": [
+      "Das Kind sieht die Hochbahn.",
+      "Das Kind fährt mit der Hochbahn."
+    ],
+    "Einschienenbahn": [
+      "Die Familie nimmt die Einschienenbahn.",
+      "Die Familie fährt mit der Einschienenbahn."
+    ],
+    "Seilbahn": [
+      "Die Familie nimmt die Seilbahn.",
+      "Die Familie fährt mit der Seilbahn."
+    ],
+    "Bergbahn": [
+      "Der Wanderer nimmt die Bergbahn.",
+      "Der Wanderer fährt mit der Bergbahn."
+    ],
+    "Bahnhof": [
+      "Das Kind sucht den Bahnhof.",
+      "Das Kind wartet bei dem Bahnhof."
+    ],
+    "Gleis": [
+      "Der Mann überquert das Gleis.",
+      "Der Zug fährt auf dem Gleis."
+    ],
+    "Waggon": [
+      "Der Mann öffnet den Waggon.",
+      "Die Koffer liegen in dem Waggon."
+    ],
+    "Fahrkarte": [
+      "Die Frau kauft die Fahrkarte.",
+      "Die Nummer steht auf der Fahrkarte."
+    ],
+    "Koffer": [
+      "Der Mann trägt den Koffer.",
+      "Die Kleidung ist in dem Koffer."
+    ],
+    "Gepäck": [
+      "Die Familie holt das Gepäck.",
+      "Der Koffer liegt bei dem Gepäck."
+    ],
+    "Aufzug": [
+      "Das Kind ruft den Aufzug.",
+      "Die Familie fährt mit dem Aufzug."
+    ],
+    "Signal": [
+      "Der Lokführer sieht das Signal.",
+      "Der Zug wartet bei dem Signal."
+    ],
+    "Brücke": [
+      "Das Kind sieht die Brücke.",
+      "Das Auto steht auf der Brücke."
+    ],
+    "Schwebebahn": [
+      "Die Familie nimmt die Schwebebahn.",
+      "Die Familie fährt mit der Schwebebahn."
+    ],
+    "Trolleybus": [
+      "Die Frau nimmt den Trolleybus.",
+      "Die Frau fährt mit dem Trolleybus."
+    ],
+    "Straßenbahnwagen": [
+      "Das Kind sieht den Straßenbahnwagen.",
+      "Die Fahrgäste sitzen in dem Straßenbahnwagen."
+    ],
+    "Güterzug": [
+      "Das Kind sieht den Güterzug.",
+      "Der Sand liegt in dem Güterzug."
+    ],
+    "Tunnel": [
+      "Der Zug fährt durch den Tunnel.",
+      "Es ist dunkel in dem Tunnel."
+    ],
+    "Fahrplan": [
+      "Die Frau liest den Fahrplan.",
+      "Die Abfahrt steht in dem Fahrplan."
+    ]
+  },
+  "schiffe": {
+    "Schiff": [
+      "Das Kind sieht das Schiff.",
+      "Die Familie fährt mit dem Schiff."
+    ],
+    "Segelboot": [
+      "Das Kind malt das Segelboot.",
+      "Die Familie fährt mit dem Segelboot."
+    ],
+    "Motorboot": [
+      "Der Mann tankt das Motorboot.",
+      "Der Mann fährt mit dem Motorboot."
+    ],
+    "Kanu": [
+      "Das Kind nimmt das Kanu.",
+      "Das Kind fährt mit dem Kanu."
+    ],
+    "Ruderboot": [
+      "Der Mann mietet das Ruderboot.",
+      "Der Mann fährt mit dem Ruderboot."
+    ],
+    "Fähre": [
+      "Die Familie nimmt die Fähre.",
+      "Die Familie fährt mit der Fähre."
+    ],
+    "Passagierschiff": [
+      "Das Kind sieht das Passagierschiff.",
+      "Die Gäste schlafen in dem Passagierschiff."
+    ],
+    "U-Boot": [
+      "Das Kind malt das U-Boot.",
+      "Die Mannschaft fährt mit dem U-Boot."
+    ],
+    "Anker": [
+      "Der Matrose wirft den Anker.",
+      "Das Schiff hängt an dem Anker."
+    ],
+    "Leuchtturm": [
+      "Das Kind fotografiert den Leuchtturm.",
+      "Das Licht kommt von dem Leuchtturm."
+    ],
+    "Rettungsring": [
+      "Der Matrose wirft den Rettungsring.",
+      "Der Matrose hält sich an dem Rettungsring fest."
+    ],
+    "Schnellboot": [
+      "Der Mann sieht das Schnellboot.",
+      "Der Mann fährt mit dem Schnellboot."
+    ],
+    "Windsurfen": [
+      "Der Mann übt das Windsurfen.",
+      "Der Mann übt bei dem Windsurfen."
+    ],
+    "Angelrute": [
+      "Der Mann nimmt die Angelrute.",
+      "Der Mann angelt mit der Angelrute."
+    ],
+    "Angelhaken": [
+      "Der Mann befestigt den Angelhaken.",
+      "Der Köder hängt an dem Angelhaken."
+    ],
+    "Eisberg": [
+      "Der Kapitän sieht den Eisberg.",
+      "Das Schiff fährt weg von dem Eisberg."
+    ],
+    "Taucherbrille": [
+      "Das Kind setzt die Taucherbrille auf.",
+      "Das Kind taucht mit der Taucherbrille."
+    ],
+    "Schnorchel": [
+      "Das Kind nimmt den Schnorchel.",
+      "Das Kind atmet mit dem Schnorchel."
+    ],
+    "Hafenbecken": [
+      "Der Mann zeigt das Hafenbecken.",
+      "Die Boote liegen in dem Hafenbecken."
+    ],
+    "Muschel": [
+      "Das Kind sammelt die Muschel.",
+      "Die Perle liegt in der Muschel."
+    ],
+    "Kompass": [
+      "Der Matrose nimmt den Kompass.",
+      "Der Matrose sucht mit dem Kompass den Weg."
+    ],
+    "Steuerrad": [
+      "Der Kapitän dreht das Steuerrad.",
+      "Der Kapitän steht an dem Steuerrad."
+    ]
+  },
+  "flugzeuge": {
+    "Flugzeug": [
+      "Das Kind sieht das Flugzeug.",
+      "Die Familie fliegt mit dem Flugzeug."
+    ],
+    "Kleinflugzeug": [
+      "Der Pilot startet das Kleinflugzeug.",
+      "Der Pilot fliegt mit dem Kleinflugzeug."
+    ],
+    "Hubschrauber": [
+      "Das Kind hört den Hubschrauber.",
+      "Der Pilot fliegt mit dem Hubschrauber."
+    ],
+    "Heißluftballon": [
+      "Die Familie sieht den Heißluftballon.",
+      "Die Familie fliegt mit dem Heißluftballon."
+    ],
+    "Fallschirm": [
+      "Der Mann öffnet den Fallschirm.",
+      "Der Mann springt mit dem Fallschirm."
+    ],
+    "Rakete": [
+      "Das Kind malt die Rakete.",
+      "Die Astronauten fliegen mit der Rakete."
+    ],
+    "Raumfähre": [
+      "Das Kind sieht die Raumfähre.",
+      "Die Astronauten fliegen mit der Raumfähre."
+    ],
+    "Satellit": [
+      "Der Techniker steuert den Satelliten.",
+      "Das Signal kommt von dem Satelliten."
+    ],
+    "Raumanzug": [
+      "Der Astronaut trägt den Raumanzug.",
+      "Der Astronaut arbeitet in dem Raumanzug."
+    ],
+    "Stern": [
+      "Das Kind beobachtet den Stern.",
+      "Das Licht kommt von dem Stern."
+    ],
+    "Mond": [
+      "Das Kind sieht den Mond.",
+      "Das Licht kommt von dem Mond."
+    ],
+    "Sonne": [
+      "Das Kind malt die Sonne.",
+      "Die Wärme kommt von der Sonne."
+    ],
+    "Planet": [
+      "Das Kind findet den Planeten.",
+      "Die Reise geht zu dem Planeten."
+    ],
+    "Erde": [
+      "Der Astronaut sieht die Erde.",
+      "Wir leben auf der Erde."
+    ],
+    "Milchstraße": [
+      "Das Kind betrachtet die Milchstraße.",
+      "Die Sterne leuchten in der Milchstraße."
+    ],
+    "Komet": [
+      "Das Kind entdeckt den Kometen.",
+      "Der Schweif gehört dem Kometen."
+    ],
+    "Teleskop": [
+      "Der Forscher benutzt das Teleskop.",
+      "Der Mond ist in dem Teleskop zu sehen."
+    ],
+    "Ufo": [
+      "Das Kind malt das Ufo.",
+      "Das Kind träumt von dem Ufo."
+    ],
+    "Drohne": [
+      "Der Mann steuert die Drohne.",
+      "Der Mann filmt mit der Drohne."
+    ],
+    "Pilot": [
+      "Das Kind grüßt den Piloten.",
+      "Das Flugzeug gehört dem Piloten."
+    ],
+    "Wolke": [
+      "Das Kind beobachtet die Wolke.",
+      "Die Sonne steckt hinter der Wolke."
+    ],
+    "Abflug": [
+      "Die Familie wartet auf den Abflug.",
+      "Die Familie ist aufgeregt bei dem Abflug."
+    ],
+    "Militärflugzeug": [
+      "Der Mann fotografiert das Militärflugzeug.",
+      "Der Pilot fliegt mit dem Militärflugzeug."
+    ],
+    "Segelflugzeug": [
+      "Der Pilot startet das Segelflugzeug.",
+      "Der Pilot fliegt mit dem Segelflugzeug."
+    ],
+    "Privatjet": [
+      "Die Familie mietet den Privatjet.",
+      "Der Mann fliegt mit dem Privatjet."
+    ]
+  }
+}

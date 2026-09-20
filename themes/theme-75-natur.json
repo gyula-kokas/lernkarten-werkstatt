@@ -1,0 +1,260 @@
+{
+  "themeId": "theme-75-natur",
+  "themeName": "Natur und Landschaft",
+  "language": "de",
+  "version": 1,
+  "entryCount": 25,
+  "imageMode": "per-entry-svg",
+  "entries": [
+    {
+      "word": "Berg",
+      "article": "der",
+      "plural": "Berge",
+      "pluralWithArticle": "die Berge",
+      "accusativeSentence": "Das Kind sieht den Berg.",
+      "dativeSentence": "Das Kind wandert zu dem Berg.",
+      "imageIndex": 0,
+      "editorType": "nature"
+    },
+    {
+      "word": "Vulkan",
+      "article": "der",
+      "plural": "Vulkane",
+      "pluralWithArticle": "die Vulkane",
+      "accusativeSentence": "Das Kind malt den Vulkan.",
+      "dativeSentence": "Das Kind wandert zu dem Vulkan.",
+      "imageIndex": 1,
+      "editorType": "nature"
+    },
+    {
+      "word": "Hügel",
+      "article": "der",
+      "plural": "Hügel",
+      "pluralWithArticle": "die Hügel",
+      "accusativeSentence": "Das Kind sieht den Hügel.",
+      "dativeSentence": "Das Kind wandert zu dem Hügel.",
+      "imageIndex": 2,
+      "editorType": "nature"
+    },
+    {
+      "word": "Tal",
+      "article": "das",
+      "plural": "Täler",
+      "pluralWithArticle": "die Täler",
+      "accusativeSentence": "Das Kind betrachtet das Tal.",
+      "dativeSentence": "Das Kind wandert zu dem Tal.",
+      "imageIndex": 3,
+      "editorType": "nature"
+    },
+    {
+      "word": "See",
+      "article": "der",
+      "plural": "Seen",
+      "pluralWithArticle": "die Seen",
+      "accusativeSentence": "Das Kind sieht den See.",
+      "dativeSentence": "Das Kind wandert zu dem See.",
+      "imageIndex": 4,
+      "editorType": "nature"
+    },
+    {
+      "word": "Fluss",
+      "article": "der",
+      "plural": "Flüsse",
+      "pluralWithArticle": "die Flüsse",
+      "accusativeSentence": "Das Kind überquert den Fluss.",
+      "dativeSentence": "Das Kind wandert zu dem Fluss.",
+      "imageIndex": 5,
+      "editorType": "nature"
+    },
+    {
+      "word": "Meer",
+      "article": "das",
+      "plural": "Meere",
+      "pluralWithArticle": "die Meere",
+      "accusativeSentence": "Das Kind liebt das Meer.",
+      "dativeSentence": "Die Familie fährt zu dem Meer.",
+      "imageIndex": 6,
+      "editorType": "nature"
+    },
+    {
+      "word": "Insel",
+      "article": "die",
+      "plural": "Inseln",
+      "pluralWithArticle": "die Inseln",
+      "accusativeSentence": "Das Kind malt die Insel.",
+      "dativeSentence": "Die Familie fährt zu der Insel.",
+      "imageIndex": 7,
+      "editorType": "nature"
+    },
+    {
+      "word": "Wüste",
+      "article": "die",
+      "plural": "Wüsten",
+      "pluralWithArticle": "die Wüsten",
+      "accusativeSentence": "Das Kind sieht die Wüste.",
+      "dativeSentence": "Das Kind reist zu der Wüste.",
+      "imageIndex": 8,
+      "editorType": "nature"
+    },
+    {
+      "word": "Wald",
+      "article": "der",
+      "plural": "Wälder",
+      "pluralWithArticle": "die Wälder",
+      "accusativeSentence": "Das Kind liebt den Wald.",
+      "dativeSentence": "Das Kind wandert zu dem Wald.",
+      "imageIndex": 9,
+      "editorType": "nature"
+    },
+    {
+      "word": "Palme",
+      "article": "die",
+      "plural": "Palmen",
+      "pluralWithArticle": "die Palmen",
+      "accusativeSentence": "Das Kind malt die Palme.",
+      "dativeSentence": "Das Kind wandert zu der Palme.",
+      "imageIndex": 10,
+      "editorType": "nature"
+    },
+    {
+      "word": "Blume",
+      "article": "die",
+      "plural": "Blumen",
+      "pluralWithArticle": "die Blumen",
+      "accusativeSentence": "Das Kind pflückt die Blume.",
+      "dativeSentence": "Das Kind riecht an der Blume.",
+      "imageIndex": 11,
+      "editorType": "nature"
+    },
+    {
+      "word": "Sonnenblume",
+      "article": "die",
+      "plural": "Sonnenblumen",
+      "pluralWithArticle": "die Sonnenblumen",
+      "accusativeSentence": "Das Kind malt die Sonnenblume.",
+      "dativeSentence": "Die Biene sitzt an der Sonnenblume.",
+      "imageIndex": 12,
+      "editorType": "nature"
+    },
+    {
+      "word": "Rose",
+      "article": "die",
+      "plural": "Rosen",
+      "pluralWithArticle": "die Rosen",
+      "accusativeSentence": "Das Kind pflückt die Rose.",
+      "dativeSentence": "Das Kind riecht an der Rose.",
+      "imageIndex": 13,
+      "editorType": "nature"
+    },
+    {
+      "word": "Tulpe",
+      "article": "die",
+      "plural": "Tulpen",
+      "pluralWithArticle": "die Tulpen",
+      "accusativeSentence": "Das Kind pflückt die Tulpe.",
+      "dativeSentence": "Das Kind riecht an der Tulpe.",
+      "imageIndex": 14,
+      "editorType": "nature"
+    },
+    {
+      "word": "Wiese",
+      "article": "die",
+      "plural": "Wiesen",
+      "pluralWithArticle": "die Wiesen",
+      "accusativeSentence": "Das Kind überquert die Wiese.",
+      "dativeSentence": "Das Kind wandert zu der Wiese.",
+      "imageIndex": 15,
+      "editorType": "nature"
+    },
+    {
+      "word": "Feld",
+      "article": "das",
+      "plural": "Felder",
+      "pluralWithArticle": "die Felder",
+      "accusativeSentence": "Das Kind sieht das Feld.",
+      "dativeSentence": "Der Bauer wandert zu dem Feld.",
+      "imageIndex": 16,
+      "editorType": "nature"
+    },
+    {
+      "word": "Stein",
+      "article": "der",
+      "plural": "Steine",
+      "pluralWithArticle": "die Steine",
+      "accusativeSentence": "Das Kind wirft den Stein.",
+      "dativeSentence": "Der Käfer sitzt an dem Stein.",
+      "imageIndex": 17,
+      "editorType": "nature"
+    },
+    {
+      "word": "Höhle",
+      "article": "die",
+      "plural": "Höhlen",
+      "pluralWithArticle": "die Höhlen",
+      "accusativeSentence": "Das Kind findet die Höhle.",
+      "dativeSentence": "Das Kind wandert zu der Höhle.",
+      "imageIndex": 18,
+      "editorType": "nature"
+    },
+    {
+      "word": "Wasserfall",
+      "article": "der",
+      "plural": "Wasserfälle",
+      "pluralWithArticle": "die Wasserfälle",
+      "accusativeSentence": "Das Kind hört den Wasserfall.",
+      "dativeSentence": "Das Kind steht vor dem Wasserfall.",
+      "imageIndex": 19,
+      "editorType": "nature"
+    },
+    {
+      "word": "Quelle",
+      "article": "die",
+      "plural": "Quellen",
+      "pluralWithArticle": "die Quellen",
+      "accusativeSentence": "Das Kind findet die Quelle.",
+      "dativeSentence": "Das Wasser kommt aus der Quelle.",
+      "imageIndex": 20,
+      "editorType": "nature"
+    },
+    {
+      "word": "Gletscher",
+      "article": "der",
+      "plural": "Gletscher",
+      "pluralWithArticle": "die Gletscher",
+      "accusativeSentence": "Das Kind bestaunt den Gletscher.",
+      "dativeSentence": "Das Kind wandert zu dem Gletscher.",
+      "imageIndex": 21,
+      "editorType": "nature"
+    },
+    {
+      "word": "Kristall",
+      "article": "der",
+      "plural": "Kristalle",
+      "pluralWithArticle": "die Kristalle",
+      "accusativeSentence": "Das Kind sammelt den Kristall.",
+      "dativeSentence": "Das Licht bricht in dem Kristall.",
+      "imageIndex": 22,
+      "editorType": "nature"
+    },
+    {
+      "word": "Erdbeben",
+      "article": "das",
+      "plural": "Erdbeben",
+      "pluralWithArticle": "die Erdbeben",
+      "accusativeSentence": "Das Kind fürchtet das Erdbeben.",
+      "dativeSentence": "Die Stadt zittert bei dem Erdbeben.",
+      "imageIndex": 23,
+      "editorType": "nature"
+    },
+    {
+      "word": "Baumstamm",
+      "article": "der",
+      "plural": "Baumstämme",
+      "pluralWithArticle": "die Baumstämme",
+      "accusativeSentence": "Das Kind sieht den Baumstamm.",
+      "dativeSentence": "Der Käfer läuft auf dem Baumstamm.",
+      "imageIndex": 24,
+      "editorType": "nature"
+    }
+  ]
+}

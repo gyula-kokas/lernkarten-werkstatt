@@ -1,0 +1,10 @@
+{
+  "slug": "mdi--chart-waterfall",
+  "provider": "mdi",
+  "source": "https://github.com/Templarian/MaterialDesign/blob/2424e748e0cc63ab7b9c095a099b9fe239b737c0/svg/chart-waterfall.svg",
+  "author": "Pictogrammers (Material Design Icons)",
+  "license": "Apache-2.0",
+  "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+  "title": "chart waterfall",
+  "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" id=\"asset-mdi--chart-waterfall-mdi-chart-waterfall\" viewBox=\"0 0 24 24\"><path d=\"M2 2H4V20H22V22H2V2M17 2H20V18H17V2M6 11H9V18H6V11M13 3H16V7H13V3M10 8H13V12H10V8Z\" /></svg>"
+}

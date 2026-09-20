@@ -1,0 +1,61 @@
+name: Validate Lernkarten-Werkstatt
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Python syntax
+        run: |
+          python3 -m py_compile bilder_waehlen.py build_simple.py tools/tts_piper.py \
+              tools/piper_worker.py tools/check_tts.py tools/image_providers.py \
+              tools/import_kaikki_dictionary.py tools/update_dictionary.py \
+              tools/audit_words.py tools/build_decks.py tools/shrink_svg.py \
+              tools/word_overview.py tools/artikel_balance.py tools/stoffnamen.py
+
+      - name: Install ffmpeg (MP3 encoder only, no voice model)
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends ffmpeg
+
+      - name: Validate standalone templating without the voice model
+        run: |
+          python3 - <<'PY'
+          import build_simple
+          from pathlib import Path
+
+          themes = build_simple.load_themes(Path('themes'))
+          # CI tests HTML assembly only. Real builds MUST pass the strict
+          # Piper probe and use the actual voice and the real MP3 encoder.
+          build_simple.probe = lambda: (True, 'CI mock')
+          build_simple.synthesize_many = lambda texts, cache, progress=None: {
+              text: b'ID3\x04\x00\x00\x00\x00\x00\x00' + b'\xff\xfb\x90\x00' + b'\0' * 1200
+              for text in texts if text
+          }
+          tts = build_simple.build_audio(themes[:1], Path('/tmp/tts-cache'))
+          template = Path('der_die_das_template.html').read_text(encoding='utf-8')
+          html = template.replace(build_simple.THEME_MARKER, build_simple.safe_json(themes[:1]), 1)
+          html = html.replace(build_simple.TTS_MARKER, build_simple.safe_json(tts), 1)
+          out = Path('/tmp/lernkarten-demo.html')
+          out.write_text(html, encoding='utf-8')
+          assert out.stat().st_size > 1000
+          assert 'embedded-piper-mp3' in html
+          assert 'data:audio/mpeg;base64,' in html
+          assert 'editorType' not in html
+          assert 'speechSynthesis' not in html
+          # Der Ton muss NACH den Themen stehen: die Karten sollen nicht auf die
+          # 26 MB Audio warten (siehe AGENTS.md).
+          assert html.index('id="ttsData"') > html.index('BUILTIN_THEMES')
+          assert 'ladeTon(daten)' in html
+          PY
+
+      - name: Test suite (audio processing, dictionary, audit, export)
+        run: python3 tests/smoke_test.py

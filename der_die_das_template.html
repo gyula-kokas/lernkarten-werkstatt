@@ -1,0 +1,3081 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DER · DIE · DAS – Lernkarten</title>
+<style>
+:root{
+  --der:#176fb2;
+  --die:#d73b78;
+  --das:#278d45;
+  --akk:#e88520;
+  --dat:#7b55a5;
+  --good:#207a3d;
+  --bad:#b13b33;
+  --line:#d7d7d7;
+  --paper:#fff;
+}
+*{box-sizing:border-box}
+html,body{
+  margin:0;
+  font-family:Arial,"Noto Sans",sans-serif;
+  background:#efefef;
+  color:#171717;
+}
+.toolbar{
+  max-width:1260px;
+  margin:14px auto;
+  padding:14px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:12px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  align-items:end;
+}
+.toolbar label{
+  display:grid;
+  gap:4px;
+  font-size:12px;
+  font-weight:700;
+}
+/* Rasterwahl: Spalten × Reihen stehen nebeneinander in einem Feld. */
+.raster-wahl{
+  display:flex;
+  align-items:center;
+  gap:4px;
+}
+.toolbar select,
+.toolbar input,
+.toolbar button{
+  font:inherit;
+  padding:8px 10px;
+  border:1px solid #aaa;
+  border-radius:8px;
+  background:#fff;
+}
+.toolbar input[type="file"]{
+  max-width:260px;
+  padding:6px;
+}
+.toolbar input[type="checkbox"]{
+  width:20px;
+  height:20px;
+  padding:0;
+}
+.toolbar button{
+  cursor:pointer;
+  font-weight:700;
+}
+/* Themen-Picker: beliebig viele Themen gleichzeitig mischen */
+.picker{
+  position:relative;
+}
+.picker summary{
+  list-style:none;
+  cursor:pointer;
+  font:inherit;
+  font-size:13px;
+  font-weight:700;
+  padding:9px 12px;
+  border:1px solid #aaa;
+  border-radius:8px;
+  background:#fff;
+}
+.picker summary::-webkit-details-marker{display:none;}
+.picker summary::after{content:" ▾";}
+.picker[open] summary::after{content:" ▴";}
+.picker-body{
+  position:absolute;
+  z-index:20;
+  margin-top:6px;
+  width:300px;
+  max-height:60vh;
+  overflow:auto;
+  padding:10px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:12px;
+  box-shadow:0 10px 24px rgba(0,0,0,.14);
+}
+.picker-actions{
+  display:flex;
+  gap:8px;
+  margin-bottom:8px;
+}
+.picker-actions button{
+  flex:1;
+  cursor:pointer;
+  font:inherit;
+  font-size:12px;
+  font-weight:700;
+  padding:6px 8px;
+  border:1px solid #aaa;
+  border-radius:8px;
+  background:#f4f7fb;
+}
+.picker-item{
+  display:grid;
+  grid-template-columns:auto 1fr auto;
+  gap:8px;
+  align-items:center;
+  padding:6px 4px;
+  border-radius:8px;
+  font-size:13px;
+  cursor:pointer;
+}
+.picker-item:hover{background:#f4f7fb;}
+.picker-item small{opacity:.62;font-weight:700;}
+.picker-item input{width:18px;height:18px;}
+.score,.status{
+  padding:7px 10px;
+  border:1px solid #ddd;
+  border-radius:8px;
+  background:#f7f7f7;
+  font-size:12px;
+}
+.score{font-weight:700}
+/* Zusätzliche Theme-JSONs zur Laufzeit zu laden ist nichts für Lernende:
+   die Dateiauswahl bleibt versteckt, der Code dafür bleibt erhalten.
+   (Zwei Klassen, weil `.toolbar label` sonst gewinnt.) */
+.toolbar .hidden-import{display:none}
+.about{
+  display:none;
+  flex:1 1 100%;
+  padding:10px 12px;
+  border:1px solid #ddd;
+  border-radius:8px;
+  background:#fafafa;
+  font-size:12px;
+  line-height:1.45;
+}
+.pages{
+  display:grid;
+  gap:18px;
+  justify-content:center;
+  padding:0 10px 32px;
+}
+.page{
+  width:210mm;
+  min-height:297mm;
+  height:297mm;
+  padding:6.2mm;
+  background:#fff;
+  box-shadow:0 2px 12px #0002;
+  break-after:page;
+  /* Feste Blatthöhe + Spalte: das Raster bekommt genau die übrige Fläche,
+     unabhängig von der Zahl der Kartenreihen. */
+  display:flex;
+  flex-direction:column;
+  /* Nur die Blätter, die man sieht, werden berechnet. Sonst rechnete der
+     Browser bei jeder Rasteränderung alle 40 Blätter auf einmal durch - das
+     ließ die Seite mehrere Sekunden stehen. Beim Drucken gilt die Regel nicht
+     (siehe @media print). */
+  content-visibility:auto;
+  contain-intrinsic-size:auto 297mm;
+}
+.title{
+  margin:0;
+  text-align:center;
+  font-size:16pt;
+  font-weight:850;
+  min-width:0;
+}
+
+/*
+  Kopfzeile: Name und Datum ganz oben rechts, darunter mittig der Thementitel.
+  Früher standen beide in einer Zeile; dabei lief die absolut gesetzte
+  Namenszeile bei längeren Themanamen ("Fahrzeuge auf der Straße") in den Titel.
+*/
+.page-head{
+  display:block;
+  margin-bottom:.6mm;
+}
+.namebar{
+  display:flex;
+  justify-content:flex-end;
+  gap:4.5mm;
+  margin-bottom:1mm;
+  font-size:7.2pt;
+  color:#6b7673;
+  white-space:nowrap;
+}
+.namebar i{
+  display:inline-block;
+  width:24mm;
+  height:2.8mm;
+  margin-left:1mm;
+  border-bottom:.25mm solid #c5cdca;
+}
+.der{color:var(--der)}
+.die{color:var(--die)}
+.das{color:var(--das)}
+.intro{
+  text-align:center;
+  font-size:8.4pt;
+  color:#555;
+  margin-bottom:1mm;
+}
+.casebar{
+  min-height:7mm;
+  margin:1.8mm 0 1.4mm;
+  border:0;
+  border-left:1.2mm solid currentColor;
+  border-radius:1.8mm;
+  background:#fafbfa;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:9.2pt;
+  font-weight:800;
+  line-height:1;
+  letter-spacing:.02em;
+}
+.casebar small{display:inline;margin-left:2mm;font-weight:650;opacity:.68}
+/* Kasus-Aufgaben brauchen keine Kästen-Balken: Akkusativ und Dativ stehen
+   gemischt im Raster, die Marke AKK./DAT. auf der Karte sagt, was gefragt ist. */
+/* Artikel-Aufgaben: keine Sätze, also auch keine Fallmarke */
+.artbar{color:var(--der);margin-top:.4mm}
+/*
+  Karte ohne Satz: das Bild bekommt den Platz der Satzzeile (die letzte Reihe
+  fällt weg). Der Satz erscheint nur am Bildschirm und erst nach der richtigen
+  Antwort - dann bekommt er unter den Antwortblasen eine eigene Zeile und das
+  Bild geht auf seine normale Größe zurück.
+*/
+.card.no-sentence{grid-template-rows:19.58em 4.9em 6.12em 0}
+.card.no-sentence .pic{height:19.58em}
+.card.no-sentence .pic > canvas,
+.card.no-sentence .pic > .entry-svg,
+.card.no-sentence .pic > .entry-image{width:17.14em;height:17.14em}
+.card.no-sentence.revealed{grid-template-rows:15.3em 4.9em 6.12em 7.83em}
+.card.no-sentence.revealed .pic{height:13.46em}
+.card.no-sentence.revealed .pic > canvas,
+.card.no-sentence.revealed .pic > .entry-svg,
+.card.no-sentence.revealed .pic > .entry-image{width:12.85em;height:12.85em}
+.card.no-sentence .word{font-size:3.11em}
+.card.no-sentence .word.mittel{font-size:2.7em}
+.card.no-sentence .word.klein{font-size:2.25em}
+/* Etwas kleiner als die Antwortblasen der Satzkarten (8,8 pt): die drei
+   Kringel der Artikel-Aufgabe müssen auch im 8×8-Raster in eine Zeile passen. */
+.card.no-sentence .choices{font-size:1.8em}
+/* Das Raster füllt den Rest des Blattes. Spalten und Reihen kommen aus der
+   Rasterwahl (3×3 bis 8×8); jedes Blatt trägt sie als --spalten/--reihen. */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(var(--spalten,4),1fr);
+  grid-template-rows:repeat(var(--reihen,4),1fr);
+  gap:1.9mm;
+  flex:1 1 0;
+  min-height:0;
+}
+/*
+  Eine Zelle hält die Karte in ihrer Entwurfsgröße (4×4 = 46,2 × 59,3 mm). Die
+  Grundschrift der Karte wird aus der Zellgröße berechnet: 2,755 % der Höhe bzw.
+  3,53 % der Breite - die kleinere Bindung gewinnt, damit die Karte immer passt.
+  Alle Maße in der Karte sind relativ zu dieser Schrift, deshalb wächst und
+  schrumpft die ganze Karte mit dem gewählten Raster.
+  (Der mm-Wert davor ist der Ersatz für Browser ohne Container-Abfrage.)
+*/
+.zelle{
+  position:relative;
+  display:flex;
+  min-width:0;
+  min-height:0;
+  container-type:size;
+}
+.zelle > .card{
+  font-size:1.634mm;
+  font-size:min(2.755cqh,3.53cqw);
+  margin:auto;
+}
+.card{
+  --case-color:#bbb;
+  position:relative;
+  width:28.27em;
+  height:36.29em;
+  padding:.857em .918em .612em;
+  border:.135em solid #d9dfdc;
+  border-top:.52em solid var(--case-color);
+  border-radius:1.59em;
+  background:#fff;
+  display:grid;
+  /* Bild · Wort · Antworten · Satz: der Satz steht **unter** der
+     der/die/das-Auswahl. */
+  grid-template-rows:15.3em 4.28em 6.12em 7.83em;
+  align-items:center;
+  text-align:center;
+  overflow:hidden;
+}
+.card.acc{--case-color:var(--akk)}
+.card.dat{--case-color:var(--dat)}
+/* Kleine Kasus-Marke in der Bildecke: hilft beim Sortieren der Blätter und
+   bleibt auch im Schwarzweißdruck lesbar (Rand statt Fläche, spart Tinte). */
+.case-mark{
+  position:absolute;
+  top:.49em;
+  right:.49em;
+  z-index:2;
+  padding:.062em .49em;
+  border:.136em solid var(--case-color);
+  border-radius:99em;
+  background:#fff;
+  color:var(--case-color);
+  font-size:.99em;
+  font-weight:800;
+  line-height:1.3;
+  letter-spacing:.02em;
+}
+.pic{
+  height:13.46em;
+  min-width:0;
+  overflow:hidden;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.pic > canvas,
+.pic > .entry-svg,
+.pic > .entry-image{
+  width:12.85em;
+  height:12.85em;
+  display:block;
+}
+.word{
+  font-size:2.85em;
+  font-weight:850;
+  line-height:1;
+  overflow-wrap:anywhere;
+}
+/* Zu lange Wörter und Sätze bekommen nach dem Rendern eine kleinere Stufe
+   (passeKartenAn), damit nichts aus der Karte herausläuft. */
+.card .word.mittel{font-size:2.4em}
+.card .word.klein{font-size:2em}
+.card .sentence.mittel{font-size:1.6em}
+.card .sentence.klein{font-size:1.45em}
+.sentence{
+  padding:0 .245em;
+  font-size:1.75em;
+  line-height:1.2;
+  color:#303735;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+/* Erst nach der richtigen Antwort zeigt der Bildschirm den ganzen Satz;
+   der Ausdruck behält immer die Lücke (siehe @media print). */
+.sentence .masked{display:inline}
+.sentence .full{display:none}
+.card.revealed .sentence .masked{display:none}
+.card.revealed .sentence .full{display:inline}
+.card.revealed .sentence{color:var(--good);font-weight:760}
+.choices{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-content:center;
+  gap:.4em;
+  align-items:center;
+  font-size:1.75em;
+}
+.choice{
+  display:flex;
+  align-items:center;
+  gap:.175em;
+  padding:.28em .3em;
+  border-radius:99em;
+  border:.091em solid transparent;
+  background:#f6f9f8;
+  cursor:pointer;
+}
+/* Farbige Antwort-Blasen: größer und mit Kugelschreiber anmalbar. */
+.choice.der{background:#eef6fc;border-color:#bcd9ee}
+.choice.die{background:#fdf0f5;border-color:#f0c3d6}
+.choice.das{background:#eefaf1;border-color:#bfe3cb}
+.choice.case,.choice.plural{background:#f2f4f5;border-color:#ccd6da}
+/*
+  Der Antwort-Kringel wird selbst gezeichnet statt vom Browser: ein echtes
+  Radio-Feld nimmt die Schrift des Formulars nicht an und bleibt deshalb bei
+  jeder Kartengröße gleich groß (rund 18 px) - dadurch wurde die Zeile
+  DER/DIE/DAS in kleinen Rastern zu breit und abgeschnitten.
+  font-size:1em erbt die Schrift der Blase, 1.19em wächst und schrumpft also mit.
+*/
+.choice input{
+  margin:0;
+  flex:0 0 auto;
+  font-size:1em;
+  width:1.19em;
+  height:1.19em;
+  -webkit-appearance:none;
+  appearance:none;
+  border:.24em solid #7e8a8f;
+  border-radius:50%;
+  background:#fff;
+}
+.choice input:checked{background:#4b5a60;border-color:#4b5a60}
+.choice.der input:checked{background:var(--der);border-color:var(--der)}
+.choice.die input:checked{background:var(--die);border-color:var(--die)}
+.choice.das input:checked{background:var(--das);border-color:var(--das)}
+.choice.case input:checked,.choice.plural input:checked{background:#3f5560;border-color:#3f5560}
+.choice.der input{accent-color:var(--der)}
+.choice.die input{accent-color:var(--die)}
+.choice.das input{accent-color:var(--das)}
+.choice.case input,.choice.plural input{accent-color:#3f5560}
+.choice.correct{
+  background:#eaf6ed;
+  border-color:#91c89f;
+}
+.choice.wrong{
+  background:#fbeceb;
+  border-color:#d9a09c;
+}
+/*
+  Die Rückmeldung hängt nicht mehr in der Karte, sondern als kleine Plakette an
+  der Zelle: in der Karte würde sie mit dem Raster mitschrumpfen (bei 8×8 auf
+  etwa 3 pt) und wäre nicht mehr zu lesen. Am Bildschirm hat sie deshalb eine
+  feste Größe; im Druck gibt es keine Rückmeldung (Lösungen stehen auf dem
+  Lösungsblatt).
+*/
+.feedback{
+  display:none;
+  position:absolute;
+  left:50%;
+  top:.7mm;
+  transform:translateX(-50%);
+  z-index:3;
+  max-width:99%;
+  padding:2px 7px;
+  border-radius:99px;
+  border:1px solid currentColor;
+  background:#fff;
+  box-shadow:0 1px 3px #0003;
+  font-size:11px;
+  font-weight:800;
+  line-height:1.25;
+  text-align:center;
+  white-space:nowrap;
+}
+.feedback.good{color:var(--good);display:block}
+.feedback.bad{color:var(--bad);display:block}
+.footer{display:none}
+/*
+  Lösungsblatt: Schrift und Abstände hängen an --sol-schrift (Millimeter), das
+  der Skript aus dem Raster berechnet - bei 8×8 stehen 64 Wörter je Blatt.
+*/
+.solution-page{font-size:var(--sol-schrift,2.4mm)}
+.solution-title{
+  margin:0 0 1.1em;
+  text-align:center;
+  font-size:2.2em;
+}
+.solution-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:.9em;
+  flex:1 1 0;
+  min-height:0;
+}
+.solution-block{
+  border:.055em solid #bbb;
+  border-radius:.32em;
+  padding:.24em;
+}
+.solution-block h3{
+  margin:0 0 .13em;
+  font-size:1.2em;
+}
+.solution-row{
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:.16em;
+  font-size:1em;
+  line-height:1.25;
+  overflow-wrap:anywhere;
+}
+.case-dot{
+  display:inline-block;
+  width:1.02em;
+  height:1.02em;
+  margin-right:.35em;
+  border-radius:50%;
+  vertical-align:middle;
+}
+.case-dot.acc{background:var(--akk)}
+.case-dot.dat{background:var(--dat)}
+/* Kompakte Lösungszeile: der | den | dem Hund · Akkusativ/Dativ farblich getrennt */
+.solution-forms .acc{color:var(--akk)}
+.solution-forms .dat{color:var(--dat)}
+.solution-forms .sep{opacity:.45;margin:0 .5mm}
+.empty{
+  max-width:800px;
+  margin:30px auto;
+  padding:24px;
+  background:#fff;
+  border:1px solid #ddd;
+  border-radius:12px;
+  text-align:center;
+}
+
+/* ------------------------------------------------------------------
+   SPIEL-ANSICHT
+   Nur Bildschirm-UI. Das bestehende A4-/Druck-CSS darunter bleibt
+   unverändert.
+------------------------------------------------------------------- */
+.view-switch{
+  display:flex;
+  gap:4px;
+  padding:3px;
+  border:1px solid #c9c9c9;
+  border-radius:10px;
+  background:#f3f3f3;
+}
+.view-switch button{
+  min-height:38px;
+  border:0;
+  background:transparent;
+}
+.view-switch button.active{
+  background:#fff;
+  box-shadow:0 1px 4px #0002;
+}
+.game-only-control{display:none!important}
+body.mode-game .game-only-control{display:grid!important}
+body.mode-game .print-only-control{display:none!important}
+body.mode-game #pages{display:none}
+.game-view{
+  display:none;
+  min-height:calc(100vh - 92px);
+  padding:14px 14px 34px;
+  align-items:center;
+  justify-content:center;
+}
+body.mode-game .game-view{display:flex}
+.game-shell{
+  width:min(920px,100%);
+  display:grid;
+  gap:14px;
+}
+.game-card{
+  width:min(720px,100%);
+  margin:0 auto;
+  padding:24px clamp(16px,4vw,38px);
+  background:#fff;
+  border:1px solid #d7d7d7;
+  border-radius:28px;
+  box-shadow:0 8px 30px #0002;
+  text-align:center;
+}
+.game-case{
+  display:inline-block;
+  margin-bottom:8px;
+  padding:7px 13px;
+  border-radius:999px;
+  font-size:14px;
+  font-weight:900;
+  letter-spacing:.04em;
+  background:#f2f2f2;
+}
+.game-case.acc{color:var(--akk);border:2px solid #f3bd83}
+.game-case.dat{color:var(--dat);border:2px solid #bba9ce}
+.game-picture{
+  width:min(320px,66vw);
+  height:min(320px,66vw);
+  min-width:200px;
+  min-height:200px;
+  margin:2px auto 8px;
+  display:grid;
+  place-items:center;
+  transform-origin:center;
+}
+.game-picture > canvas,
+.game-picture > .entry-svg,
+.game-picture > .entry-image{
+  width:100%;
+  height:100%;
+  display:block;
+}
+.game-picture.bounce{animation:gameBounce .62s ease}
+.game-picture.shake{animation:gameShake .48s ease}
+@keyframes gameBounce{
+  0%,100%{transform:translateY(0) scale(1)}
+  35%{transform:translateY(-22px) scale(1.035)}
+  65%{transform:translateY(3px) scale(.99)}
+}
+@keyframes gameShake{
+  0%,100%{transform:translateX(0)}
+  18%{transform:translateX(-13px) rotate(-2deg)}
+  36%{transform:translateX(12px) rotate(2deg)}
+  54%{transform:translateX(-9px) rotate(-1deg)}
+  72%{transform:translateX(7px) rotate(1deg)}
+}
+.game-word{
+  margin:4px 0 8px;
+  font-size:clamp(32px,6vw,52px);
+  line-height:1.05;
+  font-weight:900;
+  overflow-wrap:anywhere;
+}
+.game-sentence-row{
+  display:none;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  margin:0 auto 18px;
+  max-width:620px;
+}
+.game-sentence-row.revealed{
+  display:flex;
+}
+.game-sentence{
+  font-size:clamp(19px,3vw,27px);
+  line-height:1.3;
+}
+.speak-button{
+  flex:0 0 auto;
+  width:52px;
+  height:52px;
+  padding:0!important;
+  border:1px solid #bbb!important;
+  border-radius:50%!important;
+  font-size:24px!important;
+  background:#fff!important;
+  cursor:pointer;
+}
+.game-answers{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(100px,1fr));
+  gap:12px;
+  margin-top:6px;
+}
+.article-game-button{
+  min-width:100px;
+  min-height:86px;
+  border:5px solid transparent;
+  border-radius:22px;
+  color:#fff;
+  font-size:clamp(25px,4vw,38px);
+  font-weight:900;
+  cursor:pointer;
+  box-shadow:0 6px 0 #00000022;
+  transition:transform .08s ease,border-color .15s ease,box-shadow .15s ease;
+}
+.article-game-button:active{transform:translateY(3px);box-shadow:0 3px 0 #00000022}
+.article-game-button.der{background:linear-gradient(#2b86cc,#176fb2)}
+.article-game-button.die{background:linear-gradient(#e4578e,#d73b78)}
+.article-game-button.das{background:linear-gradient(#35a457,#278d45)}
+.article-game-button.case,.article-game-button.plural{background:linear-gradient(#5b7a8c,#3f5560);font-size:clamp(21px,3.2vw,32px)}
+.game-answers.plural{grid-template-columns:1fr}
+.game-answers.plural .article-game-button{min-height:62px}
+/* Maskottchen erzählt die Aufgabe statt einer nüchternen Zeile. */
+.game-mascot{font-size:clamp(34px,6vw,46px);line-height:1;margin:0 0 2px}
+.game-speech{
+  position:relative;
+  display:inline-block;
+  margin:0 0 14px;
+  padding:8px 15px;
+  border:2px solid #cfe4f5;
+  border-radius:18px;
+  background:#eaf5ff;
+  color:#17527d;
+  font-size:clamp(16px,2.6vw,22px);
+  font-weight:800;
+}
+.game-speech:after{
+  content:"";
+  position:absolute;
+  left:26px;
+  bottom:-9px;
+  width:13px;
+  height:13px;
+  background:#eaf5ff;
+  border-right:2px solid #cfe4f5;
+  border-bottom:2px solid #cfe4f5;
+  transform:rotate(45deg);
+}
+.game-progress{display:grid;gap:5px;margin:0 0 12px}
+.game-progress .zeile{display:flex;justify-content:space-between;font-size:13px;color:#5d6a66}
+.game-bar{height:15px;border-radius:99px;background:#eef2f0;overflow:hidden}
+.game-bar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,#ffd166,#f4a259);transition:width .35s ease}
+.game-stars{font-size:16px;letter-spacing:2px;min-height:20px}
+.game-feedback.good{background:#eafaf0;border-radius:16px;color:#1c7a43}
+.game-feedback.bad{background:#fff6e6;border-radius:16px;color:#9a6a12}
+.game-case.plural{background:#eef1f2;color:#3f5560;border:2px solid #c8d0d3}
+.choice.case b,.choice.plural b{color:#3f5560}
+.article-game-button.answer-correct{
+  border-color:#39d061;
+  box-shadow:0 0 0 4px #b9efc6,0 5px 0 #0002;
+}
+.article-game-button.answer-wrong{
+  border-color:#d9342b;
+  box-shadow:0 0 0 4px #ffd0cc,0 5px 0 #0002;
+}
+.article-game-button:disabled{cursor:default;opacity:.88}
+.game-feedback{
+  min-height:48px;
+  margin-top:14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:clamp(24px,4vw,34px);
+  font-weight:900;
+}
+.game-feedback.good{color:var(--good)}
+.game-feedback.bad{color:var(--bad)}
+/* Steuerzeile nach der Lösung: selbst weitergehen oder anhalten. */
+.game-next{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:6px;
+}
+.game-next[hidden]{display:none}
+.game-next button{
+  font:inherit;
+  font-size:clamp(15px,1.6vw,19px);
+  font-weight:800;
+  padding:10px 18px;
+  border-radius:14px;
+  border:1px solid #cfd8d4;
+  background:#fff;
+  cursor:pointer;
+}
+.game-next .next-button{background:#eaf6ff;border-color:#bcd9ee}
+.game-next .pause-button{background:#fff7e8;border-color:#f0d9a8}
+.game-countdown{
+  min-width:120px;
+  font-size:clamp(13px,1.4vw,16px);
+  font-weight:700;
+  color:#5a6560;
+  text-align:left;
+}
+.game-empty{
+  padding:40px 20px;
+  border-radius:24px;
+  background:#fff;
+  border:1px solid #ddd;
+  text-align:center;
+  font-size:20px;
+}
+.game-finish{
+  width:min(720px,100%);
+  margin:0 auto;
+  padding:48px 24px;
+  border-radius:30px;
+  background:#fff;
+  border:1px solid #d7d7d7;
+  box-shadow:0 8px 30px #0002;
+  text-align:center;
+  overflow:hidden;
+  position:relative;
+}
+.game-finish h2{
+  margin:0 0 14px;
+  font-size:clamp(34px,7vw,58px);
+}
+.game-finish p{
+  font-size:clamp(19px,3vw,26px);
+}
+.confetti{
+  font-size:clamp(28px,6vw,50px);
+  letter-spacing:8px;
+  animation:confettiPop .8s ease both;
+}
+@keyframes confettiPop{
+  from{transform:scale(.5) rotate(-5deg);opacity:0}
+  to{transform:scale(1);opacity:1}
+}
+@media (max-width:620px){
+  .toolbar{margin:6px;padding:10px}
+  .game-view{padding:8px 8px 24px}
+  .game-card{padding:18px 12px}
+  .game-answers{gap:7px}
+  .article-game-button{min-height:82px;border-radius:16px}
+  .game-progress .zeile{font-size:15px}
+}
+
+@page{size:A4 portrait;margin:0}
+@media print{
+  html,body{background:#fff}
+  .no-print,.feedback{display:none!important}
+  .pages{display:block;padding:0}
+  .page{
+    margin:0;
+    box-shadow:none;
+    width:210mm;
+    min-height:297mm;
+    /* Beim Drucken muss jedes Blatt gerechnet werden. */
+    content-visibility:visible;
+  }
+  .card{grid-template-rows:15.3em 4.28em 6.12em 7.83em}
+  .card.no-sentence{grid-template-rows:19.58em 4.9em 6.12em 0}
+  .card.no-sentence .pic{height:19.58em}
+  /* Der Ausdruck bleibt ein Arbeitsblatt: Lücke zeigen, ganzen Satz ausblenden. */
+  .sentence .masked{display:inline!important}
+  .sentence .full{display:none!important}
+  .sentence,
+  .card.revealed .sentence{color:#303735!important;font-weight:inherit}
+  .choice{
+    background:transparent!important;
+    border-color:transparent!important;
+  }
+}
+
+.entry-image{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  display:block;
+  background:#fff;
+  image-rendering:auto;
+}
+
+.entry-svg{
+  width:100%;
+  height:100%;
+  display:block;
+  background:#fff;
+  overflow:hidden;
+}
+.entry-svg > svg{
+  width:100%;
+  height:100%;
+  display:block;
+}
+
+</style>
+</head>
+<body>
+
+<div class="toolbar no-print">
+  <div class="view-switch" role="group" aria-label="Ansicht wählen">
+    <button id="printModeButton" class="active" type="button" aria-pressed="true">📄 Drucken</button>
+    <button id="gameModeButton" type="button" aria-pressed="false">🎮 Spielen</button>
+  </div>
+  <details class="picker" id="themePicker">
+    <summary id="themeSummary">Themen: alle</summary>
+    <div class="picker-body">
+      <div class="picker-actions">
+        <button type="button" id="themeAll">Alle</button>
+        <button type="button" id="themeNone">Keine</button>
+      </div>
+      <div id="themeList"></div>
+    </div>
+  </details>
+
+  <label class="print-only-control">
+    Seiten
+    <input id="pageCount" type="number" min="1" max="120" value="9" style="width:72px">
+  </label>
+
+  <label class="print-only-control">
+    Reihenfolge
+    <select id="printOrder">
+      <option value="gemischt">Gemischt (alle Themen)</option>
+      <option value="themen">Nach Themen</option>
+    </select>
+  </label>
+
+  <label class="print-only-control">
+    Karten je Blatt
+    <span class="raster-wahl">
+      <select id="printCols" aria-label="Spalten">
+        <option value="3">3</option>
+        <option value="4" selected>4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+      </select>
+      ×
+      <select id="printRows" aria-label="Reihen">
+        <option value="3">3</option>
+        <option value="4" selected>4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+      </select>
+    </span>
+  </label>
+
+  <label class="print-only-control">
+    <span>Name/Datum</span>
+    <input id="nameLine" type="checkbox" checked>
+  </label>
+
+  <label class="print-only-control">
+    <span>Lösungsblatt</span>
+    <input id="solutions" type="checkbox">
+  </label>
+
+  <label class="print-only-control">
+    Karten
+    <select id="printTask">
+      <option value="artikel">Artikel · der/die/das</option>
+      <option value="kasus">Kasus · den/dem</option>
+      <option value="gemischt">Gemischt</option>
+    </select>
+  </label>
+
+  <label class="game-only-control">
+    Spielkarten
+    <input id="gameCount" type="number" min="1" max="500" value="20" style="width:82px">
+  </label>
+
+  <label class="game-only-control">
+    Aufgabe
+    <select id="gameTask">
+      <option value="artikel">Artikel · der/die/das</option>
+      <option value="kasus">Kasus · den/dem</option>
+      <option value="plural">Mehrzahl · die …</option>
+      <option value="gemischt">Gemischt</option>
+    </select>
+  </label>
+
+  <label class="hidden-import" id="themeFilesLabel">
+    Theme-JSONs laden
+    <input id="themeFiles" type="file" accept=".json,application/json" multiple>
+  </label>
+
+  <button id="generate" class="print-only-control">Neu mischen</button>
+  <button id="newGame" class="game-only-control" type="button">Neues Spiel</button>
+  <button id="print" class="print-only-control">Drucken / PDF</button>
+  <button id="aboutButton">Info</button>
+
+  <span id="score" class="score print-only-control">0 / 0 richtig</span>
+  <span id="status" class="status"></span>
+
+  <div id="about" class="about">
+    <b>So benutzt du diese Lernkarten</b>
+    <br><br>
+    Die Seite ist ein fertiges Übungs-Set für deutsche Nomen: Artikel (der/die/das),
+    Kasus (den/dem) und Mehrzahl (die …). Oben rechts schaltest du zwischen
+    <b>📄 Drucken</b> und <b>🎮 Spielen</b> um.
+    <br><br>
+    <b>📄 Üben am Bildschirm:</b> Karte lesen, Antwort ins Kästchen tippen – ein
+    richtiger Tipp wird sofort bestätigt und der ganze Satz erscheint. Oben steht
+    „x / y richtig“. Mit <b>Neu mischen</b> kommen neue Wörter in derselben Auswahl.
+    <br><br>
+    <b>🖨️ Drucken oder PDF:</b> vorher einstellen, was aufs Papier soll – Seiten,
+    Reihenfolge, Karten je Blatt, Name/Datum-Zeile, Lösungsblatt und Kartensorte:
+    <b>Artikel</b> = Bild und Wort ohne Satz (für Anfänger),
+    <b>Kasus</b> = Satz mit Lücke und Akkusativ/Dativ,
+    <b>Gemischt</b> = beides im Wechsel. Im Druckdialog Papier <b>A4</b> wählen und
+    „Hintergrundgrafiken“ einschalten.
+    <br><br>
+    <b>Reihenfolge:</b> standardmäßig sind alle gewählten Themen <b>gemischt</b> –
+    auf einem Blatt stehen Wörter aus verschiedenen Themen, jedes Wort kommt genau
+    einmal vor. Wer lieber nach Themen lernt, schaltet auf <b>Nach Themen</b>: dann
+    bekommt jedes Thema seine eigenen Blätter.
+    <br><br>
+    <b>Karten je Blatt:</b> das Raster lässt sich einstellen – von <b>3×3</b>
+    (9 große Bilder, gut für Anfänger und kleine Kinder) bis <b>8×8</b>
+    (64 kleine Karten, spart Papier). Vorgabe ist <b>4×4</b>. In den Kasus-Aufgaben
+    stehen Akkusativ und Dativ <b>gemischt</b> auf dem Blatt; die Marke <b>AKK.</b> /
+    <b>DAT.</b> in der Ecke jeder Karte sagt, welcher Fall gefragt ist.
+    <br><br>
+    <b>Farben:</b> jede Antwortblase hat die Farbe ihrer Artikelreihe –
+    <b>blau</b> der · den · dem, <b>rot</b> die · die · der, <b>grün</b> das · das · dem.
+    Die richtige Blase hat also immer die Farbe deines Wortes: bei „das Eis“ ist
+    auch im Dativ die grüne <b>DEM</b>-Blase richtig.
+    <br><br>
+    <b>Seiten</b> stehen standardmäßig auf „so viele Blätter, wie alle Wörter
+    brauchen“; die Zeile oben zeigt immer, wie viele Wörter wirklich aufs Papier
+    kommen. Wer weniger Seiten einstellt, druckt nur einen Teil.
+    <br><br>
+    <b>🎮 Spielen:</b> Anzahl Karten und Aufgabe wählen, dann <b>Neues Spiel</b>.
+    Bild und Wort erscheinen, die Lösung wird vorgelesen. Danach geht es automatisch
+    nach 10 Sekunden weiter oder sofort mit <b>Weiter ⏭️</b>; mit
+    <b>⏸️ Anhalten</b> bleibt die Karte stehen, solange du willst.
+    <br><br>
+    <b>Themen mischen:</b> oben auf „Themen: …“ tippen und beliebig viele Themen
+    ankreuzen – zum Beispiel Haustiere + Obst + Fahrzeuge. „Alle“ und „Keine“
+    helfen beim Auswählen, die Auswahl bleibt beim nächsten Mal gespeichert.
+    <br><br>
+    Der Ton steckt in dieser Datei: Lautsprecher einschalten, Internet ist nicht nötig.
+  </div>
+
+</div>
+
+<details class="no-print" style="margin:12px 24px"><summary>Bilder: Quellen und Lizenzen</summary><div id="imageCredits"></div></details>
+
+<div id="pages" class="pages"></div>
+
+<div id="gameView" class="game-view no-print" aria-live="polite">
+  <div id="gameShell" class="game-shell">
+    <div class="game-empty">🎮 Auf „Spielen“ wechseln, um eine Runde zu starten.</div>
+  </div>
+</div>
+
+<script>
+"use strict";
+
+/*
+  Themes und Audioclips werden beim Build von build_simple.py direkt hier eingebettet.
+  Die **Themen** stehen in diesem Skript, die **Klänge** erst am Ende der Datei
+  (siehe unten): die Karten sollen nicht warten, bis der Browser 26 MB Audio
+  gelesen hat. Bis dahin meldet die Statuszeile „Ton wird geladen“.
+*/
+const BUILTIN_THEMES = /*__THEMES_JSON__*/ [];
+
+let EMBEDDED_TTS={"mode":"laedt"};
+
+/* Wird vom Nachlauf am Dateiende aufgerufen, sobald die Klänge gelesen sind. */
+function ladeTon(daten){
+  EMBEDDED_TTS=(daten && typeof daten==="object") ? daten : {"mode":"none"};
+  updateStatus();
+}
+
+
+
+const themes = new Map();
+const imageCache = new Map();
+let solved = new Set();
+let totalQuestions = 0;
+
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({
+  "&":"&amp;",
+  "<":"&lt;",
+  ">":"&gt;",
+  '"':"&quot;",
+  "'":"&#39;"
+}[c]));
+
+function shuffle(a){
+  a=[...a];
+  for(let i=a.length-1;i>0;i--){
+    const j=Math.floor(Math.random()*(i+1));
+    [a[i],a[j]]=[a[j],a[i]];
+  }
+  return a;
+}
+
+function normaliseTheme(raw, sourceName="Theme"){
+  if(!raw || typeof raw !== "object") throw new Error(`${sourceName}: JSON ist kein Objekt.`);
+
+  const themeId=String(raw.themeId||"").trim();
+  const themeName=String(raw.themeName||themeId||sourceName).trim();
+  const imageMode=String(raw.imageMode||"").trim();
+  const svgImages=imageMode==="per-entry-svg";
+  const rasterImages=imageMode==="per-entry-base64";
+  const directImages=svgImages||rasterImages;
+  const cols=directImages ? 0 : Number(raw.spriteColumns);
+  const rows=directImages ? 0 : Number(raw.spriteRows);
+  const sprite=directImages ? "" : String(raw.spriteimagebase64||"").trim();
+  const entries=Array.isArray(raw.entries) ? raw.entries : [];
+
+  if(!themeId) throw new Error(`${sourceName}: themeId fehlt.`);
+  if(!themeName) throw new Error(`${sourceName}: themeName fehlt.`);
+  if(!directImages){
+    if(!Number.isInteger(cols)||cols<1) throw new Error(`${sourceName}: spriteColumns ist ungültig.`);
+    if(!Number.isInteger(rows)||rows<1) throw new Error(`${sourceName}: spriteRows ist ungültig.`);
+    if(!sprite) throw new Error(`${sourceName}: spriteimagebase64 fehlt oder ist leer.`);
+  }
+  if(!entries.length) throw new Error(`${sourceName}: entries[] ist leer.`);
+
+  const seenWords=new Set();
+  const seenIndexes=new Set();
+
+  const cleanEntries=entries.map((entry,i)=>{
+    const word=String(entry.word||"").trim();
+    const article=String(entry.article||"").trim().toLowerCase();
+    const plural=String(entry.plural||"").trim();
+    const accusativeSentence=String(entry.accusativeSentence??entry.sentenceAcc??"").trim();
+    const dativeSentence=String(entry.dativeSentence??entry.sentenceDat??"").trim();
+
+    const imageSvg=String(entry.imageSvg||"").trim();
+    const imageBase64=String(entry.imageBase64||"").trim();
+    const imageMimeType=String(entry.imageMimeType||"image/png").trim()||"image/png";
+    const imageWidth=Number(entry.imageWidth||0);
+    const imageHeight=Number(entry.imageHeight||0);
+    const imageIndex=Number.isInteger(Number(entry.imageIndex))?Number(entry.imageIndex):i;
+    const spriteIndex=directImages ? imageIndex : Number(entry.spriteIndex);
+
+    if(!word) throw new Error(`${sourceName}: Eintrag ${i} hat kein Wort.`);
+    if(!["der","die","das"].includes(article)) throw new Error(`${sourceName}: ${word} hat einen ungültigen Artikel.`);
+    /* Stoffnamen (Milch, Reis) haben keine Mehrzahl - das ist kein Fehler. */
+    if(!accusativeSentence) throw new Error(`${sourceName}: ${word} hat keinen Akkusativsatz.`);
+    if(!dativeSentence) throw new Error(`${sourceName}: ${word} hat keinen Dativsatz.`);
+    if(seenWords.has(word)) throw new Error(`${sourceName}: Wort "${word}" ist doppelt.`);
+    seenWords.add(word);
+
+    if(svgImages){
+      if(!imageSvg || !imageSvg.includes("<svg") || !imageSvg.includes("</svg>")){
+        throw new Error(`${sourceName}: ${word} hat kein vollständiges imageSvg.`);
+      }
+    }else if(rasterImages){
+      if(!imageBase64) throw new Error(`${sourceName}: ${word} hat kein imageBase64.`);
+      if(!["image/png","image/jpeg","image/webp","image/svg+xml"].includes(imageMimeType)){
+        throw new Error(`${sourceName}: ${word} hat ungültigen imageMimeType.`);
+      }
+    }else{
+      if(!Number.isInteger(spriteIndex)||spriteIndex<0||spriteIndex>=cols*rows){
+        throw new Error(`${sourceName}: ${word} hat spriteIndex ${entry.spriteIndex}; erlaubt sind 0–${cols*rows-1}.`);
+      }
+      if(seenIndexes.has(spriteIndex)) throw new Error(`${sourceName}: spriteIndex ${spriteIndex} ist doppelt.`);
+      seenIndexes.add(spriteIndex);
+    }
+
+    return {
+      word,article,plural,
+      pluralWithArticle:String(entry.pluralWithArticle || (plural ? "die "+plural : "")),
+      accusativeSentence,dativeSentence,
+      imageSource:String(entry.imageSource||""),imageAuthor:String(entry.imageAuthor||""),
+      imageLicense:String(entry.imageLicense||""),imageLicenseUrl:String(entry.imageLicenseUrl||""),imageChanges:String(entry.imageChanges||""),
+      imageSvg,imageBase64,imageMimeType,imageWidth,imageHeight,imageIndex,spriteIndex
+    };
+  });
+
+  return {
+    themeId,themeName,
+    language:raw.language||"de-DE",
+    version:raw.version||"1.0",
+    imageMode,
+    spriteColumns:cols,
+    spriteRows:rows,
+    spriteimagebase64:sprite,
+    entries:cleanEntries
+  };
+}
+
+function entryImageSrc(entry){
+  const b64=String(entry?.imageBase64||"").trim();
+  if(!b64) return "";
+  const mime=String(entry?.imageMimeType||"image/png").trim()||"image/png";
+  return `data:${mime};base64,${b64}`;
+}
+
+function visualHtml(themeId,row,size){
+  const svg=String(row?.imageSvg||"").trim();
+  if(svg){
+    return `<div class="entry-svg" role="img" aria-label="${esc(row.word)}">${svg}</div>`;
+  }
+  const direct=entryImageSrc(row);
+  if(direct){
+    return `<img class="entry-image" src="${direct}" alt="${esc(row.word)}" width="${size}" height="${size}">`;
+  }
+  return `<canvas class="sprite-canvas" width="${size}" height="${size}"
+    data-theme-id="${esc(themeId)}" data-index="${row.spriteIndex}"
+    aria-label="${esc(row.word)}"></canvas>`;
+}
+
+/*
+  Bilder wandern mit, statt neu geschrieben zu werden.
+  Ein eingebettetes Bild macht den größten Teil des Karten-Markups aus (rund
+  17 KB je Karte). Würde bei jeder Rasteränderung das ganze Blatt als HTML-Text
+  neu geschrieben, müsste der Browser über 10 MB neu zerlegen - das Blatt hing
+  mehrere Sekunden. Deshalb wird jedes Bild **einmal** als Element gebaut und
+  danach nur noch in die neue Karte gehängt (appendChild verschiebt ein Element,
+  es wird nicht neu erzeugt). Nur wenn dasselbe Wort zweimal auf dem Blatt steht
+  (Reihenfolge „nach Themen“ mit Zusatzblättern), bekommt die zweite Karte eine
+  Kopie.
+*/
+const bildPool=new Map();
+let bildAuftrag=[];
+
+function bildSchluessel(themeId,row){
+  return `${themeId}\u0000${String(row?.word||"").trim().toLowerCase()}`;
+}
+
+function bildElement(themeId,row){
+  const key=bildSchluessel(themeId,row);
+  let element=bildPool.get(key);
+  if(!element){
+    const box=document.createElement("div");
+    box.innerHTML=visualHtml(themeId,row,320);
+    element=box.firstElementChild;
+    if(element) bildPool.set(key,element);
+  }
+  return element;
+}
+
+/* Setzt die fertigen Bilder in die Platzhalter des soeben gebauten Blattes. */
+function setzeBilder(auftrag){
+  const benutzt=new Set();
+  for(const platz of document.querySelectorAll("#pages .pic[data-bild]")){
+    const item=auftrag[Number(platz.dataset.bild)];
+    if(!item) continue;
+    const key=bildSchluessel(item.themeId,item.row);
+    let element=bildPool.get(key);
+    if(!element) element=bildElement(item.themeId,item.row);
+    else if(benutzt.has(key)) element=element.cloneNode(true);
+    benutzt.add(key);
+    if(element){
+      platz.appendChild(element);
+      /* Erledigt: eine umgezogene Karte bringt ihr Bild schon mit und darf
+         nicht noch einmal gefüllt werden. */
+      delete platz.dataset.bild;
+    }
+  }
+}
+
+
+function renderImageCredits(){
+  const target=document.getElementById('imageCredits');
+  if(!target)return;
+  const link=(url,label)=>/^https:\/\//i.test(url)?`<a href="${esc(url)}" target="_blank" rel="noopener">${esc(label)}</a>`:esc(label);
+  const rows=[];
+  for(const theme of themes.values())for(const e of theme.entries){
+    if(e.imageSource)rows.push(`<li>${esc(e.word)}: ${link(e.imageSource,e.imageAuthor||'Bildquelle')} · ${link(e.imageLicenseUrl,e.imageLicense)}${e.imageChanges?' · '+esc(e.imageChanges):''}</li>`);
+  }
+  target.innerHTML=rows.length?'<ul>'+rows.join('')+'</ul>':'Keine Bildquellenangaben in den geladenen Themes.';
+}
+
+function registerTheme(raw, sourceName){
+  const theme = normaliseTheme(raw, sourceName);
+  themes.set(theme.themeId, theme);
+  renderImageCredits();
+  imageCache.delete(theme.themeId);
+  return theme;
+}
+
+function registerThemeDocument(doc, sourceName){
+  if(Array.isArray(doc)){
+    return doc.map((x,i)=>registerTheme(x, `${sourceName} [${i+1}]`));
+  }
+  if(Array.isArray(doc.themes)){
+    return doc.themes.map((x,i)=>registerTheme(x, `${sourceName} [${i+1}]`));
+  }
+  return [registerTheme(doc, sourceName)];
+}
+
+/*
+  Themenauswahl: beliebig viele Themen gleichzeitig. "Alle" ist der Normalfall,
+  aber zwei oder drei Themen (etwa Tiere + Farben) lassen sich genauso mischen.
+  Die Auswahl wird lokal gemerkt, damit sie nach dem Neuladen nicht weg ist.
+*/
+const gewaehlteThemen=new Set();
+const THEMEN_SPEICHER="ded-themenauswahl-v1";
+
+function themenListe(){
+  return [...themes.values()].sort((a,b)=>a.themeName.localeCompare(b.themeName,"de"));
+}
+
+function aktiveThemen(){
+  return themenListe().filter(theme=>gewaehlteThemen.has(theme.themeId));
+}
+
+function aktiveIds(){
+  return aktiveThemen().map(theme=>theme.themeId);
+}
+
+function merkeThemen(){
+  try{
+    localStorage.setItem(THEMEN_SPEICHER,JSON.stringify([...gewaehlteThemen]));
+  }catch(error){
+    /* Speichern ist nur Komfort - z. B. bei file:// kann es verboten sein. */
+  }
+}
+
+function gemerkteThemen(){
+  try{
+    const roh=localStorage.getItem(THEMEN_SPEICHER);
+    const liste=roh ? JSON.parse(roh) : null;
+    return Array.isArray(liste) ? liste.filter(id=>themes.has(id)) : null;
+  }catch(error){
+    return null;
+  }
+}
+
+function renderThemePicker(){
+  const liste=document.querySelector("#themeList");
+  const themen=themenListe();
+  const gewaehlt=themen.filter(theme=>gewaehlteThemen.has(theme.themeId)).length;
+
+  document.querySelector("#themeSummary").textContent=
+    gewaehlt===0 ? "Themen: keine gewählt"
+    : gewaehlt===themen.length ? `Themen: alle (${themen.length})`
+    : `Themen: ${gewaehlt} von ${themen.length}`;
+
+  liste.innerHTML=themen.map(theme=>`<label class="picker-item">
+      <input type="checkbox" value="${esc(theme.themeId)}" ${gewaehlteThemen.has(theme.themeId)?"checked":""}>
+      <span>${esc(theme.themeName)}</span><small>${theme.entries.length}</small>
+    </label>`).join("");
+}
+
+function buildThemeMenu(preferred){
+  gewaehlteThemen.clear();
+  let ids=null;
+
+  if(preferred && preferred!=="*" && themes.has(preferred)){
+    ids=[preferred];
+  }else{
+    const gemerkt=gemerkteThemen();
+    ids=gemerkt && gemerkt.length ? gemerkt : [...themes.keys()];
+  }
+
+  for(const id of ids) gewaehlteThemen.add(id);
+  renderThemePicker();
+  updatePageCountDefault();
+}
+
+function setzeAlleThemen(an){
+  gewaehlteThemen.clear();
+  if(an) for(const theme of themenListe()) gewaehlteThemen.add(theme.themeId);
+  renderThemePicker();
+  merkeThemen();
+  updatePageCountDefault();
+  if(document.body.classList.contains("mode-game")) startGame();
+  else generate();
+}
+
+function sheetsPerTheme(themeId){
+  const theme=themes.get(themeId);
+  if(!theme) return 1;
+  return Math.max(1,Math.ceil(theme.entries.length/kartenProBlatt()));
+}
+
+/*
+  Ein Wort nur einmal: dasselbe Wort kann in zwei Themen stehen (der Deck-Bau
+  behält es dann in beiden). In einer Mischung darf es trotzdem nur einmal
+  vorkommen - sonst läge dieselbe Karte zweimal auf dem Stapel und käme im
+  Spiel doppelt so oft. Verglichen wird groß/klein-unabhängig, ohne
+  Leerzeichen am Rand; behalten wird der erste Treffer (Reihenfolge der
+  gewählten Themen).
+*/
+function eindeutigeWoerter(ids){
+  const gesehen=new Set();
+  const out=[];
+  for(const id of ids){
+    const theme=themes.get(id);
+    if(!theme) continue;
+    for(const row of theme.entries){
+      const schluessel=String(row.word||"").trim().toLocaleLowerCase("de");
+      if(!schluessel || gesehen.has(schluessel)) continue;
+      gesehen.add(schluessel);
+      out.push({themeId:id,row});
+    }
+  }
+  return out;
+}
+
+/*
+  Die Mischung wird **einmal** gemischt und bleibt dann stehen. Sonst würde
+  jede Rasteränderung die Wörter neu würfeln: die Blätter sähen völlig anders
+  aus, und keine Karte ließe sich wiederverwenden. Neu gemischt wird nur, wenn
+  der Lernende die Themenauswahl ändert oder „Neu mischen“ drückt.
+*/
+let mischReihenfolge={key:"",liste:[]};
+
+function mischListe(ids,neu=false){
+  const key=ids.join("|");
+  if(neu || mischReihenfolge.key!==key){
+    mischReihenfolge={key,liste:shuffle(eindeutigeWoerter(ids))};
+  }
+  return mischReihenfolge.liste;
+}
+
+function gemischteWoerter(ids){
+  return mischListe(ids);
+}
+
+/* Wie viele Begriffe stehen wirklich zur Wahl? Gemischt zählt jedes Wort nur
+   einmal, nach Themen zählt jedes Thema seine eigenen Wörter. */
+function begriffsZahl(){
+  const ids=aktiveIds();
+  if(druckReihenfolge()==="themen") return ids.reduce((sum,id)=>sum+(themes.get(id)?.entries.length||0),0);
+  return gemischteWoerter(ids).length;
+}
+
+function updatePageCountDefault(){
+  const seiten=document.querySelector("#pageCount");
+  if(!seiten || seiten.dataset.eigene) return;
+  seiten.max=String(SEITEN_MAX);
+  const ids=aktiveIds();
+  if(!ids.length){
+    seiten.value="1";
+    return;
+  }
+  /* Vorgabe gemischt: genau so viele Blätter, wie die gewählten Wörter
+     brauchen (jedes Wort nur einmal). Nach Themen: ein Blatt je Thema, mehr
+     erst auf Wunsch. */
+  const noetig=druckReihenfolge()==="themen"
+    ? ids.length
+    : Math.ceil(begriffsZahl()/kartenProBlatt());
+  seiten.value=String(Math.max(1,Math.min(SEITEN_MAX,noetig||1)));
+}
+
+function auswahlText(){
+  const ids=aktiveIds();
+  const themenText=ids.length===themes.size ? `${themes.size} Themen` : `${ids.length} von ${themes.size} Themen`;
+  return `${themenText} · ${gemischteWoerter(ids).length} Begriffe`;
+}
+
+/* Die Statuszeile sagt, was aufs Papier kommt: Seiten, Raster, Reihenfolge. */
+function gedrucktText(){
+  if(document.body.classList.contains("mode-game")) return "";
+  if(!aktiveIds().length) return "";
+  const seiten=seitenZahl();
+  const plaetze=seiten*kartenProBlatt();
+  const begriffe=druckReihenfolge()==="themen" ? aktiveIds().reduce((sum,id)=>sum+(themes.get(id)?.entries.length||0),0) : gemischteWoerter(aktiveIds()).length;
+  const rest=plaetze>=begriffe ? "" : ` (${plaetze} von ${begriffe} Wörtern)`;
+  const reihenfolge=druckReihenfolge()==="themen" ? "nach Themen" : "gemischt";
+  return ` · ${seiten} Seiten · ${rasterText()} · ${reihenfolge}${rest}`;
+}
+
+/* Karten-Aufgabe beim Drucken: Artikel (ohne Satz), Kasus oder gemischt. */
+function printTask(){
+  const wahl=document.querySelector("#printTask")?.value || "artikel";
+  return ["artikel","kasus","gemischt"].includes(wahl) ? wahl : "artikel";
+}
+
+/*
+  Aufgabe und Fall je Karte. Akkusativ und Dativ stehen bewusst **gemischt**
+  auf dem Blatt (nicht als zwei Kästen untereinander) - sonst könnte der
+  Lernende den Fall an der Position ablesen. Verteilt wird wie auf einem
+  Schachbrett, damit weder Blöcke noch lesbare Muster entstehen; die
+  AKK./DAT.-Marke auf der Karte sagt, welche Form in die Lücke gehört.
+*/
+function kartenFaelle(anzahl,task,spalten){
+  const spaltenZahl=Math.max(1,spalten||4);
+  const gerade=(i)=>{
+    const reihe=Math.floor(i/spaltenZahl);
+    return (reihe+(i%spaltenZahl))%2===0;
+  };
+  if(task==="artikel"){
+    return Array.from({length:anzahl},()=>({fall:"",kind:"artikel"}));
+  }
+  let kasusZaehler=0;
+  return Array.from({length:anzahl},(_,i)=>{
+    if(task==="kasus") return gerade(i) ? {fall:"acc",kind:"kasus"} : {fall:"dat",kind:"kasus"};
+    if(gerade(i)){
+      const fall=kasusZaehler++%2===0 ? "acc" : "dat";
+      return {fall,kind:"kasus"};
+    }
+    return {fall:"",kind:"artikel"};
+  });
+}
+
+/*
+  In der Mischung hängt der Fall nicht am Raster, sondern am **Platz in der
+  Mischliste**. Das Schachbrett wird auf vier Spalten bezogen - bei der
+  Standardeinstellung 4×4 ergibt das genau das gewohnte Schachbrett, und eine
+  Karte behält ihren Fall, wenn der Lernende nur das Raster umstellt. Nur so
+  kann die Karte beim Rasterwechsel stehen bleiben, statt neu gebaut zu werden.
+*/
+function mischPlan(i,task){
+  const gerade=(Math.floor(i/4)+(i%4))%2===0;
+  if(task==="artikel") return {fall:"",kind:"artikel"};
+  if(task==="kasus") return gerade ? {fall:"acc",kind:"kasus"} : {fall:"dat",kind:"kasus"};
+  /* Gemischt: jede dritte Karte fragt nur den Artikel, die übrigen den Fall. */
+  if(i%3===2) return {fall:"",kind:"artikel"};
+  return gerade ? {fall:"acc",kind:"kasus"} : {fall:"dat",kind:"kasus"};
+}
+
+function tonText(){
+  /* Für Lernende zählt nur, ob Ton da ist. Technikdetails (Stimme, Codec)
+     stehen in der Konsole und in den .md-Dateien. */
+  const mode=String(EMBEDDED_TTS?.mode || "none");
+  if(mode==="none") return "🔇 ohne Ton";
+  if(mode==="laedt") return "⏳ Ton wird geladen";
+  return "🔊 Ton eingebaut";
+}
+
+function updateStatus(){
+  document.querySelector("#status").textContent=`${auswahlText()}${gedrucktText()} · ${tonText()}`;
+}
+
+function updateScore(){
+  document.querySelector("#score").textContent=`${solved.size} / ${totalQuestions} richtig`;
+}
+
+/*
+  Seitenverteilung im Druck: ein Thema bekommt genau ein Blatt. Erst wenn mehr
+  Seiten gewählt sind als Themen, erhalten Themen ein zweites Blatt (und nur
+  Themen, die wirklich mehr Wörter haben als auf ein Blatt passen).
+*/
+function blattVerteilung(count, ids){
+  const verteilung=new Map(ids.map(id=>[id,0]));
+  if(count<=ids.length){
+    for(const id of shuffle([...ids]).slice(0,count)) verteilung.set(id,1);
+    return verteilung;
+  }
+  for(const id of ids) verteilung.set(id,1);
+  let rest=count-ids.length;
+  /* Zusatzblätter bekommen zuerst die Themen mit den meisten noch ungedruckten
+     Wörtern, und zwar so lange, bis das Thema vollständig ist. Sonst bliebe ein
+     großes Thema (Körper hat über 40 Wörter) bei leicht erhöhter Seitenzahl
+     unvollständig, während kleine Themen ein zweites Blatt bekommen. Bei
+     Gleichstand entscheidet der Zufall. */
+  const offen=id=>Math.max(0,(themes.get(id)?.entries.length||0)-(verteilung.get(id)||0)*kartenProBlatt());
+  const reihe=shuffle([...ids]).sort((a,b)=>offen(b)-offen(a));
+  for(const id of reihe){
+    while(rest>0 && offen(id)>0){
+      verteilung.set(id,verteilung.get(id)+1);
+      rest--;
+    }
+  }
+  /* Reicht der Wortvorrat nicht (z.B. sehr viele Seiten bei kleinen Themen),
+     werden die restlichen Blätter gleichmäßig verteilt; choosePageRows füllt
+     ein Blatt dann mit Wiederholungen. */
+  let i=0;
+  while(rest>0){
+    const id=ids[i++ % ids.length];
+    verteilung.set(id,verteilung.get(id)+1);
+    rest--;
+  }
+  return verteilung;
+}
+
+function themeSequence(count, ids){
+  if(!ids.length) return [];
+  /* Die Blätter eines Themas bleiben zusammen, damit der Lernende sie ablegen
+     kann; bei einem Blatt je Thema entscheidet der Zufall, welche Themen es
+     trifft. */
+  const verteilung=blattVerteilung(count, ids);
+  const out=[];
+  for(const id of ids){
+    for(let blatt=0; blatt<(verteilung.get(id)||0); blatt++) out.push(id);
+  }
+  return out.slice(0,count);
+}
+
+/*
+  Gemischt (Vorgabe): alle Wörter der gewählten Themen in einen Topf, der
+  Reihe nach auf die Blätter verteilen. Jedes Wort kommt genau einmal vor -
+  auch wenn es in zwei Themen steht. Die Reihenfolge kommt aus mischListe()
+  und bleibt stehen, bis neu gemischt wird; deshalb merkt sich jedes Blatt
+  zusätzlich, an welcher Stelle der Liste es beginnt (start).
+*/
+function gemischteSeiten(count, ids){
+  const proBlatt=kartenProBlatt();
+  const liste=gemischteWoerter(ids);
+  const seiten=[];
+  for(let i=0; i<liste.length && seiten.length<count; i+=proBlatt){
+    seiten.push({start:i,rows:liste.slice(i,i+proBlatt)});
+  }
+  return seiten;
+}
+
+function choosePageRows(themeId, usedByTheme){
+  const theme=themes.get(themeId);
+  const all=theme.entries;
+  let used=usedByTheme.get(themeId);
+  if(!used){
+    used=new Set();
+    usedByTheme.set(themeId,used);
+  }
+
+  let fresh=shuffle(all.filter(x=>!used.has(x.word)));
+  const selected=[];
+
+  const platz=kartenProBlatt();
+  for(const row of fresh){
+    if(selected.length>=platz) break;
+    selected.push(row);
+    used.add(row.word);
+  }
+
+  if(selected.length<platz){
+    const remaining=shuffle(all.filter(x=>!selected.some(s=>s.word===x.word)));
+    for(const row of remaining){
+      if(selected.length>=platz) break;
+      selected.push(row);
+    }
+  }
+
+  return selected;
+}
+
+function spriteSrc(theme){
+  const value=theme.spriteimagebase64;
+  if(value.startsWith("data:image/")) return value;
+  return `data:image/png;base64,${value}`;
+}
+
+/*
+  Karten messen sich selbst: passt der Inhalt nicht in die Karte (sehr lange
+  Wörter wie „Schraubenschlüssel“, lange Sätze, andere Schriften), wird er
+  stufenweise kleiner - statt vom Rahmen abgeschnitten zu werden. Die Karten
+  sitzen fest im Raster, deshalb ändert sich am Blattaufbau nichts.
+
+  Gemessen wird **Blatt für Blatt**. Alle Karten auf einmal zu messen erzwang
+  die Berechnung von 40 Blättern in einem Rutsch - der Bildschirm stand
+  Sekunden. Die Blätter, die man sieht, kommen sofort dran, alle übrigen in
+  Ruhepausen (und spätestens vor dem Drucken).
+*/
+let kartenLauf=0;
+let kartenArbeit=null;
+
+function naechstePause(fn){
+  if(typeof requestIdleCallback==="function") requestIdleCallback(()=>fn(),{timeout:250});
+  else setTimeout(fn,16);
+}
+
+function passeBlattAn(blatt){
+  const karten=[...blatt.querySelectorAll(".card")];
+  const passt=karte=>karte.scrollHeight<=karte.clientHeight+1 && karte.scrollWidth<=karte.clientWidth+1;
+  /* Erst alle Karten dieses Blattes messen, dann erst ändern: sonst müsste der
+     Browser das Blatt nach jeder Karte neu berechnen. */
+  const zuGross=karten.filter(karte=>karte.querySelector(".word") && !passt(karte));
+  for(const karte of zuGross){
+    const wort=karte.querySelector(".word");
+    const satz=karte.querySelector(".sentence");
+    const stufen=[
+      ()=>wort.classList.add("mittel"),
+      ()=>wort.classList.add("klein"),
+      ()=>{wort.classList.add("mittel");satz?.classList.add("mittel");},
+      ()=>{wort.classList.add("klein");satz?.classList.add("mittel");},
+      ()=>satz?.classList.add("klein")
+    ];
+    for(const stufe of stufen){
+      stufe();
+      if(passt(karte)) break;
+    }
+  }
+}
+
+function passeKartenAn(){
+  const lauf=++kartenLauf;
+  const sichtbar=[];
+  const rest=[];
+  for(const blatt of document.querySelectorAll("#pages .page")){
+    const box=blatt.getBoundingClientRect();
+    const nah=box.bottom>-200 && box.top<window.innerHeight+200;
+    (nah ? sichtbar : rest).push(blatt);
+  }
+  for(const blatt of sichtbar) passeBlattAn(blatt);
+  if(!rest.length){
+    kartenArbeit=null;
+    return;
+  }
+  kartenArbeit=new Promise(resolve=>{
+    let i=0;
+    const schritt=()=>{
+      if(lauf!==kartenLauf){ resolve(false); return; }
+      if(i>=rest.length){ kartenArbeit=null; resolve(true); return; }
+      passeBlattAn(rest[i++]);
+      naechstePause(schritt);
+    };
+    naechstePause(schritt);
+  });
+}
+
+/* Wartet, bis alle Blätter nachgemessen sind (Drucken, Prüfläufe). */
+function kartenFertig(){
+  return kartenArbeit || Promise.resolve(true);
+}
+
+function loadThemeImage(themeId){
+  if(imageCache.has(themeId)) return imageCache.get(themeId);
+
+  const theme=themes.get(themeId);
+  const promise=new Promise((resolve,reject)=>{
+    const img=new Image();
+    img.onload=()=>resolve(img);
+    img.onerror=()=>reject(new Error(`Sprite für "${theme.themeName}" konnte nicht geladen werden.`));
+    img.src=spriteSrc(theme);
+  });
+
+  imageCache.set(themeId,promise);
+  return promise;
+}
+
+async function renderCanvases(){
+  const canvases=[...document.querySelectorAll(".sprite-canvas")];
+  const themeIds=[...new Set(canvases.map(c=>c.dataset.themeId))];
+
+  await Promise.all(themeIds.map(loadThemeImage));
+
+  for(const canvas of canvases){
+    const themeId=canvas.dataset.themeId;
+    const theme=themes.get(themeId);
+    const img=await loadThemeImage(themeId);
+    const idx=Number(canvas.dataset.index);
+
+    const tileW=img.naturalWidth/theme.spriteColumns;
+    const tileH=img.naturalHeight/theme.spriteRows;
+    const col=idx%theme.spriteColumns;
+    const row=Math.floor(idx/theme.spriteColumns);
+    const sx=col*tileW;
+    const sy=row*tileH;
+
+    const ctx=canvas.getContext("2d");
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    ctx.fillStyle="#fff";
+    ctx.fillRect(0,0,canvas.width,canvas.height);
+    ctx.imageSmoothingEnabled=true;
+    ctx.imageSmoothingQuality="high";
+
+    /*
+      Kleine Innenbeschneidung entfernt die Rasterlinie des 10x10-Sprites,
+      ohne relevante Bildteile abzuschneiden.
+    */
+    /*
+      Bleed-Safe Crop:
+      Wir schneiden rund 4 % jeder Sprite-Zelle an allen Seiten weg.
+      Dadurch verschwinden Rasterlinien und kleine Bildreste aus
+      benachbarten Zellen zuverlässig.
+    */
+    const insetX=Math.max(2,tileW*0.04);
+    const insetY=Math.max(2,tileH*0.04);
+
+    ctx.drawImage(
+      img,
+      sx+insetX,
+      sy+insetY,
+      tileW-(2*insetX),
+      tileH-(2*insetY),
+      0,0,canvas.width,canvas.height
+    );
+  }
+}
+
+/* Schwache Nomen bekommen im Akkusativ/Dativ ein -en (der Polizist → den Polizisten). */
+const weakNouns={
+  Polizist:"Polizisten",Soldat:"Soldaten",Journalist:"Journalisten",Fotograf:"Fotografen",
+  Architekt:"Architekten",Postbote:"Postboten",Fels:"Felsen",Mensch:"Menschen",Herz:"Herzen",
+  Löwe:"Löwen",Elefant:"Elefanten",Leopard:"Leoparden",Bär:"Bären",Waschbär:"Waschbären",
+  Teddybär:"Teddybären",Affe:"Affen",Schimpanse:"Schimpansen",Stummelaffe:"Stummelaffen",
+  Hase:"Hasen",Plüschhase:"Plüschhasen",Falke:"Falken",Papagei:"Papageien",
+  Plüschelefant:"Plüschelefanten",Pilot:"Piloten"
+};
+
+function caseArticle(article,kind){
+  const base=String(article||"").trim();
+  if(!base) return "";
+  if(kind==="acc") return base==="der"?"den":base;
+  if(kind==="dat") return base==="der"?"dem":base==="die"?"der":"dem";
+  return base;
+}
+
+function caseNoun(word,kind){
+  const noun=String(word||"").trim();
+  const weak=weakNouns[noun];
+  const useWeak=Boolean(weak)&&(kind==="dat"||(kind==="acc"&&noun!=="Herz"));
+  return useWeak?weak:noun;
+}
+
+function casePhrase(article,word,kind){
+  const art=caseArticle(article,kind);
+  const noun=caseNoun(word,kind);
+  return art&&noun?`${art} ${noun}`:"";
+}
+
+function pluralPhrase(row,forSpeech=false){
+  /* Stoffnamen wie Milch oder Reis haben keine Mehrzahl. */
+  const stored=String(row?.pluralWithArticle||"").trim();
+  const plural=String(row?.plural||"").trim();
+  const phrase=stored || (plural ? "die "+plural : "");
+  if(!phrase) return "";
+  if(!forSpeech) return phrase;
+  return phrase.endsWith(".") ? phrase : phrase+".";
+}
+
+/*
+  Aufgabenarten:
+    artikel - Grundform des Artikels (der/die/das) erkennen
+    kasus   - die Form im Akkusativ/Dativ einsetzen (den/die/das bzw. dem/der/den)
+    plural  - die Mehrzahl erkennen (Ablenker sind andere Mehrzahlformen des Themas,
+              damit der Artikel gleich bleibt und nur die Endung zählt)
+  Die Farbcodierung der Karten gilt nur fuer das Genus. Den/dem sind nicht
+  eindeutig einer Farbe zuzuordnen, deshalb bleiben sie neutral.
+*/
+/*
+  Falsche Mehrzahlformen desselben Wortes (Bär → Bäre, Bärs).
+  Andere Wörter als Ablenker wären didaktisch falsch: Das Kind soll die Endung
+  prüfen, nicht das Nomen. Verhindert werden nur unmögliche Buchstabenfolgen
+  (Hundn, Häuss, Autoe) - die Formen sollen wie echte Fehler aussehen, nicht
+  wie Tippfehler.
+*/
+function pluralDistractors(row){
+  const phrase=pluralPhrase(row);
+  if(!phrase) return [];
+
+  const parts=phrase.split(/\s+/);
+  const last=parts.pop();
+  const prefix=parts.join(" ");
+  const headWords=String(row.word||"").trim().split(/\s+/);
+  const head=headWords.pop() || last;
+
+  /*
+    Stamm der Mehrzahl bestimmen. Bevorzugt wird die Endung, bei der die
+    Grundform übrig bleibt (Schildkröten -> Schildkröte statt Schildkröt).
+    Bei Umlaut-Mehrzahlen (Kühe, Wölfe) bleibt der umgelautete Stamm übrig,
+    die Grundform wird zusätzlich als zweiter Stamm geführt.
+  */
+  const unchanged=last.toLowerCase()===head.toLowerCase();
+  const endings=["en","er","es","e","n","s"];
+  const ending=unchanged ? "" : (
+    endings.find(x=>last.endsWith(x) && last.slice(0,last.length-x.length).toLowerCase()===head.toLowerCase())
+    || endings.find(x=>last.endsWith(x)) || ""
+  );
+  const stem=ending ? last.slice(0,last.length-ending.length) : last;
+  const plain=value=>value.toLowerCase().replace(/ä/g,"a").replace(/ö/g,"o").replace(/ü/g,"u").replace(/ß/g,"ss");
+  const fullWord=plain(stem)===plain(head);
+
+  const phrases=[];
+  const add=text=>{
+    const value=String(text||"").trim();
+    if(!value || value.toLowerCase()===phrase.toLowerCase() || phrases.includes(value)) return;
+    phrases.push(value);
+  };
+  const withPrefix=value=>[prefix,value].filter(Boolean).join(" ");
+
+  for(const trap of (unchanged ? ["s","n"] : ["s","e","en","es"])){
+    if(trap===ending) continue;
+    if((trap==="s"||trap==="es") && !fullWord) continue;                  // -s/-es hängen am ganzen Wort
+    if(stem.toLowerCase().endsWith(trap[0])) continue;                    // Häuss, Blume+e
+    if(/[aeiouäöü]$/i.test(stem) && /^[aeiouäöü]/i.test(trap)) continue;   // Autoe, Zebraen
+    if(trap==="s" && /[sßzx]$/i.test(stem)) continue;                     // Katzs
+    if(trap==="es" && !/[sßzx]$/i.test(stem)) continue;                   // nur nach Zischlaut
+    add(withPrefix(stem+trap));
+    if(phrases.length===2) break;
+  }
+
+  /* Häufigste Fehler, wenn keine Endung passt: Singular statt Mehrzahl,
+     danach der Artikel des Nomens statt "die" (das AutoS). */
+  add(withPrefix(head));
+  if(phrases.length<2){
+    const article=String(row.article||"").trim();
+    if(article && article!=="die") add([article,...phrase.split(/\s+/).slice(1)].join(" "));
+  }
+
+  return phrases.slice(0,2);
+}
+
+/*
+  Die drei Antwortblasen sind immer die drei Artikelreihen - in der Farbe der
+  Reihe und in der Form des gefragten Falls:
+
+    Reihe        Grundform (Normal)   Akkusativ        Dativ
+    männlich     der  (blau)          den  (blau)      dem  (blau)
+    weiblich     die  (rot)           die  (rot)       der  (rot)
+    sächlich     das  (grün)          das  (grün)      dem  (grün)
+
+  Im Dativ stehen also zweimal DEM auf der Karte - einmal blau für das männliche
+  und einmal grün für das sächliche Wort. Die Farbe sagt, welche Blase zum
+  eigenen Wort gehört; die richtige Blase trägt immer die Farbe des Wortes.
+*/
+function taskChoices(row,caseName,task){
+  if(task==="kasus"){
+    const artikel=String(row.article||"").trim();
+    return ["der","die","das"].map(reihe=>({
+      value:caseArticle(reihe,caseName),
+      row:reihe,
+      answer:artikel,
+      cls:reihe
+    }));
+  }
+  if(task==="plural"){
+    const answer=pluralPhrase(row);
+    const extra=pluralDistractors(row);
+    return shuffle([answer,...extra]).map(value=>({value,answer,cls:"plural"}));
+  }
+  const artikel=String(row.article||"").trim();
+  return ["der","die","das"].map(reihe=>({value:reihe,row:reihe,answer:artikel,cls:reihe}));
+}
+
+function maskedCaseSentence(row,caseName){
+  const sentence=String(caseName==="acc" ? row.accusativeSentence : row.dativeSentence || "").trim();
+  if(!sentence)return "";
+  const forms=caseName==="acc"
+    ? {der:"den",die:"die",das:"das"}
+    : {der:"dem",die:"der",das:"dem"};
+  const form=forms[row.article];
+  const word=String(row.word||"").trim();
+  if(!form||!word)return "";
+  const reEscape=x=>x.replace(/[.*+?^${}()|[\]\\]/g,"\\$&");
+
+  /*
+    Das Nomen steht im Satz nicht immer in der Grundform: schwache Nomen bekommen
+    -en (Bär → den Bären) und mehrteilige Wörter werden angeglichen
+    (Roter Panda → den Roten Panda). Deshalb wird der letzte Wortbestandteil
+    gesucht und links davon das nächstgelegene Artikelwort maskiert.
+    Zwischen Artikel und Nomen dürfen höchstens zwei Wörter stehen (Adjektiv);
+    mehr Abstand heißt, das Artikelwort gehört zu einer anderen Wortgruppe.
+    Auf \b kann hier nicht geprüft werden: JavaScript kennt Umlaute nicht als
+    Wortzeichen, deshalb wird der Wortanfang von Hand geprüft (Ärztin, Überschwemmung).
+  */
+  const parts=word.split(/\s+/);
+  const head=parts[parts.length-1];
+
+  let nounIndex=-1;
+  const headRe=new RegExp(reEscape(head),"gi");
+  let headHit;
+  while((headHit=headRe.exec(sentence))!==null){
+    const before=headHit.index===0?" ":sentence[headHit.index-1];
+    if(!/\p{L}/u.test(before)){nounIndex=headHit.index;break;}
+    headRe.lastIndex=headHit.index+1;
+  }
+  if(nounIndex<0)return "____________________________";
+
+  const left=sentence.slice(0,nounIndex);
+  const artRe=new RegExp("\\b"+reEscape(form)+"\\b","gi");
+  let hit,found=null;
+  while((hit=artRe.exec(left))!==null){
+    const gap=left.slice(hit.index+hit[0].length);
+    if(gap===""||/^(\s+\S+){0,2}\s+$/.test(gap)) found=hit;
+  }
+  if(!found)return "____________________________";
+
+  const cut=found.index+found[0].length;
+  return sentence.slice(0,found.index)+"_____"+sentence.slice(cut);
+}
+
+/*
+  Jede Karte bekommt beim Bauen eine Nummer für ihr Bild. Das Bild selbst wird
+  erst eingesetzt, wenn die Karte im Blatt steht (setzeBilder) - und nur, wenn
+  die Karte noch keins hat.
+*/
+function bildPlatzhalter(themeId,row){
+  const index=bildAuftrag.push({themeId,row})-1;
+  return `<div class="pic" data-bild="${index}"></div>`;
+}
+
+function card(item,caseName,qid,task="artikel"){
+  /*
+    Artikel-Aufgaben brauchen keinen Satz: gefragt ist die Grundform, und die
+    verrät kein Satz. Dann entfällt auch die Kasus-Marke, denn ohne Satz hat die
+    Karte keinen Kasus.
+  */
+  const themeId=item.themeId;
+  const row=item.row;
+  const withSentence=task!=="artikel";
+  const sentence=withSentence ? maskedCaseSentence(row,caseName) : "";
+  const fullSentence=String(
+    (caseName==="acc" ? row.accusativeSentence : row.dativeSentence) || ""
+  ).trim();
+
+  return `<div class="card ${caseName} ${withSentence ? "" : "no-sentence"}">
+    ${withSentence ? `<span class="case-mark" aria-hidden="true">${caseName==="acc" ? "AKK." : "DAT."}</span>` : ""}
+    ${bildPlatzhalter(themeId,row)}
+    <div class="word">${esc(row.word)}</div>
+    <div class="choices">
+      ${taskChoices(row,caseName,task).map(choice=>`
+        <label class="choice ${choice.cls}">
+          <input
+            class="article-radio"
+            type="radio"
+            name="${qid}"
+            value="${esc(choice.value)}"
+            data-row="${esc(choice.row||"")}"
+            data-answer="${esc(choice.answer)}"
+            data-qid="${qid}">
+          <b class="${choice.cls}">${esc(choice.value.toUpperCase())}</b>
+        </label>`).join("")}
+    </div>
+    <div class="sentence">
+      <span class="masked">${esc(sentence)}</span>
+      <span class="full">${esc(fullSentence)}</span>
+    </div>
+  </div>
+  <div class="feedback" aria-live="polite"></div>`;
+}
+
+function worksheet(page,task="artikel",mitKarten=true){
+  const {spalten,reihen}=rasterWahl();
+  const gemischt=!page.themeId;
+  const titel=gemischt ? "Alle Themen gemischt" : esc(themes.get(page.themeId)?.themeName||"");
+
+  const titles={artikel:"Artikeltraining",kasus:"Kasustraining",gemischt:"Artikel und Kasus gemischt"};
+  const intros={
+    artikel:"Kreise die Grundform des Artikels ein – die Farbe zeigt die Reihe deines Wortes: <b>der</b> (blau) · <b>die</b> (rot) · <b>das</b> (grün).",
+    kasus:"Schreibe die richtige Form in die Lücke. Die Marke <b>AKK.</b> / <b>DAT.</b> in der Ecke zeigt den Fall, die Farbe zeigt die Reihe deines Wortes: Akkusativ <b>den</b> (blau) · <b>die</b> (rot) · <b>das</b> (grün) – Dativ <b>dem</b> (blau) · <b>der</b> (rot) · <b>dem</b> (grün).",
+    gemischt:"Zwei Aufgaben gemischt: ohne Satz die Grundform einkreisen, mit Satz die Kasusform in die Lücke schreiben. Die Marke <b>AKK.</b> / <b>DAT.</b> zeigt den Fall, die Farbe die Reihe deines Wortes (blau der · rot die · grün das)."
+  };
+
+  const head=`<div class="page-head">
+      ${document.querySelector("#nameLine")?.checked ? '<div class="namebar"><span>Name: <i></i></span><span>Datum: <i></i></span></div>' : ""}
+      <h1 class="title">${titel}</h1>
+    </div>
+    <div class="intro">${titles[task]} · ${intros[task]}</div>`;
+
+  /*
+    Ein Raster je Blatt - auch bei Kasus-Aufgaben. Akkusativ und Dativ stehen
+    gemischt nebeneinander; welche Form gefragt ist, sagt die Marke AKK./DAT.
+    in der Ecke der Karte (deshalb braucht das Blatt keine Kästen-Balken mehr).
+  */
+  const faelle=page.faelle || [];
+  const karten=mitKarten ? page.rows.map((item,i)=>{
+    const plan=faelle[i] || {fall:"",kind:"artikel"};
+    return `<div class="zelle">${card(item,plan.fall,`p${page.pageNo}-x${i}`,plan.kind)}</div>`;
+  }).join("") : "";
+
+  /* Die Artikel-Karten haben keinen Kasus, deshalb steht dort die Antwortreihe
+     als Merkzeile über dem Raster. */
+  const merkzeile=task==="artikel"
+    ? `<div class="casebar artbar">ARTIKEL <small>der · die · das</small></div>`
+    : "";
+
+  return `<section class="page" style="--spalten:${spalten};--reihen:${reihen}">
+    ${head}
+    ${merkzeile}
+    <div class="grid" data-seite="${page.pageNo}">
+      ${karten}
+    </div>
+  </section>`;
+}
+
+/*
+  Gemischt: Karten ziehen um, statt neu gebaut zu werden.
+  Ein Blatt enthält viele kleine Elemente (Bild, Wort, Satz, drei Antworten).
+  Würde bei jeder Rasteränderung alles als Text neu geschrieben, müsste der
+  Browser rund 10.000 Elemente neu anlegen - das dauerte auf älteren Rechnern
+  mehrere Sekunden. Deshalb wird jede Karte **einmal** gebaut und wandert
+  danach nur noch in ihr neues Blatt. Das geht nur, weil Aufgabe und Fall einer
+  Karte nicht am Raster hängen (siehe mischPlan) und die Karte damit immer
+  dieselbe bleibt.
+*/
+const kartenPool=new Map();
+const kartenNummern=new Map();
+let kartenZaehler=0;
+
+function kartenSchluessel(item,plan,task){
+  return `${task}\u0000${item.themeId}\u0000${String(item.row.word||"").trim().toLowerCase()}\u0000${plan.kind}\u0000${plan.fall}`;
+}
+
+function zelleElement(item,plan,task){
+  const basis=`${item.themeId}\u0000${String(item.row.word||"")}`;
+  if(!kartenNummern.has(basis)) kartenNummern.set(basis,++kartenZaehler);
+  const qid=`q${kartenNummern.get(basis)}`;
+  const box=document.createElement("div");
+  box.innerHTML=`<div class="zelle">${card(item,plan.fall,qid,plan.kind)}</div>`;
+  return box.firstElementChild;
+}
+
+/* Eine umgezogene Karte wird wieder auf Anfang gesetzt: der Lernende bekommt
+   eine frische Frage, egal ob sie vorher schon beantwortet war. */
+function setzeZelleZurueck(zelle){
+  for(const input of zelle.querySelectorAll("input")){
+    input.checked=false;
+    input.disabled=false;
+  }
+  for(const wahl of zelle.querySelectorAll(".choice")) wahl.classList.remove("correct","wrong");
+  zelle.querySelector(".card")?.classList.remove("revealed");
+  const info=zelle.querySelector(".feedback");
+  if(info){
+    info.textContent="";
+    info.className="feedback";
+  }
+}
+
+function setzeZellen(pageSets,task){
+  const benutzt=new Set();
+  for(const page of pageSets){
+    const grid=document.querySelector(`#pages .grid[data-seite="${page.pageNo}"]`);
+    if(!grid) continue;
+    for(let i=0;i<page.rows.length;i++){
+      const item=page.rows[i];
+      const plan=(page.faelle||[])[i] || {fall:"",kind:"artikel"};
+      const key=kartenSchluessel(item,plan,task);
+      let zelle=kartenPool.get(key);
+      if(!zelle){
+        zelle=zelleElement(item,plan,task);
+        kartenPool.set(key,zelle);
+      }else if(benutzt.has(key)){
+        zelle=zelle.cloneNode(true);
+      }
+      benutzt.add(key);
+      setzeZelleZurueck(zelle);
+      /* Hat die Karte ihr Bild verloren (z. B. weil die Reihenfolge zwischenzeitlich
+         „nach Themen“ war), bekommt sie hier eine neue Nummer und wird neu gefüllt. */
+      const platz=zelle.querySelector(".pic");
+      if(platz && !platz.firstElementChild){
+        platz.dataset.bild=String(bildAuftrag.push({themeId:item.themeId,row:item.row})-1);
+      }
+      grid.appendChild(zelle);
+    }
+  }
+  /* Karten, die nicht mehr gebraucht werden (Thema abgewählt, Aufgabe
+     gewechselt), aus dem Speicher nehmen. */
+  for(const key of [...kartenPool.keys()]) if(!benutzt.has(key)) kartenPool.delete(key);
+}
+
+/* „Neu mischen“: neue Reihenfolge, neue Karten. */
+function neuMischen(){
+  mischListe(aktiveIds(),true);
+  kartenPool.clear();
+  bildPool.clear();
+  kartenNummern.clear();
+  kartenZaehler=0;
+  generate();
+}
+
+/*
+  Lösungsblatt: ein Kasten je gedruckter Seite, damit die Reihenfolge zu den
+  Karten passt. Schrift und Kästen je Blatt richten sich nach dem Raster - bei
+  8×8 stehen schließlich 64 Wörter auf einer gedruckten Seite.
+*/
+function solutionPages(pageSets,task){
+  const {spalten,reihen}=rasterWahl();
+  /* Ein Kasten je gedruckter Seite; die Schrift richtet sich nach der vollsten
+     Seite (Kasus-Blätter tragen reihen*spalten Wörter). */
+  const zeilen=Math.max(1,...pageSets.map(page=>page.rows.length),reihen);
+  const proSpalte=Math.max(1,Math.floor(56/(zeilen+1.6)));
+  const proLos=proSpalte*3;
+  const schrift=Math.min(3.2,Math.max(1.4,250/(proSpalte*(zeilen+1.6))*0.55));
+  const chunks=[];
+  for(let i=0;i<pageSets.length;i+=proLos) chunks.push(pageSets.slice(i,i+proLos));
+
+  return chunks.map(chunk=>`
+    <section class="page solution-page" style="--sol-schrift:${schrift.toFixed(2)}mm">
+      <h1 class="solution-title">Lösungen · Artikel & Mehrzahl</h1>
+      <div class="solution-grid">
+        ${chunk.map(page=>{
+          const namen=[...new Set(page.rows.map(x=>themes.get(x.themeId)?.themeName||""))];
+          const thema=namen.length===1 ? namen[0]
+            : namen.length>3 ? `${namen.length} Themen gemischt`
+            : namen.join(", ");
+          const faelle=page.faelle || [];
+          return `<div class="solution-block">
+            <h3>Seite ${page.pageNo} · ${esc(thema)}</h3>
+            ${page.rows.map((x,i)=>{
+              const plan=faelle[i] || {fall:"",kind:"artikel"};
+              return `
+              <div class="solution-row">
+                <span class="solution-forms">
+                  ${plan.kind==="kasus" ? `<i class="case-dot ${plan.fall==="acc"?"acc":"dat"}"></i>` : ""}
+                  <b class="${x.row.article}">${esc(caseArticle(x.row.article,"nom"))}</b>
+                  <span class="sep">|</span>
+                  <b class="acc">${esc(caseArticle(x.row.article,"acc"))}</b>
+                  <span class="sep">|</span>
+                  <b class="dat">${esc(caseArticle(x.row.article,"dat"))}</b>
+                  <b class="${x.row.article}">${esc(caseNoun(x.row.word,"dat"))}</b>
+                </span>
+                <span>${esc(x.row.pluralWithArticle || (x.row.plural ? "die "+x.row.plural : "– keine Mehrzahl"))}</span>
+              </div>`;
+            }).join("")}
+          </div>`;
+        }).join("")}
+      </div>
+    </section>`).join("");
+}
+
+async function generate(){
+  const pagesElement=document.querySelector("#pages");
+
+  if(!themes.size){
+    pagesElement.innerHTML=`<div class="empty">Bitte mindestens ein Theme-JSON laden.</div>`;
+    totalQuestions=0;
+    solved=new Set();
+    updateScore();
+    return;
+  }
+
+  const count=seitenZahl();
+  const ids=aktiveIds();
+
+  /* Jeder Aufbau beginnt mit einer leeren Bilderliste - sie sammelt die Bilder
+     in der Reihenfolge, in der die Karten ins Blatt geschrieben werden. */
+  bildAuftrag=[];
+
+  if(!ids.length){
+    pagesElement.innerHTML=`<div class="empty">Bitte im Feld „Themen“ mindestens ein Thema auswählen.</div>`;
+    totalQuestions=0;
+    solved=new Set();
+    updateScore();
+    return;
+  }
+
+  const pageSets=[];
+  const gemischt=druckReihenfolge()!=="themen";
+
+  solved=new Set();
+
+  const task=printTask();
+
+  if(!gemischt){
+    /* Nach Themen sortiert: ein Blatt je Thema (mehr nur auf Wunsch), damit die
+       Blätter eines Themas zusammenbleiben. */
+    const sequence=themeSequence(count,ids);
+    const usedByTheme=new Map();
+    for(let i=0;i<sequence.length;i++){
+      const themeId=sequence[i];
+      pageSets.push({
+        pageNo:i+1,
+        themeId,
+        rows:choosePageRows(themeId,usedByTheme).map(row=>({themeId,row}))
+      });
+    }
+  }else{
+    /* Vorgabe: alles gemischt (Reihenfolge bleibt stehen, siehe mischListe). */
+    gemischteSeiten(count,ids).forEach((seite,i)=>{
+      pageSets.push({pageNo:i+1,themeId:"",rows:seite.rows,start:seite.start});
+    });
+  }
+
+  /* Aufgabe und Fall je Karte festlegen, damit Karten und Lösungsblatt dieselbe
+     Reihenfolge haben. Gemischt hängt der Fall am Platz in der Mischliste
+     (mischPlan) - nur so kann eine Karte beim Rasterwechsel dieselbe bleiben. */
+  for(const page of pageSets) page.faelle=gemischt
+    ? page.rows.map((_,i)=>mischPlan((page.start||0)+i,task))
+    : kartenFaelle(page.rows.length,task,rasterWahl().spalten);
+
+  totalQuestions=pageSets.reduce((sum,p)=>sum+p.rows.length,0);
+  updateScore();
+
+  /* Gemischt entstehen nur die Blatt-Gerüste als Text; die Karten ziehen als
+     fertige Elemente um (setzeZellen). Nach Themen bleibt es beim Textweg. */
+  let html=pageSets.map(page=>worksheet(page,task,!gemischt)).join("");
+
+  if(document.querySelector("#solutions").checked){
+    html+=solutionPages(pageSets,task);
+  }
+
+  pagesElement.innerHTML=html;
+  /* Gemischt: die vorhandenen Karten in ihre neuen Blätter hängen - sie werden
+     nicht neu gebaut, nur umgehängt. */
+  if(gemischt) setzeZellen(pageSets,task);
+  /* Noch leere Bilder (nur bei frisch gebauten Karten) einsetzen. */
+  setzeBilder(bildAuftrag);
+  bildAuftrag=[];
+
+  passeKartenAn();
+
+  try{
+    await renderCanvases();
+    updateStatus();
+  }catch(error){
+    document.querySelector("#status").textContent=error.message;
+    console.error(error);
+  }
+}
+
+function checkAnswer(input){
+  const cardElement=input.closest(".card");
+  const label=input.closest(".choice");
+  /* Die Rückmeldung sitzt neben der Karte in der Zelle - dort bleibt sie in
+     fester Größe und schrumpft nicht mit dem Raster mit. */
+  const feedback=input.closest(".zelle")?.querySelector(".feedback");
+  const qid=input.dataset.qid;
+
+  cardElement.querySelectorAll(".choice").forEach(x=>x.classList.remove("wrong"));
+
+  /* Artikel- und Kasus-Aufgaben prüfen die Artikelreihe (data-row), die
+     Mehrzahl-Aufgabe den Text - nur so sind zwei gleiche Formen wie DEM (blau)
+     und DEM (grün) unterscheidbar. */
+  const soll=input.dataset.answer;
+  const gewaehlt=input.dataset.row;
+  const richtig=gewaehlt ? gewaehlt===soll : input.value===soll;
+
+  if(richtig){
+    label.classList.add("correct");
+    feedback.textContent="✓ Richtig!";
+    feedback.className="feedback good";
+    cardElement.querySelectorAll("input").forEach(x=>x.disabled=true);
+    /* Erst nach der richtigen Antwort zeigt der Bildschirm den vollständigen Satz.
+       Bei einem Fehlversuch bleibt die Lücke stehen; der Ausdruck zeigt sie immer. */
+    cardElement.classList.add("revealed");
+    solved.add(qid);
+    updateScore();
+  }else{
+    label.classList.add("wrong");
+    feedback.textContent="✗ Nochmal";
+    feedback.className="feedback bad";
+  }
+}
+
+async function loadThemeFiles(fileList){
+  const errors=[];
+  const loaded=[];
+
+  for(const file of fileList){
+    try{
+      const text=await file.text();
+      const doc=JSON.parse(text);
+      const registered=registerThemeDocument(doc,file.name);
+      loaded.push(...registered);
+    }catch(error){
+      errors.push(`${file.name}: ${error.message}`);
+    }
+  }
+
+  buildThemeMenu(loaded.length===1 ? loaded[0].themeId : "*");
+  await generate();
+
+  if(errors.length){
+    alert("Einige Theme-Dateien konnten nicht geladen werden:\n\n"+errors.join("\n"));
+  }
+}
+
+
+/* ------------------------------------------------------------------
+   SPIEL-ANSICHT
+   Nutzt dieselbe themes-Map, dieselben Theme-JSON-Daten und zum
+   Sprite-Zeichnen die unveränderte renderCanvases()-Funktion.
+------------------------------------------------------------------- */
+const gameState={
+  queue:[],
+  index:0,
+  correct:0,
+  hadWrongAttempt:false,
+  locked:false,
+  nextTimer:null,
+  countdownTimer:null,
+  deadline:0,
+  paused:false
+};
+
+/*
+  Nach der Lösung bleibt die Karte stehen. Sie geht erst weiter, wenn die
+  Sprechstimme fertig ist UND die Wartezeit abgelaufen ist - standardmäßig
+  10 Sekunden zum Innehalten. Wer schneller oder später will, kann "Weiter"
+  drücken oder mit "Anhalten" die Automatik stoppen.
+*/
+const WEITER_SEKUNDEN=10;
+
+class GamePushAudioNode{
+  constructor(context,onEnd,bufferSize=4096){
+    this.context=context;
+    this.onEnd=onEnd;
+    this.queue=[];
+    this.closed=false;
+    this.connected=false;
+    this.node=context.createScriptProcessor(bufferSize,1,1);
+    this.node.onaudioprocess=this.handle.bind(this);
+  }
+
+  connect(destination){
+    this.node.connect(destination);
+    this.connected=true;
+  }
+
+  push(chunk){
+    if(this.closed || !chunk || !chunk.length) return;
+    this.queue.push(chunk);
+  }
+
+  close(){
+    this.closed=true;
+    if(!this.queue.length) this.finish();
+  }
+
+  stop(){
+    this.queue=[];
+    this.closed=true;
+    this.finish();
+  }
+
+  finish(){
+    if(this.connected){
+      try{this.node.disconnect();}catch(_){}
+      this.connected=false;
+    }
+    this.node.onaudioprocess=null;
+    if(this.onEnd){
+      const callback=this.onEnd;
+      this.onEnd=null;
+      callback();
+    }
+  }
+
+  handle(event){
+    const output=event.outputBuffer.getChannelData(0);
+    output.fill(0);
+
+    let offset=0;
+    while(this.queue.length && offset<output.length){
+      let chunk=this.queue[0];
+      const count=Math.min(chunk.length,output.length-offset);
+      output.set(chunk.subarray(0,count),offset);
+      offset+=count;
+
+      if(count===chunk.length){
+        this.queue.shift();
+      }else{
+        this.queue[0]=chunk.subarray(count);
+      }
+    }
+
+    if(this.closed && !this.queue.length){
+      this.finish();
+    }
+  }
+}
+
+
+const LearningTTS={
+  generationId:0,
+  currentAudio:null,
+  currentResolve:null,
+
+  stop(){
+    this.generationId+=1;
+    if(this.currentAudio){
+      try{
+        this.currentAudio.pause();
+        this.currentAudio.currentTime=0;
+      }catch(_){}
+      this.currentAudio=null;
+    }
+    if(this.currentResolve){
+      const resolve=this.currentResolve;
+      this.currentResolve=null;
+      resolve(false);
+    }
+  },
+
+  async speakText(text){
+    text=String(text||"").trim();
+    if(!text) return false;
+
+    const table=EMBEDDED_TTS?.audioByText || {};
+    const src=table[text];
+    if(!src){
+      console.error("Kein eingebettetes Audio für:",text);
+      return false;
+    }
+    this.stop();
+    const generation=this.generationId;
+    const audio=new Audio(src);
+    this.currentAudio=audio;
+
+    return await new Promise(resolve=>{
+      let settled=false;
+      const finish=value=>{
+        if(settled) return;
+        settled=true;
+        if(this.currentResolve===finish) this.currentResolve=null;
+        if(this.currentAudio===audio) this.currentAudio=null;
+        resolve(value);
+      };
+      this.currentResolve=finish;
+      audio.onended=()=>finish(generation===this.generationId);
+      audio.onerror=event=>{
+        console.error("Eingebettetes MP3-Audio konnte nicht abgespielt werden:",event);
+        finish(false);
+      };
+      audio.play().catch(error=>{
+        console.error("Audio-Wiedergabe fehlgeschlagen:",error);
+        finish(false);
+      });
+    });
+  },
+
+  /* Mehrere Bausteine hintereinander sprechen (Vorspann + Wort).
+     Bricht ab, sobald ein Teil fehlt oder die Wiedergabe gestoppt wurde. */
+  async speakSequence(texts){
+    for(const text of texts){
+      const ok=await this.speakText(text);
+      if(!ok) return false;
+    }
+    return true;
+  }
+};
+
+function cancelGameSpeech(){
+  LearningTTS.stop();
+}
+
+function speakGameText(text){
+  return LearningTTS.speakText(text);
+}
+
+/*
+  Die Ansage besteht aus zwei Bausteinen: dem festen Vorspann (nur einmal
+  gesprochen) und dem Wortclip. "heißt" ist grammatisch mit nacktem Nomen und
+  hält den Artikel aus dem Prompt heraus - im Artikel-Quiz ist er die Lösung.
+  Der zweite Prompt ("Hör noch einmal") nutzt dieselben Bausteine.
+*/
+const PROMPT_PREFIX="Das Wort heißt";
+
+/*
+  Ein Arbeitsblatt ist ein Raster aus Karten (Vorgabe 4×4 = 16 Karten). Der
+  Lernende wählt zwischen 3×3 (große Bilder) und 8×8 (64 kleine Karten); die
+  Karten skalieren mit dem Raster. Die Reihenfolge ist standardmäßig gemischt
+  (alle gewählten Themen durcheinander), auf Wunsch je Thema sortiert.
+*/
+const RASTER_MIN=3,RASTER_MAX=8;
+const SEITEN_MAX=120;
+const DRUCK_SPEICHER="ded-druck-v1";
+
+function rasterWahl(){
+  const zahl=(auswahl,ersatz)=>{
+    const nummer=Number(document.querySelector(auswahl)?.value);
+    return Number.isFinite(nummer)
+      ? Math.max(RASTER_MIN,Math.min(RASTER_MAX,Math.round(nummer)))
+      : ersatz;
+  };
+  return {spalten:zahl("#printCols",4),reihen:zahl("#printRows",4)};
+}
+
+function kartenProBlatt(){
+  const {spalten,reihen}=rasterWahl();
+  return spalten*reihen;
+}
+
+function rasterText(){
+  const {spalten,reihen}=rasterWahl();
+  return `${spalten}×${reihen}`;
+}
+
+function druckReihenfolge(){
+  const wahl=document.querySelector("#printOrder")?.value;
+  return wahl==="themen" ? "themen" : "gemischt";
+}
+
+function seitenZahl(){
+  const nummer=Number(document.querySelector("#pageCount").value);
+  const zahl=Number.isFinite(nummer) ? Math.round(nummer) : 1;
+  return Math.max(1,Math.min(SEITEN_MAX,zahl));
+}
+
+function merkeDruck(){
+  try{
+    const {spalten,reihen}=rasterWahl();
+    localStorage.setItem(DRUCK_SPEICHER,JSON.stringify({
+      reihenfolge:druckReihenfolge(),spalten,reihen
+    }));
+  }catch(error){
+    /* Speichern ist nur Komfort - z. B. bei file:// kann es verboten sein. */
+  }
+}
+
+function ladeDruck(){
+  try{
+    const roh=localStorage.getItem(DRUCK_SPEICHER);
+    if(!roh) return;
+    const werte=JSON.parse(roh) || {};
+    const reihenfolge=document.querySelector("#printOrder");
+    if(reihenfolge) reihenfolge.value=werte.reihenfolge==="themen" ? "themen" : "gemischt";
+    for(const [auswahl,wert] of [["#printRows",werte.reihen],["#printCols",werte.spalten]]){
+      const feld=document.querySelector(auswahl);
+      if(feld && Number.isFinite(Number(wert))) feld.value=String(Number(wert));
+    }
+  }catch(error){
+    /* Ungültige oder fehlende Einstellungen: Vorgabe benutzen. */
+  }
+}
+
+function promptParts(word){
+  const clean=String(word||"").trim();
+  if(!clean) return [];
+  return [PROMPT_PREFIX,clean.endsWith(".") ? clean : clean+"."];
+}
+
+function speakLearningWord(word){
+  const parts=promptParts(word);
+  return parts.length ? LearningTTS.speakSequence(parts) : Promise.resolve(false);
+}
+
+/*
+  Firefox-Konsole:
+    debugWord("Seestern")
+    debugWord("Seestern","acc")
+    debugWord("Seestern","dat")
+
+  Es gibt keine IPA-/Phonem-ID-Schicht mehr. Gesprochen wird der sichtbare Text.
+*/
+function debugWord(word,kind="carrier"){
+  const needle=String(word || "").trim().toLocaleLowerCase("de");
+  const row=[...themes.values()]
+    .flatMap(theme=>theme.entries)
+    .find(entry=>entry.word.toLocaleLowerCase("de")===needle);
+
+  if(!row){
+    console.error("Wort nicht gefunden:",word);
+    return Promise.resolve(false);
+  }
+
+  const selected=kind==="acc"
+    ? row.accusativeSentence
+    : kind==="dat"
+      ? row.dativeSentence
+      : "";
+
+  console.log("WORD:",row.word);
+  console.log("MODE:",kind);
+  console.log("VOICE:",`${EMBEDDED_TTS?.engine || "Piper"} ${EMBEDDED_TTS?.voice || "de_DE-thorsten-high"}`);
+
+  if(selected){
+    console.log("TEXT:",selected);
+    return speakGameText(selected);
+  }
+
+  /* Ansage aus Bausteinen: fester Vorspann + Wortclip. */
+  const parts=promptParts(row.word);
+  console.log("TEXT:",parts.join(" "));
+  return LearningTTS.speakSequence(parts);
+}
+
+function currentGameItem(){
+  return gameState.queue[gameState.index] || null;
+}
+
+function gameCandidates(){
+  /* Jedes Wort nur einmal - sonst käme ein Wort, das in zwei Themen steht,
+     doppelt so oft dran. */
+  return gemischteWoerter(aktiveIds());
+}
+
+function makeGameQueue(){
+  const candidates=shuffle(gameCandidates());
+  const requested=Math.max(
+    1,
+    Math.min(
+      candidates.length || 1,
+      Number(document.querySelector("#gameCount").value) || 20
+    )
+  );
+  const mode=document.querySelector("#gameTask")?.value || "artikel";
+  const rotated=["artikel","kasus","plural"];
+
+  return candidates.slice(0,requested).map((item,index)=>{
+    const wanted=mode==="gemischt" ? rotated[index%rotated.length] : mode;
+    /* Ohne Mehrzahl (Milch, Reis) wird stattdessen der Artikel gefragt. */
+    const task=wanted==="plural" && !pluralPhrase(item.row) ? "artikel" : wanted;
+    return {
+      ...item,
+      task,
+      caseName:index%2===0 ? "acc" : "dat"
+    };
+  });
+}
+
+/* Ein Maskottchen erzählt die Aufgabe; welches Tier, verrät den Aufgabentyp. */
+function taskMascot(task){
+  return task==="plural" ? "🐧" : task==="kasus" ? "🦊" : "🐨";
+}
+
+function gameProgressHtml(){
+  const total=gameState.queue.length;
+  const current=Math.min(gameState.index+1,total);
+  const correct=gameState.correct;
+  const percent=total ? (correct/total)*100 : 0;
+  const stars=Math.min(correct,12);
+  return `
+    <div class="game-progress">
+      <div class="zeile"><span>Karte ${current} von ${total}</span><span>${correct} richtig</span></div>
+      <div class="game-bar"><i style="width:${percent.toFixed(0)}%"></i></div>
+      <div class="game-stars" aria-label="${correct} von ${total} richtig">${"⭐".repeat(stars)}</div>
+    </div>`;
+}
+
+async function renderGameCard(autoSpeak=true){
+  const shell=document.querySelector("#gameShell");
+  const item=currentGameItem();
+
+  if(!item){
+    renderGameFinish();
+    return;
+  }
+
+  const row=item.row;
+  const task=item.task || "artikel";
+  const sentence=item.caseName==="acc"
+    ? row.accusativeSentence
+    : row.dativeSentence;
+  const revealText=task==="plural" ? pluralPhrase(row) : sentence;
+  const speechText=task==="plural" ? pluralPhrase(row,true) : sentence;
+  const caseLabel=task==="plural"
+    ? "MEHRZAHL"
+    : (item.caseName==="acc" ? "AKKUSATIV" : "DATIV");
+  const taskHint=task==="kasus"
+    ? `Welche Form steht im ${item.caseName==="acc" ? "Akkusativ" : "Dativ"}?`
+    : task==="plural"
+      ? "Wie heißt die Mehrzahl?"
+      : "Welcher Artikel ist richtig?";
+  const choices=taskChoices(row,item.caseName,task,item);
+
+  gameState.locked=false;
+  gameState.hadWrongAttempt=false;
+  shell.innerHTML=`
+    ${gameProgressHtml()}
+    <section class="game-card">
+      <div class="game-case ${task==="plural" ? "plural" : item.caseName}">${caseLabel}</div>
+      <div class="game-mascot" aria-hidden="true">${taskMascot(task)}</div>
+      <div class="game-speech">${taskHint}</div>
+
+      <div id="gamePicture" class="game-picture">
+        ${visualHtml(item.themeId,row,640)}
+      </div>
+
+      <div class="game-word">${esc(row.word)}</div>
+
+      <div id="gameSentenceRow" class="game-sentence-row">
+        <div id="gameSentence" class="game-sentence">${esc(revealText)}</div>
+        <button id="gameSpeakSentence" class="speak-button" type="button"
+          aria-label="Lösung noch einmal vorlesen">🔊</button>
+      </div>
+
+      <div class="game-answers ${task==="plural" ? "plural" : ""}" role="group" aria-label="Antwort auswählen">
+        ${choices.map(choice=>`<button class="article-game-button ${choice.cls}" type="button"
+          data-value="${esc(choice.value)}" data-row="${esc(choice.row||"")}" data-answer="${esc(choice.answer)}">${esc(choice.value.toUpperCase())}</button>`).join("")}
+      </div>
+
+      <div id="gameFeedback" class="game-feedback"></div>
+
+      <div id="gameNextRow" class="game-next" hidden>
+        <button id="gameNextButton" class="next-button" type="button">Weiter ⏭️</button>
+        <button id="gamePauseButton" class="pause-button" type="button" aria-pressed="false">⏸️ Anhalten</button>
+        <span id="gameCountdown" class="game-countdown"></span>
+      </div>
+    </section>`;
+
+  await renderCanvases();
+
+  document.querySelectorAll(".article-game-button").forEach(button=>{
+    button.addEventListener(
+      "click",
+      ()=>answerGame(button,item,speechText)
+    );
+  });
+  document.querySelector("#gameNextButton").addEventListener("click",goToNextCard);
+  document.querySelector("#gamePauseButton").addEventListener("click",toggleGamePause);
+
+  if(autoSpeak){
+    /* Natürlicher Kontext vor und nach dem Lernwort; Artikel und Kasusform werden nicht verraten. */
+    speakLearningWord(row.word);
+  }
+}
+
+async function answerGame(button,item,speechText){
+  if(gameState.locked) return;
+
+  const word=item.row.word;
+  const picture=document.querySelector("#gamePicture");
+  const feedback=document.querySelector("#gameFeedback");
+
+  document.querySelectorAll(".article-game-button")
+    .forEach(x=>x.classList.remove("answer-wrong"));
+
+  const richtig=button.dataset.row
+    ? button.dataset.row===button.dataset.answer
+    : button.dataset.value===button.dataset.answer;
+
+  if(richtig){
+    gameState.locked=true;
+
+    const firstTryCorrect=!gameState.hadWrongAttempt;
+    if(firstTryCorrect){
+      gameState.correct+=1;
+    }
+
+    button.classList.add("answer-correct");
+    document.querySelectorAll(".article-game-button")
+      .forEach(x=>x.disabled=true);
+
+    feedback.textContent=firstTryCorrect
+      ? "🎉 Super, richtig! +1 Punkt"
+      : "✨ Jetzt stimmt's – kein Punkt";
+    feedback.className="game-feedback good";
+
+    picture.classList.remove("shake");
+    void picture.offsetWidth;
+    picture.classList.add("bounce");
+
+    /*
+      Erst nach der richtigen Auswahl zeigen und sprechen wir die Lösung.
+      So kann sie die Antwort vorher nicht verraten.
+    */
+    const sentenceRow=document.querySelector("#gameSentenceRow");
+    const repeatSentence=document.querySelector("#gameSpeakSentence");
+
+    if(sentenceRow){
+      sentenceRow.classList.add("revealed");
+    }
+
+    if(repeatSentence){
+      repeatSentence.disabled=true;
+    }
+
+    /*
+      Karte bleibt stehen, bis die Stimme den Satz vollständig abgespielt hat.
+      Danach läuft die Wartezeit (WEITER_SEKUNDEN), und "Weiter" geht sofort.
+      Auch wenn die Sprachausgabe scheitert, bleibt der Lernende nicht hängen:
+      die Steuerzeile mit Zähler erscheint trotzdem.
+    */
+    const playedToEnd=await speakGameText(speechText);
+
+    if(repeatSentence){
+      repeatSentence.disabled=false;
+      repeatSentence.addEventListener(
+        "click",
+        ()=>speakGameText(speechText)
+      );
+    }
+
+    if(!playedToEnd){
+      feedback.textContent=firstTryCorrect
+        ? "🎉 Super, richtig! +1 Punkt · 🔊 Lösung noch einmal anhören."
+        : "✨ Jetzt stimmt's – kein Punkt · 🔊 Lösung noch einmal anhören.";
+      feedback.className="game-feedback good";
+    }
+
+    showNextControls();
+  }else{
+    gameState.hadWrongAttempt=true;
+    button.classList.add("answer-wrong");
+    feedback.textContent="💪 Fast! Versuch es noch einmal. Für diese Karte gibt es keinen Punkt mehr.";
+    feedback.className="game-feedback bad";
+
+    picture.classList.remove("shake");
+    void picture.offsetWidth;
+    picture.classList.add("shake");
+
+    /* Nach einem Fehlversuch dieselbe Ansage noch einmal (kein eigener Clip). */
+    speakLearningWord(word);
+  }
+}
+
+function clearNextTimers(){
+  if(gameState.nextTimer){
+    clearTimeout(gameState.nextTimer);
+    gameState.nextTimer=null;
+  }
+  if(gameState.countdownTimer){
+    clearInterval(gameState.countdownTimer);
+    gameState.countdownTimer=null;
+  }
+}
+
+function updateNextControls(){
+  const zaehler=document.querySelector("#gameCountdown");
+  const pause=document.querySelector("#gamePauseButton");
+  if(!zaehler||!pause)return;
+
+  pause.textContent=gameState.paused ? "▶️ Weiterlaufen" : "⏸️ Anhalten";
+  pause.setAttribute("aria-pressed",String(gameState.paused));
+
+  if(gameState.paused){
+    zaehler.textContent="angehalten";
+    return;
+  }
+  if(!gameState.deadline){
+    zaehler.textContent="";
+    return;
+  }
+  const rest=Math.max(0,Math.ceil((gameState.deadline-Date.now())/1000));
+  zaehler.textContent=rest>0 ? `weiter in ${rest} s` : "gleich weiter …";
+}
+
+function scheduleNext(){
+  clearNextTimers();
+  if(gameState.paused){
+    gameState.deadline=0;
+    updateNextControls();
+    return;
+  }
+  gameState.deadline=Date.now()+WEITER_SEKUNDEN*1000;
+  gameState.countdownTimer=setInterval(updateNextControls,250);
+  gameState.nextTimer=setTimeout(goToNextCard,WEITER_SEKUNDEN*1000);
+  updateNextControls();
+}
+
+function showNextControls(){
+  const zeile=document.querySelector("#gameNextRow");
+  if(!zeile)return;
+  zeile.hidden=false;
+  gameState.paused=false;
+  scheduleNext();
+}
+
+function toggleGamePause(){
+  gameState.paused=!gameState.paused;
+  if(gameState.paused){
+    clearNextTimers();
+    gameState.deadline=0;
+    updateNextControls();
+  }else{
+    scheduleNext();
+  }
+}
+
+function goToNextCard(){
+  clearNextTimers();
+  gameState.deadline=0;
+  gameState.paused=false;
+  cancelGameSpeech();
+  gameState.index+=1;
+  renderGameCard(true);
+}
+
+function renderGameFinish(){
+  cancelGameSpeech();
+  const shell=document.querySelector("#gameShell");
+  const total=gameState.queue.length;
+  const correct=gameState.correct;
+  const lob=total && correct===total
+    ? "🏆 Alles richtig – stark!"
+    : correct>=total/2 ? "💪 Weiter so, das wird immer besser!" : "🌱 Übung macht den Meister!";
+  shell.innerHTML=`
+    ${gameProgressHtml()}
+    <section class="game-finish">
+      <div class="confetti">🎉 ⭐ 🎊 ⭐ 🎉</div>
+      <h2>Runde geschafft!</h2>
+      <p>Du hast <b>${correct} von ${total}</b> Karten gleich beim ersten Mal gewusst.</p>
+      <p>${lob}</p>
+      <button id="playAgain" type="button">Noch einmal spielen</button>
+    </section>`;
+
+  document.querySelector("#playAgain").addEventListener("click",startGame);
+}
+
+async function startGame(){
+  clearNextTimers();
+  gameState.deadline=0;
+  gameState.paused=false;
+  cancelGameSpeech();
+
+  const shell=document.querySelector("#gameShell");
+
+  if(!themes.size){
+    shell.innerHTML=`<div class="game-empty">Bitte mindestens ein Theme-JSON laden.</div>`;
+    return;
+  }
+
+  if(!aktiveIds().length){
+    shell.innerHTML=`<div class="game-empty">Bitte im Feld „Themen“ mindestens ein Thema auswählen.</div>`;
+    return;
+  }
+
+  const candidates=gameCandidates();
+  if(!candidates.length){
+    shell.innerHTML=`<div class="game-empty">Für diese Auswahl wurden keine Wörter gefunden.</div>`;
+    return;
+  }
+
+  gameState.queue=makeGameQueue();
+  gameState.index=0;
+  gameState.correct=0;
+  gameState.hadWrongAttempt=false;
+  gameState.locked=false;
+
+  updateStatus();
+  await renderGameCard(true);
+}
+
+function setViewMode(mode){
+  const isGame=mode==="game";
+
+  document.body.classList.toggle("mode-game",isGame);
+
+  const printButton=document.querySelector("#printModeButton");
+  const gameButton=document.querySelector("#gameModeButton");
+
+  printButton.classList.toggle("active",!isGame);
+  gameButton.classList.toggle("active",isGame);
+  printButton.setAttribute("aria-pressed",String(!isGame));
+  gameButton.setAttribute("aria-pressed",String(isGame));
+
+  if(isGame){
+    startGame();
+  }else{
+    clearNextTimers();
+    gameState.deadline=0;
+    cancelGameSpeech();
+    /* Die Statuszeile wurde im Spiel ohne Seitenangabe geschrieben - hier
+       wieder ergänzen (die Blätter selbst stehen ja unverändert da). */
+    updateStatus();
+  }
+}
+
+
+/* Starttheme registrieren */
+for(const builtIn of BUILTIN_THEMES){
+  registerTheme(builtIn,"eingebautes Theme");
+}
+/* Gespeicherte Druck-Einstellungen (Reihenfolge, Raster) vor der ersten
+   Seitenberechnung anwenden. */
+ladeDruck();
+buildThemeMenu("*");
+
+
+document.querySelector("#printModeButton").addEventListener("click",()=>setViewMode("print"));
+document.querySelector("#gameModeButton").addEventListener("click",()=>setViewMode("game"));
+document.querySelector("#newGame").addEventListener("click",startGame);
+document.querySelector("#gameCount").addEventListener("change",()=>{
+  if(document.body.classList.contains("mode-game")) startGame();
+});
+document.querySelector("#gameTask").addEventListener("change",()=>{
+  if(document.body.classList.contains("mode-game")) startGame();
+});
+document.querySelector("#printTask").addEventListener("change",()=>{
+  if(!document.body.classList.contains("mode-game")) generate();
+});
+document.querySelector("#nameLine").addEventListener("change",()=>{
+  if(!document.body.classList.contains("mode-game")) generate();
+});
+document.querySelector("#solutions").addEventListener("change",()=>{
+  if(!document.body.classList.contains("mode-game")) generate();
+});
+document.querySelector("#themeList").addEventListener("change",event=>{
+  const box=event.target.closest("input[type=checkbox]");
+  if(!box) return;
+  if(box.checked) gewaehlteThemen.add(box.value);
+  else gewaehlteThemen.delete(box.value);
+  renderThemePicker();
+  merkeThemen();
+  updatePageCountDefault();
+  if(document.body.classList.contains("mode-game")) startGame();
+  else generate();
+});
+document.querySelector("#themeAll").addEventListener("click",()=>setzeAlleThemen(true));
+document.querySelector("#themeNone").addEventListener("click",()=>setzeAlleThemen(false));
+
+document.querySelector("#pages").addEventListener("change",event=>{
+  if(event.target.classList.contains("article-radio")) checkAnswer(event.target);
+});
+
+document.querySelector("#generate").addEventListener("click",neuMischen);
+document.querySelector("#pageCount").addEventListener("change",event=>{
+  /* Eigene Seitenzahl nicht mehr automatisch überschreiben - und sofort neu
+     aufteilen, damit die neue Seitenzahl auch zu sehen ist. */
+  event.target.dataset.eigene="1";
+  if(!document.body.classList.contains("mode-game")) generate();
+});
+/* Reihenfolge und Raster ändern die Blattaufteilung grundsätzlich: die
+   Seitenzahl fällt auf die neue Vorgabe zurück (eigene Zahl gilt nur so lange,
+   wie der Lernende Raster und Reihenfolge nicht anfasst). Mehrere Klicks kurz
+   hintereinander (Spalten, dann Reihen) lösen nur **einen** Aufbau aus. */
+let druckTimer=0;
+const druckEinstellungGeaendert=()=>{
+  merkeDruck();
+  delete document.querySelector("#pageCount").dataset.eigene;
+  updatePageCountDefault();
+  if(document.body.classList.contains("mode-game")) return;
+  clearTimeout(druckTimer);
+  druckTimer=setTimeout(generate,120);
+};
+document.querySelector("#printOrder").addEventListener("change",druckEinstellungGeaendert);
+document.querySelector("#printCols").addEventListener("change",druckEinstellungGeaendert);
+document.querySelector("#printRows").addEventListener("change",druckEinstellungGeaendert);
+document.querySelector("#print").addEventListener("click",async()=>{
+  /* Erst alle Blätter nachmessen (zu lange Wörter werden kleiner), dann drucken. */
+  await kartenFertig();
+  window.print();
+});
+
+document.querySelector("#aboutButton").addEventListener("click",()=>{
+  const element=document.querySelector("#about");
+  element.style.display=element.style.display==="block" ? "none" : "block";
+});
+
+document.querySelector("#themeFiles").addEventListener("change",async event=>{
+  if(event.target.files?.length){
+    await loadThemeFiles(event.target.files);
+    event.target.value="";
+  }
+});
+
+generate();
+
+</script>
+
+<!--
+  Die Audioclips stehen als reine Daten (JSON) **am Ende** der Datei.
+  Der Browser muss eine 37-MB-Datei von der Platte lesen; bis die letzten Bytes
+  da sind, dauert es ein paar Sekunden. Deshalb kommen die Klänge zuletzt: die
+  Karten stehen schon, während die Töne noch einlesen, und die Statuszeile
+  wechselt von „⏳ Ton wird geladen“ auf „🔊 Ton eingebaut“.
+  Der Block ist kein Programm, sondern Text - er wird nicht übersetzt, sondern
+  nur als Zeichenkette gelesen und mit JSON.parse ausgewertet.
+-->
+<script id="ttsData" type="application/json">/*__EMBEDDED_TTS__*/ {"mode":"none"}</script>
+<script>
+(function(){
+  let daten=null;
+  try{
+    daten=JSON.parse(document.getElementById("ttsData").textContent);
+  }catch(error){
+    console.error("Tondaten konnten nicht gelesen werden (Vorlage ohne Build?)",error);
+  }
+  ladeTon(daten);
+})();
+</script>
+</body>
+</html>

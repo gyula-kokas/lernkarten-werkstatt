@@ -1,0 +1,335 @@
+# Project Guidelines
+
+Lernkarten-Werkstatt 0.4 – local visual editor for German learning cards.
+**The deliverable for learners is always exactly one self-contained HTML file.**
+
+User-facing docs (German): [README.md](README.md) ·
+security model [SECURITY.md](SECURITY.md) · licenses [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)
+
+## Build and Test
+
+No Python packages are needed in the project itself — **standard library only**. The only
+external requirements are the TTS toolchain (Piper in its own virtualenv with the CC0
+voice `de_DE-kerstin-low`) and `ffmpeg` with `libmp3lame`.
+
+```bash
+python3 tools/check_tts.py                  # verify mandatory TTS before anything else
+python3 tests/smoke_test.py                 # the test suite
+python3 tools/audit_words.py                # article + plural against the offline dictionary
+python3 tools/build_decks.py --dry-run      # resolve the deck plan against the picture catalog
+python3 tools/shrink_svg.py --help          # shrink an oversized picture
+python3 tools/word_overview.py              # review sheet: every word with its picturepython3 tools/artikel_balance.py --reserve  # der/die/das per theme + gaps (author analysis)python3 bilder_waehlen.py                   # start editor → http://127.0.0.1:8765/
+python3 build_simple.py --themes selected-themes --output lernkarten.html
+python3 -m py_compile bilder_waehlen.py build_simple.py tools/tts_piper.py \
+    tools/piper_worker.py tools/check_tts.py tools/image_providers.py \
+    tools/import_kaikki_dictionary.py tools/update_dictionary.py \
+    tools/audit_words.py tools/build_decks.py tools/shrink_svg.py \
+    tools/word_overview.py tools/artikel_balance.py tools/stoffnamen.py   # syntax check (CI)
+```
+
+`.github/workflows/build.yml` is the reference for what CI runs. It mocks
+`build_simple.probe`/`build_simple.synthesize_mp3` so CI validates templating
+**without** the Piper environment or the voice model.
+
+## Architecture
+
+Three layers, connected by a JSON contract:
+
+1. **Editor backend** – `bilder_waehlen.py` (stdlib `ThreadingHTTPServer`). Serves the
+   UI, searches images, looks up nouns, audits themes, exports and triggers builds.
+2. **Editor frontend** – `tools/image-picker.html`, a single file served at `/` with
+   `__TOKEN__` replaced by the per-session token. All calls go through `api(path, data)`.
+3. **Learner output** – `der_die_das_template.html` + theme JSON → one offline HTML
+   via `build_simple.py`.
+
+Data flow:
+
+```text
+themes/*.json  →  [editor edits, image-library/selections.json]  →  selected-themes/*.json
+                                                                          ↓ build_simple.py
+                                                          output-selected/*.html (self-contained)
+```
+
+- `build_simple.py` is the **current** builder: it requires the Piper voice, pre-renders
+  every spoken string as MP3, and injects themes + audio at the template markers
+  `/*__THEMES_JSON__*/ []` (inside the main `const BUILTIN_THEMES = …` expression) and
+  `/*__EMBEDDED_TTS__*/ {"mode":"none"}` (inside the
+  `<script id="ttsData" type="application/json">` block **at the end of the body**).
+  Each marker must appear **exactly once**.
+  - **The audio stays at the end of the file, always.** A built card file is ~35 MB
+    (10 MB pictures in the theme JSON, 26 MB MP3 as base64). Chromium reads a `file://`
+    document sequentially at only a few MB/s, so where the bytes sit decides when the
+    learner sees something: with the themes first, the parser reaches the main script
+    after ~10 MB and the sheets appear after **3.5 s** while the audio is still
+    streaming in (ready at ~12 s). With the clips in front it was ~23 s of blank page.
+    `ladeTon()` (called by the tail script) fills the mutable `EMBEDDED_TTS` and the
+    status line goes `⏳ Ton wird geladen` → `🔊 Ton eingebaut`; `tests/smoke_test.py`
+    (`check_vorlage_aufbau`) and the CI templating step both assert the order. Never
+    turn the audio back into a JS literal in the main script either — a data block is
+    plain text the browser does not have to compile.
+- `tools/tts_piper.py` owns the single voice and the whole audio chain: it finds a Python
+  with Piper installed, bootstraps the model into `vendor/piper/`, trims and levels the
+  PCM, and encodes the MP3. `tools/piper_worker.py` runs **inside the Piper virtualenv**
+  and keeps the ONNX model loaded — one model load per build instead of one per clip.
+
+## Conventions
+
+- **No TTS fallback, ever.** There is exactly one chain: Piper `de_DE-thorsten-high`
+  (CC0 1.0, 22.05 kHz, `LENGTH_SCALE` 1.12) → MP3 48 kbit/s at 44.1 kHz (MPEG-1 Layer III).
+  Never add a browser voice, a second voice or any other fallback. If Piper or ffmpeg is
+  unavailable the editor refuses to start and the build aborts by design. The codec is fixed
+  because the exported HTML must play everywhere (MPEG-1 works on Safari, iOS, Chromium,
+  Firefox).
+- **Editor-only metadata must never reach the export**: `editorType`, `imageSearch`,
+  and anything matching the `editor*` / `_editor*` prefix are stripped in
+  `build_simple.load_themes` and `export_theme`. Keep it that way.
+- **Match the file's existing style.** `bilder_waehlen.py` is deliberately dense,
+  single-line, semicolon-separated and uses `UPPER_CASE` module globals (e.g. `ROOT`,
+  `DATA`, `LOCK`, `JOB`). `build_simple.py` and `tools/*.py` are
+  PEP8-formatted with `from __future__ import annotations` and type hints. Do not
+  reformat `bilder_waehlen.py` to PEP8 or vice versa.
+- **Language:** user-facing strings, error messages and docs are German; code
+  identifiers are English. `build_simple.py`, `tools/tts_piper.py` and
+  `tools/piper_worker.py` use English docstrings, `bilder_waehlen.py` uses German
+  ones.
+- **Theme/entry contract** (required by both builders): a theme needs `themeId`,
+  `themeName`, `entries`; every entry needs `word`, `article` ∈ {`der`,`die`,`das`},
+  `plural`, `accusativeSentence`, `dativeSentence`, and `imageSvg` after export.
+  `themeId` must be unique across files; words must be unique (case-folded) per theme.
+- **Deck rules:** at most **25 words per theme**, at least **15** (smaller themes are
+  dropped), and **one picture belongs to exactly one word — project-wide**. Decks are built
+  image-first: the plan (`tools/decks/*.json`: word + English picture term, the term may be
+  a *list* `["main", "fallback", …]`) is resolved against the offline catalog by
+  `tools/build_decks.py`. A picture another word already owns forces the fallback term,
+  otherwise the word is dropped; the *same* word in two themes keeps its picture.
+- **Pictures chosen in the editor win over the plan.** `tools/build_decks.py` reads
+  `image-library/selections.json` first: a word with an existing picture choice keeps
+  exactly that picture (the plan's term is only used for words that have none yet), so a
+  deck rebuild never replaces a hand-picked ClipSafari drawing with the catalog hit.
+  `--plan-bilder` deliberately overrides that rule. `tests/smoke_test.py`
+  (`check_werkstatt_bilder`) fails if a rebuild would change any existing picture, and the
+  tool prints what the plan would have picked instead.
+  A single theme may raise its limit with `"max": N` in the plan (`Körper` has over 40
+  body parts); `tests/smoke_test.py` reads that `max` and otherwise enforces 25 words,
+  uniqueness of words, and the sentence rule; `--verworfen` writes
+  `themen-reserve/verworfen.md` (every dropped word with its reason).
+- **Article balance is a report, not a build rule.** German nouns are not spread evenly
+  over der/die/das (fruit is almost always *die*, jobs mostly *der*), so no deck is
+  rejected for an uneven mix. `tools/artikel_balance.py` shows the drift per theme and
+  per deck-plan file (Cramér's V against one third each, plus how many words of which
+  article are missing); `--reserve` adds the dropped words from `verworfen.md` whose
+  article would fill the gap — "nur Sätze schreiben" means the picture is still free.
+- **Mass nouns have no plural** (Milch, Reis, Blut, Käse, …). The list lives once in
+  `tools/stoffnamen.py` and is used by three places that must agree: `tools/build_decks.py`
+  (writes `plural: ""`, so no plural clip is spoken), `bilder_waehlen.py` (`audit_theme`)
+  and `tools/audit_words.py`. Never fill such a field with a note or with the
+  dictionary's technical plural ("die Milche", "die Reise").
+- **Example sentences are written by hand, never generated.** Every deck word needs its
+  two sentences in `tools/saetze/*.json` (`{ "<themaId>": { "<Wort>": [acc, dat] } }`).
+  `tools/build_decks.py` rejects a word without a sentence, a sentence that does not
+  contain the case form of *that* word, an indefinite article where the definite one is
+  expected, and a wrong preposition group. Never re-introduce a sentence builder, a
+  template pool or a round-robin generator for the decks — that produced nonsense like
+  “Das Kind trinkt die Erdbeere”. The `templatePools` in `tools/image-picker.html` only
+  fill the editor's suggestion box for manually edited entries.
+- **Print: mixed by default, grid selectable.** `der_die_das_template.html` mixes the words
+  of all selected themes (`gemischteSeiten()`: slices `gemischteWoerter()`)
+  and cuts them into sheets of `spalten × reihen` cards. `#printOrder` switches to
+  `themen` (per-theme sheets via `themeSequence()`/`blattVerteilung()`; extra sheets go to the
+  themes with the **most unprinted words**, so `Körper` with 41 words reaches its three sheets
+  at 32 pages while small decks keep one). `#printCols`/`#printRows` pick the grid
+  (**3×3 … 8×8**, default **4×4** = the old 16-card sheet), `seitenZahl()` clamps
+  `#pageCount` to `SEITEN_MAX` (120) and `updatePageCountDefault()` sets it to *as many
+  sheets as all words need* (mixed) or to the number of themes (per-theme). `gedrucktText()`
+  shows pages, grid, order and how many words reach paper. Raster and order are remembered in
+  `localStorage` (`ded-druck-v1`).
+- **One word = one card.** 53 words exist in two decks (Ameise in *Wald und Wiese* **and*
+  *Insekten und Kriechtiere*, Sonne in *Wetter* and *Flugzeuge und Weltall*, Traktor in
+  *Bauernhof* and *Fahrzeuge* …) — 692 entries, but only **639 distinct words**. The mixed
+  print and the game therefore draw from `gemischteWoerter(ids)`, which keeps the first
+  occurrence per case-folded `word`; the same helper feeds the counters
+  (`begriffsZahl()`, `auswahlText()`, `gedrucktText()`, `updatePageCountDefault()`), so
+  "45 Wörter" on a theme picker never means 45 cards. Per-theme order (`themen`) keeps a
+  shared word on each of its two sheets on purpose — there the learner practises one deck
+  at a time. Never gather entries with a plain `for` loop over `theme.entries` for a mixed
+  list again, and never re-add a second card for the same word to fill a sheet.
+- **Changing the grid moves cards, it never rebuilds them.** A sheet holds ~10,000 elements
+  (picture, word, sentence, three answer pills per card); rebuilding all of them as HTML for
+  every `#printCols`/`#printRows` change took 1.2 s of parsing plus 1 s of layout on the
+  target hardware. Therefore:
+  - the mixture is shuffled **once** (`mischListe()`, cached until the theme selection
+    changes or the learner presses *Neu mischen* → `neuMischen()`), so the sheets keep their
+    words;
+  - task and case of a card come from its **place in the mixed list** (`mischPlan(i,task)`),
+    not from the grid — a card stays the same card in every raster. `kartenFaelle()` (the
+    old, grid-based checkerboard) is only for per-theme order, where sheets are rebuilt
+    anyway;
+  - `kartenPool` keeps one `.zelle` element per `task + themeId + word + kind + fall`;
+    `setzeZellen()` only moves them into the new grids (and calls `setzeZelleZurueck()`, so
+    every rebuild starts with unanswered cards). Only the sheet shells (head, legend,
+    solutions) are still written as HTML (`worksheet(page,task,mitKarten=false)`);
+  - pictures live in `bildPool` and are attached by `setzeBilder()` to the `.pic`
+    placeholders (`data-bild` is deleted once filled) — a card that already carries its
+    picture is skipped, so pictures are parsed once per session.
+  Moving 639 cards plus laying out the visible sheets now costs ~0.2–0.4 s of blocking work
+  (was ~2 s, one long task). Never go back to `pagesElement.innerHTML = worksheet(...)` for
+  the mixed order.
+- **Only visible sheets are computed.** `.page` uses `content-visibility:auto`
+  (`contain-intrinsic-size:auto 297mm`, `content-visibility:visible` in `@media print`).
+  `passeKartenAn()` therefore measures **sheet by sheet**: the sheets in view immediately,
+  all others in `requestIdleCallback` slices (one forced layout per sheet instead of one for
+  all 40). `kartenFertig()` resolves when that queue is empty and `#print` awaits it before
+  `window.print()` — anything that prints or screenshots must do the same.
+- **The card scales with the grid, never clips.** The card is laid out in `em` relative to a
+  base font that each cell of the grid computes itself (`container-type:size` +
+  `font-size:min(2.755cqh,3.53cqw)`, mm fallback), so 3×3 gives big pictures and 8×8 small
+  ones. `passeKartenAn()` measures every card after rendering (sheet by sheet, see above) and
+  shrinks `.word`/`.sentence` in steps (`mittel`, `klein`) if content would be cut off.
+  Answer dots are **self-drawn**
+  (`appearance:none`) because a native radio ignores the inherited font and would stay ~18 px
+  in every grid — that was what clipped the DER/DIE/DAS row. The card's four rows are
+  **picture · word · answer pills · sentence** (`grid-template-rows:15.3em 4.28em 6.12em
+  7.83em`): the sentence always sits **below** the der/die/das choice, on kasus sheets and
+  after the reveal on article sheets alike. A sentence-free card (`no-sentence`) has no
+  sentence row (its picture grows to `19.58em`); once it is answered correctly
+  (`.card.no-sentence.revealed`) the sentence gets its own row at the bottom and the picture
+  shrinks back to normal. The solution sheet scales with
+  `--sol-schrift` (computed from the rows per sheet), one box per printed sheet.
+- **Screen feedback is not scaled.** The `✓ Richtig!` / `✗ Nochmal` badge is a sibling of the
+  card inside `.zelle` (not inside `.card`), so it keeps a fixed 11 px size in every raster;
+  inside the card it shrank to ~3 pt at 8×8. It is hidden in print (`@media print`, the sheet
+  carries the solutions), and its text stays short so it never wraps on a small card.
+- **Atomic writes:** never write theme/dictionary/selection JSON directly — use
+  `atomic(path, value)` (temp file + `replace`). Guard shared state (`JOB`, `selections`)
+  with `LOCK`.
+- **Security invariants** (see [SECURITY.md](SECURITY.md)): bind to `127.0.0.1` only,
+  verify the `Host` header, require the `X-Token` header on every POST, keep the
+  `ALLOWED_HOSTS` allowlist for downloads, and run untrusted SVG through `clean_svg`.
+  Remote fetches are size- and timeout-capped.
+- **Adding an API route:** GET routes are dispatched in `Handler.do_GET` (no token, but
+  host-checked); POST routes in `Handler.do_POST` (host **and** token checked) and must
+  validate the payload. The frontend must call them through `api()` in
+  `tools/image-picker.html`.
+- **Adding a semantic type for the editor:** the allowed `editorType` values are defined
+  in `validate_entry_payload` and grouped in `classify_word` / `infer_theme_type`; keep
+  those in sync with `templatePools` in `tools/image-picker.html` (editor suggestions
+  only — the decks take their sentences from `tools/saetze/*.json`).
+- **Learner task types:** `der_die_das_template.html` asks either the base article
+  (`artikel`), the case form (`kasus`) or the plural (`plural`). `taskChoices()` builds the
+  options, `pluralPhrase()` the plural text, `pluralDistractors()` wrong plural forms of the
+  **same** word (never another noun — the learner must check the ending). Plural speech comes
+  from `pluralWithArticle` via `texts_for_entries()`. A new task type needs matching clips,
+  otherwise the reveal falls back to the "🔊 Lösung noch einmal anhören" hint.
+- **Answer colours: one rule, no exceptions.** Every answer pill carries the colour of its
+  article row — **blue** `der · den · dem`, **red/pink** `die · die · der`, **green**
+  `das · das · dem` — and the **correct** pill is always the one in the colour of the word
+  (`row.article`). So the dative row shows `DEM` twice: blue for a masculine word, green for a
+  neuter one. `taskChoices()` therefore returns `{value, row, answer, cls}`: `value` is the form
+  to print (`den`, `dem`, …), `row`/`cls` is the article row (its colour) and `answer` is the
+  word's row. Cards *and* game check the **row** (`data-row` vs `data-answer`), because two
+  pills can share the same text (`DEM`); only the plural task compares the text. All sentences
+  are singular, so the dative never offers the plural `den` (`den Kindern` — that belongs to the
+  plural task).
+- **Print tasks** come from `#printTask` (`printTask()`): `artikel` prints a **sentence-free**
+  card (image + word + der/die/das, no case badge, bigger picture), `kasus` prints the masked
+  sentence, `gemischt` alternates per card. All three use **one grid per sheet**, and the
+  accusative/dative cards are **mixed across the sheet** (`kartenFaelle()` shuffles a balanced
+  acc/dat list, `page.faelle` is the single source for cards *and* solution sheet) — never two
+  stacked boxes with AKKUSATIV/DATIV bars: the `AKK.`/`DAT.` badge on each card is the only
+  case cue, so the learner cannot read the case off the position. The game has its own
+  `#gameTask` selector.
+- **The Info box (`#about`) is written for learners, parents and teachers** — plain German,
+  how to use the cards (screen practice, print settings, game pacing, mixing themes), never
+  build/TTS internals; that background belongs in the `.md` files. The built-in file picker
+  for extra theme JSONs is hidden (`.hidden-import`) but its code stays, so the editor-era
+  "load a deck by hand" path can come back without rewriting it.
+- **Game pacing:** after the solution is spoken the card stays put and `#gameNextRow` appears
+  (`showNextControls()`): **Weiter ⏭️** advances at once, **⏸️ Anhalten** (`toggleGamePause()`)
+  stops the automatic 10 s wait (`WEITER_SEKUNDEN`, `scheduleNext()`); `goToNextCard()` is the
+  single place that moves on. The timer only starts after the speech finished and also runs
+  when audio failed — otherwise the learner would be stuck on the card forever.
+- **Theme selection is a multi-select.** The learner picks any set of decks in the toolbar
+  picker (`#themeList` checkboxes, `#themeAll`/`#themeNone`, remembered in `localStorage`);
+  `gewaehlteThemen`, `aktiveThemen()`/`aktiveIds()` are the single source of truth for
+  printing (`themeSequence(count, ids)`) and for the game (`gameCandidates()`). Never go back
+  to the one-theme `<select>` — with 30 decks the learner needs mixtures.
+- **The spoken prompt is assembled, not rendered per word:** `texts_for_entries()` emits the
+  fixed `PROMPT_PREFIX` ("Das Wort heißt") once plus one word clip per entry, and
+  `promptParts()` / `speakSequence()` in the template play both parts in order. The second
+  prompt ("Hör noch einmal") reuses the same clip — it only differs in the text on screen.
+  Never go back to one full sentence per word: that was ~600 extra clips.
+- **Entries without a plural:** mass nouns (Milch, Reis, Butter, …) keep `plural: ""`. The
+  builder then renders no plural clip, the solution sheet prints "– keine Mehrzahl" and the
+  plural task falls back to the article task. Never fill such fields with a note — earlier
+  data contained `"kein üblicher Plural"`, which was printed *and* spoken.
+- **Dictionary:** `dictionary/nouns.json` is an editor-only cache and is never embedded
+  in the exported HTML (see [dictionary/README.md](dictionary/README.md)). It now holds the
+  full offline set (**119,744 nouns** from the Kaikki/Wikitextract dump) and keeps *every*
+  article and plural variant (`articles`/`plurals`), because German nouns are ambiguous
+  (`der/die Paprika`). Lookups are local-first, then de.wiktionary.org, then cached.
+  `audit_theme` is intentionally local-only to stay fast and deterministic;
+  `tools/audit_words.py` is the offline grammar check over all themes.
+- **Image catalogs:** search terms come from `tools/image-sources/catalog.json`
+  (OpenMoji + Twemoji emoji, pinned commits) and `tools/image-sources/mdi.json`
+  (Material Design Icons, Apache 2.0, for objects without an emoji). Respect the
+  license notes in [tools/image-sources/README.md](tools/image-sources/README.md) —
+  attribution fields are copied into exported entries, so don't drop them.
+- **Picture choice** in `tools/build_decks.py`: the plan's picture term may be a list
+  (main + fallbacks) and its 4th element picks the source (`mdi`, `twemoji`,
+  `clipsafari`; default OpenMoji). A taken OpenMoji picture falls back to the *Twemoji
+  drawing of the same motif* (a different picture, not a copy) before the next term.
+  MDI icons are monochrome; the plan uses the exact icon name as term (e.g. `radiator`).
+- **Oversized pictures** (photo tracings with thousands of tiny filled areas) are shrunk
+  with `tools/shrink_svg.py`: `--round` lowers the coordinate precision without touching
+  the shape, `--rasterize --height N` renders at print resolution (28 mm ≈ 662 px at
+  600 dpi) and writes a derived asset `<slug>-karte.json` that keeps source/author/license
+  of the original. Never round path numbers with a plain number regex: arc flags sit
+  directly on the next coordinate (`a1 1 0 0110`), and a regex turns that into garbage.
+
+## Pitfalls
+
+- The editor's **quality check and the deck builder must agree.** `audit_theme()` in
+  `bilder_waehlen.py` accepts *any* documented article/plural variant from the dictionary
+  (`articles`/`plurals`) and only warns about a missing plural when the dictionary knows
+  one — otherwise the deliberate usual-article overrides (`ARTIKEL_UEBLICH` in
+  `tools/build_decks.py`: Butter, Kiwi, Zwiebel, Taxi, …) and mass nouns show up as false
+  errors.
+- A theme **without entries** is skipped by `build_simple.load_themes` with a warning
+  (an empty theme created in the editor must not abort "Alle bauen"); every other data
+  fault still aborts the build on purpose.
+- `image-library/selections.json` keeps one entry per `theme::word`. After a deck
+  overhaul, stale keys from earlier rounds make the audit report pictures as "already
+  used" — prune them (see `themen-reserve/selections-verwaist.json`). Editor picture
+  choices survive a deck rebuild, but words that exist *only* in the plan get added:
+  read the printed `neu aus dem Plan` list before running `--write`. To hand a single
+  picture back to the plan, delete its `<themedatei>::<Wort>` entry (or use
+  `--plan-bilder` for the whole run).
+- The contents of `output-selected/`, `selected-themes/`, `image-library/` and
+  `tts-cache/` are generated outputs, not sources.
+- `vendor/piper/` holds the mandatory voice model (`de_DE-thorsten-high.onnx` plus
+  `.onnx.json`, CC0 1.0, 22.05 kHz). `bootstrap_voice()` only copies it from a local Piper
+  download directory; a build never downloads anything. Do not hand-edit it.
+- Speaking rate and voice are fixed by `VOICE` and `LENGTH_SCALE` in `tools/tts_piper.py`
+  (1.0 = model default, higher = slower). Changing either invalidates the whole audio cache.
+- Audio has exactly two entry points: `synthesize_many(texts, cache_dir)` for a build and
+  `synthesize_mp3(text, cache_dir)` for the editor's single requests. Piper stays loaded in
+  long-running child processes; `default_workers()` (env `DED_TTS_WORKERS`) decides how many
+  run in parallel, each capped via `--threads` so they share the CPU instead of fighting for
+  it. A build pays the ~5 s model load once per worker; finished MP3s are cached in
+  `tts-cache/`.
+- `probe()` caches its result in `_PROBE_CACHE`; a process that already probed will not
+  re-detect a voice that appears later. `load_dictionary()` caches by mtime, so it
+  reloads when `nouns.json` changes.
+- A printed card only shows its sentence when the sentence really contains the case form of
+  the word. `maskedCaseSentence()` in `der_die_das_template.html` and `sentence_has_case()`
+  in `bilder_waehlen.py` (audit rule) implement the same rule — keep both in sync. Tricky
+  cases: weak nouns (Bär → "den Bären"), multi-part words ("Roter Panda" → "den Roten
+  Panda") and umlaut-initial words (Ärztin, Überschwemmung, where JS `\b` fails because it
+  does not treat umlauts as word characters).
+- The editor cannot start without a working Piper chain, so UI-only changes still need a
+  working TTS toolchain to test end-to-end; use
+  `python3 bilder_waehlen.py --no-browser --port N` to avoid opening a browser.
+- Removed theme words are not gone: `themen-reserve/verworfen.md` lists every dropped
+  word. Re-adding one means giving it its own picture — otherwise the deck rule breaks.
+- Tests mock TTS. A green test run does **not** prove the real voice works —
+  run `python3 tools/check_tts.py` for that.

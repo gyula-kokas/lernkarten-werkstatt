@@ -1,0 +1,240 @@
+{
+  "themeId": "theme-77-musik",
+  "themeName": "Musik",
+  "language": "de",
+  "version": 1,
+  "entryCount": 23,
+  "imageMode": "per-entry-svg",
+  "entries": [
+    {
+      "word": "Gitarre",
+      "article": "die",
+      "plural": "Gitarren",
+      "pluralWithArticle": "die Gitarren",
+      "accusativeSentence": "Das Kind hört die Gitarre.",
+      "dativeSentence": "Das Kind spielt mit der Gitarre.",
+      "imageIndex": 0,
+      "editorType": "object"
+    },
+    {
+      "word": "Klavier",
+      "article": "das",
+      "plural": "Klaviere",
+      "pluralWithArticle": "die Klaviere",
+      "accusativeSentence": "Das Kind hört das Klavier.",
+      "dativeSentence": "Das Kind übt an dem Klavier.",
+      "imageIndex": 1,
+      "editorType": "object"
+    },
+    {
+      "word": "Violine",
+      "article": "die",
+      "plural": "Violinen",
+      "pluralWithArticle": "die Violinen",
+      "accusativeSentence": "Das Kind hört die Violine.",
+      "dativeSentence": "Das Kind spielt mit der Violine.",
+      "imageIndex": 2,
+      "editorType": "object"
+    },
+    {
+      "word": "Trommel",
+      "article": "die",
+      "plural": "Trommeln",
+      "pluralWithArticle": "die Trommeln",
+      "accusativeSentence": "Das Kind hört die Trommel.",
+      "dativeSentence": "Das Kind trommelt auf der Trommel.",
+      "imageIndex": 3,
+      "editorType": "object"
+    },
+    {
+      "word": "Trompete",
+      "article": "die",
+      "plural": "Trompeten",
+      "pluralWithArticle": "die Trompeten",
+      "accusativeSentence": "Das Kind hört die Trompete.",
+      "dativeSentence": "Der Ton kommt aus der Trompete.",
+      "imageIndex": 4,
+      "editorType": "object"
+    },
+    {
+      "word": "Saxofon",
+      "article": "das",
+      "plural": "Saxofone",
+      "pluralWithArticle": "die Saxofone",
+      "accusativeSentence": "Das Kind hört das Saxofon.",
+      "dativeSentence": "Der Musiker spielt mit dem Saxofon.",
+      "imageIndex": 5,
+      "editorType": "object"
+    },
+    {
+      "word": "Flöte",
+      "article": "die",
+      "plural": "Flöten",
+      "pluralWithArticle": "die Flöten",
+      "accusativeSentence": "Das Kind hört die Flöte.",
+      "dativeSentence": "Das Kind spielt mit der Flöte.",
+      "imageIndex": 6,
+      "editorType": "object"
+    },
+    {
+      "word": "Harfe",
+      "article": "die",
+      "plural": "Harfen",
+      "pluralWithArticle": "die Harfen",
+      "accusativeSentence": "Das Kind hört die Harfe.",
+      "dativeSentence": "Die Saiten gehören der Harfe.",
+      "imageIndex": 7,
+      "editorType": "object"
+    },
+    {
+      "word": "Akkordeon",
+      "article": "das",
+      "plural": "Akkordeons",
+      "pluralWithArticle": "die Akkordeons",
+      "accusativeSentence": "Das Kind hört das Akkordeon.",
+      "dativeSentence": "Der Musiker spielt mit dem Akkordeon.",
+      "imageIndex": 8,
+      "editorType": "object"
+    },
+    {
+      "word": "Banjo",
+      "article": "das",
+      "plural": "Banjos",
+      "pluralWithArticle": "die Banjos",
+      "accusativeSentence": "Das Kind hört das Banjo.",
+      "dativeSentence": "Der Musiker spielt mit dem Banjo.",
+      "imageIndex": 9,
+      "editorType": "object"
+    },
+    {
+      "word": "Note",
+      "article": "die",
+      "plural": "Noten",
+      "pluralWithArticle": "die Noten",
+      "accusativeSentence": "Das Kind liest die Note.",
+      "dativeSentence": "Das Lied steht in der Note.",
+      "imageIndex": 10,
+      "editorType": "object"
+    },
+    {
+      "word": "Notenblatt",
+      "article": "das",
+      "plural": "Notenblätter",
+      "pluralWithArticle": "die Notenblätter",
+      "accusativeSentence": "Das Kind nimmt das Notenblatt.",
+      "dativeSentence": "Die Note steht auf dem Notenblatt.",
+      "imageIndex": 11,
+      "editorType": "object"
+    },
+    {
+      "word": "Mikrofon",
+      "article": "das",
+      "plural": "Mikrofone",
+      "pluralWithArticle": "die Mikrofone",
+      "accusativeSentence": "Der Sänger nimmt das Mikrofon.",
+      "dativeSentence": "Der Sänger singt mit dem Mikrofon.",
+      "imageIndex": 12,
+      "editorType": "object"
+    },
+    {
+      "word": "Kopfhörer",
+      "article": "der",
+      "plural": "Kopfhörer",
+      "pluralWithArticle": "die Kopfhörer",
+      "accusativeSentence": "Das Kind nimmt den Kopfhörer.",
+      "dativeSentence": "Das Kind hört mit dem Kopfhörer.",
+      "imageIndex": 13,
+      "editorType": "object"
+    },
+    {
+      "word": "Lautsprecher",
+      "article": "der",
+      "plural": "Lautsprecher",
+      "pluralWithArticle": "die Lautsprecher",
+      "accusativeSentence": "Das Kind stellt den Lautsprecher auf.",
+      "dativeSentence": "Die Musik kommt aus dem Lautsprecher.",
+      "imageIndex": 14,
+      "editorType": "object"
+    },
+    {
+      "word": "Radio",
+      "article": "das",
+      "plural": "Radios",
+      "pluralWithArticle": "die Radios",
+      "accusativeSentence": "Der Opa hört das Radio.",
+      "dativeSentence": "Die Musik kommt aus dem Radio.",
+      "imageIndex": 15,
+      "editorType": "object"
+    },
+    {
+      "word": "Konzert",
+      "article": "das",
+      "plural": "Konzerte",
+      "pluralWithArticle": "die Konzerte",
+      "accusativeSentence": "Die Familie besucht das Konzert.",
+      "dativeSentence": "Die Familie erzählt von dem Konzert.",
+      "imageIndex": 16,
+      "editorType": "object"
+    },
+    {
+      "word": "Sänger",
+      "article": "der",
+      "plural": "Sänger",
+      "pluralWithArticle": "die Sänger",
+      "accusativeSentence": "Das Publikum hört den Sänger.",
+      "dativeSentence": "Das Lied gefällt dem Sänger.",
+      "imageIndex": 17,
+      "editorType": "object"
+    },
+    {
+      "word": "Tanz",
+      "article": "der",
+      "plural": "Tänze",
+      "pluralWithArticle": "die Tänze",
+      "accusativeSentence": "Das Kind übt den Tanz.",
+      "dativeSentence": "Die Musik gehört zu dem Tanz.",
+      "imageIndex": 18,
+      "editorType": "object"
+    },
+    {
+      "word": "Orchester",
+      "article": "das",
+      "plural": "Orchester",
+      "pluralWithArticle": "die Orchester",
+      "accusativeSentence": "Die Familie hört das Orchester.",
+      "dativeSentence": "Das Konzert gefällt dem Orchester.",
+      "imageIndex": 19,
+      "editorType": "object"
+    },
+    {
+      "word": "Schelle",
+      "article": "die",
+      "plural": "Schellen",
+      "pluralWithArticle": "die Schellen",
+      "accusativeSentence": "Das Kind schüttelt die Schelle.",
+      "dativeSentence": "Das Kind klingelt mit der Schelle.",
+      "imageIndex": 20,
+      "editorType": "object"
+    },
+    {
+      "word": "Metronom",
+      "article": "das",
+      "plural": "Metronome",
+      "pluralWithArticle": "die Metronome",
+      "accusativeSentence": "Die Lehrerin stellt das Metronom auf.",
+      "dativeSentence": "Der Takt kommt aus dem Metronom.",
+      "imageIndex": 21,
+      "editorType": "object"
+    },
+    {
+      "word": "Triangel",
+      "article": "der",
+      "plural": "Triangel",
+      "pluralWithArticle": "die Triangel",
+      "accusativeSentence": "Das Kind nimmt den Triangel.",
+      "dativeSentence": "Das Kind klingelt mit dem Triangel.",
+      "imageIndex": 22,
+      "editorType": "object"
+    }
+  ]
+}

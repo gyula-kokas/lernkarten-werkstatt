@@ -1,0 +1,260 @@
+{
+  "themeId": "theme-63-werkzeug",
+  "themeName": "Werkzeug und Garten",
+  "language": "de",
+  "version": 1,
+  "entryCount": 25,
+  "imageMode": "per-entry-svg",
+  "entries": [
+    {
+      "word": "Hammer",
+      "article": "der",
+      "plural": "Hämmer",
+      "pluralWithArticle": "die Hämmer",
+      "accusativeSentence": "Das Kind nimmt den Hammer.",
+      "dativeSentence": "Das Kind schlägt mit dem Hammer.",
+      "imageIndex": 0,
+      "editorType": "object"
+    },
+    {
+      "word": "Säge",
+      "article": "die",
+      "plural": "Sägen",
+      "pluralWithArticle": "die Sägen",
+      "accusativeSentence": "Der Mann benutzt die Säge.",
+      "dativeSentence": "Der Mann sägt mit der Säge.",
+      "imageIndex": 1,
+      "editorType": "object"
+    },
+    {
+      "word": "Schraubenzieher",
+      "article": "der",
+      "plural": "Schraubenzieher",
+      "pluralWithArticle": "die Schraubenzieher",
+      "accusativeSentence": "Das Kind braucht den Schraubenzieher.",
+      "dativeSentence": "Das Kind dreht mit dem Schraubenzieher.",
+      "imageIndex": 2,
+      "editorType": "object"
+    },
+    {
+      "word": "Schraubenschlüssel",
+      "article": "der",
+      "plural": "Schraubenschlüssel",
+      "pluralWithArticle": "die Schraubenschlüssel",
+      "accusativeSentence": "Der Mann holt den Schraubenschlüssel.",
+      "dativeSentence": "Der Mann arbeitet mit dem Schraubenschlüssel.",
+      "imageIndex": 3,
+      "editorType": "object"
+    },
+    {
+      "word": "Schraube",
+      "article": "die",
+      "plural": "Schrauben",
+      "pluralWithArticle": "die Schrauben",
+      "accusativeSentence": "Das Kind dreht die Schraube.",
+      "dativeSentence": "Das Rad hängt an der Schraube.",
+      "imageIndex": 4,
+      "editorType": "object"
+    },
+    {
+      "word": "Leiter",
+      "article": "die",
+      "plural": "Leiter",
+      "pluralWithArticle": "die Leiter",
+      "accusativeSentence": "Der Mann trägt die Leiter.",
+      "dativeSentence": "Der Mann steht auf der Leiter.",
+      "imageIndex": 5,
+      "editorType": "object"
+    },
+    {
+      "word": "Eimer",
+      "article": "der",
+      "plural": "Eimer",
+      "pluralWithArticle": "die Eimer",
+      "accusativeSentence": "Das Kind füllt den Eimer.",
+      "dativeSentence": "Das Wasser ist in dem Eimer.",
+      "imageIndex": 6,
+      "editorType": "object"
+    },
+    {
+      "word": "Schaufel",
+      "article": "die",
+      "plural": "Schaufeln",
+      "pluralWithArticle": "die Schaufeln",
+      "accusativeSentence": "Das Kind nimmt die Schaufel.",
+      "dativeSentence": "Das Kind gräbt mit der Schaufel.",
+      "imageIndex": 7,
+      "editorType": "object"
+    },
+    {
+      "word": "Besen",
+      "article": "der",
+      "plural": "Besen",
+      "pluralWithArticle": "die Besen",
+      "accusativeSentence": "Das Kind holt den Besen.",
+      "dativeSentence": "Das Kind fegt mit dem Besen.",
+      "imageIndex": 8,
+      "editorType": "object"
+    },
+    {
+      "word": "Werkzeugkasten",
+      "article": "der",
+      "plural": "Werkzeugkästen",
+      "pluralWithArticle": "die Werkzeugkästen",
+      "accusativeSentence": "Der Mann öffnet den Werkzeugkasten.",
+      "dativeSentence": "Der Hammer liegt in dem Werkzeugkasten.",
+      "imageIndex": 9,
+      "editorType": "object"
+    },
+    {
+      "word": "Rasenmäher",
+      "article": "der",
+      "plural": "Rasenmäher",
+      "pluralWithArticle": "die Rasenmäher",
+      "accusativeSentence": "Der Mann schiebt den Rasenmäher.",
+      "dativeSentence": "Der Mann mäht mit dem Rasenmäher.",
+      "imageIndex": 10,
+      "editorType": "object"
+    },
+    {
+      "word": "Kelle",
+      "article": "die",
+      "plural": "Kellen",
+      "pluralWithArticle": "die Kellen",
+      "accusativeSentence": "Das Kind nimmt die Kelle.",
+      "dativeSentence": "Der Maurer arbeitet mit der Kelle.",
+      "imageIndex": 11,
+      "editorType": "object"
+    },
+    {
+      "word": "Axt",
+      "article": "die",
+      "plural": "Äxte",
+      "pluralWithArticle": "die Äxte",
+      "accusativeSentence": "Der Mann schärft die Axt.",
+      "dativeSentence": "Der Mann hackt mit der Axt.",
+      "imageIndex": 12,
+      "editorType": "object"
+    },
+    {
+      "word": "Draht",
+      "article": "der",
+      "plural": "Drähte",
+      "pluralWithArticle": "die Drähte",
+      "accusativeSentence": "Der Mann biegt den Draht.",
+      "dativeSentence": "Der Zaun hängt an dem Draht.",
+      "imageIndex": 13,
+      "editorType": "object"
+    },
+    {
+      "word": "Seil",
+      "article": "das",
+      "plural": "Seile",
+      "pluralWithArticle": "die Seile",
+      "accusativeSentence": "Das Kind zieht das Seil.",
+      "dativeSentence": "Das Kind springt mit dem Seil.",
+      "imageIndex": 14,
+      "editorType": "object"
+    },
+    {
+      "word": "Kette",
+      "article": "die",
+      "plural": "Ketten",
+      "pluralWithArticle": "die Ketten",
+      "accusativeSentence": "Der Mann ölt die Kette.",
+      "dativeSentence": "Das Fahrrad hängt an der Kette.",
+      "imageIndex": 15,
+      "editorType": "object"
+    },
+    {
+      "word": "Magnet",
+      "article": "der",
+      "plural": "Magnete",
+      "pluralWithArticle": "die Magnete",
+      "accusativeSentence": "Das Kind nimmt den Magneten.",
+      "dativeSentence": "Die Schraube klebt an dem Magneten.",
+      "imageIndex": 16,
+      "editorType": "object"
+    },
+    {
+      "word": "Lupe",
+      "article": "die",
+      "plural": "Lupen",
+      "pluralWithArticle": "die Lupen",
+      "accusativeSentence": "Das Kind benutzt die Lupe.",
+      "dativeSentence": "Das Kind schaut mit der Lupe.",
+      "imageIndex": 17,
+      "editorType": "object"
+    },
+    {
+      "word": "Taschenlampe",
+      "article": "die",
+      "plural": "Taschenlampen",
+      "pluralWithArticle": "die Taschenlampen",
+      "accusativeSentence": "Das Kind nimmt die Taschenlampe.",
+      "dativeSentence": "Das Kind leuchtet mit der Taschenlampe.",
+      "imageIndex": 18,
+      "editorType": "object"
+    },
+    {
+      "word": "Batterie",
+      "article": "die",
+      "plural": "Batterien",
+      "pluralWithArticle": "die Batterien",
+      "accusativeSentence": "Das Kind wechselt die Batterie.",
+      "dativeSentence": "Der Strom kommt aus der Batterie.",
+      "imageIndex": 19,
+      "editorType": "object"
+    },
+    {
+      "word": "Stecker",
+      "article": "der",
+      "plural": "Stecker",
+      "pluralWithArticle": "die Stecker",
+      "accusativeSentence": "Das Kind zieht den Stecker.",
+      "dativeSentence": "Der Strom kommt aus dem Stecker.",
+      "imageIndex": 20,
+      "editorType": "object"
+    },
+    {
+      "word": "Pinsel",
+      "article": "der",
+      "plural": "Pinsel",
+      "pluralWithArticle": "die Pinsel",
+      "accusativeSentence": "Das Kind hält den Pinsel.",
+      "dativeSentence": "Das Kind malt mit dem Pinsel.",
+      "imageIndex": 21,
+      "editorType": "object"
+    },
+    {
+      "word": "Gießkanne",
+      "article": "die",
+      "plural": "Gießkannen",
+      "pluralWithArticle": "die Gießkannen",
+      "accusativeSentence": "Das Kind nimmt die Gießkanne.",
+      "dativeSentence": "Das Kind gießt mit der Gießkanne.",
+      "imageIndex": 22,
+      "editorType": "object"
+    },
+    {
+      "word": "Zange",
+      "article": "die",
+      "plural": "Zangen",
+      "pluralWithArticle": "die Zangen",
+      "accusativeSentence": "Der Mann braucht die Zange.",
+      "dativeSentence": "Der Mann zieht mit der Zange.",
+      "imageIndex": 23,
+      "editorType": "object"
+    },
+    {
+      "word": "Feile",
+      "article": "die",
+      "plural": "Feilen",
+      "pluralWithArticle": "die Feilen",
+      "accusativeSentence": "Der Mann nimmt die Feile.",
+      "dativeSentence": "Der Mann arbeitet mit der Feile.",
+      "imageIndex": 24,
+      "editorType": "object"
+    }
+  ]
+}

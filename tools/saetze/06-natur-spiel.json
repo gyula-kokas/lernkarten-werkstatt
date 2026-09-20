@@ -1,0 +1,643 @@
+{
+  "_hinweis": "Geschriebene Sätze je Thema und Wort: [Akkusativsatz, Dativsatz]. Bewusst schlichte, sichere Satzrahmen.",
+  "wetter": {
+    "Sonne": [
+      "Das Kind sieht die Sonne.",
+      "Das Kind erzählt von der Sonne."
+    ],
+    "Wolke": [
+      "Das Kind malt die Wolke.",
+      "Das Kind erzählt von der Wolke."
+    ],
+    "Regen": [
+      "Das Kind hört den Regen.",
+      "Bei dem Regen bleibt das Kind zu Hause."
+    ],
+    "Regenschauer": [
+      "Das Kind sieht den Regenschauer.",
+      "Bei dem Regenschauer bleibt das Kind zu Hause."
+    ],
+    "Gewitter": [
+      "Das Kind fürchtet das Gewitter.",
+      "Bei dem Gewitter bleibt das Kind zu Hause."
+    ],
+    "Blitz": [
+      "Das Kind sieht den Blitz.",
+      "Bei dem Blitz zählt das Kind bis drei."
+    ],
+    "Schnee": [
+      "Das Kind freut sich über den Schnee.",
+      "Bei dem Schnee zieht das Kind Handschuhe an."
+    ],
+    "Wind": [
+      "Das Kind spürt den Wind.",
+      "Bei dem Wind fliegt der Drachen hoch."
+    ],
+    "Sturm": [
+      "Das Kind hört den Sturm.",
+      "Bei dem Sturm bleibt das Kind zu Hause."
+    ],
+    "Nebel": [
+      "Das Kind sieht den Nebel.",
+      "Bei dem Nebel fährt der Bus langsam."
+    ],
+    "Regenbogen": [
+      "Das Kind fotografiert den Regenbogen.",
+      "Das Kind träumt von dem Regenbogen."
+    ],
+    "Hagel": [
+      "Das Kind fürchtet den Hagel.",
+      "Bei dem Hagel bleibt das Kind im Haus."
+    ],
+    "Glatteis": [
+      "Das Kind fürchtet das Glatteis.",
+      "Bei dem Glatteis geht das Kind langsam."
+    ],
+    "Temperatur": [
+      "Das Kind misst die Temperatur.",
+      "Das Kind erzählt von der Temperatur."
+    ],
+    "Mond": [
+      "Das Kind sieht den Mond.",
+      "Das Kind träumt von dem Mond."
+    ],
+    "Sonnenaufgang": [
+      "Das Kind fotografiert den Sonnenaufgang.",
+      "Das Kind erzählt von dem Sonnenaufgang."
+    ],
+    "Sonnenuntergang": [
+      "Das Kind beobachtet den Sonnenuntergang.",
+      "Das Kind erzählt von dem Sonnenuntergang."
+    ],
+    "Schirm": [
+      "Das Kind öffnet den Schirm.",
+      "Das Kind geht mit dem Schirm."
+    ],
+    "Regenjacke": [
+      "Das Kind sucht die Regenjacke.",
+      "Das Kind geht mit der Regenjacke."
+    ],
+    "Gummistiefel": [
+      "Das Kind trägt den Gummistiefel.",
+      "Das Kind läuft mit dem Gummistiefel."
+    ],
+    "Wetterfahne": [
+      "Das Kind sieht die Wetterfahne.",
+      "Auf der Wetterfahne sitzt ein Hahn."
+    ],
+    "Wetterstation": [
+      "Der Mann baut die Wetterstation auf.",
+      "Die Daten kommen von der Wetterstation."
+    ],
+    "Schneefall": [
+      "Das Kind beobachtet den Schneefall.",
+      "Bei dem Schneefall bleibt das Kind zu Hause."
+    ],
+    "Wassertropfen": [
+      "Das Kind fängt den Wassertropfen.",
+      "Das Licht bricht in dem Wassertropfen."
+    ],
+    "Schneeflocke": [
+      "Das Kind fängt die Schneeflocke.",
+      "Die Kälte kommt von der Schneeflocke."
+    ],
+    "Gewitterwolke": [
+      "Das Kind sieht die Gewitterwolke.",
+      "Der Blitz kommt aus der Gewitterwolke."
+    ]
+  },
+  "natur": {
+    "Berg": [
+      "Das Kind sieht den Berg.",
+      "Das Kind wandert zu dem Berg."
+    ],
+    "Vulkan": [
+      "Das Kind malt den Vulkan.",
+      "Das Kind wandert zu dem Vulkan."
+    ],
+    "Hügel": [
+      "Das Kind sieht den Hügel.",
+      "Das Kind wandert zu dem Hügel."
+    ],
+    "Tal": [
+      "Das Kind betrachtet das Tal.",
+      "Das Kind wandert zu dem Tal."
+    ],
+    "See": [
+      "Das Kind sieht den See.",
+      "Das Kind wandert zu dem See."
+    ],
+    "Fluss": [
+      "Das Kind überquert den Fluss.",
+      "Das Kind wandert zu dem Fluss."
+    ],
+    "Meer": [
+      "Das Kind liebt das Meer.",
+      "Die Familie fährt zu dem Meer."
+    ],
+    "Insel": [
+      "Das Kind malt die Insel.",
+      "Die Familie fährt zu der Insel."
+    ],
+    "Wüste": [
+      "Das Kind sieht die Wüste.",
+      "Das Kind reist zu der Wüste."
+    ],
+    "Wald": [
+      "Das Kind liebt den Wald.",
+      "Das Kind wandert zu dem Wald."
+    ],
+    "Palme": [
+      "Das Kind malt die Palme.",
+      "Das Kind wandert zu der Palme."
+    ],
+    "Blume": [
+      "Das Kind pflückt die Blume.",
+      "Das Kind riecht an der Blume."
+    ],
+    "Sonnenblume": [
+      "Das Kind malt die Sonnenblume.",
+      "Die Biene sitzt an der Sonnenblume."
+    ],
+    "Rose": [
+      "Das Kind pflückt die Rose.",
+      "Das Kind riecht an der Rose."
+    ],
+    "Tulpe": [
+      "Das Kind pflückt die Tulpe.",
+      "Das Kind riecht an der Tulpe."
+    ],
+    "Wiese": [
+      "Das Kind überquert die Wiese.",
+      "Das Kind wandert zu der Wiese."
+    ],
+    "Feld": [
+      "Das Kind sieht das Feld.",
+      "Der Bauer wandert zu dem Feld."
+    ],
+    "Stein": [
+      "Das Kind wirft den Stein.",
+      "Der Käfer sitzt an dem Stein."
+    ],
+    "Höhle": [
+      "Das Kind findet die Höhle.",
+      "Das Kind wandert zu der Höhle."
+    ],
+    "Quelle": [
+      "Das Kind findet die Quelle.",
+      "Das Wasser kommt aus der Quelle."
+    ],
+    "Gletscher": [
+      "Das Kind bestaunt den Gletscher.",
+      "Das Kind wandert zu dem Gletscher."
+    ],
+    "Kristall": [
+      "Das Kind sammelt den Kristall.",
+      "Das Licht bricht in dem Kristall."
+    ],
+    "Erdbeben": [
+      "Das Kind fürchtet das Erdbeben.",
+      "Die Stadt zittert bei dem Erdbeben."
+    ],
+    "Baumstamm": [
+      "Das Kind sieht den Baumstamm.",
+      "Der Käfer läuft auf dem Baumstamm."
+    ],
+    "Wurzel": [
+      "Das Kind gräbt die Wurzel aus.",
+      "Der Baum hält sich mit der Wurzel."
+    ],
+    "Bambus": [
+      "Der Panda frisst den Bambus.",
+      "Der Panda sitzt an dem Bambus."
+    ],
+    "Blatt": [
+      "Das Kind pflückt das Blatt.",
+      "Der Käfer sitzt auf dem Blatt."
+    ],
+    "Ast": [
+      "Der Vogel sucht den Ast.",
+      "Der Vogel sitzt auf dem Ast."
+    ],
+    "Wasserfall": [
+      "Das Kind hört den Wasserfall.",
+      "Das Kind steht vor dem Wasserfall."
+    ]
+  },
+  "blumen-pflanzen": {
+    "Blume": [
+      "Das Kind pflückt die Blume.",
+      "Das Kind riecht an der Blume."
+    ],
+    "Rose": [
+      "Das Kind pflückt die Rose.",
+      "Das Kind riecht an der Rose."
+    ],
+    "Tulpe": [
+      "Das Kind pflückt die Tulpe.",
+      "Das Kind riecht an der Tulpe."
+    ],
+    "Sonnenblume": [
+      "Das Kind gießt die Sonnenblume.",
+      "Die Biene sitzt an der Sonnenblume."
+    ],
+    "Hibiskus": [
+      "Das Kind sieht den Hibiskus.",
+      "Die Blüte sitzt an dem Hibiskus."
+    ],
+    "Mohnblume": [
+      "Das Kind fotografiert die Mohnblume.",
+      "Die Biene sitzt an der Mohnblume."
+    ],
+    "Klee": [
+      "Das Kind sucht den Klee.",
+      "Das Kaninchen frisst von dem Klee."
+    ],
+    "Pflanze": [
+      "Das Kind gießt die Pflanze.",
+      "Das Wasser läuft an der Pflanze herunter."
+    ],
+    "Kaktus": [
+      "Das Kind gießt den Kaktus selten.",
+      "Die Blüte sitzt an dem Kaktus."
+    ],
+    "Tanne": [
+      "Das Kind schmückt die Tanne.",
+      "Der Zapfen hängt an der Tanne."
+    ],
+    "Palme": [
+      "Das Kind malt die Palme.",
+      "Die Kokosnuss hängt an der Palme."
+    ],
+    "Blatt": [
+      "Das Kind trocknet das Blatt.",
+      "Der Käfer läuft auf dem Blatt."
+    ],
+    "Setzling": [
+      "Das Kind pflanzt den Setzling.",
+      "Die Erde klebt an dem Setzling."
+    ],
+    "Blumengarten": [
+      "Das Kind sieht den Blumengarten.",
+      "Die Familie arbeitet in dem Blumengarten."
+    ],
+    "Blumenstrauß": [
+      "Die Mutter kauft den Blumenstrauß.",
+      "Die Blumen stecken in dem Blumenstrauß."
+    ],
+    "Kirschblüte": [
+      "Das Kind fotografiert die Kirschblüte.",
+      "Die Biene sitzt an der Kirschblüte."
+    ],
+    "Ahornblatt": [
+      "Das Kind sammelt das Ahornblatt.",
+      "Die Ader liegt in dem Ahornblatt."
+    ],
+    "Kleeblatt": [
+      "Das Kind findet das Kleeblatt.",
+      "Das Glück steckt in dem Kleeblatt."
+    ],
+    "Hyazinthe": [
+      "Das Kind gießt die Hyazinthe.",
+      "Der Duft kommt von der Hyazinthe."
+    ],
+    "Gänseblümchen": [
+      "Das Kind pflückt das Gänseblümchen.",
+      "Die Biene sitzt auf dem Gänseblümchen."
+    ],
+    "Basilikum": [
+      "Das Kind riecht das Basilikum.",
+      "Die Soße schmeckt nach dem Basilikum."
+    ],
+    "Lotusblume": [
+      "Das Kind malt die Lotusblume.",
+      "Der Frosch sitzt auf der Lotusblume."
+    ],
+    "Samen": [
+      "Das Kind pflanzt den Samen.",
+      "Aus dem Samen wächst eine Blume."
+    ]
+  },
+  "musik": {
+    "Gitarre": [
+      "Das Kind hört die Gitarre.",
+      "Das Kind spielt mit der Gitarre."
+    ],
+    "Klavier": [
+      "Das Kind hört das Klavier.",
+      "Das Kind übt an dem Klavier."
+    ],
+    "Violine": [
+      "Das Kind hört die Violine.",
+      "Das Kind spielt mit der Violine."
+    ],
+    "Trommel": [
+      "Das Kind hört die Trommel.",
+      "Das Kind trommelt auf der Trommel."
+    ],
+    "Trompete": [
+      "Das Kind hört die Trompete.",
+      "Der Ton kommt aus der Trompete."
+    ],
+    "Saxofon": [
+      "Das Kind hört das Saxofon.",
+      "Der Musiker spielt mit dem Saxofon."
+    ],
+    "Flöte": [
+      "Das Kind hört die Flöte.",
+      "Das Kind spielt mit der Flöte."
+    ],
+    "Harfe": [
+      "Das Kind hört die Harfe.",
+      "Die Saiten gehören der Harfe."
+    ],
+    "Akkordeon": [
+      "Das Kind hört das Akkordeon.",
+      "Der Musiker spielt mit dem Akkordeon."
+    ],
+    "Banjo": [
+      "Das Kind hört das Banjo.",
+      "Der Musiker spielt mit dem Banjo."
+    ],
+    "Note": [
+      "Das Kind liest die Note.",
+      "Das Lied steht in der Note."
+    ],
+    "Notenblatt": [
+      "Das Kind nimmt das Notenblatt.",
+      "Die Note steht auf dem Notenblatt."
+    ],
+    "Mikrofon": [
+      "Der Sänger nimmt das Mikrofon.",
+      "Der Sänger singt mit dem Mikrofon."
+    ],
+    "Kopfhörer": [
+      "Das Kind nimmt den Kopfhörer.",
+      "Das Kind hört mit dem Kopfhörer."
+    ],
+    "Lautsprecher": [
+      "Das Kind stellt den Lautsprecher auf.",
+      "Die Musik kommt aus dem Lautsprecher."
+    ],
+    "Radio": [
+      "Der Opa hört das Radio.",
+      "Die Musik kommt aus dem Radio."
+    ],
+    "Konzert": [
+      "Die Familie besucht das Konzert.",
+      "Die Familie erzählt von dem Konzert."
+    ],
+    "Sänger": [
+      "Das Publikum hört den Sänger.",
+      "Das Lied gefällt dem Sänger."
+    ],
+    "Tanz": [
+      "Das Kind übt den Tanz.",
+      "Die Musik gehört zu dem Tanz."
+    ],
+    "Orchester": [
+      "Die Familie hört das Orchester.",
+      "Das Konzert gefällt dem Orchester."
+    ],
+    "Schelle": [
+      "Das Kind schüttelt die Schelle.",
+      "Das Kind klingelt mit der Schelle."
+    ],
+    "Metronom": [
+      "Die Lehrerin stellt das Metronom auf.",
+      "Der Takt kommt aus dem Metronom."
+    ],
+    "Triangel": [
+      "Das Kind nimmt den Triangel.",
+      "Das Kind klingelt mit dem Triangel."
+    ]
+  },
+  "sport": {
+    "Ball": [
+      "Das Kind wirft den Ball.",
+      "Das Kind spielt mit dem Ball."
+    ],
+    "Basketball": [
+      "Das Kind dribbelt den Basketball.",
+      "Das Kind spielt mit dem Basketball."
+    ],
+    "Volleyball": [
+      "Das Kind schlägt den Volleyball.",
+      "Das Kind spielt mit dem Volleyball."
+    ],
+    "Tennis": [
+      "Das Kind lernt das Tennis.",
+      "Das Kind erzählt von dem Tennis."
+    ],
+    "Badminton": [
+      "Das Kind probiert das Badminton.",
+      "Das Kind erzählt von dem Badminton."
+    ],
+    "Tennisball": [
+      "Das Kind wirft den Tennisball.",
+      "Das Kind spielt mit dem Tennisball."
+    ],
+    "Tor": [
+      "Der Stürmer trifft das Tor.",
+      "Der Ball liegt in dem Tor."
+    ],
+    "Trikot": [
+      "Der Spieler trägt das Trikot.",
+      "Der Name steht auf dem Trikot."
+    ],
+    "Turnschuh": [
+      "Das Kind bindet den Turnschuh.",
+      "Das Kind rennt mit dem Turnschuh."
+    ],
+    "Fahrrad": [
+      "Das Kind putzt das Fahrrad.",
+      "Das Kind fährt mit dem Fahrrad."
+    ],
+    "Skateboard": [
+      "Das Kind probiert das Skateboard.",
+      "Das Kind fährt mit dem Skateboard."
+    ],
+    "Rollschuh": [
+      "Das Kind sucht den Rollschuh.",
+      "Das Kind fährt mit dem Rollschuh."
+    ],
+    "Schlittschuh": [
+      "Das Kind schnallt den Schlittschuh an.",
+      "Das Kind läuft mit dem Schlittschuh."
+    ],
+    "Ski": [
+      "Das Kind trägt den Ski.",
+      "Das Kind fährt mit dem Ski."
+    ],
+    "Schlitten": [
+      "Das Kind zieht den Schlitten.",
+      "Das Kind fährt mit dem Schlitten."
+    ],
+    "Snowboard": [
+      "Das Kind probiert das Snowboard.",
+      "Das Kind fährt mit dem Snowboard."
+    ],
+    "Schwimmbrille": [
+      "Das Kind setzt die Schwimmbrille auf.",
+      "Das Kind schwimmt mit der Schwimmbrille."
+    ],
+    "Badehose": [
+      "Das Kind sucht die Badehose.",
+      "Das Kind schwimmt in der Badehose."
+    ],
+    "Pokal": [
+      "Die Mannschaft bekommt den Pokal.",
+      "Die Mannschaft jubelt mit dem Pokal."
+    ],
+    "Medaille": [
+      "Die Läuferin bekommt die Medaille.",
+      "Die Läuferin strahlt mit der Medaille."
+    ],
+    "Sprungseil": [
+      "Das Kind nimmt das Sprungseil.",
+      "Das Kind springt mit dem Sprungseil."
+    ],
+    "Frisbee": [
+      "Das Kind wirft den Frisbee.",
+      "Das Kind spielt mit dem Frisbee."
+    ],
+    "Bogenschießen": [
+      "Das Kind lernt das Bogenschießen.",
+      "Das Kind erzählt von dem Bogenschießen."
+    ],
+    "Boxen": [
+      "Der Junge lernt das Boxen.",
+      "Der Junge erzählt von dem Boxen."
+    ],
+    "Schach": [
+      "Der Opa lernt das Schach.",
+      "Der Opa erzählt von dem Schach."
+    ],
+    "Fächer": [
+      "Die Frau öffnet den Fächer.",
+      "Die Frau wedelt mit dem Fächer."
+    ],
+    "Würfel": [
+      "Das Kind wirft den Würfel.",
+      "Das Kind spielt mit dem Würfel."
+    ],
+    "Puzzle": [
+      "Das Kind legt das Puzzle.",
+      "Die Teile stecken in dem Puzzle."
+    ],
+    "Schläger": [
+      "Das Kind nimmt den Schläger.",
+      "Das Kind schlägt mit dem Schläger."
+    ]
+  },
+  "spielzeug": {
+    "Teddybär": [
+      "Das Kind drückt den Teddybären.",
+      "Das Kind schläft mit dem Teddybären."
+    ],
+    "Puppe": [
+      "Das Mädchen kämmt die Puppe.",
+      "Das Mädchen spielt mit der Puppe."
+    ],
+    "Ballon": [
+      "Das Kind hält den Ballon.",
+      "Das Kind spielt mit dem Ballon."
+    ],
+    "Luftballon": [
+      "Das Kind pumpt den Luftballon auf.",
+      "Das Kind spielt mit dem Luftballon."
+    ],
+    "Roboter": [
+      "Das Kind programmiert den Roboter.",
+      "Das Kind spielt mit dem Roboter."
+    ],
+    "Drache": [
+      "Das Kind malt den Drachen.",
+      "Das Kind erzählt von dem Drachen."
+    ],
+    "Dinosaurier": [
+      "Das Kind kennt den Dinosaurier.",
+      "Das Kind träumt von dem Dinosaurier."
+    ],
+    "Dino": [
+      "Das Kind malt den Dino.",
+      "Das Kind spielt mit dem Dino."
+    ],
+    "Baukasten": [
+      "Das Kind öffnet den Baukasten.",
+      "Die Steine liegen in dem Baukasten."
+    ],
+    "Puzzle": [
+      "Das Kind legt das Puzzle.",
+      "Die Teile stecken in dem Puzzle."
+    ],
+    "Würfel": [
+      "Das Kind wirft den Würfel.",
+      "Das Kind spielt mit dem Würfel."
+    ],
+    "Jo-Jo": [
+      "Das Kind probiert das Jo-Jo.",
+      "Das Kind spielt mit dem Jo-Jo."
+    ],
+    "Kreisel": [
+      "Das Kind dreht den Kreisel.",
+      "Das Kind spielt mit dem Kreisel."
+    ],
+    "Murmel": [
+      "Das Kind rollt die Murmel.",
+      "Das Kind spielt mit der Murmel."
+    ],
+    "Bilderbuch": [
+      "Das Kind liest das Bilderbuch.",
+      "Das Kind blättert in dem Bilderbuch."
+    ],
+    "Rutsche": [
+      "Das Kind rutscht die Rutsche hinunter.",
+      "Das Kind wartet an der Rutsche."
+    ],
+    "Schaukel": [
+      "Das Kind benutzt die Schaukel.",
+      "Das Kind wartet an der Schaukel."
+    ],
+    "Spielkarte": [
+      "Das Kind mischt die Spielkarte.",
+      "Das Kind spielt mit der Spielkarte."
+    ],
+    "Schachfigur": [
+      "Der Opa stellt die Schachfigur um.",
+      "Die Dame steht neben der Schachfigur."
+    ],
+    "Krone": [
+      "Das Kind bastelt die Krone.",
+      "Das Kind spielt mit der Krone."
+    ],
+    "Zauberstab": [
+      "Der Zauberer schwingt den Zauberstab.",
+      "Der Zauberer zaubert mit dem Zauberstab."
+    ],
+    "Schatzkiste": [
+      "Das Kind öffnet die Schatzkiste.",
+      "Der Schatz liegt in der Schatzkiste."
+    ],
+    "Maske": [
+      "Das Kind bastelt die Maske.",
+      "Das Kind spielt mit der Maske."
+    ],
+    "Geschenk": [
+      "Das Kind öffnet das Geschenk.",
+      "Das Band hängt an dem Geschenk."
+    ],
+    "Malkasten": [
+      "Das Kind öffnet den Malkasten.",
+      "Die Farbe liegt in dem Malkasten."
+    ],
+    "Buntstift": [
+      "Das Kind spitzt den Buntstift.",
+      "Das Kind malt mit dem Buntstift."
+    ],
+    "Papierflieger": [
+      "Das Kind faltet den Papierflieger.",
+      "Das Kind spielt mit dem Papierflieger."
+    ]
+  }
+}

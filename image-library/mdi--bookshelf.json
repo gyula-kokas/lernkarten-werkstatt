@@ -1,0 +1,10 @@
+{
+  "slug": "mdi--bookshelf",
+  "provider": "mdi",
+  "source": "https://github.com/Templarian/MaterialDesign/blob/2424e748e0cc63ab7b9c095a099b9fe239b737c0/svg/bookshelf.svg",
+  "author": "Pictogrammers (Material Design Icons)",
+  "license": "Apache-2.0",
+  "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+  "title": "bookshelf",
+  "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" id=\"asset-mdi--bookshelf-mdi-bookshelf\" viewBox=\"0 0 24 24\"><path d=\"M9 3V18H12V3H9M12 5L16 18L19 17L15 4L12 5M5 5V18H8V5H5M3 19V21H21V19H3Z\" /></svg>"
+}

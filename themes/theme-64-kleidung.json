@@ -1,0 +1,240 @@
+{
+  "themeId": "theme-64-kleidung",
+  "themeName": "Kleidung",
+  "language": "de",
+  "version": 1,
+  "entryCount": 23,
+  "imageMode": "per-entry-svg",
+  "entries": [
+    {
+      "word": "T-Shirt",
+      "article": "das",
+      "plural": "T-Shirts",
+      "pluralWithArticle": "die T-Shirts",
+      "accusativeSentence": "Das Kind trägt das T-Shirt.",
+      "dativeSentence": "Das Kind schläft in dem T-Shirt.",
+      "imageIndex": 0,
+      "editorType": "object"
+    },
+    {
+      "word": "Hose",
+      "article": "die",
+      "plural": "Hosen",
+      "pluralWithArticle": "die Hosen",
+      "accusativeSentence": "Das Kind wäscht die Hose.",
+      "dativeSentence": "Das Kind steckt in der Hose.",
+      "imageIndex": 1,
+      "editorType": "object"
+    },
+    {
+      "word": "Jacke",
+      "article": "die",
+      "plural": "Jacken",
+      "pluralWithArticle": "die Jacken",
+      "accusativeSentence": "Das Kind nimmt die Jacke.",
+      "dativeSentence": "Der Reißverschluss ist an der Jacke.",
+      "imageIndex": 2,
+      "editorType": "object"
+    },
+    {
+      "word": "Kleid",
+      "article": "das",
+      "plural": "Kleider",
+      "pluralWithArticle": "die Kleider",
+      "accusativeSentence": "Das Mädchen trägt das Kleid.",
+      "dativeSentence": "Das Mädchen dreht sich in dem Kleid.",
+      "imageIndex": 3,
+      "editorType": "object"
+    },
+    {
+      "word": "Unterhose",
+      "article": "die",
+      "plural": "Unterhosen",
+      "pluralWithArticle": "die Unterhosen",
+      "accusativeSentence": "Das Kind sucht die Unterhose.",
+      "dativeSentence": "Das Kind läuft in der Unterhose.",
+      "imageIndex": 4,
+      "editorType": "object"
+    },
+    {
+      "word": "Socke",
+      "article": "die",
+      "plural": "Socken",
+      "pluralWithArticle": "die Socken",
+      "accusativeSentence": "Das Kind zieht die Socke an.",
+      "dativeSentence": "Der Fuß steckt in der Socke.",
+      "imageIndex": 5,
+      "editorType": "object"
+    },
+    {
+      "word": "Schuh",
+      "article": "der",
+      "plural": "Schuhe",
+      "pluralWithArticle": "die Schuhe",
+      "accusativeSentence": "Das Kind putzt den Schuh.",
+      "dativeSentence": "Das Kind läuft in dem Schuh.",
+      "imageIndex": 6,
+      "editorType": "object"
+    },
+    {
+      "word": "Stiefel",
+      "article": "der",
+      "plural": "Stiefel",
+      "pluralWithArticle": "die Stiefel",
+      "accusativeSentence": "Das Kind trägt den Stiefel.",
+      "dativeSentence": "Das Kind watet in dem Stiefel.",
+      "imageIndex": 7,
+      "editorType": "object"
+    },
+    {
+      "word": "Sandale",
+      "article": "die",
+      "plural": "Sandalen",
+      "pluralWithArticle": "die Sandalen",
+      "accusativeSentence": "Das Kind nimmt die Sandale.",
+      "dativeSentence": "Das Kind läuft in der Sandale.",
+      "imageIndex": 8,
+      "editorType": "object"
+    },
+    {
+      "word": "Turnschuh",
+      "article": "der",
+      "plural": "Turnschuhe",
+      "pluralWithArticle": "die Turnschuhe",
+      "accusativeSentence": "Das Kind bindet den Turnschuh.",
+      "dativeSentence": "Das Kind rennt in dem Turnschuh.",
+      "imageIndex": 9,
+      "editorType": "object"
+    },
+    {
+      "word": "Hausschuh",
+      "article": "der",
+      "plural": "Hausschuhe",
+      "pluralWithArticle": "die Hausschuhe",
+      "accusativeSentence": "Das Kind sucht den Hausschuh.",
+      "dativeSentence": "Der Fuß steckt in dem Hausschuh.",
+      "imageIndex": 10,
+      "editorType": "object"
+    },
+    {
+      "word": "Mütze",
+      "article": "die",
+      "plural": "Mützen",
+      "pluralWithArticle": "die Mützen",
+      "accusativeSentence": "Das Kind zieht die Mütze auf.",
+      "dativeSentence": "Der Kopf steckt in der Mütze.",
+      "imageIndex": 11,
+      "editorType": "object"
+    },
+    {
+      "word": "Hut",
+      "article": "der",
+      "plural": "Hüte",
+      "pluralWithArticle": "die Hüte",
+      "accusativeSentence": "Der Mann trägt den Hut.",
+      "dativeSentence": "Der Mann grüßt mit dem Hut.",
+      "imageIndex": 12,
+      "editorType": "object"
+    },
+    {
+      "word": "Schal",
+      "article": "der",
+      "plural": "Schals",
+      "pluralWithArticle": "die Schals",
+      "accusativeSentence": "Das Kind nimmt den Schal.",
+      "dativeSentence": "Der Hals steckt in dem Schal.",
+      "imageIndex": 13,
+      "editorType": "object"
+    },
+    {
+      "word": "Handschuh",
+      "article": "der",
+      "plural": "Handschuhe",
+      "pluralWithArticle": "die Handschuhe",
+      "accusativeSentence": "Das Kind sucht den Handschuh.",
+      "dativeSentence": "Die Hand steckt in dem Handschuh.",
+      "imageIndex": 14,
+      "editorType": "object"
+    },
+    {
+      "word": "Krawatte",
+      "article": "die",
+      "plural": "Krawatten",
+      "pluralWithArticle": "die Krawatten",
+      "accusativeSentence": "Der Vater bindet die Krawatte.",
+      "dativeSentence": "Der Vater geht mit der Krawatte.",
+      "imageIndex": 15,
+      "editorType": "object"
+    },
+    {
+      "word": "Schleife",
+      "article": "die",
+      "plural": "Schleifen",
+      "pluralWithArticle": "die Schleifen",
+      "accusativeSentence": "Das Mädchen bindet die Schleife.",
+      "dativeSentence": "Das Haar hängt an der Schleife.",
+      "imageIndex": 16,
+      "editorType": "object"
+    },
+    {
+      "word": "Sonnenbrille",
+      "article": "die",
+      "plural": "Sonnenbrillen",
+      "pluralWithArticle": "die Sonnenbrillen",
+      "accusativeSentence": "Das Kind trägt die Sonnenbrille.",
+      "dativeSentence": "Die Linse steckt in der Sonnenbrille.",
+      "imageIndex": 17,
+      "editorType": "object"
+    },
+    {
+      "word": "Brille",
+      "article": "die",
+      "plural": "Brillen",
+      "pluralWithArticle": "die Brillen",
+      "accusativeSentence": "Der Opa putzt die Brille.",
+      "dativeSentence": "Der Opa liest mit der Brille.",
+      "imageIndex": 18,
+      "editorType": "object"
+    },
+    {
+      "word": "Badeanzug",
+      "article": "der",
+      "plural": "Badeanzüge",
+      "pluralWithArticle": "die Badeanzüge",
+      "accusativeSentence": "Das Kind trägt den Badeanzug.",
+      "dativeSentence": "Das Kind schwimmt in dem Badeanzug.",
+      "imageIndex": 19,
+      "editorType": "object"
+    },
+    {
+      "word": "Bikini",
+      "article": "der",
+      "plural": "Bikinis",
+      "pluralWithArticle": "die Bikinis",
+      "accusativeSentence": "Das Mädchen trägt den Bikini.",
+      "dativeSentence": "Das Mädchen liegt in dem Bikini.",
+      "imageIndex": 20,
+      "editorType": "object"
+    },
+    {
+      "word": "Kimono",
+      "article": "der",
+      "plural": "Kimonos",
+      "pluralWithArticle": "die Kimonos",
+      "accusativeSentence": "Die Frau trägt den Kimono.",
+      "dativeSentence": "Die Frau geht in dem Kimono.",
+      "imageIndex": 21,
+      "editorType": "object"
+    },
+    {
+      "word": "Weste",
+      "article": "die",
+      "plural": "Westen",
+      "pluralWithArticle": "die Westen",
+      "accusativeSentence": "Der Vater nimmt die Weste.",
+      "dativeSentence": "Der Vater arbeitet in der Weste.",
+      "imageIndex": 22,
+      "editorType": "object"
+    }
+  ]
+}

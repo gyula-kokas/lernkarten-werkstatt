@@ -1,0 +1,260 @@
+{
+  "themeId": "theme-50-haustiere",
+  "themeName": "Haustiere und Bauernhof",
+  "language": "de",
+  "version": 1,
+  "entryCount": 25,
+  "imageMode": "per-entry-svg",
+  "entries": [
+    {
+      "word": "Hund",
+      "article": "der",
+      "plural": "Hunde",
+      "pluralWithArticle": "die Hunde",
+      "accusativeSentence": "Das Kind streichelt den Hund.",
+      "dativeSentence": "Der rote Ball gehört dem Hund.",
+      "imageIndex": 0,
+      "editorType": "animal"
+    },
+    {
+      "word": "Katze",
+      "article": "die",
+      "plural": "Katzen",
+      "pluralWithArticle": "die Katzen",
+      "accusativeSentence": "Das Mädchen füttert die Katze.",
+      "dativeSentence": "Das Kind spielt mit der Katze.",
+      "imageIndex": 1,
+      "editorType": "animal"
+    },
+    {
+      "word": "Hamster",
+      "article": "der",
+      "plural": "Hamster",
+      "pluralWithArticle": "die Hamster",
+      "accusativeSentence": "Das Kind beobachtet den Hamster.",
+      "dativeSentence": "Der Käfig gehört dem Hamster.",
+      "imageIndex": 2,
+      "editorType": "animal"
+    },
+    {
+      "word": "Kaninchen",
+      "article": "das",
+      "plural": "Kaninchen",
+      "pluralWithArticle": "die Kaninchen",
+      "accusativeSentence": "Das Kind streichelt das Kaninchen.",
+      "dativeSentence": "Das Kind spielt mit dem Kaninchen.",
+      "imageIndex": 3,
+      "editorType": "animal"
+    },
+    {
+      "word": "Maus",
+      "article": "die",
+      "plural": "Mäuse",
+      "pluralWithArticle": "die Mäuse",
+      "accusativeSentence": "Die Katze fängt die Maus.",
+      "dativeSentence": "Die Katze spielt mit der Maus.",
+      "imageIndex": 4,
+      "editorType": "animal"
+    },
+    {
+      "word": "Ratte",
+      "article": "die",
+      "plural": "Ratten",
+      "pluralWithArticle": "die Ratten",
+      "accusativeSentence": "Das Kind sieht die Ratte.",
+      "dativeSentence": "Das Kind läuft vor der Ratte weg.",
+      "imageIndex": 5,
+      "editorType": "animal"
+    },
+    {
+      "word": "Papagei",
+      "article": "der",
+      "plural": "Papageien",
+      "pluralWithArticle": "die Papageien",
+      "accusativeSentence": "Das Kind füttert den Papageien.",
+      "dativeSentence": "Der Käfig gehört dem Papageien.",
+      "imageIndex": 6,
+      "editorType": "animal"
+    },
+    {
+      "word": "Goldfisch",
+      "article": "der",
+      "plural": "Goldfische",
+      "pluralWithArticle": "die Goldfische",
+      "accusativeSentence": "Das Kind füttert den Goldfisch.",
+      "dativeSentence": "Das Futter gehört dem Goldfisch.",
+      "imageIndex": 7,
+      "editorType": "animal"
+    },
+    {
+      "word": "Schildkröte",
+      "article": "die",
+      "plural": "Schildkröten",
+      "pluralWithArticle": "die Schildkröten",
+      "accusativeSentence": "Das Kind beobachtet die Schildkröte.",
+      "dativeSentence": "Das Kind spielt mit der Schildkröte.",
+      "imageIndex": 8,
+      "editorType": "animal"
+    },
+    {
+      "word": "Kuh",
+      "article": "die",
+      "plural": "Kühe",
+      "pluralWithArticle": "die Kühe",
+      "accusativeSentence": "Der Bauer melkt die Kuh.",
+      "dativeSentence": "Der Stall gehört der Kuh.",
+      "imageIndex": 9,
+      "editorType": "animal"
+    },
+    {
+      "word": "Schwein",
+      "article": "das",
+      "plural": "Schweine",
+      "pluralWithArticle": "die Schweine",
+      "accusativeSentence": "Das Kind füttert das Schwein.",
+      "dativeSentence": "Das Futter gehört dem Schwein.",
+      "imageIndex": 10,
+      "editorType": "animal"
+    },
+    {
+      "word": "Pferd",
+      "article": "das",
+      "plural": "Pferde",
+      "pluralWithArticle": "die Pferde",
+      "accusativeSentence": "Das Kind striegelt das Pferd.",
+      "dativeSentence": "Die Decke gehört dem Pferd.",
+      "imageIndex": 11,
+      "editorType": "animal"
+    },
+    {
+      "word": "Schaf",
+      "article": "das",
+      "plural": "Schafe",
+      "pluralWithArticle": "die Schafe",
+      "accusativeSentence": "Der Schäfer schert das Schaf.",
+      "dativeSentence": "Die Wolle gehört dem Schaf.",
+      "imageIndex": 12,
+      "editorType": "animal"
+    },
+    {
+      "word": "Ziege",
+      "article": "die",
+      "plural": "Ziegen",
+      "pluralWithArticle": "die Ziegen",
+      "accusativeSentence": "Das Kind füttert die Ziege.",
+      "dativeSentence": "Das Heu gehört der Ziege.",
+      "imageIndex": 13,
+      "editorType": "animal"
+    },
+    {
+      "word": "Esel",
+      "article": "der",
+      "plural": "Esel",
+      "pluralWithArticle": "die Esel",
+      "accusativeSentence": "Das Kind streichelt den Esel.",
+      "dativeSentence": "Die Karotte gehört dem Esel.",
+      "imageIndex": 14,
+      "editorType": "animal"
+    },
+    {
+      "word": "Hahn",
+      "article": "der",
+      "plural": "Hähne",
+      "pluralWithArticle": "die Hähne",
+      "accusativeSentence": "Das Kind hört den Hahn krähen.",
+      "dativeSentence": "Der Hof gehört dem Hahn.",
+      "imageIndex": 15,
+      "editorType": "animal"
+    },
+    {
+      "word": "Huhn",
+      "article": "das",
+      "plural": "Hühner",
+      "pluralWithArticle": "die Hühner",
+      "accusativeSentence": "Das Kind füttert das Huhn.",
+      "dativeSentence": "Das Nest gehört dem Huhn.",
+      "imageIndex": 16,
+      "editorType": "animal"
+    },
+    {
+      "word": "Ente",
+      "article": "die",
+      "plural": "Enten",
+      "pluralWithArticle": "die Enten",
+      "accusativeSentence": "Das Kind füttert die Ente.",
+      "dativeSentence": "Der Teich gehört der Ente.",
+      "imageIndex": 17,
+      "editorType": "animal"
+    },
+    {
+      "word": "Gans",
+      "article": "die",
+      "plural": "Gänse",
+      "pluralWithArticle": "die Gänse",
+      "accusativeSentence": "Das Kind sieht die Gans am Teich.",
+      "dativeSentence": "Der Teich gehört der Gans.",
+      "imageIndex": 18,
+      "editorType": "animal"
+    },
+    {
+      "word": "Truthahn",
+      "article": "der",
+      "plural": "Truthähne",
+      "pluralWithArticle": "die Truthähne",
+      "accusativeSentence": "Das Kind hört den Truthahn.",
+      "dativeSentence": "Der Hof gehört dem Truthahn.",
+      "imageIndex": 19,
+      "editorType": "animal"
+    },
+    {
+      "word": "Küken",
+      "article": "das",
+      "plural": "Küken",
+      "pluralWithArticle": "die Küken",
+      "accusativeSentence": "Das Kind streichelt das Küken.",
+      "dativeSentence": "Die Körner gehören dem Küken.",
+      "imageIndex": 20,
+      "editorType": "animal"
+    },
+    {
+      "word": "Traktor",
+      "article": "der",
+      "plural": "Traktoren",
+      "pluralWithArticle": "die Traktoren",
+      "accusativeSentence": "Der Bauer fährt den Traktor.",
+      "dativeSentence": "Der Bauer fährt mit dem Traktor.",
+      "imageIndex": 21,
+      "editorType": "animal"
+    },
+    {
+      "word": "Karotte",
+      "article": "die",
+      "plural": "Karotten",
+      "pluralWithArticle": "die Karotten",
+      "accusativeSentence": "Das Kind pflückt die Karotte.",
+      "dativeSentence": "Das Kaninchen nascht von der Karotte.",
+      "imageIndex": 22,
+      "editorType": "animal"
+    },
+    {
+      "word": "Kartoffel",
+      "article": "die",
+      "plural": "Kartoffeln",
+      "pluralWithArticle": "die Kartoffeln",
+      "accusativeSentence": "Das Kind schält die Kartoffel.",
+      "dativeSentence": "Das Kind kocht mit der Kartoffel.",
+      "imageIndex": 23,
+      "editorType": "animal"
+    },
+    {
+      "word": "Mais",
+      "article": "der",
+      "plural": "Maise",
+      "pluralWithArticle": "die Maise",
+      "accusativeSentence": "Das Kind pflückt den Mais.",
+      "dativeSentence": "Aus dem Mais macht man Popcorn.",
+      "imageIndex": 24,
+      "editorType": "animal"
+    }
+  ]
+}

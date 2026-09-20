@@ -1,0 +1,10 @@
+{
+  "slug": "openmoji--1F456",
+  "provider": "openmoji",
+  "source": "https://openmoji.org/library/emoji-1F456/",
+  "author": "Jonas Roßner / OpenMoji contributors",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "title": "jeans",
+  "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" id=\"asset-openmoji--1F456-emoji\" viewBox=\"0 0 72 72\">\n  <g id=\"asset-openmoji--1F456-color\">\n    <path fill=\"#61B2E4\" stroke=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" stroke-width=\"2\" d=\"M37.6214,29.6711c-2.5604,0-4.9347,1.7605-4.9347,2.8289s-2,35.4131-2,35.4131H17.625V28.5V16v-5.0417h20h20V16v12.5v39.4131 H44.5633c0,0-2-34.3446-2-35.4131s-2.3743-2.8289-4.9347-2.8289\" />\n  </g>\n  <g id=\"asset-openmoji--1F456-hair\" />\n  <g id=\"asset-openmoji--1F456-skin\" />\n  <g id=\"asset-openmoji--1F456-skin-shadow\" />\n  <g id=\"asset-openmoji--1F456-line\">\n    <path fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" stroke-width=\"2\" d=\"M37.6214,29.6711c-2.5604,0-4.9347,1.7605-4.9347,2.8289s-2,35.4131-2,35.4131H17.625V28.5V16v-5.0417h20h20V16v12.5v39.4131 H44.5633c0,0-2-34.3446-2-35.4131s-2.3743-2.8289-4.9347-2.8289\" />\n    <circle cx=\"38.125\" cy=\"16.0705\" r=\"2\" fill=\"#000000\" stroke=\"none\" />\n    <path fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" stroke-width=\"2\" d=\"M48.8653,14.328c0,0-2.403,8.938,6.0876,11.4666\" />\n    <path fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" stroke-width=\"2\" d=\"M26.3847,14.328c0,0,2.403,8.938-6.0876,11.4666\" />\n  </g>\n</svg>"
+}

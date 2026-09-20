@@ -1,0 +1,260 @@
+{
+  "themeId": "theme-52-waldtiere",
+  "themeName": "Wald und Wiese",
+  "language": "de",
+  "version": 1,
+  "entryCount": 25,
+  "imageMode": "per-entry-svg",
+  "entries": [
+    {
+      "word": "Fuchs",
+      "article": "der",
+      "plural": "Füchse",
+      "pluralWithArticle": "die Füchse",
+      "accusativeSentence": "Das Kind sieht den Fuchs am Waldrand.",
+      "dativeSentence": "Der Schwanz gehört dem Fuchs.",
+      "imageIndex": 0,
+      "editorType": "animal"
+    },
+    {
+      "word": "Wolf",
+      "article": "der",
+      "plural": "Wölfe",
+      "pluralWithArticle": "die Wölfe",
+      "accusativeSentence": "Das Kind hört den Wolf in der Nacht.",
+      "dativeSentence": "Das Heulen gehört dem Wolf.",
+      "imageIndex": 1,
+      "editorType": "animal"
+    },
+    {
+      "word": "Bär",
+      "article": "der",
+      "plural": "Bären",
+      "pluralWithArticle": "die Bären",
+      "accusativeSentence": "Das Kind beobachtet den Bären.",
+      "dativeSentence": "Die Höhle gehört dem Bären.",
+      "imageIndex": 2,
+      "editorType": "animal"
+    },
+    {
+      "word": "Reh",
+      "article": "das",
+      "plural": "Rehe",
+      "pluralWithArticle": "die Rehe",
+      "accusativeSentence": "Das Kind entdeckt das Reh.",
+      "dativeSentence": "Das Kind schaut dem Reh zu.",
+      "imageIndex": 3,
+      "editorType": "animal"
+    },
+    {
+      "word": "Eichhörnchen",
+      "article": "das",
+      "plural": "Eichhörnchen",
+      "pluralWithArticle": "die Eichhörnchen",
+      "accusativeSentence": "Das Kind füttert das Eichhörnchen.",
+      "dativeSentence": "Die Nuss gehört dem Eichhörnchen.",
+      "imageIndex": 4,
+      "editorType": "animal"
+    },
+    {
+      "word": "Igel",
+      "article": "der",
+      "plural": "Igel",
+      "pluralWithArticle": "die Igel",
+      "accusativeSentence": "Das Kind findet den Igel im Laub.",
+      "dativeSentence": "Das Kind hilft dem Igel über die Straße.",
+      "imageIndex": 5,
+      "editorType": "animal"
+    },
+    {
+      "word": "Biber",
+      "article": "der",
+      "plural": "Biber",
+      "pluralWithArticle": "die Biber",
+      "accusativeSentence": "Das Kind sieht den Biber am Fluss.",
+      "dativeSentence": "Der Damm gehört dem Biber.",
+      "imageIndex": 6,
+      "editorType": "animal"
+    },
+    {
+      "word": "Otter",
+      "article": "der",
+      "plural": "Otter",
+      "pluralWithArticle": "die Otter",
+      "accusativeSentence": "Das Kind beobachtet den Otter.",
+      "dativeSentence": "Der Fisch gehört dem Otter.",
+      "imageIndex": 7,
+      "editorType": "animal"
+    },
+    {
+      "word": "Waschbär",
+      "article": "der",
+      "plural": "Waschbären",
+      "pluralWithArticle": "die Waschbären",
+      "accusativeSentence": "Das Kind entdeckt den Waschbären.",
+      "dativeSentence": "Der Apfel gehört dem Waschbären.",
+      "imageIndex": 8,
+      "editorType": "animal"
+    },
+    {
+      "word": "Fledermaus",
+      "article": "die",
+      "plural": "Fledermäuse",
+      "pluralWithArticle": "die Fledermäuse",
+      "accusativeSentence": "Das Kind sieht die Fledermaus in der Nacht.",
+      "dativeSentence": "Die Höhle gehört der Fledermaus.",
+      "imageIndex": 9,
+      "editorType": "animal"
+    },
+    {
+      "word": "Eule",
+      "article": "die",
+      "plural": "Eulen",
+      "pluralWithArticle": "die Eulen",
+      "accusativeSentence": "Das Kind hört die Eule rufen.",
+      "dativeSentence": "Der Ast gehört der Eule.",
+      "imageIndex": 10,
+      "editorType": "animal"
+    },
+    {
+      "word": "Ameise",
+      "article": "die",
+      "plural": "Ameisen",
+      "pluralWithArticle": "die Ameisen",
+      "accusativeSentence": "Das Kind beobachtet die Ameise.",
+      "dativeSentence": "Der Krümel gehört der Ameise.",
+      "imageIndex": 11,
+      "editorType": "animal"
+    },
+    {
+      "word": "Pilz",
+      "article": "der",
+      "plural": "Pilze",
+      "pluralWithArticle": "die Pilze",
+      "accusativeSentence": "Das Kind findet den Pilz im Moos.",
+      "dativeSentence": "Der Regen tropft von dem Pilz.",
+      "imageIndex": 12,
+      "editorType": "animal"
+    },
+    {
+      "word": "Tanne",
+      "article": "die",
+      "plural": "Tannen",
+      "pluralWithArticle": "die Tannen",
+      "accusativeSentence": "Das Kind schmückt die Tanne.",
+      "dativeSentence": "Der Zapfen gehört der Tanne.",
+      "imageIndex": 13,
+      "editorType": "animal"
+    },
+    {
+      "word": "Baum",
+      "article": "der",
+      "plural": "Bäume",
+      "pluralWithArticle": "die Bäume",
+      "accusativeSentence": "Das Kind pflanzt den Baum.",
+      "dativeSentence": "Der Ast gehört dem Baum.",
+      "imageIndex": 14,
+      "editorType": "animal"
+    },
+    {
+      "word": "Eichel",
+      "article": "die",
+      "plural": "Eicheln",
+      "pluralWithArticle": "die Eicheln",
+      "accusativeSentence": "Das Kind sammelt die Eichel.",
+      "dativeSentence": "Die Kappe gehört der Eichel.",
+      "imageIndex": 15,
+      "editorType": "animal"
+    },
+    {
+      "word": "Klee",
+      "article": "der",
+      "plural": "",
+      "pluralWithArticle": "",
+      "accusativeSentence": "Das Kind sucht den Klee.",
+      "dativeSentence": "Das Kaninchen frisst von dem Klee.",
+      "imageIndex": 16,
+      "editorType": "animal"
+    },
+    {
+      "word": "Marienkäfer",
+      "article": "der",
+      "plural": "Marienkäfer",
+      "pluralWithArticle": "die Marienkäfer",
+      "accusativeSentence": "Das Kind zeigt den Marienkäfer.",
+      "dativeSentence": "Das Kind schaut dem Marienkäfer zu.",
+      "imageIndex": 17,
+      "editorType": "animal"
+    },
+    {
+      "word": "Schnecke",
+      "article": "die",
+      "plural": "Schnecken",
+      "pluralWithArticle": "die Schnecken",
+      "accusativeSentence": "Das Kind beobachtet die Schnecke.",
+      "dativeSentence": "Das Haus gehört der Schnecke.",
+      "imageIndex": 18,
+      "editorType": "animal"
+    },
+    {
+      "word": "Käfer",
+      "article": "der",
+      "plural": "Käfer",
+      "pluralWithArticle": "die Käfer",
+      "accusativeSentence": "Das Kind findet den Käfer.",
+      "dativeSentence": "Der Panzer gehört dem Käfer.",
+      "imageIndex": 19,
+      "editorType": "animal"
+    },
+    {
+      "word": "Spinne",
+      "article": "die",
+      "plural": "Spinnen",
+      "pluralWithArticle": "die Spinnen",
+      "accusativeSentence": "Das Kind sieht die Spinne an der Wand.",
+      "dativeSentence": "Das Netz gehört der Spinne.",
+      "imageIndex": 20,
+      "editorType": "animal"
+    },
+    {
+      "word": "Heidelbeere",
+      "article": "die",
+      "plural": "Heidelbeeren",
+      "pluralWithArticle": "die Heidelbeeren",
+      "accusativeSentence": "Das Kind pflückt die Heidelbeere.",
+      "dativeSentence": "Der Kuchen schmeckt nach der Heidelbeere.",
+      "imageIndex": 21,
+      "editorType": "animal"
+    },
+    {
+      "word": "Biene",
+      "article": "die",
+      "plural": "Bienen",
+      "pluralWithArticle": "die Bienen",
+      "accusativeSentence": "Das Kind beobachtet die Biene.",
+      "dativeSentence": "Die Blüte gehört der Biene.",
+      "imageIndex": 22,
+      "editorType": "animal"
+    },
+    {
+      "word": "Schmetterling",
+      "article": "der",
+      "plural": "Schmetterlinge",
+      "pluralWithArticle": "die Schmetterlinge",
+      "accusativeSentence": "Das Kind malt den Schmetterling.",
+      "dativeSentence": "Das Kind schaut dem Schmetterling zu.",
+      "imageIndex": 23,
+      "editorType": "animal"
+    },
+    {
+      "word": "Dachs",
+      "article": "der",
+      "plural": "Dachse",
+      "pluralWithArticle": "die Dachse",
+      "accusativeSentence": "Das Kind sieht den Dachs.",
+      "dativeSentence": "Der Bau gehört dem Dachs.",
+      "imageIndex": 24,
+      "editorType": "animal"
+    }
+  ]
+}

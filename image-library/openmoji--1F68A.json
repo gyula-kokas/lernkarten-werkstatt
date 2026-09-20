@@ -1,0 +1,10 @@
+{
+  "slug": "openmoji--1F68A",
+  "provider": "openmoji",
+  "source": "https://openmoji.org/library/emoji-1F68A/",
+  "author": "Nadja Grün / OpenMoji contributors",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "title": "tram",
+  "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" id=\"asset-openmoji--1F68A-emoji\" viewBox=\"0 0 72 72\">\n  <g id=\"asset-openmoji--1F68A-color\">\n    <polygon fill=\"#3f3f3f\" points=\"21 50 11 61 61 61 51 50 21 50\" />\n    <rect x=\"21.6\" y=\"15\" rx=\"3.0558\" ry=\"3.0558\" width=\"28.8\" height=\"33\" fill=\"#d0cfce\" />\n    <rect x=\"25\" y=\"19\" width=\"22\" height=\"14\" fill=\"#61b2e4\" />\n    <polyline fill=\"#92d3f5\" points=\"47 19 25 19 25 33\" />\n    <rect x=\"25\" y=\"37\" width=\"5\" height=\"5\" fill=\"#fcea2b\" />\n    <rect x=\"42\" y=\"37\" width=\"5\" height=\"5\" fill=\"#fcea2b\" />\n  </g>\n  <g id=\"asset-openmoji--1F68A-line\">\n    <rect x=\"21.6\" y=\"15\" rx=\"3.0558\" ry=\"3.0558\" width=\"28.8\" height=\"33\" fill=\"none\" stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" />\n    <line x1=\"24\" x2=\"16\" y1=\"51\" y2=\"60\" fill=\"none\" stroke=\"#000\" stroke-linecap=\"round\" stroke-miterlimit=\"10\" stroke-width=\"2\" />\n    <line x1=\"48\" x2=\"56\" y1=\"51\" y2=\"60\" fill=\"none\" stroke=\"#000\" stroke-linecap=\"round\" stroke-miterlimit=\"10\" stroke-width=\"2\" />\n    <polygon fill=\"none\" stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" points=\"35.166 15 27 8 44 8 35.166 15\" />\n    <path fill=\"none\" stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M47,20V33H26\" />\n    <polyline fill=\"none\" stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" points=\"26 42 30 42 30 38\" />\n    <polyline fill=\"none\" stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" points=\"43 42 47 42 47 38\" />\n  </g>\n</svg>"
+}

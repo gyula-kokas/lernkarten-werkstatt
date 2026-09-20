@@ -1,0 +1,497 @@
+{
+  "_hinweis": "Geschriebene Sätze je Thema und Wort: [Akkusativsatz, Dativsatz].",
+  "kueche": {
+    "Gabel": [
+      "Das Kind nimmt die Gabel.",
+      "Das Kind isst mit der Gabel."
+    ],
+    "Messer": [
+      "Das Kind benutzt das Messer.",
+      "Das Kind schneidet mit dem Messer."
+    ],
+    "Löffel": [
+      "Das Kind holt den Löffel.",
+      "Das Kind isst mit dem Löffel."
+    ],
+    "Glas": [
+      "Das Kind füllt das Glas.",
+      "Das Wasser ist in dem Glas."
+    ],
+    "Schüssel": [
+      "Das Kind wäscht die Schüssel.",
+      "Der Salat ist in der Schüssel."
+    ],
+    "Topf": [
+      "Das Kind rührt den Topf um.",
+      "Die Suppe kocht in dem Topf."
+    ],
+    "Pfanne": [
+      "Das Kind hält die Pfanne.",
+      "Das Ei brät in der Pfanne."
+    ],
+    "Kanne": [
+      "Das Kind trägt die Kanne.",
+      "Der Tee ist in der Kanne."
+    ],
+    "Waage": [
+      "Das Kind benutzt die Waage.",
+      "Das Mehl liegt auf der Waage."
+    ],
+    "Kaffeemaschine": [
+      "Das Kind schaltet die Kaffeemaschine ein.",
+      "Der Kaffee läuft in der Kaffeemaschine."
+    ],
+    "Schwamm": [
+      "Das Kind drückt den Schwamm aus.",
+      "Das Wasser ist in dem Schwamm."
+    ],
+    "Wasserhahn": [
+      "Das Kind dreht den Wasserhahn auf.",
+      "Das Wasser läuft aus dem Wasserhahn."
+    ],
+    "Flasche": [
+      "Das Kind öffnet die Flasche.",
+      "Das Wasser ist in der Flasche."
+    ],
+    "Konserve": [
+      "Das Kind öffnet die Konserve.",
+      "Die Bohnen sind in der Konserve."
+    ],
+    "Essstäbchen": [
+      "Das Kind nimmt das Essstäbchen.",
+      "Das Kind isst mit dem Essstäbchen."
+    ],
+    "Weinglas": [
+      "Das Kind trocknet das Weinglas ab.",
+      "Der Saft ist in dem Weinglas."
+    ],
+    "Espressokanne": [
+      "Das Kind stellt die Espressokanne hin.",
+      "Der Kaffee kocht in der Espressokanne."
+    ],
+    "Trinkhalm": [
+      "Das Kind nimmt den Trinkhalm.",
+      "Das Kind trinkt mit dem Trinkhalm."
+    ],
+    "Kessel": [
+      "Das Kind stellt den Kessel auf den Herd.",
+      "Das Wasser kocht in dem Kessel."
+    ],
+    "Mixer": [
+      "Die Mutter benutzt den Mixer.",
+      "Die Mutter mixt den Saft mit dem Mixer."
+    ],
+    "Kühlschrank": [
+      "Der Vater öffnet den Kühlschrank.",
+      "Die Milch steht in dem Kühlschrank."
+    ],
+    "Mikrowelle": [
+      "Das Kind benutzt die Mikrowelle.",
+      "Das Essen wird in der Mikrowelle warm."
+    ],
+    "Toaster": [
+      "Der Vater benutzt den Toaster.",
+      "Das Brot wird in dem Toaster warm."
+    ],
+    "Backofen": [
+      "Die Mutter schaltet den Backofen ein.",
+      "Der Kuchen backt in dem Backofen."
+    ]
+  },
+  "wohnen": {
+    "Stuhl": [
+      "Das Kind zieht den Stuhl heran.",
+      "Das Kind sitzt auf dem Stuhl."
+    ],
+    "Sofa": [
+      "Das Kind setzt sich auf das Sofa.",
+      "Die Katze schläft auf dem Sofa."
+    ],
+    "Sessel": [
+      "Der Opa setzt sich in den Sessel.",
+      "Der Opa sitzt in dem Sessel."
+    ],
+    "Bett": [
+      "Das Kind macht das Bett.",
+      "Die Puppe liegt in dem Bett."
+    ],
+    "Lampe": [
+      "Das Kind schaltet die Lampe an.",
+      "Das Licht kommt aus der Lampe."
+    ],
+    "Spiegel": [
+      "Das Kind putzt den Spiegel.",
+      "Das Kind steht vor dem Spiegel."
+    ],
+    "Bild": [
+      "Das Kind malt das Bild.",
+      "Das Kind steht vor dem Bild."
+    ],
+    "Fenster": [
+      "Das Kind öffnet das Fenster.",
+      "Die Blume steht an dem Fenster."
+    ],
+    "Tür": [
+      "Das Kind schließt die Tür.",
+      "Der Schlüssel steckt in der Tür."
+    ],
+    "Treppe": [
+      "Das Kind putzt die Treppe.",
+      "Das Kind läuft auf der Treppe."
+    ],
+    "Bettwäsche": [
+      "Das Kind wäscht die Bettwäsche.",
+      "Das Kind schläft in der Bettwäsche."
+    ],
+    "Hocker": [
+      "Das Kind trägt den Hocker.",
+      "Das Kind sitzt auf dem Hocker."
+    ],
+    "Uhr": [
+      "Das Kind stellt die Uhr.",
+      "Die Zeiger stehen auf der Uhr."
+    ],
+    "Topfpflanze": [
+      "Das Kind gießt die Topfpflanze.",
+      "Das Wasser läuft aus der Topfpflanze."
+    ],
+    "Kaktus": [
+      "Das Kind gießt den Kaktus selten.",
+      "Die Blüte sitzt auf dem Kaktus."
+    ],
+    "Fernseher": [
+      "Das Kind schaltet den Fernseher aus.",
+      "Der Film läuft auf dem Fernseher."
+    ],
+    "Telefon": [
+      "Das Kind nimmt das Telefon.",
+      "Das Kind spricht mit dem Telefon."
+    ],
+    "Sitzbank": [
+      "Das Kind setzt sich auf die Sitzbank.",
+      "Das Kind wartet auf der Sitzbank."
+    ],
+    "Teppich": [
+      "Das Kind rollt den Teppich aus.",
+      "Die Katze liegt auf dem Teppich."
+    ],
+    "Regal": [
+      "Das Kind baut das Regal auf.",
+      "Die Bücher stehen in dem Regal."
+    ],
+    "Schrank": [
+      "Die Mutter öffnet den Schrank.",
+      "Die Kleidung hängt in dem Schrank."
+    ],
+    "Kissen": [
+      "Das Kind drückt das Kissen.",
+      "Der Kopf liegt auf dem Kissen."
+    ],
+    "Heizung": [
+      "Der Vater repariert die Heizung.",
+      "Die Wärme kommt aus der Heizung."
+    ],
+    "Kerze": [
+      "Das Kind zündet die Kerze an.",
+      "Die Flamme brennt an der Kerze."
+    ],
+    "Vorhang": [
+      "Die Mutter näht den Vorhang.",
+      "Die Katze sitzt hinter dem Vorhang."
+    ],
+    "Steckdose": [
+      "Das Kind sucht die Steckdose.",
+      "Das Kabel steckt in der Steckdose."
+    ]
+  },
+  "bad": {
+    "Badewanne": [
+      "Das Kind füllt die Badewanne.",
+      "Das Wasser ist in der Badewanne."
+    ],
+    "Dusche": [
+      "Das Kind putzt die Dusche.",
+      "Das Wasser läuft aus der Dusche."
+    ],
+    "Toilette": [
+      "Das Kind putzt die Toilette.",
+      "Das Papier liegt neben der Toilette."
+    ],
+    "Zahnbürste": [
+      "Das Kind nimmt die Zahnbürste.",
+      "Das Kind putzt mit der Zahnbürste."
+    ],
+    "Seife": [
+      "Das Kind benutzt die Seife.",
+      "Das Kind wäscht sich mit der Seife."
+    ],
+    "Shampoo": [
+      "Das Kind öffnet das Shampoo.",
+      "Die Haare glänzen von dem Shampoo."
+    ],
+    "Kamm": [
+      "Das Kind sucht den Kamm.",
+      "Das Kind kämmt sich mit dem Kamm."
+    ],
+    "Rasierer": [
+      "Der Vater nimmt den Rasierer.",
+      "Der Vater rasiert sich mit dem Rasierer."
+    ],
+    "Waschmaschine": [
+      "Das Kind belädt die Waschmaschine.",
+      "Die Wäsche ist in der Waschmaschine."
+    ],
+    "Wäschekorb": [
+      "Das Kind trägt den Wäschekorb.",
+      "Die Wäsche liegt in dem Wäschekorb."
+    ],
+    "Wäscheklammer": [
+      "Das Kind nimmt die Wäscheklammer.",
+      "Die Wäsche hängt an der Wäscheklammer."
+    ],
+    "Seifenspender": [
+      "Das Kind drückt den Seifenspender.",
+      "Die Seife kommt aus dem Seifenspender."
+    ],
+    "Pflaster": [
+      "Das Kind klebt das Pflaster auf.",
+      "Die Wunde ist unter dem Pflaster."
+    ],
+    "Krankenhaus": [
+      "Das Kind besucht das Krankenhaus.",
+      "Die Ärztin arbeitet in dem Krankenhaus."
+    ],
+    "Wasserhahn": [
+      "Das Kind dreht den Wasserhahn zu.",
+      "Das Wasser tropft aus dem Wasserhahn."
+    ],
+    "Waschbecken": [
+      "Das Kind putzt das Waschbecken.",
+      "Das Wasser läuft in dem Waschbecken."
+    ],
+    "Handtuch": [
+      "Das Kind nimmt das Handtuch.",
+      "Das Kind trocknet sich mit dem Handtuch."
+    ],
+    "Zahnpasta": [
+      "Das Kind drückt die Zahnpasta aus.",
+      "Das Kind putzt mit der Zahnpasta."
+    ],
+    "Föhn": [
+      "Das Kind nimmt den Föhn.",
+      "Das Kind trocknet die Haare mit dem Föhn."
+    ]
+  },
+  "werkzeug": {
+    "Hammer": [
+      "Das Kind nimmt den Hammer.",
+      "Das Kind schlägt mit dem Hammer."
+    ],
+    "Säge": [
+      "Der Mann benutzt die Säge.",
+      "Der Mann sägt mit der Säge."
+    ],
+    "Schraubenzieher": [
+      "Das Kind braucht den Schraubenzieher.",
+      "Das Kind dreht mit dem Schraubenzieher."
+    ],
+    "Schraubenschlüssel": [
+      "Der Mann holt den Schraubenschlüssel.",
+      "Der Mann arbeitet mit dem Schraubenschlüssel."
+    ],
+    "Schraube": [
+      "Das Kind dreht die Schraube.",
+      "Das Rad hängt an der Schraube."
+    ],
+    "Leiter": [
+      "Der Mann trägt die Leiter.",
+      "Der Mann steht auf der Leiter."
+    ],
+    "Eimer": [
+      "Das Kind füllt den Eimer.",
+      "Das Wasser ist in dem Eimer."
+    ],
+    "Schaufel": [
+      "Das Kind nimmt die Schaufel.",
+      "Das Kind gräbt mit der Schaufel."
+    ],
+    "Besen": [
+      "Das Kind holt den Besen.",
+      "Das Kind fegt mit dem Besen."
+    ],
+    "Werkzeugkasten": [
+      "Der Mann öffnet den Werkzeugkasten.",
+      "Der Hammer liegt in dem Werkzeugkasten."
+    ],
+    "Rasenmäher": [
+      "Der Mann schiebt den Rasenmäher.",
+      "Der Mann mäht mit dem Rasenmäher."
+    ],
+    "Kelle": [
+      "Das Kind nimmt die Kelle.",
+      "Der Maurer arbeitet mit der Kelle."
+    ],
+    "Axt": [
+      "Der Mann schärft die Axt.",
+      "Der Mann hackt mit der Axt."
+    ],
+    "Draht": [
+      "Der Mann biegt den Draht.",
+      "Der Zaun hängt an dem Draht."
+    ],
+    "Seil": [
+      "Das Kind zieht das Seil.",
+      "Das Kind springt mit dem Seil."
+    ],
+    "Kette": [
+      "Der Mann ölt die Kette.",
+      "Das Fahrrad hängt an der Kette."
+    ],
+    "Schlüssel": [
+      "Das Kind sucht den Schlüssel.",
+      "Die Tür öffnet sich mit dem Schlüssel."
+    ],
+    "Magnet": [
+      "Das Kind nimmt den Magneten.",
+      "Die Schraube klebt an dem Magneten."
+    ],
+    "Lupe": [
+      "Das Kind benutzt die Lupe.",
+      "Das Kind schaut mit der Lupe."
+    ],
+    "Taschenlampe": [
+      "Das Kind nimmt die Taschenlampe.",
+      "Das Kind leuchtet mit der Taschenlampe."
+    ],
+    "Batterie": [
+      "Das Kind wechselt die Batterie.",
+      "Der Strom kommt aus der Batterie."
+    ],
+    "Stecker": [
+      "Das Kind zieht den Stecker.",
+      "Der Strom kommt aus dem Stecker."
+    ],
+    "Pinsel": [
+      "Das Kind hält den Pinsel.",
+      "Das Kind malt mit dem Pinsel."
+    ],
+    "Zange": [
+      "Der Mann braucht die Zange.",
+      "Der Mann zieht mit der Zange."
+    ],
+    "Feile": [
+      "Der Mann nimmt die Feile.",
+      "Der Mann arbeitet mit der Feile."
+    ],
+    "Pflasterstein": [
+      "Der Mann legt den Pflasterstein.",
+      "Der Weg besteht aus dem Pflasterstein."
+    ],
+    "Gießkanne": [
+      "Das Kind nimmt die Gießkanne.",
+      "Das Kind gießt mit der Gießkanne."
+    ]
+  },
+  "kleidung": {
+    "T-Shirt": [
+      "Das Kind trägt das T-Shirt.",
+      "Das Kind schläft in dem T-Shirt."
+    ],
+    "Hose": [
+      "Das Kind wäscht die Hose.",
+      "Das Kind steckt in der Hose."
+    ],
+    "Jacke": [
+      "Das Kind nimmt die Jacke.",
+      "Der Reißverschluss ist an der Jacke."
+    ],
+    "Kleid": [
+      "Das Mädchen trägt das Kleid.",
+      "Das Mädchen dreht sich in dem Kleid."
+    ],
+    "Unterhose": [
+      "Das Kind sucht die Unterhose.",
+      "Das Kind läuft in der Unterhose."
+    ],
+    "Socke": [
+      "Das Kind zieht die Socke an.",
+      "Der Fuß steckt in der Socke."
+    ],
+    "Schuh": [
+      "Das Kind putzt den Schuh.",
+      "Das Kind läuft in dem Schuh."
+    ],
+    "Stiefel": [
+      "Das Kind trägt den Stiefel.",
+      "Das Kind watet in dem Stiefel."
+    ],
+    "Sandale": [
+      "Das Kind nimmt die Sandale.",
+      "Das Kind läuft in der Sandale."
+    ],
+    "Turnschuh": [
+      "Das Kind bindet den Turnschuh.",
+      "Das Kind rennt in dem Turnschuh."
+    ],
+    "Hausschuh": [
+      "Das Kind sucht den Hausschuh.",
+      "Der Fuß steckt in dem Hausschuh."
+    ],
+    "Mütze": [
+      "Das Kind zieht die Mütze auf.",
+      "Der Kopf steckt in der Mütze."
+    ],
+    "Hut": [
+      "Der Mann trägt den Hut.",
+      "Der Mann grüßt mit dem Hut."
+    ],
+    "Schal": [
+      "Das Kind nimmt den Schal.",
+      "Der Hals steckt in dem Schal."
+    ],
+    "Handschuh": [
+      "Das Kind sucht den Handschuh.",
+      "Die Hand steckt in dem Handschuh."
+    ],
+    "Krawatte": [
+      "Der Vater bindet die Krawatte.",
+      "Der Vater geht mit der Krawatte."
+    ],
+    "Schleife": [
+      "Das Mädchen bindet die Schleife.",
+      "Das Haar hängt an der Schleife."
+    ],
+    "Sonnenbrille": [
+      "Das Kind trägt die Sonnenbrille.",
+      "Die Linse steckt in der Sonnenbrille."
+    ],
+    "Brille": [
+      "Der Opa putzt die Brille.",
+      "Der Opa liest mit der Brille."
+    ],
+    "Regenschirm": [
+      "Das Kind öffnet den Regenschirm.",
+      "Das Kind läuft mit dem Regenschirm."
+    ],
+    "Badeanzug": [
+      "Das Kind trägt den Badeanzug.",
+      "Das Kind schwimmt in dem Badeanzug."
+    ],
+    "Bikini": [
+      "Das Mädchen trägt den Bikini.",
+      "Das Mädchen liegt in dem Bikini."
+    ],
+    "Kimono": [
+      "Die Frau trägt den Kimono.",
+      "Die Frau geht in dem Kimono."
+    ],
+    "Laufshirt": [
+      "Das Kind trägt das Laufshirt.",
+      "Das Kind schwitzt in dem Laufshirt."
+    ],
+    "Weste": [
+      "Der Vater nimmt die Weste.",
+      "Der Vater arbeitet in der Weste."
+    ]
+  }
+}

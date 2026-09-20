@@ -1,0 +1,503 @@
+{
+  "_hinweis": "Geschriebene Sätze je Thema und Wort: [Akkusativsatz, Dativsatz].",
+  "koerper": {
+    "Kopf": [
+      "Das Kind dreht den Kopf.",
+      "Der Hut sitzt auf dem Kopf."
+    ],
+    "Gesicht": [
+      "Das Kind wäscht das Gesicht.",
+      "Die Augen sind in dem Gesicht."
+    ],
+    "Auge": [
+      "Das Kind schließt das Auge.",
+      "Eine Träne läuft aus dem Auge."
+    ],
+    "Ohr": [
+      "Das Kind hält das Ohr zu.",
+      "Der Ohrring hängt an dem Ohr."
+    ],
+    "Nase": [
+      "Das Kind putzt die Nase.",
+      "Die Brille sitzt auf der Nase."
+    ],
+    "Mund": [
+      "Das Kind öffnet den Mund.",
+      "Das Lachen kommt aus dem Mund."
+    ],
+    "Zahn": [
+      "Das Kind putzt den Zahn.",
+      "Die Krone sitzt auf dem Zahn."
+    ],
+    "Zunge": [
+      "Das Kind streckt die Zunge heraus.",
+      "Das Kind spricht mit der Zunge."
+    ],
+    "Haar": [
+      "Das Kind kämmt das Haar.",
+      "Die Schleife steckt in dem Haar."
+    ],
+    "Hand": [
+      "Das Kind wäscht die Hand.",
+      "Der Ring steckt an der Hand."
+    ],
+    "Finger": [
+      "Das Kind zeigt den Finger.",
+      "Der Ring steckt an dem Finger."
+    ],
+    "Daumen": [
+      "Das Kind hebt den Daumen.",
+      "Das Pflaster klebt an dem Daumen."
+    ],
+    "Arm": [
+      "Das Kind bewegt den Arm.",
+      "Die Uhr sitzt an dem Arm."
+    ],
+    "Bein": [
+      "Das Kind streckt das Bein.",
+      "Der Verband ist an dem Bein."
+    ],
+    "Knie": [
+      "Das Kind beugt das Knie.",
+      "Das Pflaster klebt auf dem Knie."
+    ],
+    "Fuß": [
+      "Das Kind hebt den Fuß.",
+      "Der Schuh sitzt an dem Fuß."
+    ],
+    "Herz": [
+      "Das Kind hört das Herz klopfen.",
+      "Der Schlag kommt von dem Herzen."
+    ],
+    "Lunge": [
+      "Die Ärztin untersucht die Lunge.",
+      "Die Luft kommt aus der Lunge."
+    ],
+    "Gehirn": [
+      "Der Arzt untersucht das Gehirn.",
+      "Das Denken kommt aus dem Gehirn."
+    ],
+    "Knochen": [
+      "Der Arzt röntgt den Knochen.",
+      "Der Hund knabbert an dem Knochen."
+    ],
+    "Bauch": [
+      "Das Kind hält den Bauch.",
+      "Das Essen liegt in dem Bauch."
+    ],
+    "Rücken": [
+      "Das Kind massiert den Rücken.",
+      "Der Rucksack hängt auf dem Rücken."
+    ],
+    "Muskel": [
+      "Der Mann trainiert den Muskel.",
+      "Der Sport hilft dem Muskel."
+    ],
+    "Blut": [
+      "Die Ärztin untersucht das Blut.",
+      "Aus dem Blut macht der Arzt einen Test."
+    ],
+    "Handfläche": [
+      "Das Kind zeigt die Handfläche.",
+      "Der Keks liegt auf der Handfläche."
+    ],
+    "Faust": [
+      "Das Kind ballt die Faust.",
+      "Der Schlüssel liegt in der Faust."
+    ],
+    "Fingernagel": [
+      "Das Kind schneidet den Fingernagel.",
+      "Der rote Lack ist auf dem Fingernagel."
+    ],
+    "Fingerabdruck": [
+      "Der Polizist nimmt den Fingerabdruck.",
+      "Die Tinte bleibt an dem Fingerabdruck."
+    ],
+    "Fußabdruck": [
+      "Das Kind sieht den Fußabdruck.",
+      "Das Wasser steht in dem Fußabdruck."
+    ],
+    "Fußsohle": [
+      "Die Mutter kitzelt die Fußsohle.",
+      "Der Kiesel klebt an der Fußsohle."
+    ],
+    "Lippe": [
+      "Das Kind leckt die Lippe.",
+      "Der Lippenstift glänzt auf der Lippe."
+    ],
+    "Schnurrbart": [
+      "Der Opa zwirbelt den Schnurrbart.",
+      "Der Schaum bleibt in dem Schnurrbart."
+    ],
+    "Zopf": [
+      "Die Mutter flechtet den Zopf.",
+      "Die Schleife sitzt an dem Zopf."
+    ],
+    "Träne": [
+      "Das Kind trocknet die Träne.",
+      "Die Wange ist nass von der Träne."
+    ],
+    "Leber": [
+      "Die Ärztin prüft die Leber.",
+      "Die Galle kommt aus der Leber."
+    ],
+    "Niere": [
+      "Die Ärztin fühlt die Niere.",
+      "Das Wasser bleibt in der Niere."
+    ],
+    "Darm": [
+      "Die Ärztin hört den Darm ab.",
+      "Die Nährstoffe kommen aus dem Darm."
+    ],
+    "Brustkorb": [
+      "Die Ärztin klopft den Brustkorb ab.",
+      "Das Herz sitzt in dem Brustkorb."
+    ],
+    "Schädel": [
+      "Das Kind berührt den Schädel.",
+      "Das Gehirn steckt in dem Schädel."
+    ],
+    "Skelett": [
+      "Das Kind malt das Skelett.",
+      "Die Knochen stecken in dem Skelett."
+    ],
+    "Wirbel": [
+      "Die Ärztin tastet den Wirbel ab.",
+      "Der Druck liegt auf dem Wirbel."
+    ]
+  },
+  "gesundheit": {
+    "Arzt": [
+      "Das Kind besucht den Arzt.",
+      "Das Kind gibt dem Arzt die Hand."
+    ],
+    "Ärztin": [
+      "Das Kind fragt die Ärztin.",
+      "Das Kind vertraut der Ärztin."
+    ],
+    "Krankenhaus": [
+      "Die Familie besucht das Krankenhaus.",
+      "Das Kind liegt in dem Krankenhaus."
+    ],
+    "Krankenschwester": [
+      "Das Kind grüßt die Krankenschwester.",
+      "Das Kind dankt der Krankenschwester."
+    ],
+    "Krankenpfleger": [
+      "Das Kind fragt den Krankenpfleger.",
+      "Das Kind dankt dem Krankenpfleger."
+    ],
+    "Spritze": [
+      "Das Kind fürchtet die Spritze.",
+      "Das Kind zittert vor der Spritze."
+    ],
+    "Medikament": [
+      "Das Kind nimmt das Medikament.",
+      "Die Ärztin hilft dem Kind mit dem Medikament."
+    ],
+    "Tablette": [
+      "Das Kind schluckt die Tablette.",
+      "Das Wasser hilft bei der Tablette."
+    ],
+    "Pflaster": [
+      "Das Kind klebt das Pflaster auf.",
+      "Die Wunde heilt unter dem Pflaster."
+    ],
+    "Verband": [
+      "Die Ärztin wickelt den Verband.",
+      "Das Bein steckt in dem Verband."
+    ],
+    "Thermometer": [
+      "Das Kind benutzt das Thermometer.",
+      "Die Ärztin misst mit dem Thermometer."
+    ],
+    "Fieberthermometer": [
+      "Das Kind holt das Fieberthermometer.",
+      "Die Mutter misst mit dem Fieberthermometer."
+    ],
+    "Stethoskop": [
+      "Die Ärztin nimmt das Stethoskop.",
+      "Die Ärztin hört mit dem Stethoskop."
+    ],
+    "Rollstuhl": [
+      "Der Mann schiebt den Rollstuhl.",
+      "Der Opa sitzt in dem Rollstuhl."
+    ],
+    "Krücke": [
+      "Der Mann nimmt die Krücke.",
+      "Der Mann geht mit der Krücke."
+    ],
+    "Röntgenbild": [
+      "Die Ärztin zeigt das Röntgenbild.",
+      "Der Knochen ist auf dem Röntgenbild."
+    ],
+    "Verbandkasten": [
+      "Der Lehrer öffnet den Verbandkasten.",
+      "Das Pflaster liegt in dem Verbandkasten."
+    ],
+    "Schutzmaske": [
+      "Die Ärztin trägt die Schutzmaske.",
+      "Das Gesicht steckt in der Schutzmaske."
+    ],
+    "Infusion": [
+      "Die Schwester hängt die Infusion auf.",
+      "Das Medikament läuft aus der Infusion."
+    ],
+    "Arztkittel": [
+      "Die Ärztin trägt den Arztkittel.",
+      "Das Stethoskop steckt in dem Arztkittel."
+    ],
+    "Zahnbürste": [
+      "Das Kind nimmt die Zahnbürste.",
+      "Das Kind putzt mit der Zahnbürste."
+    ],
+    "Seife": [
+      "Das Kind benutzt die Seife.",
+      "Die Hände werden mit der Seife gewaschen."
+    ],
+    "Apotheke": [
+      "Die Mutter sucht die Apotheke.",
+      "In der Apotheke gibt es Medikamente."
+    ]
+  },
+  "menschen": {
+    "Kind": [
+      "Die Mutter tröstet das Kind.",
+      "Das Spielzeug gehört dem Kind."
+    ],
+    "Baby": [
+      "Die Mutter füttert das Baby.",
+      "Die Windel gehört dem Baby."
+    ],
+    "Schüler": [
+      "Die Lehrerin lobt den Schüler.",
+      "Die Aufgabe gefällt dem Schüler."
+    ],
+    "Lehrer": [
+      "Die Klasse fragt den Lehrer.",
+      "Die Kreide gehört dem Lehrer."
+    ],
+    "Familie": [
+      "Das Kind liebt die Familie.",
+      "Das Haus gehört der Familie."
+    ],
+    "Polizist": [
+      "Das Kind fragt den Polizisten.",
+      "Das Kind dankt dem Polizisten."
+    ],
+    "Feuerwehrmann": [
+      "Das Kind ruft den Feuerwehrmann.",
+      "Das Kind winkt dem Feuerwehrmann zu."
+    ],
+    "Koch": [
+      "Das Kind sieht den Koch in der Küche.",
+      "Die Suppe schmeckt dem Koch."
+    ],
+    "Friseur": [
+      "Der Mann besucht den Friseur.",
+      "Das Kind winkt dem Friseur zu."
+    ],
+    "Maler": [
+      "Das Kind beobachtet den Maler.",
+      "Der Pinsel gehört dem Maler."
+    ],
+    "Sänger": [
+      "Das Publikum hört den Sänger.",
+      "Das Lied gefällt dem Sänger."
+    ],
+    "Wissenschaftler": [
+      "Das Kind besucht den Wissenschaftler.",
+      "Das Experiment gelingt dem Wissenschaftler."
+    ],
+    "Techniker": [
+      "Die Firma ruft den Techniker.",
+      "Der Koffer gehört dem Techniker."
+    ],
+    "Richter": [
+      "Das Gericht hört den Richter.",
+      "Der Hammer gehört dem Richter."
+    ],
+    "Detektiv": [
+      "Das Kind bewundert den Detektiv.",
+      "Der Fall gefällt dem Detektiv."
+    ],
+    "Astronaut": [
+      "Das Kind fotografiert den Astronauten.",
+      "Die Rakete gehört dem Astronauten."
+    ],
+    "Pilot": [
+      "Das Kind grüßt den Piloten.",
+      "Das Flugzeug gehört dem Piloten."
+    ],
+    "Bauer": [
+      "Das Kind besucht den Bauern.",
+      "Der Traktor gehört dem Bauern."
+    ],
+    "Mechaniker": [
+      "Der Mann holt den Mechaniker.",
+      "Das Werkzeug gehört dem Mechaniker."
+    ],
+    "Kellner": [
+      "Das Kind ruft den Kellner.",
+      "Das Trinkgeld gehört dem Kellner."
+    ],
+    "Wächter": [
+      "Der Hund begleitet den Wächter.",
+      "Der Schlüssel gehört dem Wächter."
+    ],
+    "Zauberer": [
+      "Das Publikum bejubelt den Zauberer.",
+      "Der Zauberstab gehört dem Zauberer."
+    ],
+    "Ritter": [
+      "Das Kind malt den Ritter.",
+      "Das Schwert gehört dem Ritter."
+    ],
+    "Pirat": [
+      "Das Kind spielt den Piraten.",
+      "Die Schatzkarte gehört dem Piraten."
+    ],
+    "Prinzessin": [
+      "Das Kind zeichnet die Prinzessin.",
+      "Die Krone gehört der Prinzessin."
+    ],
+    "Prinz": [
+      "Das Kind sieht den Prinzen.",
+      "Die Krone gehört dem Prinzen."
+    ],
+    "Elf": [
+      "Das Kind sieht den Elf.",
+      "Die Mütze gehört dem Elf."
+    ],
+    "Engel": [
+      "Das Kind sieht den Engel.",
+      "Der Flügel gehört dem Engel."
+    ],
+    "Ninja": [
+      "Das Kind sieht den Ninja.",
+      "Das Schwert gehört dem Ninja."
+    ],
+    "Riese": [
+      "Das Kind sieht den Riesen.",
+      "Der Stiefel gehört dem Riesen."
+    ],
+    "Superheld": [
+      "Das Kind sieht den Superhelden.",
+      "Der Umhang gehört dem Superhelden."
+    ],
+    "Vampir": [
+      "Das Kind sieht den Vampir.",
+      "Der Umhang gehört dem Vampir."
+    ],
+    "Freund": [
+      "Das Kind besucht den Freund.",
+      "Das Kind hilft dem Freund."
+    ],
+    "Hexe": [
+      "Das Kind malt die Hexe.",
+      "Das Kind erzählt von der Hexe."
+    ]
+  },
+  "schule": {
+    "Schule": [
+      "Das Kind liebt die Schule.",
+      "Die Klasse lernt in der Schule."
+    ],
+    "Buch": [
+      "Das Kind liest das Buch.",
+      "Das Kind blättert in dem Buch."
+    ],
+    "Heft": [
+      "Das Kind beschreibt das Heft.",
+      "Die Hausaufgabe steht in dem Heft."
+    ],
+    "Notizbuch": [
+      "Das Kind öffnet das Notizbuch.",
+      "Das Kind schreibt in dem Notizbuch."
+    ],
+    "Bleistift": [
+      "Das Kind spitzt den Bleistift.",
+      "Das Kind schreibt mit dem Bleistift."
+    ],
+    "Stift": [
+      "Das Kind sucht den Stift.",
+      "Das Kind schreibt mit dem Stift."
+    ],
+    "Füller": [
+      "Das Kind füllt den Füller.",
+      "Das Kind schreibt mit dem Füller."
+    ],
+    "Radiergummi": [
+      "Das Kind benutzt den Radiergummi.",
+      "Das Kind radiert mit dem Radiergummi."
+    ],
+    "Lineal": [
+      "Das Kind nimmt das Lineal.",
+      "Das Kind zeichnet mit dem Lineal."
+    ],
+    "Geodreieck": [
+      "Das Kind holt das Geodreieck.",
+      "Das Kind zeichnet mit dem Geodreieck."
+    ],
+    "Schere": [
+      "Das Kind braucht die Schere.",
+      "Das Kind schneidet mit der Schere."
+    ],
+    "Taschenrechner": [
+      "Das Kind benutzt den Taschenrechner.",
+      "Das Kind rechnet mit dem Taschenrechner."
+    ],
+    "Computer": [
+      "Das Kind startet den Computer.",
+      "Das Kind arbeitet mit dem Computer."
+    ],
+    "Laptop": [
+      "Das Kind klappt den Laptop auf.",
+      "Die Hausaufgabe ist auf dem Laptop."
+    ],
+    "Tastatur": [
+      "Das Kind putzt die Tastatur.",
+      "Das Kind tippt auf der Tastatur."
+    ],
+    "Globus": [
+      "Das Kind dreht den Globus.",
+      "Das Land liegt auf dem Globus."
+    ],
+    "Weltkarte": [
+      "Das Kind betrachtet die Weltkarte.",
+      "Das Meer ist auf der Weltkarte blau."
+    ],
+    "Landkarte": [
+      "Das Kind faltet die Landkarte auf.",
+      "Der Weg steht auf der Landkarte."
+    ],
+    "Aktentasche": [
+      "Der Lehrer trägt die Aktentasche.",
+      "Die Hefte sind in der Aktentasche."
+    ],
+    "Rucksack": [
+      "Das Kind packt den Rucksack.",
+      "Die Brotdose ist in dem Rucksack."
+    ],
+    "Kalender": [
+      "Das Kind blättert den Kalender um.",
+      "Das Datum steht auf dem Kalender."
+    ],
+    "Uhr": [
+      "Die Lehrerin stellt die Uhr.",
+      "Die Pause steht auf der Uhr."
+    ],
+    "Papier": [
+      "Das Kind knüllt das Papier.",
+      "Das Kind schreibt auf dem Papier."
+    ],
+    "Ordner": [
+      "Das Kind heftet den Ordner ab.",
+      "Die Blätter liegen in dem Ordner."
+    ],
+    "Computermaus": [
+      "Das Kind bewegt die Computermaus.",
+      "Das Kind klickt mit der Computermaus."
+    ]
+  }
+}

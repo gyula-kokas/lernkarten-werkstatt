@@ -1,0 +1,10 @@
+{
+  "slug": "twemoji--1f4a7",
+  "provider": "twemoji",
+  "source": "https://github.com/jdecked/twemoji/blob/b6b55fef1e8636b540a6d016a4729ca8cdf2e60b/assets/svg/1f4a7.svg",
+  "author": "Twitter, Inc. and other Twemoji contributors",
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "title": "droplet",
+  "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 36 36\"><path fill=\"#5DADEC\" d=\"M28.344 17.768L18.148 1.09 8.7 17.654c-2.2 3.51-2.392 8.074-.081 11.854 3.285 5.373 10.363 7.098 15.811 3.857 5.446-3.24 7.199-10.22 3.914-15.597z\" /></svg>"
+}

@@ -1,0 +1,10 @@
+{
+  "slug": "openmoji--1F964",
+  "provider": "openmoji",
+  "source": "https://openmoji.org/library/emoji-1F964/",
+  "author": "Laura Humpfer / OpenMoji contributors",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "title": "cup with straw",
+  "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" id=\"asset-openmoji--1F964-emoji\" viewBox=\"0 0 72 72\">\n  <g id=\"asset-openmoji--1F964-color\">\n    <polygon fill=\"#fff\" points=\"18.933 21.376 52.9693 21.495 46.9395 65.7271 25.9937 65.5684 18.933 21.376\" />\n    <polygon fill=\"#d22f27\" points=\"49.9235 50.25 51.9 35.85 20.4 35.85 22.6588 50.25 49.9235 50.25\" />\n  </g>\n  <g id=\"asset-openmoji--1F964-line\">\n    <polygon fill=\"none\" stroke=\"#000\" stroke-miterlimit=\"10\" stroke-width=\"2\" points=\"49.9235 50.25 51.9 35.85 20.4 35.85 22.6588 50.25 49.9235 50.25\" />\n    <polyline fill=\"none\" stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" points=\"54 20.55 47.7 66.45 25.2 66.45 18 20.55\" />\n    <line x1=\"18\" x2=\"54\" y1=\"20.55\" y2=\"20.55\" fill=\"none\" stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" />\n    <line x1=\"36\" x2=\"36\" y1=\"5\" y2=\"17\" fill=\"none\" stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" />\n  </g>\n</svg>"
+}

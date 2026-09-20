@@ -1,0 +1,465 @@
+{
+  "_hinweis": "Geschriebene Sätze je Thema und Wort: [Akkusativsatz, Dativsatz].",
+  "krabbeltiere": {
+    "Ameise": [
+      "Das Kind beobachtet die Ameise auf dem Stein.",
+      "Der Krümel gehört der Ameise."
+    ],
+    "Biene": [
+      "Das Kind fürchtet die Biene.",
+      "Die Blüte gehört der Biene."
+    ],
+    "Käfer": [
+      "Das Kind findet den Käfer.",
+      "Der Panzer gehört dem Käfer."
+    ],
+    "Schmetterling": [
+      "Das Kind malt den Schmetterling.",
+      "Das Kind schaut dem Schmetterling zu."
+    ],
+    "Marienkäfer": [
+      "Das Kind zeigt den Marienkäfer.",
+      "Das Kind schaut dem Marienkäfer zu."
+    ],
+    "Grille": [
+      "Das Kind hört die Grille zirpen.",
+      "Der Garten gehört der Grille."
+    ],
+    "Spinne": [
+      "Das Kind entdeckt die Spinne in der Ecke.",
+      "Das Netz gehört der Spinne."
+    ],
+    "Spinnennetz": [
+      "Das Kind betrachtet das Spinnennetz.",
+      "Die Spinne sitzt in dem Spinnennetz."
+    ],
+    "Schnecke": [
+      "Das Kind sammelt die Schnecke ein.",
+      "Das Haus gehört der Schnecke."
+    ],
+    "Mücke": [
+      "Das Kind fängt die Mücke.",
+      "Das Kind läuft vor der Mücke weg."
+    ],
+    "Fliege": [
+      "Das Kind verscheucht die Fliege.",
+      "Das Kind läuft vor der Fliege weg."
+    ],
+    "Kakerlake": [
+      "Das Kind sieht die Kakerlake in der Küche.",
+      "Das Kind läuft vor der Kakerlake weg."
+    ],
+    "Skorpion": [
+      "Das Kind fürchtet den Skorpion.",
+      "Der Stachel gehört dem Skorpion."
+    ],
+    "Wurm": [
+      "Das Kind findet den Wurm im Boden.",
+      "Der Vogel pickt nach dem Wurm."
+    ],
+    "Eidechse": [
+      "Das Kind beobachtet die Eidechse auf der Mauer.",
+      "Der Schwanz gehört der Eidechse."
+    ],
+    "Schlange": [
+      "Das Kind sieht die Schlange im Gras.",
+      "Das Kind läuft vor der Schlange weg."
+    ],
+    "Frosch": [
+      "Das Kind hört den Frosch quaken.",
+      "Der Teich gehört dem Frosch."
+    ],
+    "Schildkröte": [
+      "Das Kind beobachtet die Schildkröte im Garten.",
+      "Der Panzer gehört der Schildkröte."
+    ],
+    "Raupe": [
+      "Das Kind entdeckt die Raupe auf dem Blatt.",
+      "Aus der Raupe wird ein Schmetterling."
+    ],
+    "Monarchfalter": [
+      "Das Kind fotografiert den Monarchfalter.",
+      "Das Kind schaut dem Monarchfalter zu."
+    ]
+  },
+  "obst": {
+    "Apfel": [
+      "Das Kind isst den Apfel.",
+      "Der Wurm sitzt in dem Apfel."
+    ],
+    "Banane": [
+      "Das Kind schält die Banane.",
+      "Die Schale gehört der Banane."
+    ],
+    "Orange": [
+      "Das Kind pellt die Orange.",
+      "Der Saft läuft aus der Orange."
+    ],
+    "Birne": [
+      "Das Kind wäscht die Birne.",
+      "Der Stiel hängt an der Birne."
+    ],
+    "Erdbeere": [
+      "Das Kind pflückt die Erdbeere.",
+      "Das Kind nascht von der Erdbeere."
+    ],
+    "Traube": [
+      "Das Kind probiert die Traube.",
+      "Der Saft läuft aus der Traube."
+    ],
+    "Kirsche": [
+      "Das Kind isst die Kirsche.",
+      "Der Stiel hängt an der Kirsche."
+    ],
+    "Zitrone": [
+      "Das Kind schneidet die Zitrone auf.",
+      "Der Saft tropft aus der Zitrone."
+    ],
+    "Limette": [
+      "Das Kind probiert die Limette.",
+      "Der Saft kommt aus der Limette."
+    ],
+    "Pfirsich": [
+      "Das Kind beißt in den Pfirsich.",
+      "Der Kern steckt in dem Pfirsich."
+    ],
+    "Wassermelone": [
+      "Das Kind schneidet die Wassermelone auf.",
+      "Die Kerne stecken in der Wassermelone."
+    ],
+    "Melone": [
+      "Das Kind probiert die Melone.",
+      "Der Saft läuft aus der Melone."
+    ],
+    "Kiwi": [
+      "Das Kind schält die Kiwi.",
+      "Das Fruchtfleisch ist grün bei der Kiwi."
+    ],
+    "Heidelbeere": [
+      "Das Kind sammelt die Heidelbeere.",
+      "Der Kuchen schmeckt nach der Heidelbeere."
+    ],
+    "Avocado": [
+      "Das Kind halbiert die Avocado.",
+      "Der Kern steckt in der Avocado."
+    ],
+    "Kokosnuss": [
+      "Das Kind öffnet die Kokosnuss.",
+      "Das Wasser schwimmt in der Kokosnuss."
+    ],
+    "Granatapfel": [
+      "Das Kind öffnet den Granatapfel.",
+      "Die Kerne leuchten in dem Granatapfel."
+    ],
+    "Olive": [
+      "Das Kind probiert die Olive.",
+      "Das Öl kommt von der Olive."
+    ],
+    "Tomate": [
+      "Das Kind wäscht die Tomate.",
+      "Der Salat schmeckt mit der Tomate besser."
+    ],
+    "Ananas": [
+      "Das Kind schneidet die Ananas.",
+      "Die Blätter sitzen oben an der Ananas."
+    ],
+    "Mango": [
+      "Das Kind schält die Mango.",
+      "Der Saft läuft aus der Mango."
+    ],
+    "Kastanie": [
+      "Das Kind sammelt die Kastanie.",
+      "Die Kappe gehört der Kastanie."
+    ],
+    "Kirschblüte": [
+      "Das Kind fotografiert die Kirschblüte.",
+      "Die Biene sitzt in der Kirschblüte."
+    ]
+  },
+  "gemuese": {
+    "Karotte": [
+      "Das Kind schält die Karotte.",
+      "Das Kaninchen nascht von der Karotte."
+    ],
+    "Gurke": [
+      "Das Kind schneidet die Gurke.",
+      "Der Salat schmeckt mit der Gurke."
+    ],
+    "Paprika": [
+      "Das Kind schneidet den Paprika.",
+      "Der Auflauf schmeckt mit dem Paprika."
+    ],
+    "Zwiebel": [
+      "Das Kind schneidet die Zwiebel.",
+      "Die Suppe riecht nach der Zwiebel."
+    ],
+    "Kartoffel": [
+      "Das Kind schält die Kartoffel.",
+      "Das Kind kocht mit der Kartoffel."
+    ],
+    "Knoblauch": [
+      "Das Kind riecht den Knoblauch.",
+      "Die Soße schmeckt nach dem Knoblauch."
+    ],
+    "Mais": [
+      "Das Kind isst den Mais.",
+      "Aus dem Mais macht man Popcorn."
+    ],
+    "Erbse": [
+      "Das Kind isst die Erbse.",
+      "Die Suppe schmeckt mit der Erbse."
+    ],
+    "Pilz": [
+      "Das Kind findet den Pilz im Moos.",
+      "Der Regen tropft von dem Pilz."
+    ],
+    "Champignon": [
+      "Das Kind putzt den Champignon.",
+      "Die Pfanne ist voll mit dem Champignon."
+    ],
+    "Brokkoli": [
+      "Das Kind isst den Brokkoli.",
+      "Der Auflauf schmeckt mit dem Brokkoli."
+    ],
+    "Salat": [
+      "Das Kind wäscht den Salat.",
+      "Die Schüssel ist voll mit dem Salat."
+    ],
+    "Spinat": [
+      "Das Kind probiert den Spinat.",
+      "Die Nudeln schmecken mit dem Spinat."
+    ],
+    "Aubergine": [
+      "Das Kind schneidet die Aubergine.",
+      "Der Ofen ist heiß mit der Aubergine."
+    ],
+    "Ingwer": [
+      "Das Kind riecht den Ingwer.",
+      "Der Tee schmeckt nach dem Ingwer."
+    ],
+    "Chili": [
+      "Das Kind probiert den Chili nicht.",
+      "Die Suppe brennt von dem Chili."
+    ],
+    "Pfeffer": [
+      "Das Kind mahlt den Pfeffer.",
+      "Das Schnitzel schmeckt nach dem Pfeffer."
+    ],
+    "Tomate": [
+      "Das Kind isst die Tomate.",
+      "Der Salat schmeckt mit der Tomate."
+    ],
+    "Bohne": [
+      "Das Kind pflückt die Bohne.",
+      "Das Kind kocht mit der Bohne."
+    ],
+    "Kürbis": [
+      "Das Kind schnitzt den Kürbis.",
+      "Die Suppe schmeckt nach dem Kürbis."
+    ],
+    "Lauch": [
+      "Die Mutter schneidet den Lauch.",
+      "Die Suppe schmeckt mit dem Lauch."
+    ],
+    "Petersilie": [
+      "Das Kind schneidet die Petersilie.",
+      "Die Kartoffeln schmecken mit der Petersilie."
+    ]
+  },
+  "essen-trinken": {
+    "Brot": [
+      "Das Kind schneidet das Brot.",
+      "Die Butter liegt auf dem Brot."
+    ],
+    "Brezel": [
+      "Das Kind kauft die Brezel.",
+      "Das Salz liegt auf der Brezel."
+    ],
+    "Käse": [
+      "Das Kind schneidet den Käse.",
+      "Die Maus nascht von dem Käse."
+    ],
+    "Butter": [
+      "Das Kind streicht die Butter aufs Brot.",
+      "Das Brot schmeckt mit der Butter."
+    ],
+    "Milch": [
+      "Das Kind trinkt die Milch.",
+      "Aus der Milch macht man Kakao."
+    ],
+    "Ei": [
+      "Das Kind kocht das Ei.",
+      "Das Eigelb sitzt in dem Ei."
+    ],
+    "Fleisch": [
+      "Das Kind isst das Fleisch.",
+      "Die Soße schmeckt mit dem Fleisch."
+    ],
+    "Fisch": [
+      "Das Kind isst den Fisch.",
+      "Die Zitrone liegt auf dem Fisch."
+    ],
+    "Reis": [
+      "Das Kind kocht den Reis.",
+      "Die Soße schmeckt mit dem Reis."
+    ],
+    "Nudeln": [
+      "Das Kind probiert die Nudeln.",
+      "Die Soße schmeckt mit der Nudeln."
+    ],
+    "Pizza": [
+      "Das Kind teilt die Pizza.",
+      "Der Käse schmilzt auf der Pizza."
+    ],
+    "Hamburger": [
+      "Das Kind isst den Hamburger.",
+      "Der Salat liegt in dem Hamburger."
+    ],
+    "Pommes": [
+      "Das Kind isst die Pommes.",
+      "Der Ketchup gehört zu der Pommes."
+    ],
+    "Suppe": [
+      "Das Kind löffelt die Suppe.",
+      "Der Löffel steckt in der Suppe."
+    ],
+    "Schokolade": [
+      "Das Kind mag die Schokolade.",
+      "Aus der Schokolade macht man Kakao."
+    ],
+    "Honig": [
+      "Das Kind probiert den Honig.",
+      "Der Tee schmeckt mit dem Honig besser."
+    ],
+    "Salz": [
+      "Das Kind streut das Salz.",
+      "Die Suppe schmeckt nach dem Salz."
+    ],
+    "Pfeffermühle": [
+      "Das Kind dreht die Pfeffermühle.",
+      "Der Pfeffer kommt aus der Pfeffermühle."
+    ],
+    "Wasser": [
+      "Das Kind trinkt das Wasser.",
+      "Der Fisch schwimmt in dem Wasser."
+    ],
+    "Tee": [
+      "Das Kind trinkt den Tee.",
+      "Der Honig schwimmt in dem Tee."
+    ],
+    "Kaffee": [
+      "Der Vater trinkt den Kaffee.",
+      "Die Milch gehört zu dem Kaffee."
+    ],
+    "Baguette": [
+      "Das Kind kauft das Baguette.",
+      "Der Käse liegt auf dem Baguette."
+    ],
+    "Saft": [
+      "Das Kind trinkt den Saft.",
+      "Der Zucker schwimmt in dem Saft."
+    ],
+    "Eis": [
+      "Das Kind schleckt das Eis.",
+      "Die Sonne schmilzt an dem Eis."
+    ],
+    "Müsli": [
+      "Das Kind löffelt das Müsli.",
+      "Das Kind rührt in dem Müsli."
+    ],
+    "Pasta": [
+      "Das Kind kocht die Pasta.",
+      "Die Soße schwimmt auf der Pasta."
+    ]
+  },
+  "suesses": {
+    "Keks": [
+      "Das Kind isst den Keks.",
+      "Die Schokolade schmilzt auf dem Keks."
+    ],
+    "Torte": [
+      "Das Kind schneidet die Torte an.",
+      "Die Kerze steckt auf der Torte."
+    ],
+    "Cupcake": [
+      "Das Kind verziert den Cupcake.",
+      "Die Kirsche sitzt auf dem Cupcake."
+    ],
+    "Donut": [
+      "Das Kind beißt in den Donut.",
+      "Der Zucker klebt auf dem Donut."
+    ],
+    "Eis": [
+      "Das Kind schleckt das Eis.",
+      "Die Sonne schmilzt an dem Eis."
+    ],
+    "Schokolade": [
+      "Das Kind teilt die Schokolade.",
+      "Die Nüsse stecken in der Schokolade."
+    ],
+    "Bonbon": [
+      "Das Kind lutscht das Bonbon.",
+      "Der Zucker klebt an dem Bonbon."
+    ],
+    "Lutscher": [
+      "Das Kind mag den Lutscher.",
+      "Der Stiel steckt in dem Lutscher."
+    ],
+    "Popcorn": [
+      "Das Kind knabbert das Popcorn.",
+      "Der Zucker klebt auf dem Popcorn."
+    ],
+    "Waffel": [
+      "Das Kind backt die Waffel.",
+      "Der Puderzucker liegt auf der Waffel."
+    ],
+    "Pfannkuchen": [
+      "Das Kind isst den Pfannkuchen.",
+      "Die Marmelade liegt auf dem Pfannkuchen."
+    ],
+    "Croissant": [
+      "Das Kind kauft das Croissant.",
+      "Die Krümel liegen auf dem Croissant."
+    ],
+    "Brezel": [
+      "Das Kind teilt die Brezel.",
+      "Das Salz liegt auf der Brezel."
+    ],
+    "Softeis": [
+      "Das Kind schleckt das Softeis.",
+      "Die Waffel gehört zu dem Softeis."
+    ],
+    "Kuchen": [
+      "Das Kind isst den Kuchen.",
+      "Die Sahne liegt auf dem Kuchen."
+    ],
+    "Marmelade": [
+      "Das Kind öffnet die Marmelade.",
+      "Das Brot schmeckt mit der Marmelade."
+    ],
+    "Honig": [
+      "Das Kind löffelt den Honig.",
+      "Der Tee schmeckt mit dem Honig."
+    ],
+    "Pudding": [
+      "Das Kind mag den Pudding.",
+      "Der Löffel steckt in dem Pudding."
+    ],
+    "Bagel": [
+      "Das Kind belegt den Bagel.",
+      "Der Käse liegt auf dem Bagel."
+    ],
+    "Glückskeks": [
+      "Das Kind öffnet den Glückskeks.",
+      "Der Zettel steckt in dem Glückskeks."
+    ],
+    "Obstkuchen": [
+      "Das Kind backt den Obstkuchen.",
+      "Der Zucker liegt auf dem Obstkuchen."
+    ],
+    "Teigtasche": [
+      "Das Kind füllt die Teigtasche.",
+      "Die Füllung steckt in der Teigtasche."
+    ]
+  }
+}

@@ -1,0 +1,240 @@
+{
+  "themeId": "theme-71-zuege",
+  "themeName": "Züge und Bahnen",
+  "language": "de",
+  "version": 1,
+  "entryCount": 23,
+  "imageMode": "per-entry-svg",
+  "entries": [
+    {
+      "word": "Zug",
+      "article": "der",
+      "plural": "Züge",
+      "pluralWithArticle": "die Züge",
+      "accusativeSentence": "Das Kind sieht den Zug.",
+      "dativeSentence": "Das Kind fährt mit dem Zug.",
+      "imageIndex": 0,
+      "editorType": "vehicle"
+    },
+    {
+      "word": "Schnellzug",
+      "article": "der",
+      "plural": "Schnellzüge",
+      "pluralWithArticle": "die Schnellzüge",
+      "accusativeSentence": "Der Mann nimmt den Schnellzug.",
+      "dativeSentence": "Der Mann fährt mit dem Schnellzug.",
+      "imageIndex": 1,
+      "editorType": "vehicle"
+    },
+    {
+      "word": "Dampflok",
+      "article": "die",
+      "plural": "Dampfloks",
+      "pluralWithArticle": "die Dampfloks",
+      "accusativeSentence": "Das Kind fotografiert die Dampflok.",
+      "dativeSentence": "Der Rauch kommt aus der Dampflok.",
+      "imageIndex": 2,
+      "editorType": "vehicle"
+    },
+    {
+      "word": "Diesellok",
+      "article": "die",
+      "plural": "Dieselloks",
+      "pluralWithArticle": "die Dieselloks",
+      "accusativeSentence": "Das Kind hört die Diesellok.",
+      "dativeSentence": "Der Lärm kommt von der Diesellok.",
+      "imageIndex": 3,
+      "editorType": "vehicle"
+    },
+    {
+      "word": "Straßenbahn",
+      "article": "die",
+      "plural": "Straßenbahnen",
+      "pluralWithArticle": "die Straßenbahnen",
+      "accusativeSentence": "Die Frau nimmt die Straßenbahn.",
+      "dativeSentence": "Die Frau fährt mit der Straßenbahn.",
+      "imageIndex": 4,
+      "editorType": "vehicle"
+    },
+    {
+      "word": "U-Bahn",
+      "article": "die",
+      "plural": "U-Bahnen",
+      "pluralWithArticle": "die U-Bahnen",
+      "accusativeSentence": "Der Mann nimmt die U-Bahn.",
+      "dativeSentence": "Der Mann fährt mit der U-Bahn.",
+      "imageIndex": 5,
+      "editorType": "vehicle"
+    },
+    {
+      "word": "Hochbahn",
+      "article": "die",
+      "plural": "Hochbahnen",
+      "pluralWithArticle": "die Hochbahnen",
+      "accusativeSentence": "Das Kind sieht die Hochbahn.",
+      "dativeSentence": "Das Kind fährt mit der Hochbahn.",
+      "imageIndex": 6,
+      "editorType": "vehicle"
+    },
+    {
+      "word": "Einschienenbahn",
+      "article": "die",
+      "plural": "Einschienenbahnen",
+      "pluralWithArticle": "die Einschienenbahnen",
+      "accusativeSentence": "Die Familie nimmt die Einschienenbahn.",
+      "dativeSentence": "Die Familie fährt mit der Einschienenbahn.",
+      "imageIndex": 7,
+      "editorType": "vehicle"
+    },
+    {
+      "word": "Seilbahn",
+      "article": "die",
+      "plural": "Seilbahnen",
+      "pluralWithArticle": "die Seilbahnen",
+      "accusativeSentence": "Die Familie nimmt die Seilbahn.",
+      "dativeSentence": "Die Familie fährt mit der Seilbahn.",
+      "imageIndex": 8,
+      "editorType": "vehicle"
+    },
+    {
+      "word": "Bergbahn",
+      "article": "die",
+      "plural": "Bergbahnen",
+      "pluralWithArticle": "die Bergbahnen",
+      "accusativeSentence": "Der Wanderer nimmt die Bergbahn.",
+      "dativeSentence": "Der Wanderer fährt mit der Bergbahn.",
+      "imageIndex": 9,
+      "editorType": "vehicle"
+    },
+    {
+      "word": "Bahnhof",
+      "article": "der",
+      "plural": "Bahnhöfe",
+      "pluralWithArticle": "die Bahnhöfe",
+      "accusativeSentence": "Das Kind sucht den Bahnhof.",
+      "dativeSentence": "Das Kind wartet bei dem Bahnhof.",
+      "imageIndex": 10,
+      "editorType": "vehicle"
+    },
+    {
+      "word": "Gleis",
+      "article": "das",
+      "plural": "Gleise",
+      "pluralWithArticle": "die Gleise",
+      "accusativeSentence": "Der Mann überquert das Gleis.",
+      "dativeSentence": "Der Zug fährt auf dem Gleis.",
+      "imageIndex": 11,
+      "editorType": "vehicle"
+    },
+    {
+      "word": "Waggon",
+      "article": "der",
+      "plural": "Waggons",
+      "pluralWithArticle": "die Waggons",
+      "accusativeSentence": "Der Mann öffnet den Waggon.",
+      "dativeSentence": "Die Koffer liegen in dem Waggon.",
+      "imageIndex": 12,
+      "editorType": "vehicle"
+    },
+    {
+      "word": "Güterzug",
+      "article": "der",
+      "plural": "Güterzüge",
+      "pluralWithArticle": "die Güterzüge",
+      "accusativeSentence": "Das Kind sieht den Güterzug.",
+      "dativeSentence": "Der Sand liegt in dem Güterzug.",
+      "imageIndex": 13,
+      "editorType": "vehicle"
+    },
+    {
+      "word": "Fahrkarte",
+      "article": "die",
+      "plural": "Fahrkarten",
+      "pluralWithArticle": "die Fahrkarten",
+      "accusativeSentence": "Die Frau kauft die Fahrkarte.",
+      "dativeSentence": "Die Nummer steht auf der Fahrkarte.",
+      "imageIndex": 14,
+      "editorType": "vehicle"
+    },
+    {
+      "word": "Koffer",
+      "article": "der",
+      "plural": "Koffer",
+      "pluralWithArticle": "die Koffer",
+      "accusativeSentence": "Der Mann trägt den Koffer.",
+      "dativeSentence": "Die Kleidung ist in dem Koffer.",
+      "imageIndex": 15,
+      "editorType": "vehicle"
+    },
+    {
+      "word": "Aufzug",
+      "article": "der",
+      "plural": "Aufzüge",
+      "pluralWithArticle": "die Aufzüge",
+      "accusativeSentence": "Das Kind ruft den Aufzug.",
+      "dativeSentence": "Die Familie fährt mit dem Aufzug.",
+      "imageIndex": 16,
+      "editorType": "vehicle"
+    },
+    {
+      "word": "Signal",
+      "article": "das",
+      "plural": "Signale",
+      "pluralWithArticle": "die Signale",
+      "accusativeSentence": "Der Lokführer sieht das Signal.",
+      "dativeSentence": "Der Zug wartet bei dem Signal.",
+      "imageIndex": 17,
+      "editorType": "vehicle"
+    },
+    {
+      "word": "Brücke",
+      "article": "die",
+      "plural": "Brücken",
+      "pluralWithArticle": "die Brücken",
+      "accusativeSentence": "Das Kind sieht die Brücke.",
+      "dativeSentence": "Das Auto steht auf der Brücke.",
+      "imageIndex": 18,
+      "editorType": "vehicle"
+    },
+    {
+      "word": "Schwebebahn",
+      "article": "die",
+      "plural": "Schwebebahnen",
+      "pluralWithArticle": "die Schwebebahnen",
+      "accusativeSentence": "Die Familie nimmt die Schwebebahn.",
+      "dativeSentence": "Die Familie fährt mit der Schwebebahn.",
+      "imageIndex": 19,
+      "editorType": "vehicle"
+    },
+    {
+      "word": "Straßenbahnwagen",
+      "article": "der",
+      "plural": "Straßenbahnwagen",
+      "pluralWithArticle": "die Straßenbahnwagen",
+      "accusativeSentence": "Das Kind sieht den Straßenbahnwagen.",
+      "dativeSentence": "Die Fahrgäste sitzen in dem Straßenbahnwagen.",
+      "imageIndex": 20,
+      "editorType": "vehicle"
+    },
+    {
+      "word": "Tunnel",
+      "article": "der",
+      "plural": "Tunnel",
+      "pluralWithArticle": "die Tunnel",
+      "accusativeSentence": "Der Zug fährt durch den Tunnel.",
+      "dativeSentence": "Es ist dunkel in dem Tunnel.",
+      "imageIndex": 21,
+      "editorType": "vehicle"
+    },
+    {
+      "word": "Fahrplan",
+      "article": "der",
+      "plural": "Fahrpläne",
+      "pluralWithArticle": "die Fahrpläne",
+      "accusativeSentence": "Die Frau liest den Fahrplan.",
+      "dativeSentence": "Die Abfahrt steht in dem Fahrplan.",
+      "imageIndex": 22,
+      "editorType": "vehicle"
+    }
+  ]
+}

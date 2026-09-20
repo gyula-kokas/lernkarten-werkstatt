@@ -1,0 +1,260 @@
+{
+  "themeId": "theme-70-baustelle",
+  "themeName": "Baustelle und Werkzeug",
+  "language": "de",
+  "version": 1,
+  "entryCount": 25,
+  "imageMode": "per-entry-svg",
+  "entries": [
+    {
+      "word": "Baustelle",
+      "article": "die",
+      "plural": "Baustellen",
+      "pluralWithArticle": "die Baustellen",
+      "accusativeSentence": "Das Kind sieht die Baustelle.",
+      "dativeSentence": "Der Bauarbeiter arbeitet auf der Baustelle.",
+      "imageIndex": 0,
+      "editorType": "object"
+    },
+    {
+      "word": "Kran",
+      "article": "der",
+      "plural": "Kräne",
+      "pluralWithArticle": "die Kräne",
+      "accusativeSentence": "Der Arbeiter bedient den Kran.",
+      "dativeSentence": "Die Last hängt an dem Kran.",
+      "imageIndex": 1,
+      "editorType": "object"
+    },
+    {
+      "word": "Ziegelstein",
+      "article": "der",
+      "plural": "Ziegelsteine",
+      "pluralWithArticle": "die Ziegelsteine",
+      "accusativeSentence": "Der Maurer nimmt den Ziegelstein.",
+      "dativeSentence": "Der Mörtel klebt an dem Ziegelstein.",
+      "imageIndex": 2,
+      "editorType": "object"
+    },
+    {
+      "word": "Schubkarre",
+      "article": "die",
+      "plural": "Schubkarren",
+      "pluralWithArticle": "die Schubkarren",
+      "accusativeSentence": "Der Maurer schiebt die Schubkarre.",
+      "dativeSentence": "Der Sand liegt in der Schubkarre.",
+      "imageIndex": 3,
+      "editorType": "object"
+    },
+    {
+      "word": "Kelle",
+      "article": "die",
+      "plural": "Kellen",
+      "pluralWithArticle": "die Kellen",
+      "accusativeSentence": "Der Maurer nimmt die Kelle.",
+      "dativeSentence": "Der Maurer arbeitet mit der Kelle.",
+      "imageIndex": 4,
+      "editorType": "object"
+    },
+    {
+      "word": "Leiter",
+      "article": "die",
+      "plural": "Leiter",
+      "pluralWithArticle": "die Leiter",
+      "accusativeSentence": "Der Maler trägt die Leiter.",
+      "dativeSentence": "Der Maler steht auf der Leiter.",
+      "imageIndex": 5,
+      "editorType": "object"
+    },
+    {
+      "word": "Spitzhacke",
+      "article": "die",
+      "plural": "Spitzhacken",
+      "pluralWithArticle": "die Spitzhacken",
+      "accusativeSentence": "Der Arbeiter schwingt die Spitzhacke.",
+      "dativeSentence": "Der Arbeiter hackt mit der Spitzhacke.",
+      "imageIndex": 6,
+      "editorType": "object"
+    },
+    {
+      "word": "Schaufel",
+      "article": "die",
+      "plural": "Schaufeln",
+      "pluralWithArticle": "die Schaufeln",
+      "accusativeSentence": "Der Arbeiter nimmt die Schaufel.",
+      "dativeSentence": "Der Arbeiter gräbt mit der Schaufel.",
+      "imageIndex": 7,
+      "editorType": "object"
+    },
+    {
+      "word": "Hammer",
+      "article": "der",
+      "plural": "Hämmer",
+      "pluralWithArticle": "die Hämmer",
+      "accusativeSentence": "Der Arbeiter holt den Hammer.",
+      "dativeSentence": "Der Arbeiter schlägt mit dem Hammer.",
+      "imageIndex": 8,
+      "editorType": "object"
+    },
+    {
+      "word": "Bauhelm",
+      "article": "der",
+      "plural": "Bauhelme",
+      "pluralWithArticle": "die Bauhelme",
+      "accusativeSentence": "Der Arbeiter setzt den Bauhelm auf.",
+      "dativeSentence": "Der Kopf steckt in dem Bauhelm.",
+      "imageIndex": 9,
+      "editorType": "object"
+    },
+    {
+      "word": "Kabel",
+      "article": "das",
+      "plural": "Kabel",
+      "pluralWithArticle": "die Kabel",
+      "accusativeSentence": "Der Elektriker verlegt das Kabel.",
+      "dativeSentence": "Der Strom fließt in dem Kabel.",
+      "imageIndex": 10,
+      "editorType": "object"
+    },
+    {
+      "word": "Ölfass",
+      "article": "das",
+      "plural": "Ölfässer",
+      "pluralWithArticle": "die Ölfässer",
+      "accusativeSentence": "Der Arbeiter rollt das Ölfass.",
+      "dativeSentence": "Das Öl ist in dem Ölfass.",
+      "imageIndex": 11,
+      "editorType": "object"
+    },
+    {
+      "word": "Zahnrad",
+      "article": "das",
+      "plural": "Zahnräder",
+      "pluralWithArticle": "die Zahnräder",
+      "accusativeSentence": "Der Mechaniker dreht das Zahnrad.",
+      "dativeSentence": "Die Maschine läuft mit dem Zahnrad.",
+      "imageIndex": 12,
+      "editorType": "object"
+    },
+    {
+      "word": "Rad",
+      "article": "das",
+      "plural": "Räder",
+      "pluralWithArticle": "die Räder",
+      "accusativeSentence": "Der Mann wechselt das Rad.",
+      "dativeSentence": "Das Auto fährt mit dem Rad.",
+      "imageIndex": 13,
+      "editorType": "object"
+    },
+    {
+      "word": "Schraube",
+      "article": "die",
+      "plural": "Schrauben",
+      "pluralWithArticle": "die Schrauben",
+      "accusativeSentence": "Der Mann dreht die Schraube.",
+      "dativeSentence": "Der Deckel sitzt auf der Schraube.",
+      "imageIndex": 14,
+      "editorType": "object"
+    },
+    {
+      "word": "Haken",
+      "article": "der",
+      "plural": "Haken",
+      "pluralWithArticle": "die Haken",
+      "accusativeSentence": "Der Mann hängt den Haken auf.",
+      "dativeSentence": "Die Jacke hängt an dem Haken.",
+      "imageIndex": 15,
+      "editorType": "object"
+    },
+    {
+      "word": "Kette",
+      "article": "die",
+      "plural": "Ketten",
+      "pluralWithArticle": "die Ketten",
+      "accusativeSentence": "Der Mann ölt die Kette.",
+      "dativeSentence": "Der Anhänger hängt an der Kette.",
+      "imageIndex": 16,
+      "editorType": "object"
+    },
+    {
+      "word": "Magnet",
+      "article": "der",
+      "plural": "Magnete",
+      "pluralWithArticle": "die Magnete",
+      "accusativeSentence": "Das Kind nimmt den Magneten.",
+      "dativeSentence": "Die Schraube klebt an dem Magneten.",
+      "imageIndex": 17,
+      "editorType": "object"
+    },
+    {
+      "word": "Taschenlampe",
+      "article": "die",
+      "plural": "Taschenlampen",
+      "pluralWithArticle": "die Taschenlampen",
+      "accusativeSentence": "Der Arbeiter nimmt die Taschenlampe.",
+      "dativeSentence": "Der Arbeiter leuchtet mit der Taschenlampe.",
+      "imageIndex": 18,
+      "editorType": "object"
+    },
+    {
+      "word": "Batterie",
+      "article": "die",
+      "plural": "Batterien",
+      "pluralWithArticle": "die Batterien",
+      "accusativeSentence": "Der Arbeiter wechselt die Batterie.",
+      "dativeSentence": "Der Strom kommt aus der Batterie.",
+      "imageIndex": 19,
+      "editorType": "object"
+    },
+    {
+      "word": "Stecker",
+      "article": "der",
+      "plural": "Stecker",
+      "pluralWithArticle": "die Stecker",
+      "accusativeSentence": "Der Elektriker zieht den Stecker.",
+      "dativeSentence": "Der Strom kommt aus dem Stecker.",
+      "imageIndex": 20,
+      "editorType": "object"
+    },
+    {
+      "word": "Draht",
+      "article": "der",
+      "plural": "Drähte",
+      "pluralWithArticle": "die Drähte",
+      "accusativeSentence": "Der Elektriker biegt den Draht.",
+      "dativeSentence": "Der Strom fließt in dem Draht.",
+      "imageIndex": 21,
+      "editorType": "object"
+    },
+    {
+      "word": "Werkzeugkasten",
+      "article": "der",
+      "plural": "Werkzeugkästen",
+      "pluralWithArticle": "die Werkzeugkästen",
+      "accusativeSentence": "Der Arbeiter öffnet den Werkzeugkasten.",
+      "dativeSentence": "Die Zange liegt in dem Werkzeugkasten.",
+      "imageIndex": 22,
+      "editorType": "object"
+    },
+    {
+      "word": "Warnweste",
+      "article": "die",
+      "plural": "Warnwesten",
+      "pluralWithArticle": "die Warnwesten",
+      "accusativeSentence": "Der Arbeiter zieht die Warnweste an.",
+      "dativeSentence": "Der Arbeiter ist gut sichtbar in der Warnweste.",
+      "imageIndex": 23,
+      "editorType": "object"
+    },
+    {
+      "word": "Warnschild",
+      "article": "das",
+      "plural": "Warnschilder",
+      "pluralWithArticle": "die Warnschilder",
+      "accusativeSentence": "Der Arbeiter stellt das Warnschild auf.",
+      "dativeSentence": "Der Weg endet an dem Warnschild.",
+      "imageIndex": 24,
+      "editorType": "object"
+    }
+  ]
+}

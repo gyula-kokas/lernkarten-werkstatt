@@ -1,0 +1,410 @@
+{
+  "themeId": "theme-65-koerper",
+  "themeName": "Körper",
+  "language": "de",
+  "version": 1,
+  "entryCount": 40,
+  "imageMode": "per-entry-svg",
+  "entries": [
+    {
+      "word": "Kopf",
+      "article": "der",
+      "plural": "Köpfe",
+      "pluralWithArticle": "die Köpfe",
+      "accusativeSentence": "Das Kind dreht den Kopf.",
+      "dativeSentence": "Der Hut sitzt auf dem Kopf.",
+      "imageIndex": 0,
+      "editorType": "bodypart"
+    },
+    {
+      "word": "Gesicht",
+      "article": "das",
+      "plural": "Gesichter",
+      "pluralWithArticle": "die Gesichter",
+      "accusativeSentence": "Das Kind wäscht das Gesicht.",
+      "dativeSentence": "Die Augen sind in dem Gesicht.",
+      "imageIndex": 1,
+      "editorType": "bodypart"
+    },
+    {
+      "word": "Auge",
+      "article": "das",
+      "plural": "Augen",
+      "pluralWithArticle": "die Augen",
+      "accusativeSentence": "Das Kind schließt das Auge.",
+      "dativeSentence": "Eine Träne läuft aus dem Auge.",
+      "imageIndex": 2,
+      "editorType": "bodypart"
+    },
+    {
+      "word": "Ohr",
+      "article": "das",
+      "plural": "Ohren",
+      "pluralWithArticle": "die Ohren",
+      "accusativeSentence": "Das Kind hält das Ohr zu.",
+      "dativeSentence": "Der Ohrring hängt an dem Ohr.",
+      "imageIndex": 3,
+      "editorType": "bodypart"
+    },
+    {
+      "word": "Nase",
+      "article": "die",
+      "plural": "Nasen",
+      "pluralWithArticle": "die Nasen",
+      "accusativeSentence": "Das Kind putzt die Nase.",
+      "dativeSentence": "Die Brille sitzt auf der Nase.",
+      "imageIndex": 4,
+      "editorType": "bodypart"
+    },
+    {
+      "word": "Mund",
+      "article": "der",
+      "plural": "Münder",
+      "pluralWithArticle": "die Münder",
+      "accusativeSentence": "Das Kind öffnet den Mund.",
+      "dativeSentence": "Das Lachen kommt aus dem Mund.",
+      "imageIndex": 5,
+      "editorType": "bodypart"
+    },
+    {
+      "word": "Zahn",
+      "article": "der",
+      "plural": "Zähne",
+      "pluralWithArticle": "die Zähne",
+      "accusativeSentence": "Das Kind putzt den Zahn.",
+      "dativeSentence": "Die Krone sitzt auf dem Zahn.",
+      "imageIndex": 6,
+      "editorType": "bodypart"
+    },
+    {
+      "word": "Zunge",
+      "article": "die",
+      "plural": "Zungen",
+      "pluralWithArticle": "die Zungen",
+      "accusativeSentence": "Das Kind streckt die Zunge heraus.",
+      "dativeSentence": "Das Kind spricht mit der Zunge.",
+      "imageIndex": 7,
+      "editorType": "bodypart"
+    },
+    {
+      "word": "Haar",
+      "article": "das",
+      "plural": "Haare",
+      "pluralWithArticle": "die Haare",
+      "accusativeSentence": "Das Kind kämmt das Haar.",
+      "dativeSentence": "Die Schleife steckt in dem Haar.",
+      "imageIndex": 8,
+      "editorType": "bodypart"
+    },
+    {
+      "word": "Hand",
+      "article": "die",
+      "plural": "Hände",
+      "pluralWithArticle": "die Hände",
+      "accusativeSentence": "Das Kind wäscht die Hand.",
+      "dativeSentence": "Der Ring steckt an der Hand.",
+      "imageIndex": 9,
+      "editorType": "bodypart"
+    },
+    {
+      "word": "Finger",
+      "article": "der",
+      "plural": "Finger",
+      "pluralWithArticle": "die Finger",
+      "accusativeSentence": "Das Kind zeigt den Finger.",
+      "dativeSentence": "Der Ring steckt an dem Finger.",
+      "imageIndex": 10,
+      "editorType": "bodypart"
+    },
+    {
+      "word": "Daumen",
+      "article": "der",
+      "plural": "Daumen",
+      "pluralWithArticle": "die Daumen",
+      "accusativeSentence": "Das Kind hebt den Daumen.",
+      "dativeSentence": "Das Pflaster klebt an dem Daumen.",
+      "imageIndex": 11,
+      "editorType": "bodypart"
+    },
+    {
+      "word": "Arm",
+      "article": "der",
+      "plural": "Arme",
+      "pluralWithArticle": "die Arme",
+      "accusativeSentence": "Das Kind bewegt den Arm.",
+      "dativeSentence": "Die Uhr sitzt an dem Arm.",
+      "imageIndex": 12,
+      "editorType": "bodypart"
+    },
+    {
+      "word": "Bein",
+      "article": "das",
+      "plural": "Beine",
+      "pluralWithArticle": "die Beine",
+      "accusativeSentence": "Das Kind streckt das Bein.",
+      "dativeSentence": "Der Verband ist an dem Bein.",
+      "imageIndex": 13,
+      "editorType": "bodypart"
+    },
+    {
+      "word": "Knie",
+      "article": "das",
+      "plural": "Knie",
+      "pluralWithArticle": "die Knie",
+      "accusativeSentence": "Das Kind beugt das Knie.",
+      "dativeSentence": "Das Pflaster klebt auf dem Knie.",
+      "imageIndex": 14,
+      "editorType": "bodypart"
+    },
+    {
+      "word": "Fuß",
+      "article": "der",
+      "plural": "Füße",
+      "pluralWithArticle": "die Füße",
+      "accusativeSentence": "Das Kind hebt den Fuß.",
+      "dativeSentence": "Der Schuh sitzt an dem Fuß.",
+      "imageIndex": 15,
+      "editorType": "bodypart"
+    },
+    {
+      "word": "Herz",
+      "article": "das",
+      "plural": "Herzen",
+      "pluralWithArticle": "die Herzen",
+      "accusativeSentence": "Das Kind hört das Herz klopfen.",
+      "dativeSentence": "Der Schlag kommt von dem Herzen.",
+      "imageIndex": 16,
+      "editorType": "bodypart"
+    },
+    {
+      "word": "Lunge",
+      "article": "die",
+      "plural": "Lungen",
+      "pluralWithArticle": "die Lungen",
+      "accusativeSentence": "Die Ärztin untersucht die Lunge.",
+      "dativeSentence": "Die Luft kommt aus der Lunge.",
+      "imageIndex": 17,
+      "editorType": "bodypart"
+    },
+    {
+      "word": "Gehirn",
+      "article": "das",
+      "plural": "Gehirne",
+      "pluralWithArticle": "die Gehirne",
+      "accusativeSentence": "Der Arzt untersucht das Gehirn.",
+      "dativeSentence": "Das Denken kommt aus dem Gehirn.",
+      "imageIndex": 18,
+      "editorType": "bodypart"
+    },
+    {
+      "word": "Knochen",
+      "article": "der",
+      "plural": "Knochen",
+      "pluralWithArticle": "die Knochen",
+      "accusativeSentence": "Der Arzt röntgt den Knochen.",
+      "dativeSentence": "Der Hund knabbert an dem Knochen.",
+      "imageIndex": 19,
+      "editorType": "bodypart"
+    },
+    {
+      "word": "Bauch",
+      "article": "der",
+      "plural": "Bäuche",
+      "pluralWithArticle": "die Bäuche",
+      "accusativeSentence": "Das Kind hält den Bauch.",
+      "dativeSentence": "Das Essen liegt in dem Bauch.",
+      "imageIndex": 20,
+      "editorType": "bodypart"
+    },
+    {
+      "word": "Rücken",
+      "article": "der",
+      "plural": "Rücken",
+      "pluralWithArticle": "die Rücken",
+      "accusativeSentence": "Das Kind massiert den Rücken.",
+      "dativeSentence": "Der Rucksack hängt auf dem Rücken.",
+      "imageIndex": 21,
+      "editorType": "bodypart"
+    },
+    {
+      "word": "Muskel",
+      "article": "der",
+      "plural": "Muskeln",
+      "pluralWithArticle": "die Muskeln",
+      "accusativeSentence": "Der Mann trainiert den Muskel.",
+      "dativeSentence": "Der Sport hilft dem Muskel.",
+      "imageIndex": 22,
+      "editorType": "bodypart"
+    },
+    {
+      "word": "Blut",
+      "article": "das",
+      "plural": "",
+      "pluralWithArticle": "",
+      "accusativeSentence": "Die Ärztin untersucht das Blut.",
+      "dativeSentence": "Aus dem Blut macht der Arzt einen Test.",
+      "imageIndex": 23,
+      "editorType": "bodypart"
+    },
+    {
+      "word": "Handfläche",
+      "article": "die",
+      "plural": "Handflächen",
+      "pluralWithArticle": "die Handflächen",
+      "accusativeSentence": "Das Kind zeigt die Handfläche.",
+      "dativeSentence": "Der Keks liegt auf der Handfläche.",
+      "imageIndex": 24,
+      "editorType": "bodypart"
+    },
+    {
+      "word": "Faust",
+      "article": "die",
+      "plural": "Fäuste",
+      "pluralWithArticle": "die Fäuste",
+      "accusativeSentence": "Das Kind ballt die Faust.",
+      "dativeSentence": "Der Schlüssel liegt in der Faust.",
+      "imageIndex": 25,
+      "editorType": "bodypart"
+    },
+    {
+      "word": "Fingernagel",
+      "article": "der",
+      "plural": "Fingernägel",
+      "pluralWithArticle": "die Fingernägel",
+      "accusativeSentence": "Das Kind schneidet den Fingernagel.",
+      "dativeSentence": "Der rote Lack ist auf dem Fingernagel.",
+      "imageIndex": 26,
+      "editorType": "bodypart"
+    },
+    {
+      "word": "Fingerabdruck",
+      "article": "der",
+      "plural": "Fingerabdrücke",
+      "pluralWithArticle": "die Fingerabdrücke",
+      "accusativeSentence": "Der Polizist nimmt den Fingerabdruck.",
+      "dativeSentence": "Die Tinte bleibt an dem Fingerabdruck.",
+      "imageIndex": 27,
+      "editorType": "bodypart"
+    },
+    {
+      "word": "Fußabdruck",
+      "article": "der",
+      "plural": "Fußabdrücke",
+      "pluralWithArticle": "die Fußabdrücke",
+      "accusativeSentence": "Das Kind sieht den Fußabdruck.",
+      "dativeSentence": "Das Wasser steht in dem Fußabdruck.",
+      "imageIndex": 28,
+      "editorType": "bodypart"
+    },
+    {
+      "word": "Fußsohle",
+      "article": "die",
+      "plural": "Fußsohlen",
+      "pluralWithArticle": "die Fußsohlen",
+      "accusativeSentence": "Die Mutter kitzelt die Fußsohle.",
+      "dativeSentence": "Der Kiesel klebt an der Fußsohle.",
+      "imageIndex": 29,
+      "editorType": "bodypart"
+    },
+    {
+      "word": "Lippe",
+      "article": "die",
+      "plural": "Lippen",
+      "pluralWithArticle": "die Lippen",
+      "accusativeSentence": "Das Kind leckt die Lippe.",
+      "dativeSentence": "Der Lippenstift glänzt auf der Lippe.",
+      "imageIndex": 30,
+      "editorType": "bodypart"
+    },
+    {
+      "word": "Schnurrbart",
+      "article": "der",
+      "plural": "Schnurrbärte",
+      "pluralWithArticle": "die Schnurrbärte",
+      "accusativeSentence": "Der Opa zwirbelt den Schnurrbart.",
+      "dativeSentence": "Der Schaum bleibt in dem Schnurrbart.",
+      "imageIndex": 31,
+      "editorType": "bodypart"
+    },
+    {
+      "word": "Zopf",
+      "article": "der",
+      "plural": "Zöpfe",
+      "pluralWithArticle": "die Zöpfe",
+      "accusativeSentence": "Die Mutter flechtet den Zopf.",
+      "dativeSentence": "Die Schleife sitzt an dem Zopf.",
+      "imageIndex": 32,
+      "editorType": "bodypart"
+    },
+    {
+      "word": "Träne",
+      "article": "die",
+      "plural": "Tränen",
+      "pluralWithArticle": "die Tränen",
+      "accusativeSentence": "Das Kind trocknet die Träne.",
+      "dativeSentence": "Die Wange ist nass von der Träne.",
+      "imageIndex": 33,
+      "editorType": "bodypart"
+    },
+    {
+      "word": "Leber",
+      "article": "die",
+      "plural": "Lebern",
+      "pluralWithArticle": "die Lebern",
+      "accusativeSentence": "Die Ärztin prüft die Leber.",
+      "dativeSentence": "Die Galle kommt aus der Leber.",
+      "imageIndex": 34,
+      "editorType": "bodypart"
+    },
+    {
+      "word": "Niere",
+      "article": "die",
+      "plural": "Nieren",
+      "pluralWithArticle": "die Nieren",
+      "accusativeSentence": "Die Ärztin fühlt die Niere.",
+      "dativeSentence": "Das Wasser bleibt in der Niere.",
+      "imageIndex": 35,
+      "editorType": "bodypart"
+    },
+    {
+      "word": "Darm",
+      "article": "der",
+      "plural": "Därme",
+      "pluralWithArticle": "die Därme",
+      "accusativeSentence": "Die Ärztin hört den Darm ab.",
+      "dativeSentence": "Die Nährstoffe kommen aus dem Darm.",
+      "imageIndex": 36,
+      "editorType": "bodypart"
+    },
+    {
+      "word": "Brustkorb",
+      "article": "der",
+      "plural": "Brustkörbe",
+      "pluralWithArticle": "die Brustkörbe",
+      "accusativeSentence": "Die Ärztin klopft den Brustkorb ab.",
+      "dativeSentence": "Das Herz sitzt in dem Brustkorb.",
+      "imageIndex": 37,
+      "editorType": "bodypart"
+    },
+    {
+      "word": "Schädel",
+      "article": "der",
+      "plural": "Schädel",
+      "pluralWithArticle": "die Schädel",
+      "accusativeSentence": "Das Kind berührt den Schädel.",
+      "dativeSentence": "Das Gehirn steckt in dem Schädel.",
+      "imageIndex": 38,
+      "editorType": "bodypart"
+    },
+    {
+      "word": "Skelett",
+      "article": "das",
+      "plural": "Skelette",
+      "pluralWithArticle": "die Skelette",
+      "accusativeSentence": "Das Kind malt das Skelett.",
+      "dativeSentence": "Die Knochen stecken in dem Skelett.",
+      "imageIndex": 39,
+      "editorType": "bodypart"
+    }
+  ]
+}

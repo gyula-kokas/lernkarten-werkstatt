@@ -1,0 +1,10 @@
+{
+  "slug": "openmoji--1F95B",
+  "provider": "openmoji",
+  "source": "https://openmoji.org/library/emoji-1F95B/",
+  "author": "Laura Humpfer / OpenMoji contributors",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "title": "glass of milk",
+  "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" id=\"asset-openmoji--1F95B-emoji\" viewBox=\"0 0 72 72\">\n  <g id=\"asset-openmoji--1F95B-color\">\n    <polygon fill=\"#fff\" points=\"53.545 28 48.35 67 24.6 67 18.6794 28\" />\n    <polygon fill=\"#d0cfce\" points=\"43.404 28 38.35 67 48.35 67 53.404 28\" />\n  </g>\n  <g id=\"asset-openmoji--1F95B-line\">\n    <path fill=\"none\" stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" stroke-width=\"2\" d=\"m17,17L24.6,67L48.35,67L55,17\" />\n  </g>\n</svg>"
+}

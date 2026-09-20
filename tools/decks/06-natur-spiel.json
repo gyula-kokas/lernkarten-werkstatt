@@ -1,0 +1,741 @@
+{
+  "themes": [
+    {
+      "id": "wetter",
+      "name": "Wetter",
+      "type": "nature",
+      "words": [
+        [
+          "Sonne",
+          "sun"
+        ],
+        [
+          "Wolke",
+          "cloud"
+        ],
+        [
+          "Regen",
+          "cloud with rain"
+        ],
+        [
+          "Regenschauer",
+          "sun behind rain cloud"
+        ],
+        [
+          "Gewitter",
+          "cloud with lightning"
+        ],
+        [
+          "Blitz",
+          "high voltage"
+        ],
+        [
+          "Schneeflocke",
+          "snowflake",
+          null,
+          "mdi"
+        ],
+        [
+          "Schnee",
+          "snowman"
+        ],
+        [
+          "Wind",
+          "wind face"
+        ],
+        [
+          "Sturm",
+          "tornado"
+        ],
+        [
+          "Nebel",
+          "fog"
+        ],
+        [
+          "Regenbogen",
+          "rainbow"
+        ],
+        [
+          "Hagel",
+          "ice"
+        ],
+        [
+          "Temperatur",
+          "thermometer"
+        ],
+        [
+          "Sterne",
+          "night with stars"
+        ],
+        [
+          "Sonnenaufgang",
+          "sunrise"
+        ],
+        [
+          "Sonnenuntergang",
+          "sunset"
+        ],
+        [
+          "Schirm",
+          "umbrella"
+        ],
+        [
+          "Regenjacke",
+          "coat"
+        ],
+        [
+          "Gummistiefel",
+          "boot"
+        ],
+        [
+          "Wetterfahne",
+          "wind chime"
+        ],
+        [
+          "Wetterstation",
+          "satellite antenna"
+        ],
+        [
+          "Sonne hinter Wolke",
+          "sun behind cloud"
+        ],
+        [
+          "Wassertropfen",
+          "droplet"
+        ]
+      ]
+    },
+    {
+      "id": "natur",
+      "name": "Natur und Landschaft",
+      "type": "nature",
+      "words": [
+        [
+          "Berg",
+          "mountain"
+        ],
+        [
+          "Schneegipfel",
+          "snow-capped mountain"
+        ],
+        [
+          "Vulkan",
+          "volcano"
+        ],
+        [
+          "Hügel",
+          "foggy mountain"
+        ],
+        [
+          "Tal",
+          "national park"
+        ],
+        [
+          "See",
+          "water wave"
+        ],
+        [
+          "Fluss",
+          "bridge at night"
+        ],
+        [
+          "Meer",
+          "beach with umbrella"
+        ],
+        [
+          "Insel",
+          "desert island"
+        ],
+        [
+          "Strand",
+          "beach with umbrella"
+        ],
+        [
+          "Wüste",
+          "desert"
+        ],
+        [
+          "Wald",
+          "forest",
+          null,
+          "mdi"
+        ],
+        [
+          "Baum",
+          "deciduous tree"
+        ],
+        [
+          "Palme",
+          "palm tree"
+        ],
+        [
+          "Blume",
+          "blossom"
+        ],
+        [
+          "Sonnenblume",
+          "sunflower"
+        ],
+        [
+          "Rose",
+          "rose"
+        ],
+        [
+          "Tulpe",
+          "tulip"
+        ],
+        [
+          "Wiese",
+          "grass",
+          null,
+          "mdi"
+        ],
+        [
+          "Feld",
+          "sheaf of rice"
+        ],
+        [
+          "Stein",
+          "rock"
+        ],
+        [
+          "Sand",
+          "desert"
+        ],
+        [
+          "Höhle",
+          "hole"
+        ],
+        [
+          "Wasserfall",
+          "waterfall",
+          null,
+          "mdi"
+        ],
+        [
+          "Quelle",
+          "fountain"
+        ],
+        [
+          "Gletscher",
+          [
+            "iceberg",
+            "snow-capped mountain"
+          ]
+        ],
+        [
+          "Kristall",
+          "gem stone"
+        ],
+        [
+          "Erdbeben",
+          "earthquake"
+        ],
+        [
+          "Baumstamm",
+          "wood"
+        ],
+        [
+          "Wurzel",
+          "root vegetable"
+        ],
+        [
+          "Bambus",
+          "cactus"
+        ],
+        [
+          "Blatt",
+          "fallen leaf"
+        ],
+        [
+          "Ast",
+          "nest with eggs"
+        ]
+      ]
+    },
+    {
+      "id": "blumen-pflanzen",
+      "name": "Blumen und Pflanzen",
+      "type": "plant",
+      "words": [
+        [
+          "Blume",
+          "blossom"
+        ],
+        [
+          "Rose",
+          "rose"
+        ],
+        [
+          "Tulpe",
+          "tulip"
+        ],
+        [
+          "Sonnenblume",
+          "sunflower"
+        ],
+        [
+          "Gänseblümchen",
+          "flower",
+          null,
+          "mdi"
+        ],
+        [
+          "Hibiskus",
+          "hibiscus"
+        ],
+        [
+          "Lotus",
+          "lotus"
+        ],
+        [
+          "Mohnblume",
+          "poppy"
+        ],
+        [
+          "Klee",
+          "four leaf clover"
+        ],
+        [
+          "Pflanze",
+          "potted plant"
+        ],
+        [
+          "Pflanze",
+          "potted plant"
+        ],
+        [
+          "Kaktus",
+          "cactus"
+        ],
+        [
+          "Setzling",
+          "seedling"
+        ],
+        [
+          "Kräuter",
+          "herb"
+        ],
+        [
+          "Blumengarten",
+          "house with garden"
+        ],
+        [
+          "Blumenstrauß",
+          "bouquet"
+        ],
+        [
+          "Kirschblüte",
+          "cherry blossom"
+        ],
+        [
+          "Ahornblatt",
+          "maple leaf"
+        ],
+        [
+          "Verwelkte Blume",
+          "wilted flower"
+        ],
+        [
+          "Weiße Blume",
+          "white flower"
+        ],
+        [
+          "Hyazinthe",
+          "hyacinth"
+        ],
+        [
+          "Moos",
+          "moss"
+        ],
+        [
+          "Basilikum",
+          "herb"
+        ],
+        [
+          "Lotusblume",
+          "lotus"
+        ],
+        [
+          "Samen",
+          "seed",
+          null,
+          "mdi"
+        ]
+      ]
+    },
+    {
+      "id": "musik",
+      "name": "Musik",
+      "type": "object",
+      "words": [
+        [
+          "Gitarre",
+          "guitar"
+        ],
+        [
+          "Klavier",
+          "musical keyboard"
+        ],
+        [
+          "Violine",
+          "violin"
+        ],
+        [
+          "Trommel",
+          "drum"
+        ],
+        [
+          "Trompete",
+          "trumpet"
+        ],
+        [
+          "Saxofon",
+          "saxophone"
+        ],
+        [
+          "Flöte",
+          "flute"
+        ],
+        [
+          "Harfe",
+          "harp"
+        ],
+        [
+          "Akkordeon",
+          "accordion"
+        ],
+        [
+          "Banjo",
+          "banjo"
+        ],
+        [
+          "Maracas",
+          "maracas"
+        ],
+        [
+          "Note",
+          "musical note"
+        ],
+        [
+          "Noten",
+          "musical notes"
+        ],
+        [
+          "Notenblatt",
+          "musical score"
+        ],
+        [
+          "Mikrofon",
+          "microphone"
+        ],
+        [
+          "Kopfhörer",
+          "headphone"
+        ],
+        [
+          "Lautsprecher",
+          "loudspeaker"
+        ],
+        [
+          "Radio",
+          "radio"
+        ],
+        [
+          "Musikbox",
+          "boombox"
+        ],
+        [
+          "Konzert",
+          "performing arts"
+        ],
+        [
+          "Dirigent",
+          "conductor"
+        ],
+        [
+          "Sänger",
+          "singer"
+        ],
+        [
+          "Tanz",
+          "ballet dancer"
+        ],
+        [
+          "Orchester",
+          "long drum"
+        ],
+        [
+          "Schelle",
+          "bell"
+        ],
+        [
+          "Metronom",
+          "metronome",
+          null,
+          "mdi"
+        ],
+        [
+          "Triangel",
+          "instrument-triangle",
+          null,
+          "mdi"
+        ]
+      ]
+    },
+    {
+      "id": "sport",
+      "name": "Spiel und Sport",
+      "type": "object",
+      "words": [
+        [
+          "Ball",
+          "soccer ball"
+        ],
+        [
+          "Basketball",
+          "basketball"
+        ],
+        [
+          "Volleyball",
+          "volleyball"
+        ],
+        [
+          "Tennis",
+          "tennis"
+        ],
+        [
+          "Badminton",
+          "badminton"
+        ],
+        [
+          "Schläger",
+          "tennis",
+          null,
+          "mdi"
+        ],
+        [
+          "Tennisball",
+          "softball"
+        ],
+        [
+          "Tor",
+          "goal net"
+        ],
+        [
+          "Trikot",
+          "running shirt"
+        ],
+        [
+          "Turnschuh",
+          "running shoe"
+        ],
+        [
+          "Fahrrad",
+          "bicycle"
+        ],
+        [
+          "Skateboard",
+          "skateboard"
+        ],
+        [
+          "Rollschuh",
+          "roller skate"
+        ],
+        [
+          "Schlittschuh",
+          "ice skate"
+        ],
+        [
+          "Ski",
+          "skis"
+        ],
+        [
+          "Schlitten",
+          "sled"
+        ],
+        [
+          "Snowboard",
+          "snowboarder"
+        ],
+        [
+          "Schwimmbrille",
+          "goggles"
+        ],
+        [
+          "Badehose",
+          "shorts"
+        ],
+        [
+          "Pokal",
+          "trophy"
+        ],
+        [
+          "Medaille",
+          "sports medal"
+        ],
+        [
+          "Erste Hilfe",
+          "first aid kit"
+        ],
+        [
+          "Sprungseil",
+          "jump-rope",
+          null,
+          "mdi"
+        ],
+        [
+          "Frisbee",
+          "flying disc"
+        ],
+        [
+          "Bogenschießen",
+          "bow and arrow"
+        ],
+        [
+          "Boxen",
+          "boxing glove"
+        ],
+        [
+          "Schach",
+          "chess pawn"
+        ],
+        [
+          "Würfel",
+          "game die"
+        ],
+        [
+          "Puzzle",
+          "puzzle piece"
+        ]
+      ]
+    },
+    {
+      "id": "spielzeug",
+      "name": "Spielzeug",
+      "type": "object",
+      "words": [
+        [
+          "Teddybär",
+          "teddy bear"
+        ],
+        [
+          "Puppe",
+          "nesting dolls"
+        ],
+        [
+          "Luftballon",
+          "balloon"
+        ],
+        [
+          "Roboter",
+          "robot"
+        ],
+        [
+          "Drache",
+          "kite",
+          null,
+          "mdi"
+        ],
+        [
+          "Dinosaurier",
+          "T-Rex"
+        ],
+        [
+          "Baukasten",
+          "toy-brick",
+          null,
+          "mdi"
+        ],
+        [
+          "Puzzle",
+          "puzzle piece"
+        ],
+        [
+          "Würfel",
+          "game die"
+        ],
+        [
+          "Jo-Jo",
+          "yo-yo"
+        ],
+        [
+          "Kreisel",
+          "top"
+        ],
+        [
+          "Murmel",
+          "pool 8 ball"
+        ],
+        [
+          "Bilderbuch",
+          "closed book"
+        ],
+        [
+          "Rutsche",
+          "playground slide"
+        ],
+        [
+          "Schaukel",
+          "carousel horse"
+        ],
+        [
+          "Klettergerüst",
+          "playground"
+        ],
+        [
+          "Spielkarte",
+          "flower playing cards"
+        ],
+        [
+          "Schachfigur",
+          "chess pawn"
+        ],
+        [
+          "Krone",
+          "crown"
+        ],
+        [
+          "Zauberstab",
+          "magic wand"
+        ],
+        [
+          "Schatzkiste",
+          "treasure chest"
+        ],
+        [
+          "Maske",
+          "guy fawkes mask"
+        ],
+        [
+          "Puzzlebild",
+          "framed picture"
+        ],
+        [
+          "Malkasten",
+          "artist palette"
+        ],
+        [
+          "Buntstift",
+          "crayon"
+        ],
+        [
+          "Papierflieger",
+          "paperclip"
+        ],
+        [
+          "Seifenblasen",
+          "bubbles"
+        ],
+        [
+          "Bauklotz",
+          "brick"
+        ],
+        [
+          "Spielwürfel",
+          "game die"
+        ]
+      ]
+    }
+  ]
+}

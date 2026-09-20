@@ -1,0 +1,509 @@
+{
+  "_hinweis": "Geschriebene Sätze je Thema und Wort: [Akkusativsatz, Dativsatz]. Kein Baukasten. Die Form stammt aus dictionary/nouns.json und wird von tools/build_decks.py geprüft.",
+  "haustiere": {
+    "Hund": [
+      "Das Kind streichelt den Hund.",
+      "Der rote Ball gehört dem Hund."
+    ],
+    "Katze": [
+      "Das Mädchen füttert die Katze.",
+      "Das Kind spielt mit der Katze."
+    ],
+    "Hamster": [
+      "Das Kind beobachtet den Hamster.",
+      "Der Käfig gehört dem Hamster."
+    ],
+    "Kaninchen": [
+      "Das Kind streichelt das Kaninchen.",
+      "Das Kind spielt mit dem Kaninchen."
+    ],
+    "Maus": [
+      "Die Katze fängt die Maus.",
+      "Die Katze spielt mit der Maus."
+    ],
+    "Ratte": [
+      "Das Kind sieht die Ratte.",
+      "Das Kind läuft vor der Ratte weg."
+    ],
+    "Papagei": [
+      "Das Kind füttert den Papageien.",
+      "Der Käfig gehört dem Papageien."
+    ],
+    "Goldfisch": [
+      "Das Kind füttert den Goldfisch.",
+      "Das Futter gehört dem Goldfisch."
+    ],
+    "Schildkröte": [
+      "Das Kind beobachtet die Schildkröte.",
+      "Das Kind spielt mit der Schildkröte."
+    ],
+    "Kuh": [
+      "Der Bauer melkt die Kuh.",
+      "Der Stall gehört der Kuh."
+    ],
+    "Schwein": [
+      "Das Kind füttert das Schwein.",
+      "Das Futter gehört dem Schwein."
+    ],
+    "Pferd": [
+      "Das Kind striegelt das Pferd.",
+      "Die Decke gehört dem Pferd."
+    ],
+    "Schaf": [
+      "Der Schäfer schert das Schaf.",
+      "Die Wolle gehört dem Schaf."
+    ],
+    "Ziege": [
+      "Das Kind füttert die Ziege.",
+      "Das Heu gehört der Ziege."
+    ],
+    "Esel": [
+      "Das Kind streichelt den Esel.",
+      "Die Karotte gehört dem Esel."
+    ],
+    "Hahn": [
+      "Das Kind hört den Hahn krähen.",
+      "Der Hof gehört dem Hahn."
+    ],
+    "Huhn": [
+      "Das Kind füttert das Huhn.",
+      "Das Nest gehört dem Huhn."
+    ],
+    "Ente": [
+      "Das Kind füttert die Ente.",
+      "Der Teich gehört der Ente."
+    ],
+    "Gans": [
+      "Das Kind sieht die Gans am Teich.",
+      "Der Teich gehört der Gans."
+    ],
+    "Truthahn": [
+      "Das Kind hört den Truthahn.",
+      "Der Hof gehört dem Truthahn."
+    ],
+    "Küken": [
+      "Das Kind streichelt das Küken.",
+      "Die Körner gehören dem Küken."
+    ],
+    "Traktor": [
+      "Der Bauer fährt den Traktor.",
+      "Der Bauer fährt mit dem Traktor."
+    ],
+    "Karotte": [
+      "Das Kind pflückt die Karotte.",
+      "Das Kaninchen nascht von der Karotte."
+    ],
+    "Kartoffel": [
+      "Das Kind schält die Kartoffel.",
+      "Das Kind kocht mit der Kartoffel."
+    ],
+    "Mais": [
+      "Das Kind pflückt den Mais.",
+      "Aus dem Mais macht man Popcorn."
+    ]
+  },
+  "wilde-tiere": {
+    "Löwe": [
+      "Das Kind sieht den Löwen im Zoo.",
+      "Die Mähne gehört dem Löwen."
+    ],
+    "Tiger": [
+      "Das Kind beobachtet den Tiger.",
+      "Das Fell gehört dem Tiger."
+    ],
+    "Elefant": [
+      "Das Kind füttert den Elefanten.",
+      "Der Rüssel gehört dem Elefanten."
+    ],
+    "Giraffe": [
+      "Das Kind fotografiert die Giraffe.",
+      "Der lange Hals gehört der Giraffe."
+    ],
+    "Zebra": [
+      "Das Kind malt das Zebra.",
+      "Die Streifen gehören dem Zebra."
+    ],
+    "Nashorn": [
+      "Das Kind bestaunt das Nashorn.",
+      "Das Horn gehört dem Nashorn."
+    ],
+    "Nilpferd": [
+      "Das Kind sieht das Nilpferd im Wasser.",
+      "Der Schlamm gehört dem Nilpferd."
+    ],
+    "Leopard": [
+      "Das Kind entdeckt den Leoparden.",
+      "Die Beute gehört dem Leoparden."
+    ],
+    "Krokodil": [
+      "Das Kind beobachtet das Krokodil.",
+      "Das Kind läuft vor dem Krokodil weg."
+    ],
+    "Affe": [
+      "Das Kind füttert den Affen.",
+      "Die Banane gehört dem Affen."
+    ],
+    "Gorilla": [
+      "Das Kind sieht den Gorilla.",
+      "Der Zoo gibt dem Gorilla Obst."
+    ],
+    "Orang-Utan": [
+      "Das Kind beobachtet den Orang-Utan.",
+      "Der Ast gehört dem Orang-Utan."
+    ],
+    "Panda": [
+      "Das Kind malt den Panda.",
+      "Der Bambus gehört dem Panda."
+    ],
+    "Koala": [
+      "Das Kind entdeckt den Koala.",
+      "Der Baum gehört dem Koala."
+    ],
+    "Känguru": [
+      "Das Kind sieht das Känguru hüpfen.",
+      "Die Tasche gehört dem Känguru."
+    ],
+    "Kamel": [
+      "Das Kind führt das Kamel.",
+      "Die Decke gehört dem Kamel."
+    ],
+    "Lama": [
+      "Das Kind füttert das Lama.",
+      "Die Wolle gehört dem Lama."
+    ],
+    "Faultier": [
+      "Das Kind bewundert das Faultier.",
+      "Der Ast gehört dem Faultier."
+    ],
+    "Bison": [
+      "Das Kind sieht den Bison.",
+      "Der Winterpelz gehört dem Bison."
+    ],
+    "Büffel": [
+      "Das Kind beobachtet den Büffel.",
+      "Das Horn gehört dem Büffel."
+    ],
+    "Mammut": [
+      "Das Kind malt das Mammut.",
+      "Der lange Rüssel gehört dem Mammut."
+    ],
+    "Eisbär": [
+      "Das Kind sieht den Eisbären.",
+      "Der Fisch gehört dem Eisbären."
+    ],
+    "Wolf": [
+      "Das Kind hört den Wolf heulen.",
+      "Das Rudel folgt dem Wolf."
+    ],
+    "Fuchs": [
+      "Das Kind entdeckt den Fuchs.",
+      "Der Bau gehört dem Fuchs."
+    ],
+    "Bär": [
+      "Das Kind beobachtet den Bären.",
+      "Der Honig gehört dem Bären."
+    ]
+  },
+  "waldtiere": {
+    "Fuchs": [
+      "Das Kind sieht den Fuchs am Waldrand.",
+      "Der Schwanz gehört dem Fuchs."
+    ],
+    "Wolf": [
+      "Das Kind hört den Wolf in der Nacht.",
+      "Das Heulen gehört dem Wolf."
+    ],
+    "Bär": [
+      "Das Kind beobachtet den Bären.",
+      "Die Höhle gehört dem Bären."
+    ],
+    "Reh": [
+      "Das Kind entdeckt das Reh.",
+      "Das Kind schaut dem Reh zu."
+    ],
+    "Eichhörnchen": [
+      "Das Kind füttert das Eichhörnchen.",
+      "Die Nuss gehört dem Eichhörnchen."
+    ],
+    "Igel": [
+      "Das Kind findet den Igel im Laub.",
+      "Das Kind hilft dem Igel über die Straße."
+    ],
+    "Biber": [
+      "Das Kind sieht den Biber am Fluss.",
+      "Der Damm gehört dem Biber."
+    ],
+    "Otter": [
+      "Das Kind beobachtet den Otter.",
+      "Der Fisch gehört dem Otter."
+    ],
+    "Waschbär": [
+      "Das Kind entdeckt den Waschbären.",
+      "Der Apfel gehört dem Waschbären."
+    ],
+    "Fledermaus": [
+      "Das Kind sieht die Fledermaus in der Nacht.",
+      "Die Höhle gehört der Fledermaus."
+    ],
+    "Eule": [
+      "Das Kind hört die Eule rufen.",
+      "Der Ast gehört der Eule."
+    ],
+    "Ameise": [
+      "Das Kind beobachtet die Ameise.",
+      "Der Krümel gehört der Ameise."
+    ],
+    "Pilz": [
+      "Das Kind findet den Pilz im Moos.",
+      "Der Regen tropft von dem Pilz."
+    ],
+    "Tanne": [
+      "Das Kind schmückt die Tanne.",
+      "Der Zapfen gehört der Tanne."
+    ],
+    "Baum": [
+      "Das Kind pflanzt den Baum.",
+      "Der Ast gehört dem Baum."
+    ],
+    "Eichel": [
+      "Das Kind sammelt die Eichel.",
+      "Die Kappe gehört der Eichel."
+    ],
+    "Blatt": [
+      "Das Kind trocknet das Blatt.",
+      "Die Ader gehört dem Blatt."
+    ],
+    "Klee": [
+      "Das Kind sucht den Klee.",
+      "Das Kaninchen frisst von dem Klee."
+    ],
+    "Marienkäfer": [
+      "Das Kind zeigt den Marienkäfer.",
+      "Das Kind schaut dem Marienkäfer zu."
+    ],
+    "Schnecke": [
+      "Das Kind beobachtet die Schnecke.",
+      "Das Haus gehört der Schnecke."
+    ],
+    "Käfer": [
+      "Das Kind findet den Käfer.",
+      "Der Panzer gehört dem Käfer."
+    ],
+    "Spinne": [
+      "Das Kind sieht die Spinne an der Wand.",
+      "Das Netz gehört der Spinne."
+    ],
+    "Heidelbeere": [
+      "Das Kind pflückt die Heidelbeere.",
+      "Der Kuchen schmeckt nach der Heidelbeere."
+    ],
+    "Biene": [
+      "Das Kind beobachtet die Biene.",
+      "Die Blüte gehört der Biene."
+    ],
+    "Schmetterling": [
+      "Das Kind malt den Schmetterling.",
+      "Das Kind schaut dem Schmetterling zu."
+    ],
+    "Dachs": [
+      "Das Kind sieht den Dachs.",
+      "Der Bau gehört dem Dachs."
+    ],
+    "Mücke": [
+      "Das Kind hört die Mücke.",
+      "Das Kind läuft vor der Mücke weg."
+    ],
+    "Blume": [
+      "Das Kind pflückt die Blume.",
+      "Die Biene sitzt an der Blume."
+    ]
+  },
+  "voegel": {
+    "Vogel": [
+      "Das Kind beobachtet den Vogel.",
+      "Das Nest gehört dem Vogel."
+    ],
+    "Eule": [
+      "Das Kind erkennt die Eule im Baum.",
+      "Der Ast gehört der Eule."
+    ],
+    "Adler": [
+      "Das Kind malt den Adler.",
+      "Der Horst gehört dem Adler."
+    ],
+    "Papagei": [
+      "Das Kind hört den Papageien sprechen.",
+      "Das Obst gehört dem Papageien."
+    ],
+    "Ara": [
+      "Das Kind bewundert den Ara.",
+      "Die Feder gehört dem Ara."
+    ],
+    "Pinguin": [
+      "Das Kind sieht den Pinguin.",
+      "Der Fisch gehört dem Pinguin."
+    ],
+    "Schwan": [
+      "Das Kind füttert den Schwan.",
+      "Das Kind schaut dem Schwan zu."
+    ],
+    "Ente": [
+      "Das Kind beobachtet die Ente.",
+      "Das Brot gehört der Ente."
+    ],
+    "Gans": [
+      "Das Kind hört die Gans schnattern.",
+      "Der Teich gehört der Gans."
+    ],
+    "Taube": [
+      "Das Kind füttert die Taube.",
+      "Das Brot gehört der Taube."
+    ],
+    "Pfau": [
+      "Das Kind fotografiert den Pfau.",
+      "Die Feder gehört dem Pfau."
+    ],
+    "Flamingo": [
+      "Das Kind malt den Flamingo.",
+      "Das Bein gehört dem Flamingo."
+    ],
+    "Hahn": [
+      "Das Kind hört den Hahn am Morgen.",
+      "Der Hof gehört dem Hahn."
+    ],
+    "Küken": [
+      "Das Kind hält das Küken.",
+      "Die Körner gehören dem Küken."
+    ],
+    "Truthahn": [
+      "Das Kind sieht den Truthahn auf dem Hof.",
+      "Der Fächer gehört dem Truthahn."
+    ],
+    "Krähe": [
+      "Das Kind beobachtet die Krähe.",
+      "Das Nest gehört der Krähe."
+    ],
+    "Dodo": [
+      "Das Kind malt den Dodo.",
+      "Das Buch erzählt von dem Dodo."
+    ],
+    "Phönix": [
+      "Das Kind zeichnet den Phönix.",
+      "Die Sage erzählt von dem Phönix."
+    ],
+    "Feder": [
+      "Das Kind findet die Feder.",
+      "Das Kind schreibt mit der Feder."
+    ],
+    "Nest": [
+      "Das Kind entdeckt das Nest.",
+      "Die Eier liegen in dem Nest."
+    ],
+    "Flügel": [
+      "Das Kind bewegt den Flügel.",
+      "Das Kind winkt mit dem Flügel."
+    ],
+    "Stadttaube": [
+      "Das Kind beobachtet die Stadttaube.",
+      "Das Brot gehört der Stadttaube."
+    ],
+    "Hühnerei": [
+      "Das Kind isst das Hühnerei.",
+      "Das Küken wächst in dem Hühnerei."
+    ]
+  },
+  "wassertiere": {
+    "Fisch": [
+      "Das Kind füttert den Fisch.",
+      "Der Teich gehört dem Fisch."
+    ],
+    "Wal": [
+      "Das Kind sieht den Wal.",
+      "Die Flosse gehört dem Wal."
+    ],
+    "Delfin": [
+      "Das Kind beobachtet den Delfin.",
+      "Das Kind schwimmt mit dem Delfin."
+    ],
+    "Orca": [
+      "Das Kind malt den Orca.",
+      "Die Flosse gehört dem Orca."
+    ],
+    "Hai": [
+      "Das Kind fürchtet den Hai.",
+      "Das Kind schwimmt weg von dem Hai."
+    ],
+    "Oktopus": [
+      "Das Kind entdeckt den Oktopus.",
+      "Der Stein gehört dem Oktopus."
+    ],
+    "Tintenfisch": [
+      "Das Kind sieht den Tintenfisch.",
+      "Die Tinte gehört dem Tintenfisch."
+    ],
+    "Krabbe": [
+      "Das Kind findet die Krabbe.",
+      "Die Schere gehört der Krabbe."
+    ],
+    "Hummer": [
+      "Das Kind sieht den Hummer.",
+      "Der Felsen gehört dem Hummer."
+    ],
+    "Garnele": [
+      "Das Kind probiert die Garnele.",
+      "Die Schale gehört der Garnele."
+    ],
+    "Qualle": [
+      "Das Kind beobachtet die Qualle.",
+      "Das Kind schwimmt weg von der Qualle."
+    ],
+    "Kugelfisch": [
+      "Das Kind entdeckt den Kugelfisch.",
+      "Die Stacheln gehören dem Kugelfisch."
+    ],
+    "Koralle": [
+      "Das Kind malt die Koralle.",
+      "Der Fisch versteckt sich bei der Koralle."
+    ],
+    "Muschel": [
+      "Das Kind sammelt die Muschel.",
+      "Die Perle gehört der Muschel."
+    ],
+    "Robbe": [
+      "Das Kind beobachtet die Robbe.",
+      "Der Fisch gehört der Robbe."
+    ],
+    "Tropenfisch": [
+      "Das Kind sieht den Tropenfisch.",
+      "Das Aquarium gehört dem Tropenfisch."
+    ],
+    "Angelrute": [
+      "Das Kind nimmt die Angelrute.",
+      "Der Vater angelt mit der Angelrute."
+    ],
+    "Welle": [
+      "Das Kind sieht die Welle.",
+      "Das Kind spielt mit der Welle."
+    ],
+    "Auster": [
+      "Das Kind findet die Auster.",
+      "Die Perle gehört der Auster."
+    ],
+    "Schweinswal": [
+      "Das Kind entdeckt den Schweinswal.",
+      "Die Flosse gehört dem Schweinswal."
+    ],
+    "Narwal": [
+      "Das Kind malt den Narwal.",
+      "Der lange Zahn gehört dem Narwal."
+    ],
+    "Beluga": [
+      "Das Kind sieht die Beluga.",
+      "Die Flosse gehört der Beluga."
+    ],
+    "Pottwal": [
+      "Das Kind bestaunt den Pottwal.",
+      "Die Flosse gehört dem Pottwal."
+    ]
+  }
+}

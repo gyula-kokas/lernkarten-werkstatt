@@ -1,0 +1,17 @@
+# Einheitliche Zeilenenden und Sprachzuordnung für GitHub.
+# Im Repository liegen Textdateien immer mit LF; Checkout-Werkzeuge mit
+# anderen Vorgaben (Windows) wandeln beim Auschecken nichts um.
+* text=auto eol=lf
+
+# Binäre Dateien nicht als Text behandeln
+*.onnx         binary
+*.gz           binary
+*.mp3          binary
+*.png          binary
+*.jpg          binary
+*.jpeg         binary
+*.webp         binary
+*.wav          binary
+
+# Erzeugte Bilddateien nicht in der Sprachstatistik mitzählen
+image-library/** linguist-generated=true

@@ -1,0 +1,50 @@
+# --------------------------------------------------------------------------
+# Lernkarten-Werkstatt: was ins Repository gehört - und was nicht
+#
+# Drin sind die Quellen: Themes, Bildauswahl, Wörterbuch, Vorlage, Werkzeuge,
+# Tests. Draußen bleibt alles, was daraus entsteht oder sehr groß ist
+# (Erklärung in README.md, Abschnitt „Repository“).
+#
+# Bereits versionierte Dateien entfernt diese Liste nicht. Wenn eine Datei
+# versehentlich im Repository liegt:
+#     git rm --cached <pfad>
+# --------------------------------------------------------------------------
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# --- Editor und Betriebssystem ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*~
+*.tmp
+*.bak
+*.part
+
+# --- Pflicht-Stimmmodell (rund 109 MB, CC0 1.0) ---
+# Einmalig holen, siehe README „Feste Aussprache“:
+#   python3 -m venv ~/.local/share/ded-tts/venv
+#   ~/.local/share/ded-tts/venv/bin/python -m piper.download_voices \
+#       de_DE-thorsten-high --download-dir vendor/piper
+vendor/
+
+# --- Wörterbuch-Rohdaten (rund 289 MB, Kaikki/Wiktextract) ---
+# Nur für tools/import_kaikki_dictionary.py nötig; das fertige
+# dictionary/nouns.json liegt im Repository.
+dictionary/raw-wiktextract-data.jsonl.gz
+
+# --- Lokal erzeugte Dateien ---
+# MP3-Cache des Builds
+tts-cache/
+# Fertige Lernkarten-HTML und Vergleichsseiten
+output-selected/
+# Halbfertige Builds
+*.building.html
+
+# --- Zwischenstand des Editor-Werkzeugs tools/bildreview.py ---
+image-library/bildwahl-kandidaten.json

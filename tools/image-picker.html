@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lernkarten-Werkstatt</title>
+<style>
+:root{--ink:#173d3a;--muted:#60736f;--line:#d8dfdc;--bg:#f5f6f2;--paper:#fff;--green:#126850;--green2:#e5f2ec;--orange:#d9781d;--purple:#7051a3;--danger:#a53d37}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button,input,select,textarea{font:inherit;color:inherit}button{cursor:pointer}.top{position:sticky;top:0;z-index:10;background:#ffffffef;backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:14px 22px;display:flex;gap:16px;align-items:center;justify-content:space-between}.brand h1{margin:0;font-size:22px}.brand p{margin:2px 0 0;color:var(--muted);font-size:13px}.top-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.btn{border:1px solid #b9c8c2;border-radius:10px;padding:9px 12px;background:#fff;font-weight:650}.btn:hover{background:#edf5f1}.btn.primary{background:var(--green);color:white;border-color:var(--green)}.btn.danger{color:var(--danger)}.btn.secondary{background:#f0f4f2}.btn:disabled{opacity:.55;cursor:not-allowed}.auditbox{margin:0 0 14px;border:1px solid var(--line);border-radius:14px;background:#fff;padding:12px}.audit-summary{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.pill{border-radius:999px;padding:5px 9px;font-size:12px;font-weight:750;background:#eef2f0}.pill.good{background:#e6f5eb;color:#27643d}.pill.warn{background:#fff4d8;color:#765618}.pill.bad{background:#fde9e7;color:#8b302b}.audit-list{margin:8px 0 0;padding-left:20px;font-size:12px;line-height:1.45;max-height:150px;overflow:auto}.upload-zone{margin-top:10px;border:1px dashed #9fb2aa;border-radius:12px;padding:10px;text-align:center;background:#fbfcfb}.upload-zone.drag{background:#e8f4ee;border-color:var(--green)}.qualityline{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:8px}.preview-card{border:1px solid #dbe2df;border-radius:14px;padding:12px;background:#fbfcfb;margin-top:12px}.preview-card .pvword{font-size:22px;font-weight:850}.preview-card .pvsentence{font-size:13px;color:var(--muted);margin-top:4px}.app{display:grid;grid-template-columns:290px minmax(0,1fr);max-width:1600px;margin:auto;min-height:calc(100vh - 73px)}aside{border-right:1px solid var(--line);padding:18px;background:#fafbf8}.side-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0 14px}.side-title{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:800;margin-top:10px}.select{width:100%;border:1px solid #bdcbc6;border-radius:10px;padding:9px;background:#fff}.count{font-size:13px;color:var(--muted);margin:10px 0}.filter{width:100%;border:1px solid #cad5d1;border-radius:10px;padding:9px;margin-bottom:8px;background:#fff}.words{max-height:calc(100vh - 280px);overflow:auto;padding-right:3px}.wordbtn{display:flex;width:100%;gap:8px;align-items:center;text-align:left;border:0;background:transparent;border-radius:9px;padding:8px 9px;margin:2px 0}.wordbtn:hover{background:#eef3ef}.wordbtn.current{background:var(--green2);font-weight:750}.dot{width:9px;height:9px;border-radius:50%;background:#c5cdca;flex:0 0 auto}.dot.ok{background:#2d8b5c}.main{padding:22px 26px 60px}.workspace{display:grid;grid-template-columns:minmax(360px,620px) minmax(360px,1fr);gap:18px;align-items:start}.panel{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:0 1px 2px #00000008}.panel h2,.panel h3{margin:0}.panel-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:15px}.panel-head h2{font-size:26px}.badge{font-size:12px;border-radius:999px;background:#edf4f0;padding:5px 8px;color:#47635c}.field{display:grid;gap:5px;margin:10px 0}.field label{font-size:12px;font-weight:800;color:#49625c}.field input,.field select,.field textarea{width:100%;border:1px solid #c4d0cc;border-radius:10px;background:#fff;padding:10px 11px}.field textarea{min-height:72px;resize:vertical;line-height:1.4}.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}.row.three{grid-template-columns:1fr 1fr 1fr}.inline{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.hint{font-size:12px;color:var(--muted);line-height:1.4}.lookup{border-radius:12px;padding:10px 12px;background:#f4f8f5;border:1px solid #d6e2dd;margin:8px 0 12px;font-size:13px;min-height:42px}.lookup.good{background:#edf7f0;border-color:#bcd8c5}.lookup.warn{background:#fff8e8;border-color:#ead49c}.suggestions{display:grid;gap:6px;margin-top:8px}.suggestion{display:flex;justify-content:space-between;gap:8px;align-items:center;border:1px solid #dde4e1;border-radius:9px;padding:7px 9px;background:#fff}.sentence-box{border:1px solid #e0e5e3;border-radius:12px;padding:11px;margin:12px 0}.sentence-title{display:flex;justify-content:space-between;align-items:center;gap:10px;font-weight:800;font-size:13px}.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}.chip{border:1px solid #c9d6d1;border-radius:999px;padding:6px 9px;background:#fff;font-size:12px}.chip:hover{background:#ecf5f1}.savebar{display:flex;justify-content:space-between;gap:8px;margin-top:14px;padding-top:12px;border-top:1px solid #e2e7e4}.image-preview{height:190px;border:1px dashed #bdcac5;border-radius:14px;display:flex;align-items:center;justify-content:center;background:#fbfcfa;overflow:hidden}.image-preview svg{width:88%;height:88%;display:block}.image-preview .empty{color:var(--muted);font-size:14px}.image-preview small{display:block}.search{display:grid;grid-template-columns:150px 1fr auto;gap:8px;margin-top:12px}.search select,.search input{border:1px solid #c2cfca;border-radius:10px;padding:9px;background:#fff}.message{min-height:23px;color:#755526;font-size:13px;margin:8px 0}.results{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px;max-height:560px;overflow:auto;padding-right:4px}.tile{border:1px solid #dde4e1;border-radius:12px;padding:9px;background:#fff;text-align:center}.tile img{width:100%;height:112px;object-fit:contain}.tile p{font-size:12px;height:32px;overflow:hidden;margin:6px 0}.tile small{font-size:10px;color:var(--muted)}.tile .btn{width:100%;padding:7px;margin-top:6px;font-size:12px}.footer-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}.ttsbar{background:#eef5f1;border:1px solid #d3e0da;padding:10px 12px;border-radius:12px;margin:0 0 14px}.ttsbar select{max-width:420px;border:1px solid #bccac5;border-radius:8px;padding:7px;background:#fff}.status{font-size:12px;color:var(--muted)}details{margin-top:16px}pre{white-space:pre-wrap;background:#173b37;color:#e6f4ed;padding:14px;border-radius:12px;max-height:260px;overflow:auto;font-size:12px}@media(max-width:1050px){.workspace{grid-template-columns:1fr}.app{grid-template-columns:250px 1fr}}@media(max-width:760px){.top{position:static}.app{grid-template-columns:1fr}aside{border-right:0;border-bottom:1px solid var(--line)}.words{max-height:220px}.main{padding:14px}.row,.row.three{grid-template-columns:1fr}.search{grid-template-columns:1fr}.workspace{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="brand"><h1>Lernkarten-Werkstatt</h1><p>Themen · Wörter · Bilder · Sätze · Aussprache · Single-HTML</p></div>
+  <div class="top-actions">
+    <span id="dictCount" class="status"></span>
+    <button class="btn" onclick="runAudit()">Qualität prüfen</button>
+    <button class="btn" onclick="exportTheme()">Theme exportieren</button>
+    <button class="btn secondary" onclick="buildTheme()">Dieses Theme bauen</button>
+    <button class="btn primary" onclick="buildAll()">Alle Themes · 1 HTML</button>
+  </div>
+</header>
+<div class="app">
+<aside>
+  <div class="side-title">Thema</div>
+  <select id="theme" class="select" onchange="changeTheme()"></select>
+  <div class="side-actions"><button class="btn" onclick="newTheme()">+ Thema</button><button class="btn" onclick="newWord()">+ Wort</button></div>
+  <input id="wordFilter" class="filter" placeholder="Wort suchen …" oninput="listWords()">
+  <label class="hint"><input id="missing" type="checkbox" onchange="listWords()"> nur ohne Bild</label>
+  <div id="count" class="count"></div>
+  <div id="words" class="words"></div>
+</aside>
+<main class="main">
+  <div class="ttsbar">
+    <div class="inline"><b>Aussprache:</b><span class="badge" id="ttsEngine">Piper → MP3</span><span id="ttsStatus" class="status">prüfe …</span></div>
+  </div>
+  <section id="auditBox" class="auditbox"><div class="audit-summary"><b>Qualitätsprüfung</b><span class="status">Noch nicht geprüft.</span></div></section>
+  <div class="workspace">
+    <section class="panel">
+      <div class="panel-head"><h2 id="heading">Wort</h2><span id="dirtyBadge" class="badge">gespeichert</span></div>
+      <div class="field"><label>Wort</label><div class="inline"><input id="word" style="flex:1" oninput="markDirty()"><button class="btn" onclick="lookupWord()">Wörterbuch</button><button class="btn" onclick="speakField('word')">▶</button></div></div>
+      <div id="dictionary" class="lookup">Wörterbuchprüfung bereit.</div>
+      <div class="row three">
+        <div class="field"><label>Artikel</label><select id="article" onchange="markDirty();refreshSuggestions()"><option>der</option><option>die</option><option>das</option></select></div>
+        <div class="field"><label>Mehrzahl</label><input id="plural" oninput="markDirty()"></div>
+        <div class="field"><label>Typ · nur Editor</label><div class="inline"><select id="editorType" style="flex:1" onchange="markDirty();refreshSuggestions()"><option value="animal">Tier</option><option value="person">Mensch</option><option value="plant">Pflanze</option><option value="food">Essen/Trinken</option><option value="object">Gegenstand</option><option value="vehicle">Fahrzeug</option><option value="place">Ort</option><option value="bodypart">Körperteil</option><option value="nature">Natur</option><option value="other">Allgemein</option></select><button class="btn" onclick="autoType()" title="Mit Wikidata vorschlagen">Auto</button></div></div>
+      </div>
+      <div class="preview-card"><div class="hint">Kartenvorschau</div><div id="previewWord" class="pvword">—</div><div id="previewAcc" class="pvsentence">—</div><div id="previewDat" class="pvsentence">—</div></div>
+      <div class="sentence-box">
+        <div class="sentence-title"><span>Akkusativsatz</span><button class="btn" onclick="refreshSuggestions('acc')">🎲 Vorschläge</button></div>
+        <div class="field"><div class="inline"><textarea id="acc" style="flex:1" oninput="markDirty()"></textarea><button class="btn" onclick="speakField('acc')">▶</button></div></div>
+        <div id="accSuggestions" class="chips"></div>
+      </div>
+      <div class="sentence-box">
+        <div class="sentence-title"><span>Dativsatz</span><button class="btn" onclick="refreshSuggestions('dat')">🎲 Vorschläge</button></div>
+        <div class="field"><div class="inline"><textarea id="dat" style="flex:1" oninput="markDirty()"></textarea><button class="btn" onclick="speakField('dat')">▶</button></div></div>
+        <div id="datSuggestions" class="chips"></div>
+      </div>
+      <div class="savebar"><button class="btn danger" onclick="removeWord()">Wort löschen</button><button class="btn primary" onclick="saveEntry()">Änderungen speichern</button></div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head"><h3>Bild</h3><span class="badge">SVG</span></div>
+      <div id="chosen" class="image-preview"><span class="empty">Noch kein Bild gewählt.</span></div>
+      <div id="uploadZone" class="upload-zone">Eigenes Bild hierher ziehen oder <label class="btn" style="display:inline-block;padding:6px 9px">Datei wählen<input id="imageFile" type="file" accept="image/png,image/jpeg,image/webp,image/svg+xml" hidden></label><div class="hint">PNG, JPEG, WebP oder SVG · max. 6 MB · nur Bilder verwenden, die du verwenden darfst.</div></div>
+      <form class="search" onsubmit="event.preventDefault();searchImages(1)">
+        <select id="source" onchange="clearResults()"><option value="all">Alle Quellen</option><option value="clipsafari">ClipSafari</option><option value="openmoji">OpenMoji</option><option value="twemoji">Twemoji</option></select>
+        <input id="query" placeholder="englischer Suchbegriff">
+        <button class="btn primary" id="searchButton">Suchen</button>
+      </form>
+      <div id="message" class="message"></div>
+      <div id="results" class="results"></div>
+      <div class="footer-actions"><button class="btn" onclick="move(-1)">← Vorheriges Wort</button><button class="btn" onclick="move(1)">Nächstes Wort →</button><button class="btn" onclick="searchImages(page+1)">Mehr Bilder</button></div>
+      <details id="buildDetails"><summary>Build-Verlauf</summary><pre id="log">Noch kein Build gestartet.</pre></details>
+    </section>
+  </div>
+</main>
+</div>
+<script>
+const TOKEN='__TOKEN__',el=id=>document.getElementById(id),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+let themes={},selected={},translations={},index=0,page=1,generation=0,items=[],oldWord='',dirty=false,lastDict=null,lastAudit=null;
+async function api(path,data){const r=await fetch(path,data?{method:'POST',headers:{'Content-Type':'application/json','X-Token':TOKEN},body:JSON.stringify(data)}:{});const j=await r.json();if(!r.ok)throw Error(j.error||'Anfrage fehlgeschlagen');return j}
+const name=()=>el('theme').value,entry=()=>themes[name()]?.entries?.[index],key=()=>name()+'::'+(entry()?.word||'');
+function message(t){el('message').textContent=t||''}
+function markDirty(){dirty=true;el('dirtyBadge').textContent='nicht gespeichert';el('dirtyBadge').style.background='#fff2d8';updatePreview()}
+function markSaved(){dirty=false;el('dirtyBadge').textContent='gespeichert';el('dirtyBadge').style.background=''}
+async function reloadThemes(preferredTheme=name(),preferredWord=oldWord){const d=await api('/api/themes');themes=d.themes;selected=d.selected;translations=d.translations;el('dictCount').textContent=`Wörterbuch: ${d.dictionaryCount||0} Nomen`;const names=Object.keys(themes);el('theme').innerHTML=names.map(k=>`<option value="${esc(k)}">${esc(themes[k].themeName)}</option>`).join('');if(names.includes(preferredTheme))el('theme').value=preferredTheme;const t=themes[el('theme').value];index=Math.max(0,t?.entries?.findIndex(e=>e.word===preferredWord)??0);if(index<0)index=0;await chooseWord(index)}
+async function init(){try{await reloadThemes('','');await initTts();poll()}catch(e){message(e.message)}}
+function listWords(){const t=themes[name()];if(!t){el('words').innerHTML='';return}let n=0;const filter=el('wordFilter').value.trim().toLocaleLowerCase('de');el('words').innerHTML=t.entries.map((e,i)=>{const yes=Boolean(selected[name()+'::'+e.word]||e.imageSvg);if(yes)n++;if(el('missing').checked&&yes)return '';if(filter&&!e.word.toLocaleLowerCase('de').includes(filter))return '';return `<button class="wordbtn ${i===index?'current':''}" onclick="chooseWord(${i})"><span class="dot ${yes?'ok':''}"></span>${esc(e.article)} ${esc(e.word)}</button>`}).join('');el('count').textContent=`${t.entries.length} Wörter · ${n} Bilder`}
+function changeTheme(){index=0;chooseWord(0)}
+async function chooseWord(i){const t=themes[name()];if(!t||!t.entries.length){clearEditor();listWords();return}index=Math.max(0,Math.min(i,t.entries.length-1));generation++;page=1;items=[];el('results').innerHTML='';const e=entry(),k=key();oldWord=e.word;el('heading').textContent=e.article+' '+e.word;el('word').value=e.word;el('article').value=e.article;el('plural').value=e.plural||'';el('editorType').value=e.editorType||'other';el('acc').value=e.accusativeSentence||'';el('dat').value=e.dativeSentence||'';el('query').value=searchDefault(e,selected[k]?.query);el('dictionary').className='lookup';el('dictionary').textContent='Wörterbuchprüfung bereit.';listWords();markSaved();refreshSuggestions();updatePreview();el('chosen').innerHTML='<span class="empty">Noch kein Bild gewählt.</span>';message('');try{if(selected[k]){const a=await api('/api/selected?slug='+encodeURIComponent(selected[k].slug));if(key()===k)showChosen(a)}else if(e.imageSvg)el('chosen').innerHTML=e.imageSvg}catch(err){message(err.message)}}
+function clearEditor(){['word','plural','acc','dat'].forEach(x=>el(x).value='');el('heading').textContent='Leeres Thema';el('chosen').innerHTML='<span class="empty">Noch kein Wort vorhanden.</span>';listWords()}
+function move(delta){const t=themes[name()];if(!t?.entries?.length)return;chooseWord((index+delta+t.entries.length)%t.entries.length)}
+function searchDefault(e,saved){const raw=(saved||e.imageSearch||translations[e.word]||'').replace(/^cartoon\s+/i,'').trim();return translations[raw]||raw}
+function clearResults(){generation++;items=[];page=1;el('results').innerHTML='';message('Quelle geändert.')}
+function showChosen(a){el('chosen').innerHTML=`<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center">${a.svg}</div>`;el('chosen').title=`${a.author||''} · ${a.license||''}`}
+async function searchImages(p){const g=++generation;page=p;el('searchButton').disabled=true;message('Suche läuft …');try{const response=await api('/api/search?q='+encodeURIComponent(el('query').value)+'&page='+p+'&source='+encodeURIComponent(el('source').value));if(g!==generation)return;items=response.items;el('results').innerHTML=items.map((a,i)=>`<article class="tile"><img src="${esc(a.thumbnail)}" alt="${esc(a.title)}" referrerpolicy="no-referrer"><p>${esc(a.title)}</p><small>${esc(a.provider)} · ${esc(a.license)}</small><button class="btn" onclick="selectImage(${i})">Bild wählen</button></article>`).join('');message((items.length?`${items.length} Vorschläge · Seite ${p}`:'Keine Vorschläge gefunden.')+(response.errors.length?' · '+response.errors.join('; '):''))}catch(e){message(e.message)}finally{el('searchButton').disabled=false}}
+async function selectImage(i){const k=key(),theme=name(),word=entry().word,query=el('query').value,slug=items[i].slug;message('Lade Original-SVG …');try{const a=await api('/api/select',{theme,word,slug,query});selected[k]={slug,query};showChosen(a);listWords();message('Bild gespeichert.')}catch(e){message(e.message)}}
+
+
+function updatePreview(){
+  if(!el('previewWord'))return;
+  el('previewWord').textContent=el('word').value.trim()||'—';
+  el('previewAcc').textContent='Akkusativ: '+(el('acc').value.trim()||'—');
+  el('previewDat').textContent='Dativ: '+(el('dat').value.trim()||'—');
+}
+async function runAudit(){
+  if(!name())return;
+  const box=el('auditBox');box.innerHTML='<div class="audit-summary"><b>Qualitätsprüfung</b><span class="status">prüfe …</span></div>';
+  try{
+    const r=await api('/api/audit?theme='+encodeURIComponent(name()));lastAudit=r;
+    const st=r.stats||{};
+    let html=`<div class="audit-summary"><b>Qualitätsprüfung</b><span class="pill good">${st.ready||0} fertig</span><span class="pill warn">${st.warning||0} Hinweise</span><span class="pill bad">${st.error||0} Fehler</span><span class="status">${st.total||0} Wörter</span></div>`;
+    if(r.issues?.length)html+='<ul class="audit-list">'+r.issues.slice(0,30).map(x=>`<li><b>${esc(x.word)}</b>: ${esc(x.issues.join(' · '))}</li>`).join('')+'</ul>';
+    else html+='<div class="hint" style="margin-top:7px">Keine Probleme gefunden.</div>';
+    box.innerHTML=html;
+  }catch(e){box.innerHTML='<div class="audit-summary"><b>Qualitätsprüfung</b><span class="pill bad">'+esc(e.message)+'</span></div>'}
+}
+async function uploadFile(file){
+  if(!entry()||!file)return;
+  if(file.size>6*1024*1024){message('Bild ist größer als 6 MB.');return}
+  if(!/^image\/(png|jpeg|webp|svg\+xml)$/.test(file.type)){message('Nur PNG, JPEG, WebP oder SVG.');return}
+  const dataUrl=await new Promise((resolve,reject)=>{const r=new FileReader();r.onload=()=>resolve(r.result);r.onerror=()=>reject(Error('Datei konnte nicht gelesen werden.'));r.readAsDataURL(file)});
+  message('Eigenes Bild wird gespeichert …');
+  try{
+    const a=await api('/api/upload-image',{theme:name(),word:entry().word,filename:file.name,dataUrl});
+    selected[key()]={slug:a.slug,query:''};showChosen(a);listWords();message('Eigenes Bild gespeichert.');runAudit();
+  }catch(e){message(e.message)}
+}
+function initUpload(){
+  const input=el('imageFile'),zone=el('uploadZone');
+  input.addEventListener('change',()=>{if(input.files?.[0])uploadFile(input.files[0]);input.value=''})
+  for(const ev of ['dragenter','dragover'])zone.addEventListener(ev,e=>{e.preventDefault();zone.classList.add('drag')});
+  for(const ev of ['dragleave','drop'])zone.addEventListener(ev,e=>{e.preventDefault();zone.classList.remove('drag')});
+  zone.addEventListener('drop',e=>{if(e.dataTransfer?.files?.[0])uploadFile(e.dataTransfer.files[0])});
+}
+const weakNouns={'Polizist':'Polizisten','Soldat':'Soldaten','Journalist':'Journalisten','Fotograf':'Fotografen','Architekt':'Architekten','Postbote':'Postboten','Fels':'Felsen','Mensch':'Menschen','Herz':'Herzen','Löwe':'Löwen','Elefant':'Elefanten','Leopard':'Leoparden','Bär':'Bären','Waschbär':'Waschbären','Teddybär':'Teddybären','Affe':'Affen','Schimpanse':'Schimpansen','Stummelaffe':'Stummelaffen','Hase':'Hasen','Plüschhase':'Plüschhasen','Falke':'Falken','Papagei':'Papageien','Plüschelefant':'Plüschelefanten','Pilot':'Piloten'};
+function weakForm(word,kind){const w=weakNouns[word];if(!w)return word;if(word==='Herz'&&kind==='acc')return word;return w}
+function forms(){const article=el('article').value,word=el('word').value.trim();return{acc:`${article==='der'?'den':article} ${weakForm(word,'acc')}`,dat:`${article==='der'?'dem':article==='die'?'der':'dem'} ${weakForm(word,'dat')}`}}
+const templatePools={
+  generic:{acc:['Das Kind sieht {x}.','Das Kind findet {x}.','Das Kind zeigt {x}.','Das Kind sucht {x}.','Das Kind holt {x}.','Wir betrachten {x}.'],dat:['Das Kind steht neben {x}.','Etwas liegt neben {x}.','Das Kind wartet bei {x}.','Das Kind steht vor {x}.','Das Kind geht zu {x}.','Das Kind bleibt bei {x}.']},
+  animal:{acc:['Das Kind sieht {x}.','Das Kind beobachtet {x}.','Das Kind entdeckt {x}.','Das Kind füttert {x}.','Das Kind malt {x}.','Das Kind fotografiert {x}.'],dat:['Das Kind schaut zu {x}.','Das Kind geht zu {x}.','Das Kind steht bei {x}.','Das Kind spielt mit {x}.','Das Kind wartet bei {x}.']},
+  person:{acc:['Das Kind sieht {x}.','Das Kind grüßt {x}.','Das Kind trifft {x}.','Das Kind fragt {x}.','Wir besuchen {x}.'],dat:['Das Kind spricht mit {x}.','Das Kind geht zu {x}.','Das Kind winkt {x}.','Das Kind hilft {x}.','Das Kind dankt {x}.']},
+  plant:{acc:['Das Kind sieht {x}.','Das Kind pflückt {x}.','Das Kind gießt {x}.','Das Kind malt {x}.','Das Kind betrachtet {x}.'],dat:['Das Kind steht unter {x}.','Das Kind steht neben {x}.','Das Kind riecht an {x}.','Das Kind sitzt unter {x}.']},
+  food:{acc:['Das Kind isst {x}.','Das Kind mag {x}.','Das Kind probiert {x}.','Das Kind nimmt {x}.','Das Kind kauft {x}.','Das Kind trinkt {x}.','Das Kind schneidet {x}.'],dat:['Das Kind probiert von {x}.','Das Kind nascht von {x}.','Das Kind kocht mit {x}.','Etwas liegt neben {x}.','Das Kind sitzt vor {x}.']},
+  object:{acc:['Das Kind nimmt {x}.','Das Kind holt {x}.','Das Kind findet {x}.','Das Kind sucht {x}.','Das Kind braucht {x}.','Das Kind benutzt {x}.','Das Kind zeigt {x}.'],dat:['Das Kind steht neben {x}.','Etwas liegt neben {x}.','Das Kind greift nach {x}.','Das Kind wartet bei {x}.','Das Kind schaut nach {x}.','Das Kind arbeitet mit {x}.']},
+  vehicle:{acc:['Das Kind sieht {x}.','Das Kind beobachtet {x}.','Das Kind entdeckt {x}.','Das Kind malt {x}.','Das Kind fotografiert {x}.'],dat:['Das Kind fährt mit {x}.','Das Kind schaut zu {x}.','Das Kind steht neben {x}.','Das Kind wartet bei {x}.','Das Kind geht zu {x}.']},
+  place:{acc:['Das Kind sieht {x}.','Das Kind findet {x}.','Das Kind betritt {x}.','Wir besuchen {x}.'],dat:['Das Kind steht vor {x}.','Das Kind geht zu {x}.','Das Kind lernt in {x}.','Das Kind wartet vor {x}.','Das Kind bleibt bei {x}.']},
+  bodypart:{acc:['Das Kind zeigt {x}.','Das Kind wäscht {x}.','Das Kind bewegt {x}.','Das Kind berührt {x}.','Das Kind zeigt auf {x}.'],dat:['Etwas klebt an {x}.','Das Kind hat etwas an {x}.','Das Kind zeigt es an {x}.']},
+  nature:{acc:['Das Kind sieht {x}.','Das Kind entdeckt {x}.','Das Kind malt {x}.','Das Kind bestaunt {x}.','Das Kind beobachtet {x}.'],dat:['Das Kind steht an {x}.','Das Kind steht auf {x}.','Das Kind schaut zu {x}.','Das Kind steht vor {x}.','Das Kind bleibt bei {x}.']},
+  other:{acc:[],dat:[]}
+};
+function randomTake(a,n=5){a=[...new Set(a)];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a.slice(0,n)}
+function suggestions(kind){const type=el('editorType').value,f=forms();const extra=templatePools[type]?.[kind]||[],base=templatePools.generic[kind];return randomTake([...extra,...base],5).map(t=>t.replace('{x}',f[kind]))}
+function refreshSuggestions(which){if(!which||which==='acc')renderChips('accSuggestions','acc',suggestions('acc'));if(!which||which==='dat')renderChips('datSuggestions','dat',suggestions('dat'))}
+function renderChips(id,target,rows){el(id).innerHTML=rows.map((s,i)=>`<button class="chip" onclick="setSentence('${target}',${i})" data-text="${esc(s)}">${esc(s)}</button>`).join('')}
+function setSentence(target,i){const box=target==='acc'?'accSuggestions':'datSuggestions';const b=el(box).querySelectorAll('button')[i];el(target).value=b.dataset.text;markDirty()}
+
+async function lookupWord(){const word=el('word').value.trim();if(!word)return;el('dictionary').className='lookup';el('dictionary').textContent='Suche …';try{const r=await api('/api/dictionary?word='+encodeURIComponent(word));lastDict=r;el('dictCount').textContent=`Wörterbuch: ${r.count||0} Nomen`;if(r.found){const x=r.entry;el('dictionary').className='lookup good';el('dictionary').innerHTML=`✓ <b>${esc(x.article)} ${esc(x.word)}</b> · Mehrzahl: <b>${esc(x.plural||'—')}</b> · <span style="opacity:.72">${esc(x.source||'lokal')}</span> <button class="btn" style="margin-left:8px;padding:5px 8px" onclick="applyDictionary()">Übernehmen</button>`}else{el('dictionary').className='lookup warn';el('dictionary').innerHTML='Nicht exakt gefunden.'+(r.suggestions?.length?'<div class="suggestions">'+r.suggestions.map((x,i)=>`<div class="suggestion"><span><b>${esc(x.article)} ${esc(x.word)}</b> · ${esc(x.plural||'—')}</span><button class="btn" onclick="applySuggestion(${i})">nehmen</button></div>`).join('')+'</div>':'')}}catch(e){el('dictionary').className='lookup warn';el('dictionary').textContent=e.message}}
+function applyDictionary(){if(!lastDict?.entry)return;const x=lastDict.entry;el('word').value=x.word;el('article').value=x.article;el('plural').value=x.plural||'';markDirty();refreshSuggestions()}
+function applySuggestion(i){const x=lastDict?.suggestions?.[i];if(!x)return;el('word').value=x.word;el('article').value=x.article;el('plural').value=x.plural||'';markDirty();refreshSuggestions();lookupWord()}
+async function autoType(){const word=el('word').value.trim();if(!word)return;const old=el('editorType').value;try{el('editorType').disabled=true;const r=await api('/api/classify?word='+encodeURIComponent(word));el('editorType').value=r.type||'other';markDirty();refreshSuggestions()}catch(e){el('editorType').value=old;el('dictionary').className='lookup warn';el('dictionary').textContent='Typ-Erkennung: '+e.message}finally{el('editorType').disabled=false}}
+async function saveEntry(){if(!entry())return;try{const check=await api('/api/dictionary?word='+encodeURIComponent(el('word').value.trim()));if(check.found){const d=check.entry,m=[];if(el('article').value!==d.article)m.push('Artikel '+d.article);if(d.plural&&el('plural').value.trim()!==d.plural)m.push('Mehrzahl '+d.plural);if(m.length&&confirm('Wörterbuch-Abweichung: '+m.join(', ')+'.\n\nWörterbuchdaten übernehmen?')){el('article').value=d.article;el('plural').value=d.plural||'';refreshSuggestions();updatePreview()}}const payload={theme:name(),oldWord,word:el('word').value,article:el('article').value,plural:el('plural').value,accusativeSentence:el('acc').value,dativeSentence:el('dat').value,editorType:el('editorType').value};const r=await api('/api/save-entry',payload);oldWord=r.entry.word;await reloadThemes(name(),oldWord);message('Wortdaten gespeichert.');runAudit()}catch(e){message(e.message)}}
+async function newWord(){if(!name())return;const word=prompt('Neues deutsches Nomen:');if(!word)return;try{const r=await api('/api/add-entry',{theme:name(),word});await reloadThemes(name(),r.entry.word);lookupWord();autoType();message('Wort aus Wörterbuch angelegt: '+r.entry.article+' '+r.entry.word+' · '+(r.entry.plural||'ohne Mehrzahl'))}catch(e){if(confirm(e.message+'\n\nTrotzdem manuell anlegen?')){try{const r=await api('/api/add-entry',{theme:name(),word,allowUnknown:true});await reloadThemes(name(),r.entry.word);message('Manuell angelegt. Bitte Artikel und Mehrzahl prüfen.')}catch(x){message(x.message)}}else message(e.message)}}
+async function removeWord(){if(!entry())return;if(!confirm(`„${entry().word}“ wirklich löschen?`))return;try{await api('/api/delete-entry',{theme:name(),word:entry().word});await reloadThemes(name(),'')}catch(e){message(e.message)}}
+async function newTheme(){const themeName=prompt('Name des neuen Themas:');if(!themeName)return;try{const r=await api('/api/create-theme',{themeName});await reloadThemes(r.name,'');message('Neues Theme angelegt. Jetzt Wörter hinzufügen.')}catch(e){message(e.message)}}
+
+let ttsAudio=null;
+async function initTts(){try{const r=await api('/api/tts-status');el('ttsEngine').textContent=`${r.engine||'Piper'} ${r.voice||''} → ${r.codec||'MP3'} ${r.bitrate||''}`.trim();el('ttsStatus').textContent=r.ready?'bereit · feste Pflichtstimme':'FEHLER: '+r.detail;el('ttsStatus').style.color=r.ready?'#49625c':'#a53d37'}catch(e){el('ttsStatus').textContent='FEHLER: '+e.message;el('ttsStatus').style.color='#a53d37'}}
+async function speakText(text){text=String(text||'').trim();if(!text)return;try{if(ttsAudio){ttsAudio.pause();ttsAudio=null}el('ttsStatus').style.color='#49625c';el('ttsStatus').textContent='erzeuge Audio …';const r=await fetch('/api/tts',{method:'POST',headers:{'Content-Type':'application/json','X-Token':TOKEN},body:JSON.stringify({text})});if(!r.ok){let msg='TTS fehlgeschlagen';try{msg=(await r.json()).error||msg}catch(_){}throw Error(msg)}const blob=await r.blob();const url=URL.createObjectURL(blob);const a=new Audio(url);ttsAudio=a;el('ttsStatus').textContent='spricht · MP3';a.onended=()=>{URL.revokeObjectURL(url);if(ttsAudio===a)ttsAudio=null;el('ttsStatus').textContent='bereit · feste Pflichtstimme'};a.onerror=()=>{URL.revokeObjectURL(url);if(ttsAudio===a)ttsAudio=null;el('ttsStatus').textContent='Audiofehler'};await a.play()}catch(e){el('ttsStatus').textContent='FEHLER: '+e.message;el('ttsStatus').style.color='#a53d37'}}
+function speakField(id){speakText(el(id).value)}
+async function exportTheme(){try{const r=await api('/api/export',{theme:name()});message('Exportiert: '+r.path)}catch(e){message(e.message)}}
+async function buildTheme(){try{await api('/api/build',{theme:name()});el('buildDetails').open=true;poll()}catch(e){message(e.message)}}
+async function buildAll(){try{await api('/api/build-all',{});el('buildDetails').open=true;poll()}catch(e){message(e.message)}}
+async function poll(){try{const j=await api('/api/job');el('log').textContent=j.log;if(j.running)setTimeout(poll,1200)}catch(e){}}
+initUpload();init();setTimeout(runAudit,500);
+</script>
+</body>
+</html>

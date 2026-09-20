@@ -1,0 +1,10 @@
+{
+  "slug": "openmoji--1F9B6",
+  "provider": "openmoji",
+  "source": "https://openmoji.org/library/emoji-1F9B6/",
+  "author": "Daniel Utz / OpenMoji contributors",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "title": "foot",
+  "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" id=\"asset-openmoji--1F9B6-emoji\" viewBox=\"0 0 72 72\">\n  <g id=\"asset-openmoji--1F9B6-color\" />\n  <g id=\"asset-openmoji--1F9B6-skin\">\n    <path fill=\"#fcea2b\" d=\"M38,13s2,18,2,23c0,4.1231-2.1716,7.5858-5,9-4,2-14,7-19,7H12.6a4.8944,4.8944,0,0,0-.6,2.5A3.5,3.5,0,0,0,15.5,58H49a5,5,0,0,0,5-5c0-6-3-11-3-17s3-23,3-23V12H38Z\" />\n  </g>\n  <g id=\"asset-openmoji--1F9B6-skin-shadow\">\n    <path fill=\"#f1b31c\" d=\"M45.5,58H49a5,5,0,0,0,5-5c0-6-3-11-3-17s3-23,3-23V12H50s-3,17-3,23,3,11,3,17a5,5,0,0,1-5,5Z\" />\n  </g>\n  <g id=\"asset-openmoji--1F9B6-line\">\n    <path fill=\"none\" stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M38,13s2,18,2,23c0,4.1231-2.1716,7.5858-5,9-4,2-14,7-19,7H12.6a4.8944,4.8944,0,0,0-.6,2.5A3.5,3.5,0,0,0,15.5,58H49a5,5,0,0,0,5-5c0-6-3-11-3-17s3-23,3-23\" />\n    <path fill=\"none\" stroke=\"#000\" stroke-linecap=\"round\" stroke-miterlimit=\"10\" stroke-width=\"2\" d=\"M48,47a4,4,0,0,1-4,4\" />\n  </g>\n</svg>"
+}

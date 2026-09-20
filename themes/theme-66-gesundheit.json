@@ -1,0 +1,210 @@
+{
+  "themeId": "theme-66-gesundheit",
+  "themeName": "Gesund und krank",
+  "language": "de",
+  "version": 1,
+  "entryCount": 20,
+  "imageMode": "per-entry-svg",
+  "entries": [
+    {
+      "word": "Arzt",
+      "article": "der",
+      "plural": "Ärzte",
+      "pluralWithArticle": "die Ärzte",
+      "accusativeSentence": "Das Kind besucht den Arzt.",
+      "dativeSentence": "Das Kind gibt dem Arzt die Hand.",
+      "imageIndex": 0,
+      "editorType": "object"
+    },
+    {
+      "word": "Ärztin",
+      "article": "die",
+      "plural": "Ärztinnen",
+      "pluralWithArticle": "die Ärztinnen",
+      "accusativeSentence": "Das Kind fragt die Ärztin.",
+      "dativeSentence": "Das Kind vertraut der Ärztin.",
+      "imageIndex": 1,
+      "editorType": "object"
+    },
+    {
+      "word": "Krankenhaus",
+      "article": "das",
+      "plural": "Krankenhäuser",
+      "pluralWithArticle": "die Krankenhäuser",
+      "accusativeSentence": "Die Familie besucht das Krankenhaus.",
+      "dativeSentence": "Das Kind liegt in dem Krankenhaus.",
+      "imageIndex": 2,
+      "editorType": "object"
+    },
+    {
+      "word": "Krankenschwester",
+      "article": "die",
+      "plural": "Krankenschwestern",
+      "pluralWithArticle": "die Krankenschwestern",
+      "accusativeSentence": "Das Kind grüßt die Krankenschwester.",
+      "dativeSentence": "Das Kind dankt der Krankenschwester.",
+      "imageIndex": 3,
+      "editorType": "object"
+    },
+    {
+      "word": "Krankenpfleger",
+      "article": "der",
+      "plural": "Krankenpfleger",
+      "pluralWithArticle": "die Krankenpfleger",
+      "accusativeSentence": "Das Kind fragt den Krankenpfleger.",
+      "dativeSentence": "Das Kind dankt dem Krankenpfleger.",
+      "imageIndex": 4,
+      "editorType": "object"
+    },
+    {
+      "word": "Spritze",
+      "article": "die",
+      "plural": "Spritzen",
+      "pluralWithArticle": "die Spritzen",
+      "accusativeSentence": "Das Kind fürchtet die Spritze.",
+      "dativeSentence": "Das Kind zittert vor der Spritze.",
+      "imageIndex": 5,
+      "editorType": "object"
+    },
+    {
+      "word": "Medikament",
+      "article": "das",
+      "plural": "Medikamente",
+      "pluralWithArticle": "die Medikamente",
+      "accusativeSentence": "Das Kind nimmt das Medikament.",
+      "dativeSentence": "Die Ärztin hilft dem Kind mit dem Medikament.",
+      "imageIndex": 6,
+      "editorType": "object"
+    },
+    {
+      "word": "Tablette",
+      "article": "die",
+      "plural": "Tabletten",
+      "pluralWithArticle": "die Tabletten",
+      "accusativeSentence": "Das Kind schluckt die Tablette.",
+      "dativeSentence": "Das Wasser hilft bei der Tablette.",
+      "imageIndex": 7,
+      "editorType": "object"
+    },
+    {
+      "word": "Pflaster",
+      "article": "das",
+      "plural": "Pflaster",
+      "pluralWithArticle": "die Pflaster",
+      "accusativeSentence": "Das Kind klebt das Pflaster auf.",
+      "dativeSentence": "Die Wunde heilt unter dem Pflaster.",
+      "imageIndex": 8,
+      "editorType": "object"
+    },
+    {
+      "word": "Verband",
+      "article": "der",
+      "plural": "Verbände",
+      "pluralWithArticle": "die Verbände",
+      "accusativeSentence": "Die Ärztin wickelt den Verband.",
+      "dativeSentence": "Das Bein steckt in dem Verband.",
+      "imageIndex": 9,
+      "editorType": "object"
+    },
+    {
+      "word": "Thermometer",
+      "article": "das",
+      "plural": "Thermometer",
+      "pluralWithArticle": "die Thermometer",
+      "accusativeSentence": "Das Kind benutzt das Thermometer.",
+      "dativeSentence": "Die Ärztin misst mit dem Thermometer.",
+      "imageIndex": 10,
+      "editorType": "object"
+    },
+    {
+      "word": "Fieberthermometer",
+      "article": "das",
+      "plural": "Fieberthermometer",
+      "pluralWithArticle": "die Fieberthermometer",
+      "accusativeSentence": "Das Kind holt das Fieberthermometer.",
+      "dativeSentence": "Die Mutter misst mit dem Fieberthermometer.",
+      "imageIndex": 11,
+      "editorType": "object"
+    },
+    {
+      "word": "Stethoskop",
+      "article": "das",
+      "plural": "Stethoskope",
+      "pluralWithArticle": "die Stethoskope",
+      "accusativeSentence": "Die Ärztin nimmt das Stethoskop.",
+      "dativeSentence": "Die Ärztin hört mit dem Stethoskop.",
+      "imageIndex": 12,
+      "editorType": "object"
+    },
+    {
+      "word": "Rollstuhl",
+      "article": "der",
+      "plural": "Rollstühle",
+      "pluralWithArticle": "die Rollstühle",
+      "accusativeSentence": "Der Mann schiebt den Rollstuhl.",
+      "dativeSentence": "Der Opa sitzt in dem Rollstuhl.",
+      "imageIndex": 13,
+      "editorType": "object"
+    },
+    {
+      "word": "Krücke",
+      "article": "die",
+      "plural": "Krücken",
+      "pluralWithArticle": "die Krücken",
+      "accusativeSentence": "Der Mann nimmt die Krücke.",
+      "dativeSentence": "Der Mann geht mit der Krücke.",
+      "imageIndex": 14,
+      "editorType": "object"
+    },
+    {
+      "word": "Röntgenbild",
+      "article": "das",
+      "plural": "Röntgenbilder",
+      "pluralWithArticle": "die Röntgenbilder",
+      "accusativeSentence": "Die Ärztin zeigt das Röntgenbild.",
+      "dativeSentence": "Der Knochen ist auf dem Röntgenbild.",
+      "imageIndex": 15,
+      "editorType": "object"
+    },
+    {
+      "word": "Verbandkasten",
+      "article": "der",
+      "plural": "Verbandkästen",
+      "pluralWithArticle": "die Verbandkästen",
+      "accusativeSentence": "Der Lehrer öffnet den Verbandkasten.",
+      "dativeSentence": "Das Pflaster liegt in dem Verbandkasten.",
+      "imageIndex": 16,
+      "editorType": "object"
+    },
+    {
+      "word": "Schutzmaske",
+      "article": "die",
+      "plural": "Schutzmasken",
+      "pluralWithArticle": "die Schutzmasken",
+      "accusativeSentence": "Die Ärztin trägt die Schutzmaske.",
+      "dativeSentence": "Das Gesicht steckt in der Schutzmaske.",
+      "imageIndex": 17,
+      "editorType": "object"
+    },
+    {
+      "word": "Infusion",
+      "article": "die",
+      "plural": "Infusionen",
+      "pluralWithArticle": "die Infusionen",
+      "accusativeSentence": "Die Schwester hängt die Infusion auf.",
+      "dativeSentence": "Das Medikament läuft aus der Infusion.",
+      "imageIndex": 18,
+      "editorType": "object"
+    },
+    {
+      "word": "Arztkittel",
+      "article": "der",
+      "plural": "Arztkittel",
+      "pluralWithArticle": "die Arztkittel",
+      "accusativeSentence": "Die Ärztin trägt den Arztkittel.",
+      "dativeSentence": "Das Stethoskop steckt in dem Arztkittel.",
+      "imageIndex": 19,
+      "editorType": "object"
+    }
+  ]
+}

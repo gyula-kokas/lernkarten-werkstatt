@@ -1,0 +1,250 @@
+{
+  "themeId": "theme-58-essen-trinken",
+  "themeName": "Essen und Trinken",
+  "language": "de",
+  "version": 1,
+  "entryCount": 24,
+  "imageMode": "per-entry-svg",
+  "entries": [
+    {
+      "word": "Brot",
+      "article": "das",
+      "plural": "Brote",
+      "pluralWithArticle": "die Brote",
+      "accusativeSentence": "Das Kind schneidet das Brot.",
+      "dativeSentence": "Die Butter liegt auf dem Brot.",
+      "imageIndex": 0,
+      "editorType": "food"
+    },
+    {
+      "word": "Brezel",
+      "article": "die",
+      "plural": "Brezeln",
+      "pluralWithArticle": "die Brezeln",
+      "accusativeSentence": "Das Kind kauft die Brezel.",
+      "dativeSentence": "Das Salz liegt auf der Brezel.",
+      "imageIndex": 1,
+      "editorType": "food"
+    },
+    {
+      "word": "Käse",
+      "article": "der",
+      "plural": "",
+      "pluralWithArticle": "",
+      "accusativeSentence": "Das Kind schneidet den Käse.",
+      "dativeSentence": "Die Maus nascht von dem Käse.",
+      "imageIndex": 2,
+      "editorType": "food"
+    },
+    {
+      "word": "Butter",
+      "article": "die",
+      "plural": "",
+      "pluralWithArticle": "",
+      "accusativeSentence": "Das Kind streicht die Butter aufs Brot.",
+      "dativeSentence": "Das Brot schmeckt mit der Butter.",
+      "imageIndex": 3,
+      "editorType": "food"
+    },
+    {
+      "word": "Milch",
+      "article": "die",
+      "plural": "",
+      "pluralWithArticle": "",
+      "accusativeSentence": "Das Kind trinkt die Milch.",
+      "dativeSentence": "Aus der Milch macht man Kakao.",
+      "imageIndex": 4,
+      "editorType": "food"
+    },
+    {
+      "word": "Ei",
+      "article": "das",
+      "plural": "Eier",
+      "pluralWithArticle": "die Eier",
+      "accusativeSentence": "Das Kind kocht das Ei.",
+      "dativeSentence": "Das Eigelb sitzt in dem Ei.",
+      "imageIndex": 5,
+      "editorType": "food"
+    },
+    {
+      "word": "Fleisch",
+      "article": "das",
+      "plural": "",
+      "pluralWithArticle": "",
+      "accusativeSentence": "Das Kind isst das Fleisch.",
+      "dativeSentence": "Die Soße schmeckt mit dem Fleisch.",
+      "imageIndex": 6,
+      "editorType": "food"
+    },
+    {
+      "word": "Fisch",
+      "article": "der",
+      "plural": "Fische",
+      "pluralWithArticle": "die Fische",
+      "accusativeSentence": "Das Kind isst den Fisch.",
+      "dativeSentence": "Die Zitrone liegt auf dem Fisch.",
+      "imageIndex": 7,
+      "editorType": "food"
+    },
+    {
+      "word": "Reis",
+      "article": "der",
+      "plural": "",
+      "pluralWithArticle": "",
+      "accusativeSentence": "Das Kind kocht den Reis.",
+      "dativeSentence": "Die Soße schmeckt mit dem Reis.",
+      "imageIndex": 8,
+      "editorType": "food"
+    },
+    {
+      "word": "Nudeln",
+      "article": "die",
+      "plural": "Nudeln",
+      "pluralWithArticle": "die Nudeln",
+      "accusativeSentence": "Das Kind probiert die Nudeln.",
+      "dativeSentence": "Die Soße schmeckt mit der Nudeln.",
+      "imageIndex": 9,
+      "editorType": "food"
+    },
+    {
+      "word": "Pizza",
+      "article": "die",
+      "plural": "Pizzas",
+      "pluralWithArticle": "die Pizzas",
+      "accusativeSentence": "Das Kind teilt die Pizza.",
+      "dativeSentence": "Der Käse schmilzt auf der Pizza.",
+      "imageIndex": 10,
+      "editorType": "food"
+    },
+    {
+      "word": "Hamburger",
+      "article": "der",
+      "plural": "Hamburger",
+      "pluralWithArticle": "die Hamburger",
+      "accusativeSentence": "Das Kind isst den Hamburger.",
+      "dativeSentence": "Der Salat liegt in dem Hamburger.",
+      "imageIndex": 11,
+      "editorType": "food"
+    },
+    {
+      "word": "Pommes",
+      "article": "die",
+      "plural": "Pommes",
+      "pluralWithArticle": "die Pommes",
+      "accusativeSentence": "Das Kind isst die Pommes.",
+      "dativeSentence": "Der Ketchup gehört zu der Pommes.",
+      "imageIndex": 12,
+      "editorType": "food"
+    },
+    {
+      "word": "Suppe",
+      "article": "die",
+      "plural": "Suppen",
+      "pluralWithArticle": "die Suppen",
+      "accusativeSentence": "Das Kind löffelt die Suppe.",
+      "dativeSentence": "Der Löffel steckt in der Suppe.",
+      "imageIndex": 13,
+      "editorType": "food"
+    },
+    {
+      "word": "Schokolade",
+      "article": "die",
+      "plural": "",
+      "pluralWithArticle": "",
+      "accusativeSentence": "Das Kind mag die Schokolade.",
+      "dativeSentence": "Aus der Schokolade macht man Kakao.",
+      "imageIndex": 14,
+      "editorType": "food"
+    },
+    {
+      "word": "Honig",
+      "article": "der",
+      "plural": "",
+      "pluralWithArticle": "",
+      "accusativeSentence": "Das Kind probiert den Honig.",
+      "dativeSentence": "Der Tee schmeckt mit dem Honig besser.",
+      "imageIndex": 15,
+      "editorType": "food"
+    },
+    {
+      "word": "Salz",
+      "article": "das",
+      "plural": "Salze",
+      "pluralWithArticle": "die Salze",
+      "accusativeSentence": "Das Kind streut das Salz.",
+      "dativeSentence": "Die Suppe schmeckt nach dem Salz.",
+      "imageIndex": 16,
+      "editorType": "food"
+    },
+    {
+      "word": "Wasser",
+      "article": "das",
+      "plural": "",
+      "pluralWithArticle": "",
+      "accusativeSentence": "Das Kind trinkt das Wasser.",
+      "dativeSentence": "Der Fisch schwimmt in dem Wasser.",
+      "imageIndex": 17,
+      "editorType": "food"
+    },
+    {
+      "word": "Tee",
+      "article": "der",
+      "plural": "Tees",
+      "pluralWithArticle": "die Tees",
+      "accusativeSentence": "Das Kind trinkt den Tee.",
+      "dativeSentence": "Der Honig schwimmt in dem Tee.",
+      "imageIndex": 18,
+      "editorType": "food"
+    },
+    {
+      "word": "Kaffee",
+      "article": "der",
+      "plural": "Kaffees",
+      "pluralWithArticle": "die Kaffees",
+      "accusativeSentence": "Der Vater trinkt den Kaffee.",
+      "dativeSentence": "Die Milch gehört zu dem Kaffee.",
+      "imageIndex": 19,
+      "editorType": "food"
+    },
+    {
+      "word": "Baguette",
+      "article": "das",
+      "plural": "Baguettes",
+      "pluralWithArticle": "die Baguettes",
+      "accusativeSentence": "Das Kind kauft das Baguette.",
+      "dativeSentence": "Der Käse liegt auf dem Baguette.",
+      "imageIndex": 20,
+      "editorType": "food"
+    },
+    {
+      "word": "Saft",
+      "article": "der",
+      "plural": "Säfte",
+      "pluralWithArticle": "die Säfte",
+      "accusativeSentence": "Das Kind trinkt den Saft.",
+      "dativeSentence": "Der Zucker schwimmt in dem Saft.",
+      "imageIndex": 21,
+      "editorType": "food"
+    },
+    {
+      "word": "Müsli",
+      "article": "das",
+      "plural": "Müsli",
+      "pluralWithArticle": "die Müsli",
+      "accusativeSentence": "Das Kind löffelt das Müsli.",
+      "dativeSentence": "Das Kind rührt in dem Müsli.",
+      "imageIndex": 22,
+      "editorType": "food"
+    },
+    {
+      "word": "Pasta",
+      "article": "die",
+      "plural": "Pasten",
+      "pluralWithArticle": "die Pasten",
+      "accusativeSentence": "Das Kind kocht die Pasta.",
+      "dativeSentence": "Die Soße schwimmt auf der Pasta.",
+      "imageIndex": 23,
+      "editorType": "food"
+    }
+  ]
+}

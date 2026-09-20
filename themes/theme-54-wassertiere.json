@@ -1,0 +1,220 @@
+{
+  "themeId": "theme-54-wassertiere",
+  "themeName": "Tiere im Wasser",
+  "language": "de",
+  "version": 1,
+  "entryCount": 21,
+  "imageMode": "per-entry-svg",
+  "entries": [
+    {
+      "word": "Fisch",
+      "article": "der",
+      "plural": "Fische",
+      "pluralWithArticle": "die Fische",
+      "accusativeSentence": "Das Kind füttert den Fisch.",
+      "dativeSentence": "Der Teich gehört dem Fisch.",
+      "imageIndex": 0,
+      "editorType": "animal"
+    },
+    {
+      "word": "Wal",
+      "article": "der",
+      "plural": "Wale",
+      "pluralWithArticle": "die Wale",
+      "accusativeSentence": "Das Kind sieht den Wal.",
+      "dativeSentence": "Die Flosse gehört dem Wal.",
+      "imageIndex": 1,
+      "editorType": "animal"
+    },
+    {
+      "word": "Delfin",
+      "article": "der",
+      "plural": "Delfine",
+      "pluralWithArticle": "die Delfine",
+      "accusativeSentence": "Das Kind beobachtet den Delfin.",
+      "dativeSentence": "Das Kind schwimmt mit dem Delfin.",
+      "imageIndex": 2,
+      "editorType": "animal"
+    },
+    {
+      "word": "Orca",
+      "article": "der",
+      "plural": "Orcas",
+      "pluralWithArticle": "die Orcas",
+      "accusativeSentence": "Das Kind malt den Orca.",
+      "dativeSentence": "Die Flosse gehört dem Orca.",
+      "imageIndex": 3,
+      "editorType": "animal"
+    },
+    {
+      "word": "Hai",
+      "article": "der",
+      "plural": "Haie",
+      "pluralWithArticle": "die Haie",
+      "accusativeSentence": "Das Kind fürchtet den Hai.",
+      "dativeSentence": "Das Kind schwimmt weg von dem Hai.",
+      "imageIndex": 4,
+      "editorType": "animal"
+    },
+    {
+      "word": "Oktopus",
+      "article": "der",
+      "plural": "Oktopoden",
+      "pluralWithArticle": "die Oktopoden",
+      "accusativeSentence": "Das Kind entdeckt den Oktopus.",
+      "dativeSentence": "Der Stein gehört dem Oktopus.",
+      "imageIndex": 5,
+      "editorType": "animal"
+    },
+    {
+      "word": "Tintenfisch",
+      "article": "der",
+      "plural": "Tintenfische",
+      "pluralWithArticle": "die Tintenfische",
+      "accusativeSentence": "Das Kind sieht den Tintenfisch.",
+      "dativeSentence": "Die Tinte gehört dem Tintenfisch.",
+      "imageIndex": 6,
+      "editorType": "animal"
+    },
+    {
+      "word": "Krabbe",
+      "article": "die",
+      "plural": "Krabben",
+      "pluralWithArticle": "die Krabben",
+      "accusativeSentence": "Das Kind findet die Krabbe.",
+      "dativeSentence": "Die Schere gehört der Krabbe.",
+      "imageIndex": 7,
+      "editorType": "animal"
+    },
+    {
+      "word": "Hummer",
+      "article": "der",
+      "plural": "Hummer",
+      "pluralWithArticle": "die Hummer",
+      "accusativeSentence": "Das Kind sieht den Hummer.",
+      "dativeSentence": "Der Felsen gehört dem Hummer.",
+      "imageIndex": 8,
+      "editorType": "animal"
+    },
+    {
+      "word": "Garnele",
+      "article": "die",
+      "plural": "Garnelen",
+      "pluralWithArticle": "die Garnelen",
+      "accusativeSentence": "Das Kind probiert die Garnele.",
+      "dativeSentence": "Die Schale gehört der Garnele.",
+      "imageIndex": 9,
+      "editorType": "animal"
+    },
+    {
+      "word": "Qualle",
+      "article": "die",
+      "plural": "Quallen",
+      "pluralWithArticle": "die Quallen",
+      "accusativeSentence": "Das Kind beobachtet die Qualle.",
+      "dativeSentence": "Das Kind schwimmt weg von der Qualle.",
+      "imageIndex": 10,
+      "editorType": "animal"
+    },
+    {
+      "word": "Kugelfisch",
+      "article": "der",
+      "plural": "Kugelfische",
+      "pluralWithArticle": "die Kugelfische",
+      "accusativeSentence": "Das Kind entdeckt den Kugelfisch.",
+      "dativeSentence": "Die Stacheln gehören dem Kugelfisch.",
+      "imageIndex": 11,
+      "editorType": "animal"
+    },
+    {
+      "word": "Koralle",
+      "article": "die",
+      "plural": "Korallen",
+      "pluralWithArticle": "die Korallen",
+      "accusativeSentence": "Das Kind malt die Koralle.",
+      "dativeSentence": "Der Fisch versteckt sich bei der Koralle.",
+      "imageIndex": 12,
+      "editorType": "animal"
+    },
+    {
+      "word": "Muschel",
+      "article": "die",
+      "plural": "Muscheln",
+      "pluralWithArticle": "die Muscheln",
+      "accusativeSentence": "Das Kind sammelt die Muschel.",
+      "dativeSentence": "Die Perle gehört der Muschel.",
+      "imageIndex": 13,
+      "editorType": "animal"
+    },
+    {
+      "word": "Robbe",
+      "article": "die",
+      "plural": "Robben",
+      "pluralWithArticle": "die Robben",
+      "accusativeSentence": "Das Kind beobachtet die Robbe.",
+      "dativeSentence": "Der Fisch gehört der Robbe.",
+      "imageIndex": 14,
+      "editorType": "animal"
+    },
+    {
+      "word": "Tropenfisch",
+      "article": "der",
+      "plural": "Tropenfische",
+      "pluralWithArticle": "die Tropenfische",
+      "accusativeSentence": "Das Kind sieht den Tropenfisch.",
+      "dativeSentence": "Das Aquarium gehört dem Tropenfisch.",
+      "imageIndex": 15,
+      "editorType": "animal"
+    },
+    {
+      "word": "Auster",
+      "article": "die",
+      "plural": "Austern",
+      "pluralWithArticle": "die Austern",
+      "accusativeSentence": "Das Kind findet die Auster.",
+      "dativeSentence": "Die Perle gehört der Auster.",
+      "imageIndex": 16,
+      "editorType": "animal"
+    },
+    {
+      "word": "Schweinswal",
+      "article": "der",
+      "plural": "Schweinswale",
+      "pluralWithArticle": "die Schweinswale",
+      "accusativeSentence": "Das Kind entdeckt den Schweinswal.",
+      "dativeSentence": "Die Flosse gehört dem Schweinswal.",
+      "imageIndex": 17,
+      "editorType": "animal"
+    },
+    {
+      "word": "Narwal",
+      "article": "der",
+      "plural": "Narwale",
+      "pluralWithArticle": "die Narwale",
+      "accusativeSentence": "Das Kind malt den Narwal.",
+      "dativeSentence": "Der lange Zahn gehört dem Narwal.",
+      "imageIndex": 18,
+      "editorType": "animal"
+    },
+    {
+      "word": "Beluga",
+      "article": "die",
+      "plural": "Belugas",
+      "pluralWithArticle": "die Belugas",
+      "accusativeSentence": "Das Kind sieht die Beluga.",
+      "dativeSentence": "Die Flosse gehört der Beluga.",
+      "imageIndex": 19,
+      "editorType": "animal"
+    },
+    {
+      "word": "Pottwal",
+      "article": "der",
+      "plural": "Pottwale",
+      "pluralWithArticle": "die Pottwale",
+      "accusativeSentence": "Das Kind bestaunt den Pottwal.",
+      "dativeSentence": "Die Flosse gehört dem Pottwal.",
+      "imageIndex": 20,
+      "editorType": "animal"
+    }
+  ]
+}

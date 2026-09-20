@@ -1,0 +1,190 @@
+{
+  "themeId": "theme-76-blumen-pflanzen",
+  "themeName": "Blumen und Pflanzen",
+  "language": "de",
+  "version": 1,
+  "entryCount": 18,
+  "imageMode": "per-entry-svg",
+  "entries": [
+    {
+      "word": "Blume",
+      "article": "die",
+      "plural": "Blumen",
+      "pluralWithArticle": "die Blumen",
+      "accusativeSentence": "Das Kind pflückt die Blume.",
+      "dativeSentence": "Das Kind riecht an der Blume.",
+      "imageIndex": 0,
+      "editorType": "plant"
+    },
+    {
+      "word": "Rose",
+      "article": "die",
+      "plural": "Rosen",
+      "pluralWithArticle": "die Rosen",
+      "accusativeSentence": "Das Kind pflückt die Rose.",
+      "dativeSentence": "Das Kind riecht an der Rose.",
+      "imageIndex": 1,
+      "editorType": "plant"
+    },
+    {
+      "word": "Tulpe",
+      "article": "die",
+      "plural": "Tulpen",
+      "pluralWithArticle": "die Tulpen",
+      "accusativeSentence": "Das Kind pflückt die Tulpe.",
+      "dativeSentence": "Das Kind riecht an der Tulpe.",
+      "imageIndex": 2,
+      "editorType": "plant"
+    },
+    {
+      "word": "Sonnenblume",
+      "article": "die",
+      "plural": "Sonnenblumen",
+      "pluralWithArticle": "die Sonnenblumen",
+      "accusativeSentence": "Das Kind gießt die Sonnenblume.",
+      "dativeSentence": "Die Biene sitzt an der Sonnenblume.",
+      "imageIndex": 3,
+      "editorType": "plant"
+    },
+    {
+      "word": "Gänseblümchen",
+      "article": "das",
+      "plural": "Gänseblümchen",
+      "pluralWithArticle": "die Gänseblümchen",
+      "accusativeSentence": "Das Kind pflückt das Gänseblümchen.",
+      "dativeSentence": "Die Biene sitzt auf dem Gänseblümchen.",
+      "imageIndex": 4,
+      "editorType": "plant"
+    },
+    {
+      "word": "Hibiskus",
+      "article": "der",
+      "plural": "Hibisken",
+      "pluralWithArticle": "die Hibisken",
+      "accusativeSentence": "Das Kind sieht den Hibiskus.",
+      "dativeSentence": "Die Blüte sitzt an dem Hibiskus.",
+      "imageIndex": 5,
+      "editorType": "plant"
+    },
+    {
+      "word": "Mohnblume",
+      "article": "die",
+      "plural": "Mohnblumen",
+      "pluralWithArticle": "die Mohnblumen",
+      "accusativeSentence": "Das Kind fotografiert die Mohnblume.",
+      "dativeSentence": "Die Biene sitzt an der Mohnblume.",
+      "imageIndex": 6,
+      "editorType": "plant"
+    },
+    {
+      "word": "Klee",
+      "article": "der",
+      "plural": "",
+      "pluralWithArticle": "",
+      "accusativeSentence": "Das Kind sucht den Klee.",
+      "dativeSentence": "Das Kaninchen frisst von dem Klee.",
+      "imageIndex": 7,
+      "editorType": "plant"
+    },
+    {
+      "word": "Pflanze",
+      "article": "die",
+      "plural": "Pflanzen",
+      "pluralWithArticle": "die Pflanzen",
+      "accusativeSentence": "Das Kind gießt die Pflanze.",
+      "dativeSentence": "Das Wasser läuft an der Pflanze herunter.",
+      "imageIndex": 8,
+      "editorType": "plant"
+    },
+    {
+      "word": "Kaktus",
+      "article": "der",
+      "plural": "Kakteen",
+      "pluralWithArticle": "die Kakteen",
+      "accusativeSentence": "Das Kind gießt den Kaktus selten.",
+      "dativeSentence": "Die Blüte sitzt an dem Kaktus.",
+      "imageIndex": 9,
+      "editorType": "plant"
+    },
+    {
+      "word": "Setzling",
+      "article": "der",
+      "plural": "Setzlinge",
+      "pluralWithArticle": "die Setzlinge",
+      "accusativeSentence": "Das Kind pflanzt den Setzling.",
+      "dativeSentence": "Die Erde klebt an dem Setzling.",
+      "imageIndex": 10,
+      "editorType": "plant"
+    },
+    {
+      "word": "Blumenstrauß",
+      "article": "der",
+      "plural": "Blumensträuße",
+      "pluralWithArticle": "die Blumensträuße",
+      "accusativeSentence": "Die Mutter kauft den Blumenstrauß.",
+      "dativeSentence": "Die Blumen stecken in dem Blumenstrauß.",
+      "imageIndex": 12,
+      "editorType": "plant"
+    },
+    {
+      "word": "Kirschblüte",
+      "article": "die",
+      "plural": "Kirschblüten",
+      "pluralWithArticle": "die Kirschblüten",
+      "accusativeSentence": "Das Kind fotografiert die Kirschblüte.",
+      "dativeSentence": "Die Biene sitzt an der Kirschblüte.",
+      "imageIndex": 13,
+      "editorType": "plant"
+    },
+    {
+      "word": "Ahornblatt",
+      "article": "das",
+      "plural": "Ahornblätter",
+      "pluralWithArticle": "die Ahornblätter",
+      "accusativeSentence": "Das Kind sammelt das Ahornblatt.",
+      "dativeSentence": "Die Ader liegt in dem Ahornblatt.",
+      "imageIndex": 14,
+      "editorType": "plant"
+    },
+    {
+      "word": "Hyazinthe",
+      "article": "die",
+      "plural": "Hyazinthen",
+      "pluralWithArticle": "die Hyazinthen",
+      "accusativeSentence": "Das Kind gießt die Hyazinthe.",
+      "dativeSentence": "Der Duft kommt von der Hyazinthe.",
+      "imageIndex": 15,
+      "editorType": "plant"
+    },
+    {
+      "word": "Basilikum",
+      "article": "das",
+      "plural": "Basilikums",
+      "pluralWithArticle": "die Basilikums",
+      "accusativeSentence": "Das Kind riecht das Basilikum.",
+      "dativeSentence": "Die Soße schmeckt nach dem Basilikum.",
+      "imageIndex": 16,
+      "editorType": "plant"
+    },
+    {
+      "word": "Lotusblume",
+      "article": "die",
+      "plural": "Lotusblumen",
+      "pluralWithArticle": "die Lotusblumen",
+      "accusativeSentence": "Das Kind malt die Lotusblume.",
+      "dativeSentence": "Der Frosch sitzt auf der Lotusblume.",
+      "imageIndex": 17,
+      "editorType": "plant"
+    },
+    {
+      "word": "Samen",
+      "article": "der",
+      "plural": "Samen",
+      "pluralWithArticle": "die Samen",
+      "accusativeSentence": "Das Kind pflanzt den Samen.",
+      "dativeSentence": "Aus dem Samen wächst eine Blume.",
+      "imageIndex": 18,
+      "editorType": "plant"
+    }
+  ]
+}

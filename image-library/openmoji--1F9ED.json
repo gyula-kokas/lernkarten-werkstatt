@@ -1,0 +1,10 @@
+{
+  "slug": "openmoji--1F9ED",
+  "provider": "openmoji",
+  "source": "https://openmoji.org/library/emoji-1F9ED/",
+  "author": "Kai Magnus Müller / OpenMoji contributors",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "title": "compass",
+  "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" id=\"asset-openmoji--1F9ED-emoji\" viewBox=\"0 0 72 72\">\n  <g id=\"asset-openmoji--1F9ED-line-supplement\">\n    <polyline points=\"33.2 33.2 48 24 38.8 38.8\" />\n  </g>\n  <g id=\"asset-openmoji--1F9ED-color\">\n    <circle cx=\"36\" cy=\"36\" r=\"24\" fill=\"#fcea2b\" />\n    <path fill=\"#f1b31c\" d=\"M53,19A24.0417,24.0417,0,0,1,36,60a24.302,24.302,0,0,1-17-7\" />\n    <polyline fill=\"#fff\" points=\"33.2 33.2 24 48 38.8 38.8\" />\n    <polyline fill=\"#ea5a47\" points=\"33.2 33.2 48 24 38.8 38.8\" />\n  </g>\n  <g id=\"asset-openmoji--1F9ED-line\">\n    <circle cx=\"36\" cy=\"36\" r=\"24\" fill=\"none\" stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" />\n    <polyline fill=\"none\" stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" points=\"33.2 33.2 24 48 38.8 38.8\" />\n    <polyline fill=\"none\" stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" points=\"33.2 33.2 48 24 38.8 38.8\" />\n    <line x1=\"36\" x2=\"36\" y1=\"21\" y2=\"16\" fill=\"none\" stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" />\n    <line x1=\"36\" x2=\"36\" y1=\"56\" y2=\"51\" fill=\"none\" stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" />\n    <line x1=\"51\" x2=\"56\" y1=\"36\" y2=\"36\" fill=\"none\" stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" />\n    <line x1=\"16\" x2=\"21\" y1=\"36\" y2=\"36\" fill=\"none\" stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" />\n  </g>\n</svg>"
+}

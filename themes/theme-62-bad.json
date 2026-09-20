@@ -1,0 +1,170 @@
+{
+  "themeId": "theme-62-bad",
+  "themeName": "Bad und Körperpflege",
+  "language": "de",
+  "version": 1,
+  "entryCount": 16,
+  "imageMode": "per-entry-svg",
+  "entries": [
+    {
+      "word": "Badewanne",
+      "article": "die",
+      "plural": "Badewannen",
+      "pluralWithArticle": "die Badewannen",
+      "accusativeSentence": "Das Kind füllt die Badewanne.",
+      "dativeSentence": "Das Wasser ist in der Badewanne.",
+      "imageIndex": 0,
+      "editorType": "object"
+    },
+    {
+      "word": "Dusche",
+      "article": "die",
+      "plural": "Duschen",
+      "pluralWithArticle": "die Duschen",
+      "accusativeSentence": "Das Kind putzt die Dusche.",
+      "dativeSentence": "Das Wasser läuft aus der Dusche.",
+      "imageIndex": 1,
+      "editorType": "object"
+    },
+    {
+      "word": "Toilette",
+      "article": "die",
+      "plural": "Toiletten",
+      "pluralWithArticle": "die Toiletten",
+      "accusativeSentence": "Das Kind putzt die Toilette.",
+      "dativeSentence": "Das Papier liegt neben der Toilette.",
+      "imageIndex": 2,
+      "editorType": "object"
+    },
+    {
+      "word": "Zahnbürste",
+      "article": "die",
+      "plural": "Zahnbürsten",
+      "pluralWithArticle": "die Zahnbürsten",
+      "accusativeSentence": "Das Kind nimmt die Zahnbürste.",
+      "dativeSentence": "Das Kind putzt mit der Zahnbürste.",
+      "imageIndex": 3,
+      "editorType": "object"
+    },
+    {
+      "word": "Seife",
+      "article": "die",
+      "plural": "Seifen",
+      "pluralWithArticle": "die Seifen",
+      "accusativeSentence": "Das Kind benutzt die Seife.",
+      "dativeSentence": "Das Kind wäscht sich mit der Seife.",
+      "imageIndex": 4,
+      "editorType": "object"
+    },
+    {
+      "word": "Shampoo",
+      "article": "das",
+      "plural": "Shampoos",
+      "pluralWithArticle": "die Shampoos",
+      "accusativeSentence": "Das Kind öffnet das Shampoo.",
+      "dativeSentence": "Die Haare glänzen von dem Shampoo.",
+      "imageIndex": 5,
+      "editorType": "object"
+    },
+    {
+      "word": "Kamm",
+      "article": "der",
+      "plural": "Kämme",
+      "pluralWithArticle": "die Kämme",
+      "accusativeSentence": "Das Kind sucht den Kamm.",
+      "dativeSentence": "Das Kind kämmt sich mit dem Kamm.",
+      "imageIndex": 6,
+      "editorType": "object"
+    },
+    {
+      "word": "Rasierer",
+      "article": "der",
+      "plural": "Rasierer",
+      "pluralWithArticle": "die Rasierer",
+      "accusativeSentence": "Der Vater nimmt den Rasierer.",
+      "dativeSentence": "Der Vater rasiert sich mit dem Rasierer.",
+      "imageIndex": 7,
+      "editorType": "object"
+    },
+    {
+      "word": "Waschmaschine",
+      "article": "die",
+      "plural": "Waschmaschinen",
+      "pluralWithArticle": "die Waschmaschinen",
+      "accusativeSentence": "Das Kind belädt die Waschmaschine.",
+      "dativeSentence": "Die Wäsche ist in der Waschmaschine.",
+      "imageIndex": 8,
+      "editorType": "object"
+    },
+    {
+      "word": "Wäschekorb",
+      "article": "der",
+      "plural": "Wäschekörbe",
+      "pluralWithArticle": "die Wäschekörbe",
+      "accusativeSentence": "Das Kind trägt den Wäschekorb.",
+      "dativeSentence": "Die Wäsche liegt in dem Wäschekorb.",
+      "imageIndex": 9,
+      "editorType": "object"
+    },
+    {
+      "word": "Wäscheklammer",
+      "article": "die",
+      "plural": "Wäscheklammern",
+      "pluralWithArticle": "die Wäscheklammern",
+      "accusativeSentence": "Das Kind nimmt die Wäscheklammer.",
+      "dativeSentence": "Die Wäsche hängt an der Wäscheklammer.",
+      "imageIndex": 10,
+      "editorType": "object"
+    },
+    {
+      "word": "Zahnpasta",
+      "article": "die",
+      "plural": "Zahnpasten",
+      "pluralWithArticle": "die Zahnpasten",
+      "accusativeSentence": "Das Kind drückt die Zahnpasta aus.",
+      "dativeSentence": "Das Kind putzt mit der Zahnpasta.",
+      "imageIndex": 11,
+      "editorType": "object"
+    },
+    {
+      "word": "Seifenspender",
+      "article": "der",
+      "plural": "Seifenspender",
+      "pluralWithArticle": "die Seifenspender",
+      "accusativeSentence": "Das Kind drückt den Seifenspender.",
+      "dativeSentence": "Die Seife kommt aus dem Seifenspender.",
+      "imageIndex": 12,
+      "editorType": "object"
+    },
+    {
+      "word": "Pflaster",
+      "article": "das",
+      "plural": "Pflaster",
+      "pluralWithArticle": "die Pflaster",
+      "accusativeSentence": "Das Kind klebt das Pflaster auf.",
+      "dativeSentence": "Die Wunde ist unter dem Pflaster.",
+      "imageIndex": 13,
+      "editorType": "object"
+    },
+    {
+      "word": "Wasserhahn",
+      "article": "der",
+      "plural": "Wasserhähne",
+      "pluralWithArticle": "die Wasserhähne",
+      "accusativeSentence": "Das Kind dreht den Wasserhahn zu.",
+      "dativeSentence": "Das Wasser tropft aus dem Wasserhahn.",
+      "imageIndex": 14,
+      "editorType": "object"
+    },
+    {
+      "word": "Föhn",
+      "article": "der",
+      "plural": "Föhne",
+      "pluralWithArticle": "die Föhne",
+      "accusativeSentence": "Das Kind nimmt den Föhn.",
+      "dativeSentence": "Das Kind trocknet die Haare mit dem Föhn.",
+      "imageIndex": 15,
+      "editorType": "object"
+    }
+  ]
+}

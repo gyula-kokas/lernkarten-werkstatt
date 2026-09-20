@@ -1,0 +1,260 @@
+{
+  "themeId": "theme-51-wilde-tiere",
+  "themeName": "Wilde Tiere",
+  "language": "de",
+  "version": 1,
+  "entryCount": 25,
+  "imageMode": "per-entry-svg",
+  "entries": [
+    {
+      "word": "Löwe",
+      "article": "der",
+      "plural": "Löwen",
+      "pluralWithArticle": "die Löwen",
+      "accusativeSentence": "Das Kind sieht den Löwen im Zoo.",
+      "dativeSentence": "Die Mähne gehört dem Löwen.",
+      "imageIndex": 0,
+      "editorType": "animal"
+    },
+    {
+      "word": "Tiger",
+      "article": "der",
+      "plural": "Tiger",
+      "pluralWithArticle": "die Tiger",
+      "accusativeSentence": "Das Kind beobachtet den Tiger.",
+      "dativeSentence": "Das Fell gehört dem Tiger.",
+      "imageIndex": 1,
+      "editorType": "animal"
+    },
+    {
+      "word": "Elefant",
+      "article": "der",
+      "plural": "Elefanten",
+      "pluralWithArticle": "die Elefanten",
+      "accusativeSentence": "Das Kind füttert den Elefanten.",
+      "dativeSentence": "Der Rüssel gehört dem Elefanten.",
+      "imageIndex": 2,
+      "editorType": "animal"
+    },
+    {
+      "word": "Giraffe",
+      "article": "die",
+      "plural": "Giraffen",
+      "pluralWithArticle": "die Giraffen",
+      "accusativeSentence": "Das Kind fotografiert die Giraffe.",
+      "dativeSentence": "Der lange Hals gehört der Giraffe.",
+      "imageIndex": 3,
+      "editorType": "animal"
+    },
+    {
+      "word": "Zebra",
+      "article": "das",
+      "plural": "Zebras",
+      "pluralWithArticle": "die Zebras",
+      "accusativeSentence": "Das Kind malt das Zebra.",
+      "dativeSentence": "Die Streifen gehören dem Zebra.",
+      "imageIndex": 4,
+      "editorType": "animal"
+    },
+    {
+      "word": "Nashorn",
+      "article": "das",
+      "plural": "Nashörner",
+      "pluralWithArticle": "die Nashörner",
+      "accusativeSentence": "Das Kind bestaunt das Nashorn.",
+      "dativeSentence": "Das Horn gehört dem Nashorn.",
+      "imageIndex": 5,
+      "editorType": "animal"
+    },
+    {
+      "word": "Nilpferd",
+      "article": "das",
+      "plural": "Nilpferde",
+      "pluralWithArticle": "die Nilpferde",
+      "accusativeSentence": "Das Kind sieht das Nilpferd im Wasser.",
+      "dativeSentence": "Der Schlamm gehört dem Nilpferd.",
+      "imageIndex": 6,
+      "editorType": "animal"
+    },
+    {
+      "word": "Leopard",
+      "article": "der",
+      "plural": "Leoparden",
+      "pluralWithArticle": "die Leoparden",
+      "accusativeSentence": "Das Kind entdeckt den Leoparden.",
+      "dativeSentence": "Die Beute gehört dem Leoparden.",
+      "imageIndex": 7,
+      "editorType": "animal"
+    },
+    {
+      "word": "Krokodil",
+      "article": "das",
+      "plural": "Krokodile",
+      "pluralWithArticle": "die Krokodile",
+      "accusativeSentence": "Das Kind beobachtet das Krokodil.",
+      "dativeSentence": "Das Kind läuft vor dem Krokodil weg.",
+      "imageIndex": 8,
+      "editorType": "animal"
+    },
+    {
+      "word": "Affe",
+      "article": "der",
+      "plural": "Affen",
+      "pluralWithArticle": "die Affen",
+      "accusativeSentence": "Das Kind füttert den Affen.",
+      "dativeSentence": "Die Banane gehört dem Affen.",
+      "imageIndex": 9,
+      "editorType": "animal"
+    },
+    {
+      "word": "Gorilla",
+      "article": "der",
+      "plural": "Gorillas",
+      "pluralWithArticle": "die Gorillas",
+      "accusativeSentence": "Das Kind sieht den Gorilla.",
+      "dativeSentence": "Der Zoo gibt dem Gorilla Obst.",
+      "imageIndex": 10,
+      "editorType": "animal"
+    },
+    {
+      "word": "Orang-Utan",
+      "article": "der",
+      "plural": "Orang-Utans",
+      "pluralWithArticle": "die Orang-Utans",
+      "accusativeSentence": "Das Kind beobachtet den Orang-Utan.",
+      "dativeSentence": "Der Ast gehört dem Orang-Utan.",
+      "imageIndex": 11,
+      "editorType": "animal"
+    },
+    {
+      "word": "Panda",
+      "article": "der",
+      "plural": "Pandas",
+      "pluralWithArticle": "die Pandas",
+      "accusativeSentence": "Das Kind malt den Panda.",
+      "dativeSentence": "Der Bambus gehört dem Panda.",
+      "imageIndex": 12,
+      "editorType": "animal"
+    },
+    {
+      "word": "Koala",
+      "article": "der",
+      "plural": "Koalas",
+      "pluralWithArticle": "die Koalas",
+      "accusativeSentence": "Das Kind entdeckt den Koala.",
+      "dativeSentence": "Der Baum gehört dem Koala.",
+      "imageIndex": 13,
+      "editorType": "animal"
+    },
+    {
+      "word": "Känguru",
+      "article": "das",
+      "plural": "Kängurus",
+      "pluralWithArticle": "die Kängurus",
+      "accusativeSentence": "Das Kind sieht das Känguru hüpfen.",
+      "dativeSentence": "Die Tasche gehört dem Känguru.",
+      "imageIndex": 14,
+      "editorType": "animal"
+    },
+    {
+      "word": "Kamel",
+      "article": "das",
+      "plural": "Kamele",
+      "pluralWithArticle": "die Kamele",
+      "accusativeSentence": "Das Kind führt das Kamel.",
+      "dativeSentence": "Die Decke gehört dem Kamel.",
+      "imageIndex": 15,
+      "editorType": "animal"
+    },
+    {
+      "word": "Lama",
+      "article": "das",
+      "plural": "Lamas",
+      "pluralWithArticle": "die Lamas",
+      "accusativeSentence": "Das Kind füttert das Lama.",
+      "dativeSentence": "Die Wolle gehört dem Lama.",
+      "imageIndex": 16,
+      "editorType": "animal"
+    },
+    {
+      "word": "Faultier",
+      "article": "das",
+      "plural": "Faultiere",
+      "pluralWithArticle": "die Faultiere",
+      "accusativeSentence": "Das Kind bewundert das Faultier.",
+      "dativeSentence": "Der Ast gehört dem Faultier.",
+      "imageIndex": 17,
+      "editorType": "animal"
+    },
+    {
+      "word": "Bison",
+      "article": "der",
+      "plural": "Bisons",
+      "pluralWithArticle": "die Bisons",
+      "accusativeSentence": "Das Kind sieht den Bison.",
+      "dativeSentence": "Der Winterpelz gehört dem Bison.",
+      "imageIndex": 18,
+      "editorType": "animal"
+    },
+    {
+      "word": "Büffel",
+      "article": "der",
+      "plural": "Büffel",
+      "pluralWithArticle": "die Büffel",
+      "accusativeSentence": "Das Kind beobachtet den Büffel.",
+      "dativeSentence": "Das Horn gehört dem Büffel.",
+      "imageIndex": 19,
+      "editorType": "animal"
+    },
+    {
+      "word": "Mammut",
+      "article": "das",
+      "plural": "Mammute",
+      "pluralWithArticle": "die Mammute",
+      "accusativeSentence": "Das Kind malt das Mammut.",
+      "dativeSentence": "Der lange Rüssel gehört dem Mammut.",
+      "imageIndex": 20,
+      "editorType": "animal"
+    },
+    {
+      "word": "Eisbär",
+      "article": "der",
+      "plural": "Eisbären",
+      "pluralWithArticle": "die Eisbären",
+      "accusativeSentence": "Das Kind sieht den Eisbären.",
+      "dativeSentence": "Der Fisch gehört dem Eisbären.",
+      "imageIndex": 21,
+      "editorType": "animal"
+    },
+    {
+      "word": "Wolf",
+      "article": "der",
+      "plural": "Wölfe",
+      "pluralWithArticle": "die Wölfe",
+      "accusativeSentence": "Das Kind hört den Wolf heulen.",
+      "dativeSentence": "Das Rudel folgt dem Wolf.",
+      "imageIndex": 22,
+      "editorType": "animal"
+    },
+    {
+      "word": "Fuchs",
+      "article": "der",
+      "plural": "Füchse",
+      "pluralWithArticle": "die Füchse",
+      "accusativeSentence": "Das Kind entdeckt den Fuchs.",
+      "dativeSentence": "Der Bau gehört dem Fuchs.",
+      "imageIndex": 23,
+      "editorType": "animal"
+    },
+    {
+      "word": "Bär",
+      "article": "der",
+      "plural": "Bären",
+      "pluralWithArticle": "die Bären",
+      "accusativeSentence": "Das Kind beobachtet den Bären.",
+      "dativeSentence": "Der Honig gehört dem Bären.",
+      "imageIndex": 24,
+      "editorType": "animal"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "slug": "openmoji--1F997",
+  "provider": "openmoji",
+  "source": "https://openmoji.org/library/emoji-1F997/",
+  "author": "Selina Bauder / OpenMoji contributors",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "title": "cricket",
+  "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" id=\"asset-openmoji--1F997-emoji\" viewBox=\"0 0 72 72\">\n  <g id=\"asset-openmoji--1F997-color\">\n    <path fill=\"#5C9E31\" stroke=\"none\" d=\"M58,46h3c0,0-5,10-23,9c0,0-7,0-15-8c0,0,1,7-4,5s-6-5-4-12l25,4\" />\n    <polygon fill=\"#B1CC33\" stroke=\"none\" points=\"39,50 56,35 54,46\" />\n  </g>\n  <g id=\"asset-openmoji--1F997-hair\" />\n  <g id=\"asset-openmoji--1F997-skin\" />\n  <g id=\"asset-openmoji--1F997-skin-shadow\" />\n  <g id=\"asset-openmoji--1F997-line\">\n    <polyline fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" stroke-width=\"2\" points=\"8,36 14,40 11,34\" />\n    <polyline fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" stroke-width=\"2\" points=\"27.1439,51.2523 24,59 21,59\" />\n    <polyline fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" stroke-width=\"2\" points=\"32.8504,54.1235 31,59 35,59\" />\n    <path fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" stroke-width=\"2\" d=\"M58,46h3c0,0-5,10-23,9c0,0-7,0-15-8c0,0,1,7-4,5s-6-5-4-12l25,4\" />\n    <polyline fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" stroke-width=\"2\" points=\"56,59 52,59 57,34 39,49\" />\n  </g>\n</svg>"
+}

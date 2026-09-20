@@ -1,0 +1,10 @@
+{
+  "slug": "openmoji--E1D4",
+  "provider": "openmoji",
+  "source": "https://openmoji.org/library/emoji-E1D4/",
+  "author": "Kai Magnus Müller / OpenMoji contributors",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "title": "wire",
+  "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" id=\"asset-openmoji--E1D4-emoji\" viewBox=\"0 0 72 72\" version=\"1.1\">\n  <g id=\"asset-openmoji--E1D4-color\">\n    <line x1=\"16\" x2=\"11\" y1=\"36\" y2=\"36\" fill=\"none\" stroke=\"#E27022\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" stroke-width=\"2\" />\n    <line x1=\"61\" x2=\"56\" y1=\"36\" y2=\"36\" fill=\"none\" stroke=\"#E27022\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" stroke-width=\"2\" />\n    <rect x=\"16\" y=\"35.94\" width=\"40\" height=\"4.06\" fill=\"#D22F27\" />\n    <rect x=\"16\" y=\"32\" width=\"40\" height=\"4\" fill=\"#EA5A47\" />\n  </g>\n  <g id=\"asset-openmoji--E1D4-hair\" />\n  <g id=\"asset-openmoji--E1D4-skin\" />\n  <g id=\"asset-openmoji--E1D4-skin-shadow\" />\n  <g id=\"asset-openmoji--E1D4-line\">\n    <rect x=\"16\" y=\"32\" width=\"40\" height=\"8\" fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" stroke-width=\"2\" />\n    <line x1=\"16\" x2=\"11\" y1=\"36\" y2=\"36\" fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" stroke-width=\"2\" />\n    <line x1=\"61\" x2=\"56\" y1=\"36\" y2=\"36\" fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" stroke-width=\"2\" />\n  </g>\n  <g id=\"asset-openmoji--E1D4-color-foreground\">\n    <path fill=\"#E27022\" d=\"M15,37.0498h-4c-0.5801,0-1.0498-0.4697-1.0498-1.0498S10.4199,34.9502,11,34.9502h4\" />\n    <path fill=\"#E27022\" d=\"M57,34.9502h4c0.5801,0,1.0498,0.4697,1.0498,1.0498S61.5801,37.0498,61,37.0498h-4\" />\n  </g>\n</svg>"
+}

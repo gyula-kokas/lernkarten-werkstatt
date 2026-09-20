@@ -57,12 +57,18 @@ WORKER = Path(__file__).resolve().parent / "piper_worker.py"
 VOICE_FILES = (f"{VOICE}.onnx", f"{VOICE}.onnx.json")
 
 # Interpreters that may have Piper installed, in order of preference. A
-# PIPER_PYTHON environment variable wins over this list.
-VENV = Path.home() / ".local" / "share" / "ded-tts" / "venv"
-PIPER_PYTHONS = (
-    VENV / "bin" / "python",
-    Path.home() / ".local" / "share" / "piper" / "venv" / "bin" / "python",
-)
+# PIPER_PYTHON environment variable wins over this list. Windows virtualenvs put
+# the interpreter into ``Scripts\python.exe`` instead of ``bin/python``, so the
+# two platforms need their own list - the README walks users through the setup.
+if os.name == "nt":  # pragma: no cover - platform specific
+    VENV = Path(os.environ.get("LOCALAPPDATA") or Path.home()) / "ded-tts" / "venv"
+    PIPER_PYTHONS = (VENV / "Scripts" / "python.exe",)
+else:
+    VENV = Path.home() / ".local" / "share" / "ded-tts" / "venv"
+    PIPER_PYTHONS = (
+        VENV / "bin" / "python",
+        Path.home() / ".local" / "share" / "piper" / "venv" / "bin" / "python",
+    )
 # Places a one-time ``piper.download_voices`` run may have left the models in.
 MODEL_SOURCES = (
     Path.home() / ".local" / "share" / "piper" / "voices",
@@ -187,6 +193,17 @@ def _run_piper(text: str) -> bytes:
 
 def install_hint() -> str:
     """Copy-paste commands that make the mandatory toolchain available."""
+    if os.name == "nt":  # pragma: no cover - platform specific
+        venv = str(VENV)
+        return (
+            "Einmalige Einrichtung (nur dieser Schritt braucht Internet):\n"
+            "  py -m venv \"%LOCALAPPDATA%\\ded-tts\\venv\"\n"
+            f"  \"{venv}\\Scripts\\pip.exe\" install piper-tts\n"
+            f"  \"{venv}\\Scripts\\python.exe\" -m piper.download_voices {VOICE} "
+            "--download-dir vendor\\piper\n"
+            "  ffmpeg installieren: winget install Gyan.FFmpeg  (oder https://www.gyan.dev/ffmpeg/builds/)\n"
+            f"  Falls Python nicht gefunden wird: PIPER_PYTHON=\"{venv}\\Scripts\\python.exe\" setzen"
+        )
     return (
         "Einmalige Einrichtung (nur dieser Schritt braucht Internet):\n"
         f"  python3 -m venv {VENV}\n"

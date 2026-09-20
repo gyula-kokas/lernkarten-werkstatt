@@ -4,6 +4,15 @@ Danke fürs Mitmachen! Dieses Projekt ist bewusst klein und ohne Abhängigkeiten
 **Python-Standardbibliothek**, eine feste Stimme, eine einzige Ausgabedatei.
 Bitte diese Linie nicht aufweichen.
 
+Wo steht was?
+
+| Datei | Inhalt |
+|---|---|
+| [README.md](README.md) | Bedienung für Anwender (mit Bildern) |
+| [TECHNIK.md](TECHNIK.md) | Aufbau, Datenformat, Bau der Datei, Tests |
+| [AGENTS.md](AGENTS.md) | die Regeln und Entscheidungen des Projekts (hier steht das Warum) |
+| [SECURITY.md](SECURITY.md) | Sicherheitsmodell des Editors |
+
 ## Schnellstart
 
 ```bash

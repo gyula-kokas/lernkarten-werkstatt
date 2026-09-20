@@ -3,7 +3,8 @@
 Lernkarten-Werkstatt 0.1 – local visual editor for German learning cards.
 **The deliverable for learners is always exactly one self-contained HTML file.**
 
-User-facing docs (German): [README.md](README.md) ·
+User-facing docs (German): [README.md](README.md) (users, with screenshots) ·
+[TECHNIK.md](TECHNIK.md) (how it is built, data format, tests) ·
 security model [SECURITY.md](SECURITY.md) · licenses [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)
 
 ## Release

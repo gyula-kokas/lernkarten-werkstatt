@@ -593,6 +593,8 @@ body.mode-game .game-view{display:flex}
 }
 .game-case.acc{color:var(--akk);border:2px solid #f3bd83}
 .game-case.dat{color:var(--dat);border:2px solid #bba9ce}
+/* Artikel-Aufgabe: dieselbe Farbe wie die Artikel-Merkzeile auf dem Blatt. */
+.game-case.artikel{color:var(--der);border:2px solid #bcd9ee}
 .game-picture{
   width:min(320px,66vw);
   height:min(320px,66vw);
@@ -2493,7 +2495,10 @@ const LearningTTS={
     const table=EMBEDDED_TTS?.audioByText || {};
     const src=table[text];
     if(!src){
-      console.error("Kein eingebettetes Audio für:",text);
+      /* Solange die Tondaten noch einlesen (siehe ladeTon am Dateiende), ist
+         ein fehlender Clip kein Fehler - nur ein zu früher Klick. */
+      if(String(EMBEDDED_TTS?.mode || "")==="laedt") console.info("Ton wird noch geladen:",text);
+      else console.error("Kein eingebettetes Audio für:",text);
       return false;
     }
     this.stop();
@@ -2738,9 +2743,17 @@ async function renderGameCard(autoSpeak=true){
     : row.dativeSentence;
   const revealText=task==="plural" ? pluralPhrase(row) : sentence;
   const speechText=task==="plural" ? pluralPhrase(row,true) : sentence;
+  /*
+    Marke über der Karte: sie benennt die **Aufgabe**, nicht einen Fall. Bei der
+    Artikel-Aufgabe stand hier früher „AKKUSATIV“, obwohl die Grundform der/die/das
+    gefragt war - das hat die Kinder in die Irre geführt. Wie auf dem Arbeitsblatt
+    heißt diese Aufgabe jetzt „ARTIKEL“.
+  */
   const caseLabel=task==="plural"
     ? "MEHRZAHL"
-    : (item.caseName==="acc" ? "AKKUSATIV" : "DATIV");
+    : task==="artikel"
+      ? "ARTIKEL"
+      : (item.caseName==="acc" ? "AKKUSATIV" : "DATIV");
   const taskHint=task==="kasus"
     ? `Welche Form steht im ${item.caseName==="acc" ? "Akkusativ" : "Dativ"}?`
     : task==="plural"
@@ -2753,7 +2766,7 @@ async function renderGameCard(autoSpeak=true){
   shell.innerHTML=`
     ${gameProgressHtml()}
     <section class="game-card">
-      <div class="game-case ${task==="plural" ? "plural" : item.caseName}">${caseLabel}</div>
+      <div class="game-case ${task==="plural" ? "plural" : task==="artikel" ? "artikel" : item.caseName}">${caseLabel}</div>
       <div class="game-mascot" aria-hidden="true">${taskMascot(task)}</div>
       <div class="game-speech">${taskHint}</div>
 

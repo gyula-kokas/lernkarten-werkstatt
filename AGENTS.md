@@ -222,16 +222,20 @@ themes/*.json  →  [editor edits, image-library/selections.json]  →  selected
   **same** word (never another noun — the learner must check the ending). Plural speech comes
   from `pluralWithArticle` via `texts_for_entries()`. A new task type needs matching clips,
   otherwise the reveal falls back to the "🔊 Lösung noch einmal anhören" hint.
-- **Answer colours: one rule, no exceptions.** Every answer pill carries the colour of its
-  article row — **blue** `der · den · dem`, **red/pink** `die · die · der`, **green**
-  `das · das · dem` — and the **correct** pill is always the one in the colour of the word
-  (`row.article`). So the dative row shows `DEM` twice: blue for a masculine word, green for a
-  neuter one. `taskChoices()` therefore returns `{value, row, answer, cls}`: `value` is the form
-  to print (`den`, `dem`, …), `row`/`cls` is the article row (its colour) and `answer` is the
-  word's row. Cards *and* game check the **row** (`data-row` vs `data-answer`), because two
-  pills can share the same text (`DEM`); only the plural task compares the text. All sentences
-  are singular, so the dative never offers the plural `den` (`den Kindern` — that belongs to the
-  plural task).
+- **Answer colours: one rule, and the dative is the exception.** Every answer pill carries the
+  colour of its article row — **blue** `der · den · dem`, **red/pink** `die · die · der`,
+  **green** `das · das · dem` — and the **correct** pill is always the one in the colour of the
+  word (`row.article`). The dative has only **two** forms (`dem` for masculine *and* neuter,
+  `der` for feminine), so `taskChoices()` returns just two pills there: one `DEM` coloured
+  **neutral grey** (`--dem`) and one `DER` in red. Never bring back the old three-pill dative
+  (blue `DEM` + red `DER` + green `DEM`): the same form appeared twice, once wrong and once
+  right, and learners clicked the "wrong DEM". In the dative the colour deliberately gives no
+  hint — the learner must know the gender. `taskChoices()` returns `{value, row, answer, cls}`:
+  `value` is the form to print (`den`, `dem`, …), `row`/`cls` is the pill's identity (its
+  colour) and `answer` is the identity that is correct for this word — in the dative that is
+  `"die"` for a feminine word and `"dem"` for a masculine/neuter one. Cards *and* game check the
+  **row** (`data-row` vs `data-answer`), never the text. All sentences are singular, so the
+  dative never offers the plural `den` (`den Kindern` — that belongs to the plural task).
 - **Print tasks** come from `#printTask` (`printTask()`): `artikel` prints a **sentence-free**
   card (image + word + der/die/das, no case badge, bigger picture), `kasus` prints the masked
   sentence, `gemischt` alternates per card. All three use **one grid per sheet**, and the

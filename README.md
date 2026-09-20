@@ -265,11 +265,11 @@ Das Feld **Karten** wählt die Aufgabe fürs ganze Blatt:
 | Karten | Karte zeigt | Auswahl |
 |---|---|---|
 | Artikel | Bild, Wort, **kein Satz** (der Satz würde die Lösung verraten) | `DER` · `DIE` · `DAS` |
-| Kasus | Bild, Wort, Satz mit Lücke; Akkusativ und Dativ **gemischt**, die Marke `AKK.`/`DAT.` zeigt den Fall | Akkusativ `DEN` · `DIE` · `DAS` · Dativ `DEM` · `DER` · `DEM` (jeweils in der Farbe der Artikelreihe) |
+| Kasus | Bild, Wort, Satz mit Lücke; Akkusativ und Dativ **gemischt**, die Marke `AKK.`/`DAT.` zeigt den Fall | Akkusativ `DEN` · `DIE` · `DAS` · Dativ `DEM` · `DER` |
 | Gemischt | je Karte abwechselnd Artikel- und Kasus-Aufgabe | beides |
 
-**Farben – eine Regel für alles:** jede Antwortblase trägt die Farbe ihrer
-Artikelreihe, und die richtige Blase ist immer die mit der Farbe des Wortes.
+**Farben:** jede Antwortblase trägt die Farbe ihrer Artikelreihe, und die richtige
+Blase ist immer die mit der Farbe des Wortes.
 
 | Reihe | Normal | Akkusativ | Dativ |
 |---|---|---|---|
@@ -277,9 +277,14 @@ Artikelreihe, und die richtige Blase ist immer die mit der Farbe des Wortes.
 | `die` – **rot** | die | die | der |
 | `das` – **grün** | das | das | dem |
 
-Im Dativ steht deshalb zweimal `DEM` auf der Karte: blau für ein männliches Wort,
-grün für ein sächliches. Die Mehrzahl (`den Kindern`) steht nur in der
-Mehrzahl-Aufgabe.
+**Der Dativ ist die Ausnahme.** Er hat nur zwei Formen: `dem` für männliche **und**
+sächliche Wörter, `der` für weibliche. Deshalb steht im Dativ **nur eine**
+`DEM`-Blase auf der Karte, und sie ist **grau** — eine Reihenfarbe wäre gelogen,
+denn `dem` gehört zu zwei Reihen. Im Dativ verrät die Farbe die Antwort also
+nicht: dort muss man das Geschlecht kennen („das Eis“ → `dem`, „die Milch“ →
+`der`). Früher standen dort zwei `DEM`-Blasen – dieselbe Form einmal falsch und
+einmal richtig, was beim Ankreuzen nur verwirrt hat. Die Mehrzahl (`den Kindern`)
+steht nur in der Mehrzahl-Aufgabe.
 
 Ohne Sätze (Artikel-Modus) entfallen die Fallmarken; alle Karten stehen in einem
 Raster mit größeren Bildern. Auch die Kasus-Aufgaben stehen in **einem** Raster –
@@ -346,7 +351,7 @@ Der Spielmodus zeigt Bild und Wort, spricht die Frage vor und bietet drei Antwor
 | Aufgabentyp | Frage | Antwortmöglichkeiten |
 |---|---|---|
 | Artikel | Welcher Artikel ist richtig? | `DER` · `DIE` · `DAS` |
-| Kasus | Welche Form steht im Akkusativ bzw. Dativ? | `DEN` · `DIE` · `DAS` bzw. `DEM` · `DER` · `DEM` (im Dativ steht `DEM` zweimal – blau für männliche, grün für sächliche Wörter) |
+| Kasus | Welche Form steht im Akkusativ bzw. Dativ? | `DEN` · `DIE` · `DAS` bzw. `DEM` · `DER` (Dativ hat nur zwei Formen: `DEM` grau für männlich/sächlich, `DER` rot für weiblich) |
 | Mehrzahl | Wie heißt die Mehrzahl? | die richtige Mehrzahlform plus zwei falsche Formen **desselben** Wortes (`die Bärs`, `die Bäre`) |
 | Gemischt | wechselt die drei Typen ab | — |
 

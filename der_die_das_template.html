@@ -11,6 +11,9 @@
   --das:#278d45;
   --akk:#e88520;
   --dat:#7b55a5;
+  /* Neutral für die eine Dativ-Blase DEM: im Dativ gehört „dem“ zu zwei
+     Reihen (männlich und sächlich), deshalb wäre jede Reihenfarbe gelogen. */
+  --dem:#4b5a60;
   --good:#207a3d;
   --bad:#b13b33;
   --line:#d7d7d7;
@@ -212,6 +215,7 @@ html,body{
 .der{color:var(--der)}
 .die{color:var(--die)}
 .das{color:var(--das)}
+.dem{color:var(--dem)}
 .intro{
   text-align:center;
   font-size:8.4pt;
@@ -393,6 +397,7 @@ html,body{
 .choice.der{background:#eef6fc;border-color:#bcd9ee}
 .choice.die{background:#fdf0f5;border-color:#f0c3d6}
 .choice.das{background:#eefaf1;border-color:#bfe3cb}
+.choice.dem{background:#f2f4f5;border-color:#ccd6da}
 .choice.case,.choice.plural{background:#f2f4f5;border-color:#ccd6da}
 /*
   Der Antwort-Kringel wird selbst gezeichnet statt vom Browser: ein echtes
@@ -417,10 +422,12 @@ html,body{
 .choice.der input:checked{background:var(--der);border-color:var(--der)}
 .choice.die input:checked{background:var(--die);border-color:var(--die)}
 .choice.das input:checked{background:var(--das);border-color:var(--das)}
+.choice.dem input:checked{background:var(--dem);border-color:var(--dem)}
 .choice.case input:checked,.choice.plural input:checked{background:#3f5560;border-color:#3f5560}
 .choice.der input{accent-color:var(--der)}
 .choice.die input{accent-color:var(--die)}
 .choice.das input{accent-color:var(--das)}
+.choice.dem input{accent-color:var(--dem)}
 .choice.case input,.choice.plural input{accent-color:#3f5560}
 .choice.correct{
   background:#eaf6ed;
@@ -665,6 +672,8 @@ body.mode-game .game-view{display:flex}
 .article-game-button.die{background:linear-gradient(#e4578e,#d73b78)}
 .article-game-button.das{background:linear-gradient(#35a457,#278d45)}
 .article-game-button.case,.article-game-button.plural{background:linear-gradient(#5b7a8c,#3f5560);font-size:clamp(21px,3.2vw,32px)}
+/* Die eine Dativ-Blase DEM ist grau: „dem“ gehört zu zwei Artikelreihen. */
+.article-game-button.dem{background:linear-gradient(#66787f,#4b5a60)}
 .game-answers.plural{grid-template-columns:1fr}
 .game-answers.plural .article-game-button{min-height:62px}
 /* Maskottchen erzählt die Aufgabe statt einer nüchternen Zeile. */
@@ -702,6 +711,7 @@ body.mode-game .game-view{display:flex}
 .game-feedback.bad{background:#fff6e6;border-radius:16px;color:#9a6a12}
 .game-case.plural{background:#eef1f2;color:#3f5560;border:2px solid #c8d0d3}
 .choice.case b,.choice.plural b{color:#3f5560}
+.choice.dem b{color:var(--dem)}
 .article-game-button.answer-correct{
   border-color:#39d061;
   box-shadow:0 0 0 4px #b9efc6,0 5px 0 #0002;
@@ -979,8 +989,14 @@ body.mode-game .game-view{display:flex}
     <br><br>
     <b>Farben:</b> jede Antwortblase hat die Farbe ihrer Artikelreihe –
     <b>blau</b> der · den · dem, <b>rot</b> die · die · der, <b>grün</b> das · das · dem.
-    Die richtige Blase hat also immer die Farbe deines Wortes: bei „das Eis“ ist
-    auch im Dativ die grüne <b>DEM</b>-Blase richtig.
+    Bei Artikel- und Akkusativ-Aufgaben hat die richtige Blase also immer die Farbe
+    deines Wortes.
+    <br><br>
+    Im <b>Dativ</b> gibt es nur zwei Formen: <b>dem</b> für männliche <i>und</i>
+    sächliche Wörter und <b>der</b> für weibliche. Die <b>DEM</b>-Blase ist deshalb
+    <b>grau</b> – sie gehört zu zwei Reihen, und die Farbe würde dich hier in die
+    Irre führen. Im Dativ musst du das Geschlecht kennen: „das Eis“ bekommt
+    <b>dem</b>, „die Milch“ bekommt <b>der</b>.
     <br><br>
     <b>Seiten</b> stehen standardmäßig auf „so viele Blätter, wie alle Wörter
     brauchen“; die Zeile oben zeigt immer, wie viele Wörter wirklich aufs Papier
@@ -1853,6 +1869,23 @@ function pluralDistractors(row){
 function taskChoices(row,caseName,task){
   if(task==="kasus"){
     const artikel=String(row.article||"").trim();
+    /*
+      Der Dativ hat nur **zwei** Formen: „dem“ (männlich und sächlich) und „der“
+      (weiblich). Früher standen drei Blasen da - DEM blau, DER rot, DEM grün -
+      also zweimal dieselbe Form, einmal falsch und einmal richtig. Das war
+      verwirrend: der Lernende tippt auf DEM und bekommt „nochmal“, obwohl DEM
+      dasteht. Jetzt gibt es nur noch eine DEM-Blase, und sie ist **grau**: im
+      Dativ verrät die Farbe die Antwort nicht, dort muss man das Geschlecht
+      kennen. Das Akkusativ-Feld bleibt farbig (den blau · die rot · das grün),
+      weil dort alle drei Formen verschieden sind.
+    */
+    if(caseName==="dat"){
+      const ziel=artikel==="die" ? "die" : "dem";
+      return [
+        {value:"dem",row:"dem",answer:ziel,cls:"dem"},
+        {value:"der",row:"die",answer:ziel,cls:"die"}
+      ];
+    }
     return ["der","die","das"].map(reihe=>({
       value:caseArticle(reihe,caseName),
       row:reihe,
@@ -1974,7 +2007,7 @@ function worksheet(page,task="artikel",mitKarten=true){
   const titles={artikel:"Artikeltraining",kasus:"Kasustraining",gemischt:"Artikel und Kasus gemischt"};
   const intros={
     artikel:"Kreise die Grundform des Artikels ein – die Farbe zeigt die Reihe deines Wortes: <b>der</b> (blau) · <b>die</b> (rot) · <b>das</b> (grün).",
-    kasus:"Schreibe die richtige Form in die Lücke. Die Marke <b>AKK.</b> / <b>DAT.</b> in der Ecke zeigt den Fall, die Farbe zeigt die Reihe deines Wortes: Akkusativ <b>den</b> (blau) · <b>die</b> (rot) · <b>das</b> (grün) – Dativ <b>dem</b> (blau) · <b>der</b> (rot) · <b>dem</b> (grün).",
+    kasus:"Schreibe die richtige Form in die Lücke. Die Marke <b>AKK.</b> / <b>DAT.</b> in der Ecke zeigt den Fall. <b>Akkusativ:</b> <b>den</b> (blau) · <b>die</b> (rot) · <b>das</b> (grün) – die Farbe zeigt die Reihe deines Wortes. <b>Dativ:</b> es gibt nur <b>dem</b> (männlich und sächlich, grau) und <b>der</b> (weiblich, rot) – hier musst du das Geschlecht kennen, die Farbe hilft nicht.",
     gemischt:"Zwei Aufgaben gemischt: ohne Satz die Grundform einkreisen, mit Satz die Kasusform in die Lücke schreiben. Die Marke <b>AKK.</b> / <b>DAT.</b> zeigt den Fall, die Farbe die Reihe deines Wortes (blau der · rot die · grün das)."
   };
 

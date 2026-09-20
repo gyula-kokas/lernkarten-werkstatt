@@ -5,7 +5,9 @@ The page is meant for authors, not for learners: it lines up every deck word
 next to its picture, article, plural and both sentences, so odd combinations
 (wrong picture, strange word, picture shared with another theme) are easy to
 spot. Pictures used in more than one theme are marked, because that is what a
-learner notices first.
+learner notices first. A click on a card opens picture and sentences large
+(``←``/``→`` walk through the deck, ``Esc`` closes) - the review sheet therefore
+ships with every release as ``wortuebersicht.html``.
 
 Example:
   python3 tools/word_overview.py
@@ -30,12 +32,15 @@ h2{margin:34px 0 4px;font-size:19px;border-bottom:2px solid var(--line);padding-
 h2 small{font-weight:400;color:#6b7280;font-size:13px}
 .summary{background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin:14px 0 6px}
 .summary b{font-variant-numeric:tabular-nums}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px;margin-top:12px}
-.card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:14px;margin-top:12px}
+.card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px;cursor:zoom-in;
+  transition:border-color .12s,box-shadow .12s}
+.card:hover{border-color:#b6b8bd;box-shadow:0 3px 12px rgba(20,24,30,.09)}
+.card:focus-visible{outline:3px solid var(--der);outline-offset:2px}
 .card.dupe{border-color:#e8a33d;box-shadow:0 0 0 2px #fdf2dd inset}
-.pic{height:104px;display:flex;align-items:center;justify-content:center;background:#fff}
-.pic svg{max-height:100px;max-width:100%;height:100px;width:auto}
-.word{margin-top:8px;font-size:16px;font-weight:700;display:flex;align-items:center;gap:8px}
+.pic{height:196px;display:flex;align-items:center;justify-content:center;background:#fff}
+.pic svg{max-height:190px;max-width:100%;height:190px;width:auto}
+.word{margin-top:10px;font-size:17px;font-weight:700;display:flex;align-items:center;gap:8px}
 .pill{font-size:11px;font-weight:700;padding:2px 7px;border-radius:999px;color:#fff}
 .pill.der{background:var(--der)}.pill.die{background:var(--die)}.pill.das{background:var(--das)}
 .plural{color:#4b5563;font-size:12.5px}
@@ -56,6 +61,20 @@ h2 small{font-weight:400;color:#6b7280;font-size:13px}
 .worte li{margin:0 0 3px;break-inside:avoid}
 .worte b{font-weight:700}
 .worte .themen{color:#6b7280}
+.hinweis{margin:6px 0 0;color:#6b7280;font-size:13px}
+#zoom{position:fixed;inset:0;z-index:50;background:rgba(24,26,31,.76);display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:10px;padding:18px;cursor:zoom-out}
+#zoom[hidden]{display:none}
+#zoom .gross{background:#fff;border-radius:14px;padding:18px 22px 20px;overflow:auto;
+  width:min(94vw,940px);box-sizing:border-box;max-height:88vh}
+#zoom .gross .pic{height:min(50vh,520px)}
+#zoom .gross .pic svg{height:min(48vh,500px);max-height:min(48vh,500px);max-width:100%;width:auto}
+#zoom .gross .word{font-size:30px}
+#zoom .gross .plural{font-size:17px}
+#zoom .gross .sentence{font-size:16.5px}
+#zoom .gross .meta{font-size:12.5px}
+#zoom .tasten{color:#fff;font-size:13px;opacity:.92;text-align:center}
+body.offen{overflow:hidden}
 """
 
 
@@ -101,7 +120,8 @@ def card_html(entry: dict, dupe_with: list[str], auch_in: list[str]) -> str:
     badge = f'<div class="badge">Bild auch für {html.escape(", ".join(dupe_with))}</div>' if dupe_with else ""
     if auch_in:
         badge += f'<div class="badge other">auch in {html.escape(", ".join(auch_in))}</div>'
-    return f"""      <div class="card{' dupe' if dupe_with else ''}">
+    return f"""      <div class="card{' dupe' if dupe_with else ''}" role="button" tabindex="0"
+        title="Anklicken: Bild und Sätze groß ansehen">
         <div class="pic">{entry.get('imageSvg','')}</div>
         <div class="word">{html.escape(entry['word'])}<span class="pill {article}">{article}</span></div>
         <div class="plural">{html.escape(plural_text)}</div>
@@ -187,6 +207,47 @@ def build(decks: list[dict], usage: dict[str, dict], worte: dict[str, list[tuple
 {themenpaare or '        <li>keine</li>'}
     </ul></div>
 {chr(10).join(sections)}
+  <p class="hinweis">Jede Karte anklicken (oder mit Tab anwählen und Enter drücken) – das Bild öffnet sich groß,
+  <b>←</b>/<b>→</b> blättert weiter, <b>Esc</b> schließt.</p>
+  <div id="zoom" hidden><div class="gross"></div>
+    <div class="tasten">Klick schließt die Ansicht · ← → blättert · Esc schließt</div></div>
+  <script>
+  (() => {{
+    const karten = [...document.querySelectorAll('.card')];
+    const zoom = document.getElementById('zoom');
+    const gross = zoom.querySelector('.gross');
+    let jetzt = -1;
+    const zeige = (i) => {{
+      if (i < 0 || i >= karten.length) return;
+      jetzt = i;
+      gross.innerHTML = karten[i].innerHTML;
+      gross.scrollTop = 0;
+      zoom.hidden = false;
+      document.body.classList.add('offen');
+    }};
+    const zu = () => {{
+      zoom.hidden = true;
+      jetzt = -1;
+      document.body.classList.remove('offen');
+    }};
+    karten.forEach((karte, i) => {{
+      karte.addEventListener('click', () => zeige(i));
+      karte.addEventListener('keydown', (ereignis) => {{
+        if (ereignis.key === 'Enter' || ereignis.key === ' ') {{
+          ereignis.preventDefault();
+          zeige(i);
+        }}
+      }});
+    }});
+    zoom.addEventListener('click', zu);
+    document.addEventListener('keydown', (ereignis) => {{
+      if (zoom.hidden) return;
+      if (ereignis.key === 'Escape') zu();
+      else if (ereignis.key === 'ArrowRight') zeige(jetzt + 1);
+      else if (ereignis.key === 'ArrowLeft') zeige(jetzt - 1);
+    }});
+  }})();
+  </script>
 </body>
 </html>
 """
@@ -207,7 +268,8 @@ def main() -> None:
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(page, encoding="utf-8")
     print(f"{args.output} · {len(decks)} Themen · {sum(len(d['entries']) for _, d in decks)} Wörter "
-          f"· {len(usage)} mehrfach verwendete Bilder · {args.output.stat().st_size / 1048576:.1f} MiB")
+          f"· {len(usage)} mehrfach verwendete Bilder · {args.output.stat().st_size / 1048576:.1f} MiB "
+          f"· Klick auf eine Karte öffnet das Bild groß")
 
 
 if __name__ == "__main__":

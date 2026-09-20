@@ -22,6 +22,16 @@ Every published version touches **six** places — keep them in sync:
 Build the release file with `python3 build_simple.py --themes selected-themes
 --output output-selected/lernkarten-alle-themes.html` and run `tests/smoke_test.py` first.
 
+The release carries **two** assets:
+
+* `lernkarten-alle-themes.html` – the file learners download instead of building it,
+* `wortuebersicht.html` from `python3 tools/word_overview.py` – the review sheet: every
+  word with article, plural, both sentences and its picture, shared pictures marked, a
+  click on a card opens picture and sentences large.
+
+After a tag move re-upload both with `gh release upload vX.Y <datei> --clobber` — and check
+that the release still exists afterwards, moving a tag can drop it.
+
 ## Content review
 
 Every review of the card contents ships with the current word overview — the reviewer
@@ -32,7 +42,8 @@ python3 tools/word_overview.py            # → output-selected/wortuebersicht.h
 ```
 
 The page lists every theme with all its words, articles, plurals, both sentences and the
-picture, and marks pictures that two words share. Findings are fixed **in the data**
+picture, and marks pictures that two words share; a click on a card opens picture and
+sentences large. It ships as the second file of every release. Findings are fixed **in the data**
 (`themes/`, `tools/saetze/`, `tools/decks/`, `image-library/selections.json`,
 `ARTIKEL_UEBLICH` in `tools/build_decks.py`), then re-checked with `tests/smoke_test.py`,
 `tools/audit_words.py` and `tools/build_decks.py --dry-run` (the dry run must reproduce

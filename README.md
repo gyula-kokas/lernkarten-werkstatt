@@ -28,6 +28,11 @@ kann.
 2. Die Datei doppelklicken – sie öffnet sich im Browser wie eine Webseite.
 3. Oben rechts zwischen **📄 Drucken** und **🎮 Spielen** wählen.
 
+Zusätzlich liegt am selben Release **`wortuebersicht.html`**: das Kontrollblatt für Eltern,
+Lehrkräfte und Prüfende. Es zeigt zu jedem Wort Artikel, Mehrzahl, beide Sätze und das Bild;
+Bilder, die zwei Wörter teilen, sind markiert. Ein Klick auf eine Karte öffnet Bild und Sätze
+groß, mit **←**/**→** blättert man weiter, mit **Esc** schließt man.
+
 Beim Öffnen stehen die Karten nach wenigen Sekunden da; der Ton folgt ein paar
 Sekunden später. Die Zeile oben zeigt das an: **⏳ Ton wird geladen** wird zu
 **🔊 Ton eingebaut**. Solange kann man schon üben.

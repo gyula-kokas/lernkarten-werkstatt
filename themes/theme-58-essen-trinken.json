@@ -97,12 +97,12 @@
       "editorType": "food"
     },
     {
-      "word": "Nudeln",
+      "word": "Nudel",
       "article": "die",
       "plural": "Nudeln",
       "pluralWithArticle": "die Nudeln",
-      "accusativeSentence": "Das Kind probiert die Nudeln.",
-      "dativeSentence": "Die Soße schmeckt mit der Nudeln.",
+      "accusativeSentence": "Das Kind isst die Nudel.",
+      "dativeSentence": "Die Soße tropft von der Nudel.",
       "imageIndex": 9,
       "editorType": "food"
     },

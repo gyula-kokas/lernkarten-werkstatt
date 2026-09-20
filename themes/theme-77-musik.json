@@ -3,7 +3,7 @@
   "themeName": "Musik",
   "language": "de",
   "version": 1,
-  "entryCount": 23,
+  "entryCount": 21,
   "imageMode": "per-entry-svg",
   "entries": [
     {
@@ -177,23 +177,13 @@
       "editorType": "object"
     },
     {
-      "word": "Sänger",
-      "article": "der",
-      "plural": "Sänger",
-      "pluralWithArticle": "die Sänger",
-      "accusativeSentence": "Das Publikum hört den Sänger.",
-      "dativeSentence": "Das Lied gefällt dem Sänger.",
-      "imageIndex": 17,
-      "editorType": "object"
-    },
-    {
       "word": "Tanz",
       "article": "der",
       "plural": "Tänze",
       "pluralWithArticle": "die Tänze",
       "accusativeSentence": "Das Kind übt den Tanz.",
       "dativeSentence": "Die Musik gehört zu dem Tanz.",
-      "imageIndex": 18,
+      "imageIndex": 17,
       "editorType": "object"
     },
     {
@@ -203,17 +193,7 @@
       "pluralWithArticle": "die Orchester",
       "accusativeSentence": "Die Familie hört das Orchester.",
       "dativeSentence": "Das Konzert gefällt dem Orchester.",
-      "imageIndex": 19,
-      "editorType": "object"
-    },
-    {
-      "word": "Schelle",
-      "article": "die",
-      "plural": "Schellen",
-      "pluralWithArticle": "die Schellen",
-      "accusativeSentence": "Das Kind schüttelt die Schelle.",
-      "dativeSentence": "Das Kind klingelt mit der Schelle.",
-      "imageIndex": 20,
+      "imageIndex": 18,
       "editorType": "object"
     },
     {
@@ -223,7 +203,7 @@
       "pluralWithArticle": "die Metronome",
       "accusativeSentence": "Die Lehrerin stellt das Metronom auf.",
       "dativeSentence": "Der Takt kommt aus dem Metronom.",
-      "imageIndex": 21,
+      "imageIndex": 19,
       "editorType": "object"
     },
     {
@@ -233,7 +213,7 @@
       "pluralWithArticle": "die Triangel",
       "accusativeSentence": "Das Kind nimmt den Triangel.",
       "dativeSentence": "Das Kind klingelt mit dem Triangel.",
-      "imageIndex": 22,
+      "imageIndex": 20,
       "editorType": "object"
     }
   ]

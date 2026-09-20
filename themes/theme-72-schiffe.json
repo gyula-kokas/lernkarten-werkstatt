@@ -3,7 +3,7 @@
   "themeName": "Schiffe und Boote",
   "language": "de",
   "version": 1,
-  "entryCount": 22,
+  "entryCount": 15,
   "imageMode": "per-entry-svg",
   "entries": [
     {
@@ -27,53 +27,13 @@
       "editorType": "vehicle"
     },
     {
-      "word": "Motorboot",
-      "article": "das",
-      "plural": "Motorboote",
-      "pluralWithArticle": "die Motorboote",
-      "accusativeSentence": "Der Mann tankt das Motorboot.",
-      "dativeSentence": "Der Mann fährt mit dem Motorboot.",
-      "imageIndex": 2,
-      "editorType": "vehicle"
-    },
-    {
       "word": "Kanu",
       "article": "das",
       "plural": "Kanus",
       "pluralWithArticle": "die Kanus",
       "accusativeSentence": "Das Kind nimmt das Kanu.",
       "dativeSentence": "Das Kind fährt mit dem Kanu.",
-      "imageIndex": 3,
-      "editorType": "vehicle"
-    },
-    {
-      "word": "Ruderboot",
-      "article": "das",
-      "plural": "Ruderboote",
-      "pluralWithArticle": "die Ruderboote",
-      "accusativeSentence": "Der Mann mietet das Ruderboot.",
-      "dativeSentence": "Der Mann fährt mit dem Ruderboot.",
-      "imageIndex": 4,
-      "editorType": "vehicle"
-    },
-    {
-      "word": "Fähre",
-      "article": "die",
-      "plural": "Fähren",
-      "pluralWithArticle": "die Fähren",
-      "accusativeSentence": "Die Familie nimmt die Fähre.",
-      "dativeSentence": "Die Familie fährt mit der Fähre.",
-      "imageIndex": 5,
-      "editorType": "vehicle"
-    },
-    {
-      "word": "Passagierschiff",
-      "article": "das",
-      "plural": "Passagierschiffe",
-      "pluralWithArticle": "die Passagierschiffe",
-      "accusativeSentence": "Das Kind sieht das Passagierschiff.",
-      "dativeSentence": "Die Gäste schlafen in dem Passagierschiff.",
-      "imageIndex": 6,
+      "imageIndex": 2,
       "editorType": "vehicle"
     },
     {
@@ -83,7 +43,7 @@
       "pluralWithArticle": "die U-Boote",
       "accusativeSentence": "Das Kind malt das U-Boot.",
       "dativeSentence": "Die Mannschaft fährt mit dem U-Boot.",
-      "imageIndex": 7,
+      "imageIndex": 3,
       "editorType": "vehicle"
     },
     {
@@ -93,7 +53,7 @@
       "pluralWithArticle": "die Anker",
       "accusativeSentence": "Der Matrose wirft den Anker.",
       "dativeSentence": "Das Schiff hängt an dem Anker.",
-      "imageIndex": 8,
+      "imageIndex": 4,
       "editorType": "vehicle"
     },
     {
@@ -103,7 +63,7 @@
       "pluralWithArticle": "die Leuchttürme",
       "accusativeSentence": "Das Kind fotografiert den Leuchtturm.",
       "dativeSentence": "Das Licht kommt von dem Leuchtturm.",
-      "imageIndex": 9,
+      "imageIndex": 5,
       "editorType": "vehicle"
     },
     {
@@ -113,17 +73,7 @@
       "pluralWithArticle": "die Rettungsringe",
       "accusativeSentence": "Der Matrose wirft den Rettungsring.",
       "dativeSentence": "Der Matrose hält sich an dem Rettungsring fest.",
-      "imageIndex": 10,
-      "editorType": "vehicle"
-    },
-    {
-      "word": "Schnellboot",
-      "article": "das",
-      "plural": "Schnellboote",
-      "pluralWithArticle": "die Schnellboote",
-      "accusativeSentence": "Der Mann sieht das Schnellboot.",
-      "dativeSentence": "Der Mann fährt mit dem Schnellboot.",
-      "imageIndex": 11,
+      "imageIndex": 6,
       "editorType": "vehicle"
     },
     {
@@ -133,7 +83,7 @@
       "pluralWithArticle": "",
       "accusativeSentence": "Der Mann übt das Windsurfen.",
       "dativeSentence": "Der Mann übt bei dem Windsurfen.",
-      "imageIndex": 12,
+      "imageIndex": 7,
       "editorType": "vehicle"
     },
     {
@@ -143,7 +93,7 @@
       "pluralWithArticle": "die Angelruten",
       "accusativeSentence": "Der Mann nimmt die Angelrute.",
       "dativeSentence": "Der Mann angelt mit der Angelrute.",
-      "imageIndex": 13,
+      "imageIndex": 8,
       "editorType": "vehicle"
     },
     {
@@ -153,7 +103,7 @@
       "pluralWithArticle": "die Angelhaken",
       "accusativeSentence": "Der Mann befestigt den Angelhaken.",
       "dativeSentence": "Der Köder hängt an dem Angelhaken.",
-      "imageIndex": 14,
+      "imageIndex": 9,
       "editorType": "vehicle"
     },
     {
@@ -163,7 +113,7 @@
       "pluralWithArticle": "die Eisberge",
       "accusativeSentence": "Der Kapitän sieht den Eisberg.",
       "dativeSentence": "Das Schiff fährt weg von dem Eisberg.",
-      "imageIndex": 15,
+      "imageIndex": 10,
       "editorType": "vehicle"
     },
     {
@@ -173,27 +123,7 @@
       "pluralWithArticle": "die Taucherbrillen",
       "accusativeSentence": "Das Kind setzt die Taucherbrille auf.",
       "dativeSentence": "Das Kind taucht mit der Taucherbrille.",
-      "imageIndex": 16,
-      "editorType": "vehicle"
-    },
-    {
-      "word": "Schnorchel",
-      "article": "der",
-      "plural": "Schnorchel",
-      "pluralWithArticle": "die Schnorchel",
-      "accusativeSentence": "Das Kind nimmt den Schnorchel.",
-      "dativeSentence": "Das Kind atmet mit dem Schnorchel.",
-      "imageIndex": 17,
-      "editorType": "vehicle"
-    },
-    {
-      "word": "Hafenbecken",
-      "article": "das",
-      "plural": "Hafenbecken",
-      "pluralWithArticle": "die Hafenbecken",
-      "accusativeSentence": "Der Mann zeigt das Hafenbecken.",
-      "dativeSentence": "Die Boote liegen in dem Hafenbecken.",
-      "imageIndex": 18,
+      "imageIndex": 11,
       "editorType": "vehicle"
     },
     {
@@ -203,7 +133,7 @@
       "pluralWithArticle": "die Muscheln",
       "accusativeSentence": "Das Kind sammelt die Muschel.",
       "dativeSentence": "Die Perle liegt in der Muschel.",
-      "imageIndex": 19,
+      "imageIndex": 12,
       "editorType": "vehicle"
     },
     {
@@ -213,7 +143,7 @@
       "pluralWithArticle": "die Kompasse",
       "accusativeSentence": "Der Matrose nimmt den Kompass.",
       "dativeSentence": "Der Matrose sucht mit dem Kompass den Weg.",
-      "imageIndex": 20,
+      "imageIndex": 13,
       "editorType": "vehicle"
     },
     {
@@ -223,7 +153,7 @@
       "pluralWithArticle": "die Steuerräder",
       "accusativeSentence": "Der Kapitän dreht das Steuerrad.",
       "dativeSentence": "Der Kapitän steht an dem Steuerrad.",
-      "imageIndex": 21,
+      "imageIndex": 14,
       "editorType": "vehicle"
     }
   ]

@@ -3,7 +3,7 @@
   "themeName": "Spiel und Sport",
   "language": "de",
   "version": 1,
-  "entryCount": 25,
+  "entryCount": 23,
   "imageMode": "per-entry-svg",
   "entries": [
     {
@@ -347,36 +347,6 @@
       "imageSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" id=\"42a441ba2a80-asset-openmoji--1F94F-emoji\" viewBox=\"0 0 72 72\">\n  <g id=\"42a441ba2a80-asset-openmoji--1F94F-color\">\n    <ellipse cx=\"35.9999\" cy=\"30.5\" rx=\"11.5334\" ry=\"27.8816\" transform=\"translate(-4.9734 53.8973) rotate(-70)\" fill=\"#92d3f5\" />\n    <path fill=\"#61b2e4\" d=\"M62.2,40.0361c-2.1785,5.9856-15.6748,6.5684-30.1447,1.3018s-17.22-8.3093-14.0934-12.5391c.9582-1.2961,5.2447,4.3094,21.9827,10.0928C54.4989,43.9205,64.3786,34.0505,62.2,40.0361Z\" />\n  </g>\n  <g id=\"42a441ba2a80-asset-openmoji--1F94F-line\">\n    <ellipse cx=\"35.9999\" cy=\"30.5\" rx=\"6.7991\" ry=\"21.9789\" transform=\"translate(-5.0564 53.7513) rotate(-69.7961)\" fill=\"none\" stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" />\n    <ellipse cx=\"35.9999\" cy=\"30.5\" rx=\"11.5334\" ry=\"27.8816\" transform=\"translate(-4.9734 53.8973) rotate(-70)\" fill=\"none\" stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" />\n    <path fill=\"none\" stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M39.8023,52.363c2.8865,1.5925,21.926,6.78,23.98,1.8\" />\n    <path fill=\"none\" stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M37.778,48.8451c2.3577,1.41,18.0633,6.2843,19.919,2.1969\" />\n  </g>\n</svg>",
       "imageSource": "https://openmoji.org/library/emoji-1F94F/",
       "imageAuthor": "Nicole Kornhaas / OpenMoji contributors",
-      "imageLicense": "CC-BY-SA-4.0",
-      "imageLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "imageChanges": "Technische SVG-Bereinigung und angepasste Darstellung."
-    },
-    {
-      "word": "Bogenschießen",
-      "article": "das",
-      "plural": "Bogenschießen",
-      "pluralWithArticle": "die Bogenschießen",
-      "accusativeSentence": "Das Kind lernt das Bogenschießen.",
-      "dativeSentence": "Das Kind erzählt von dem Bogenschießen.",
-      "imageIndex": 23,
-      "imageSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" id=\"d6da093e16b3-asset-openmoji--1F3F9-emoji\" viewBox=\"0 0 72 72\">\n  <g id=\"d6da093e16b3-asset-openmoji--1F3F9-color\">\n    <g id=\"d6da093e16b3-asset-openmoji--1F3F9-_1F3F9\">\n      <path fill=\"none\" stroke=\"#a57939\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2.8\" d=\"M51.88,55.5863A27.0167,27.0167,0,0,0,16.3837,20.09\" />\n      <path fill=\"#d22f27\" d=\"M31.1285,40.8418l-7.098,7.098v6.8521a.6024.6024,0,0,0,1.0283.4259l5.8933-5.8933a.6027.6027,0,0,0,.1764-.4259Z\" />\n      <path fill=\"#ea5a47\" d=\"M31.1285,40.8418l-7.098,7.098H17.1784a.6024.6024,0,0,1-.4259-1.0283l5.8933-5.8933a.6027.6027,0,0,1,.4259-.1764Z\" />\n    </g>\n  </g>\n  <g id=\"d6da093e16b3-asset-openmoji--1F3F9-line\">\n    <g>\n      <line x1=\"19.2278\" x2=\"50.4542\" y1=\"21.5167\" y2=\"52.7424\" fill=\"none\" stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" />\n      <path fill=\"none\" stroke=\"#000\" stroke-miterlimit=\"10\" stroke-width=\"2\" d=\"M50.2183,57.2486a2.3515,2.3515,0,0,1-.4964-2.5908,24.6677,24.6677,0,0,0-32.41-32.41,2.3493,2.3493,0,0,1-1.8567-4.3162A29.3663,29.3663,0,0,1,54.0381,56.5145a2.3526,2.3526,0,0,1-3.82.7341Z\" />\n      <line x1=\"57.966\" x2=\"22.1582\" y1=\"14.0638\" y2=\"49.8716\" fill=\"none\" stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" />\n      <polyline fill=\"none\" stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" points=\"52.596 14.064 57.966 14.064 57.966 19.153\" />\n    </g>\n  </g>\n</svg>",
-      "imageSource": "https://openmoji.org/library/emoji-1F3F9/",
-      "imageAuthor": "Marleen Heine / OpenMoji contributors",
-      "imageLicense": "CC-BY-SA-4.0",
-      "imageLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "imageChanges": "Technische SVG-Bereinigung und angepasste Darstellung."
-    },
-    {
-      "word": "Boxen",
-      "article": "das",
-      "plural": "",
-      "pluralWithArticle": "",
-      "accusativeSentence": "Der Junge lernt das Boxen.",
-      "dativeSentence": "Der Junge erzählt von dem Boxen.",
-      "imageIndex": 24,
-      "imageSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" id=\"f83e1fd43370-asset-openmoji--1F94A-emoji\" viewBox=\"0 0 72 72\">\n  <g id=\"f83e1fd43370-asset-openmoji--1F94A-color\">\n    <path fill=\"#ea5a47\" stroke=\"none\" d=\"M45.6055,50.9252V46.364c0,0,1.2674-1.1629,2.4125-2.3333c3.7692-3.8524,5.6146-9.8857,5.6146-9.8857 c5.0219-13.3527,0.71-17.7289,0.71-17.7289c-0.9967-1.3248-3.1441-0.5776-3.1441-0.5776c-0.3357-3.0657-1.217-5.0365-1.217-5.0365 c-2.3082-7.0949-21.9067-5.0803-21.9067-5.0803C15.1069,7.5175,15.9463,21.532,15.9463,21.532 c-0.011,18.5937,6.1272,24.8196,6.1272,24.8196v4.524c0,1.8644,5.2812,3.3819,11.7536,3.3819S45.6055,52.7896,45.6055,50.9252\" />\n    <path fill=\"#d0cfce\" stroke=\"none\" d=\"M33.5724,66.5424c6.6195,0,12.0327-1.515,12.0327-3.3795l0.0005-0.0252V50.9252 c0,1.8644-5.3061,3.3324-11.7785,3.3324s-11.7536-1.5175-11.7536-3.3819v12.2496l0.0005,0.0376 c0,1.8644,5.4131,3.3795,12.0327,3.3795\" />\n    <path fill=\"#d22f27\" stroke=\"none\" d=\"M45.1785,50.9252V46.364c0,0,1.2674-1.1629,2.4125-2.3333c3.7692-3.8524,5.6146-9.8857,5.6146-9.8857 c5.0219-13.3527,0.71-17.7289,0.71-17.7289c-0.9967-1.3248-3.1441-0.5776-3.1441-0.5776c-0.3357-3.0657-1.217-5.0365-1.217-5.0365 C48.5609,7.7486,40.9582,6.0735,36.5,5.5079c0,0,27.125,11.8671,3.6091,39.5366c-0.1393,0.1639-0.2027,0.3785-0.2025,0.5937 c0.0012,1.2357,0.0053,5.6832,0.0053,8.0304l-0.0057,0.0385C39.9062,53.707,43.9507,53.017,45.1785,50.9252z\" />\n    <path fill=\"#9b9b9a\" stroke=\"none\" d=\"M39.9063,66.9688c4.0891-0.5312,6.695-2.125,6.695-3.5284l0.0006-0.0258V50.9252 c0,1.1917-2.7146,2.2375-6.6956,2.8449V66.9688z\" />\n  </g>\n  <g id=\"f83e1fd43370-asset-openmoji--1F94A-hair\" />\n  <g id=\"f83e1fd43370-asset-openmoji--1F94A-skin\" />\n  <g id=\"f83e1fd43370-asset-openmoji--1F94A-skin-shadow\" />\n  <g id=\"f83e1fd43370-asset-openmoji--1F94A-line\">\n    <path fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" stroke-width=\"2\" d=\"M45.6055,50.9252c0,1.8644-5.3061,3.3324-11.7785,3.3324s-11.7536-1.5175-11.7536-3.3819\" />\n    <path fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" stroke-width=\"2\" d=\"M45.6055,60.1059V46.364c0,0,1.2674-1.1629,2.4125-2.3333c3.7692-3.8524,5.6146-9.8857,5.6146-9.8857 c5.0219-13.3527,0.71-17.7289,0.71-17.7289c-0.9967-1.3248-3.1441-0.5776-3.1441-0.5776c-0.3357-3.0657-1.217-5.0365-1.217-5.0365 c-2.3082-7.0949-21.9067-5.0803-21.9067-5.0803C15.1069,7.5175,15.9463,21.532,15.9463,21.532 c-0.011,18.5937,6.1272,24.8196,6.1272,24.8196v16.7736l0.0005,0.0376c0,1.8644,5.4131,3.3795,12.0327,3.3795\" />\n    <path fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" stroke-width=\"2\" d=\"M33.5724,66.5424c5.3784,0,9.9603-1.0002,11.4895-2.3752c0.0209-0.0188,0.0413-0.0377,0.0611-0.0567\" />\n    <path fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" stroke-width=\"2\" d=\"M41.3212,13.5613c4.9387-4.4356,9.8773,2.2774,9.8773,2.2774s-6.0223,1.8613-4.9836,10.927\" />\n  </g>\n</svg>",
-      "imageSource": "https://openmoji.org/library/emoji-1F94A/",
-      "imageAuthor": "Vanessa Boutzikoudi / OpenMoji contributors",
       "imageLicense": "CC-BY-SA-4.0",
       "imageLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
       "imageChanges": "Technische SVG-Bereinigung und angepasste Darstellung."

@@ -207,12 +207,12 @@
       "editorType": "bodypart"
     },
     {
-      "word": "Bauch",
+      "word": "Magen",
       "article": "der",
-      "plural": "Bäuche",
-      "pluralWithArticle": "die Bäuche",
-      "accusativeSentence": "Das Kind hält den Bauch.",
-      "dativeSentence": "Das Essen liegt in dem Bauch.",
+      "plural": "Mägen",
+      "pluralWithArticle": "die Mägen",
+      "accusativeSentence": "Das Brot füllt den Magen.",
+      "dativeSentence": "Die Wärme tut dem Magen gut.",
       "imageIndex": 20,
       "editorType": "bodypart"
     },

@@ -3,7 +3,7 @@
   "themeName": "Küche und Geschirr",
   "language": "de",
   "version": 1,
-  "entryCount": 22,
+  "entryCount": 21,
   "imageMode": "per-entry-svg",
   "entries": [
     {
@@ -167,23 +167,13 @@
       "editorType": "object"
     },
     {
-      "word": "Kessel",
-      "article": "der",
-      "plural": "Kessel",
-      "pluralWithArticle": "die Kessel",
-      "accusativeSentence": "Das Kind stellt den Kessel auf den Herd.",
-      "dativeSentence": "Das Wasser kocht in dem Kessel.",
-      "imageIndex": 16,
-      "editorType": "object"
-    },
-    {
       "word": "Mixer",
       "article": "der",
       "plural": "Mixer",
       "pluralWithArticle": "die Mixer",
       "accusativeSentence": "Die Mutter benutzt den Mixer.",
       "dativeSentence": "Die Mutter mixt den Saft mit dem Mixer.",
-      "imageIndex": 17,
+      "imageIndex": 16,
       "editorType": "object"
     },
     {
@@ -193,7 +183,7 @@
       "pluralWithArticle": "die Toaster",
       "accusativeSentence": "Der Vater benutzt den Toaster.",
       "dativeSentence": "Das Brot wird in dem Toaster warm.",
-      "imageIndex": 18,
+      "imageIndex": 17,
       "editorType": "object"
     },
     {
@@ -203,7 +193,7 @@
       "pluralWithArticle": "die Kühlschränke",
       "accusativeSentence": "Der Vater öffnet den Kühlschrank.",
       "dativeSentence": "Die Milch steht in dem Kühlschrank.",
-      "imageIndex": 19,
+      "imageIndex": 18,
       "editorType": "object"
     },
     {
@@ -213,7 +203,7 @@
       "pluralWithArticle": "die Mikrowellen",
       "accusativeSentence": "Das Kind benutzt die Mikrowelle.",
       "dativeSentence": "Das Essen wird in der Mikrowelle warm.",
-      "imageIndex": 20,
+      "imageIndex": 19,
       "editorType": "object"
     },
     {
@@ -223,7 +213,7 @@
       "pluralWithArticle": "die Backöfen",
       "accusativeSentence": "Die Mutter schaltet den Backofen ein.",
       "dativeSentence": "Der Kuchen backt in dem Backofen.",
-      "imageIndex": 21,
+      "imageIndex": 20,
       "editorType": "object"
     }
   ]

@@ -435,21 +435,9 @@
     "slug": "openmoji--1F9AD",
     "query": "seal"
   },
-  "theme-54-wassertiere.json::Tropenfisch": {
-    "slug": "openmoji--1F420",
-    "query": "tropical fish"
-  },
   "theme-54-wassertiere.json::Auster": {
     "slug": "openmoji--1F9AA",
     "query": "oyster"
-  },
-  "theme-54-wassertiere.json::Beluga": {
-    "slug": "openmoji--E007",
-    "query": "beluga"
-  },
-  "theme-54-wassertiere.json::Pottwal": {
-    "slug": "openmoji--1F433",
-    "query": "spouting whale"
   },
   "theme-55-krabbeltiere.json::Ameise": {
     "slug": "openmoji--1F41C",
@@ -470,10 +458,6 @@
   "theme-55-krabbeltiere.json::Marienkäfer": {
     "slug": "openmoji--1F41E",
     "query": "lady beetle"
-  },
-  "theme-55-krabbeltiere.json::Grille": {
-    "slug": "openmoji--1F997",
-    "query": "cricket"
   },
   "theme-55-krabbeltiere.json::Spinne": {
     "slug": "openmoji--1F577",
@@ -526,10 +510,6 @@
   "theme-55-krabbeltiere.json::Raupe": {
     "slug": "openmoji--1F41B",
     "query": "bug"
-  },
-  "theme-55-krabbeltiere.json::Monarchfalter": {
-    "slug": "openmoji--1FACC",
-    "query": "monarch butterfly"
   },
   "theme-56-obst.json::Apfel": {
     "slug": "openmoji--1F34E",
@@ -636,8 +616,8 @@
     "query": "potato"
   },
   "theme-57-gemuese.json::Knoblauch": {
-    "slug": "openmoji--1F9C4",
-    "query": "garlic"
+    "slug": "o304813-garlic-bulb",
+    "query": "o304813-garlic-bulb"
   },
   "theme-57-gemuese.json::Mais": {
     "slug": "openmoji--1F33D",
@@ -676,8 +656,8 @@
     "query": "beans"
   },
   "theme-57-gemuese.json::Kürbis": {
-    "slug": "openmoji--1F383",
-    "query": "jack-o-lantern"
+    "slug": "o189427-pumpkin",
+    "query": "o189427-pumpkin"
   },
   "theme-58-essen-trinken.json::Brot": {
     "slug": "o213638-bread",
@@ -714,10 +694,6 @@
   "theme-58-essen-trinken.json::Reis": {
     "slug": "openmoji--1F35A",
     "query": "cooked rice"
-  },
-  "theme-58-essen-trinken.json::Nudeln": {
-    "slug": "openmoji--1F35D",
-    "query": "spaghetti"
   },
   "theme-58-essen-trinken.json::Pizza": {
     "slug": "openmoji--1F355",
@@ -803,13 +779,9 @@
     "slug": "openmoji--1F37F",
     "query": "popcorn"
   },
-  "theme-59-suesses.json::Waffel": {
-    "slug": "openmoji--1F9C7",
-    "query": "waffle"
-  },
   "theme-59-suesses.json::Pfannkuchen": {
-    "slug": "openmoji--1F95E",
-    "query": "pancakes"
+    "slug": "o8671-crepes",
+    "query": "o8671-crepes"
   },
   "theme-59-suesses.json::Croissant": {
     "slug": "openmoji--1F950",
@@ -830,10 +802,6 @@
   "theme-59-suesses.json::Pudding": {
     "slug": "openmoji--1F36E",
     "query": "custard"
-  },
-  "theme-59-suesses.json::Bagel": {
-    "slug": "openmoji--1F96F",
-    "query": "bagel"
   },
   "theme-59-suesses.json::Glückskeks": {
     "slug": "openmoji--1F960",
@@ -1012,8 +980,8 @@
     "query": "basket"
   },
   "theme-62-bad.json::Wäscheklammer": {
-    "slug": "o24903-tweezers-outline",
-    "query": "Tweezers"
+    "slug": "o175599-clothes-peg",
+    "query": "o175599-clothes-peg"
   },
   "theme-62-bad.json::Seifenspender": {
     "slug": "o307946-soap-dispenser-bottle",
@@ -1070,10 +1038,6 @@
   "theme-63-werkzeug.json::Rasenmäher": {
     "slug": "openmoji--E343",
     "query": "lawn mower"
-  },
-  "theme-63-werkzeug.json::Kelle": {
-    "slug": "openmoji--E346",
-    "query": "trowel"
   },
   "theme-63-werkzeug.json::Axt": {
     "slug": "openmoji--1FA93",
@@ -1140,8 +1104,8 @@
     "query": "briefs"
   },
   "theme-64-kleidung.json::Socke": {
-    "slug": "openmoji--1F9E6",
-    "query": "socks"
+    "slug": "o213977-gray-sock",
+    "query": "o213977-gray-sock"
   },
   "theme-64-kleidung.json::Schuh": {
     "slug": "openmoji--E14B",
@@ -1176,8 +1140,8 @@
     "query": "scarf"
   },
   "theme-64-kleidung.json::Handschuh": {
-    "slug": "openmoji--1F9E4",
-    "query": "gloves"
+    "slug": "o105559-gray-glove",
+    "query": "o105559-gray-glove"
   },
   "theme-64-kleidung.json::Krawatte": {
     "slug": "openmoji--1F454",
@@ -1203,10 +1167,6 @@
     "slug": "openmoji--1F459",
     "query": "bikini"
   },
-  "theme-64-kleidung.json::Kimono": {
-    "slug": "openmoji--1F458",
-    "query": "kimono"
-  },
   "theme-64-kleidung.json::Weste": {
     "slug": "openmoji--1F9BA",
     "query": "safety vest"
@@ -1216,8 +1176,8 @@
     "query": "o240431-head-silhouette"
   },
   "theme-65-koerper.json::Gesicht": {
-    "slug": "twemoji--1f647",
-    "query": "face human"
+    "slug": "o15242-face-drawing",
+    "query": "o15242-face-drawing"
   },
   "theme-65-koerper.json::Auge": {
     "slug": "openmoji--1F441",
@@ -1291,10 +1251,6 @@
     "slug": "openmoji--1F9B4",
     "query": "bone"
   },
-  "theme-65-koerper.json::Bauch": {
-    "slug": "openmoji--E313",
-    "query": "stomach"
-  },
   "theme-65-koerper.json::Rücken": {
     "slug": "o14572-male-body-silhouette-back",
     "query": "o14572-male-body-silhouette-back"
@@ -1307,25 +1263,9 @@
     "slug": "openmoji--1FA78",
     "query": "drop of blood"
   },
-  "theme-66-gesundheit.json::Arzt": {
-    "slug": "openmoji--E301",
-    "query": "male doctor"
-  },
-  "theme-66-gesundheit.json::Ärztin": {
-    "slug": "openmoji--E300",
-    "query": "female doctor"
-  },
   "theme-66-gesundheit.json::Krankenhaus": {
     "slug": "openmoji--1F3E5",
     "query": "hospital"
-  },
-  "theme-66-gesundheit.json::Krankenschwester": {
-    "slug": "openmoji--E302",
-    "query": " nurse"
-  },
-  "theme-66-gesundheit.json::Krankenpfleger": {
-    "slug": "openmoji--E303",
-    "query": " nurse"
   },
   "theme-66-gesundheit.json::Spritze": {
     "slug": "openmoji--1F489",
@@ -1344,8 +1284,8 @@
     "query": "adhesive bandage"
   },
   "theme-66-gesundheit.json::Verband": {
-    "slug": "openmoji--1F915",
-    "query": "bandage"
+    "slug": "o17041-bandage",
+    "query": "o17041-bandage"
   },
   "theme-66-gesundheit.json::Thermometer": {
     "slug": "openmoji--1F321",
@@ -1395,81 +1335,9 @@
     "slug": "openmoji--1F476",
     "query": "baby"
   },
-  "theme-67-menschen.json::Schüler": {
-    "slug": "openmoji--1F9D1-200D-1F393",
-    "query": "student"
-  },
-  "theme-67-menschen.json::Lehrer": {
-    "slug": "openmoji--1F9D1-200D-1F3EB",
-    "query": "teacher"
-  },
   "theme-67-menschen.json::Familie": {
     "slug": "openmoji--1F46A",
     "query": "family"
-  },
-  "theme-67-menschen.json::Polizist": {
-    "slug": "openmoji--1F46E",
-    "query": "police officer"
-  },
-  "theme-67-menschen.json::Feuerwehrmann": {
-    "slug": "openmoji--1F9D1-200D-1F692",
-    "query": "firefighter"
-  },
-  "theme-67-menschen.json::Koch": {
-    "slug": "openmoji--1F9D1-200D-1F373",
-    "query": "cook"
-  },
-  "theme-67-menschen.json::Friseur": {
-    "slug": "o263320-barber-and-customer-karte",
-    "query": "o263320-barber-and-customer-karte"
-  },
-  "theme-67-menschen.json::Maler": {
-    "slug": "openmoji--1F9D1-200D-1F3A8",
-    "query": "artist"
-  },
-  "theme-67-menschen.json::Sänger": {
-    "slug": "openmoji--1F9D1-200D-1F3A4",
-    "query": "singer"
-  },
-  "theme-67-menschen.json::Wissenschaftler": {
-    "slug": "openmoji--1F9D1-200D-1F52C",
-    "query": "scientist"
-  },
-  "theme-67-menschen.json::Techniker": {
-    "slug": "openmoji--1F9D1-200D-1F4BB",
-    "query": "technologist"
-  },
-  "theme-67-menschen.json::Richter": {
-    "slug": "openmoji--1F9D1-200D-2696-FE0F",
-    "query": "judge"
-  },
-  "theme-67-menschen.json::Detektiv": {
-    "slug": "openmoji--1F575",
-    "query": "detective"
-  },
-  "theme-67-menschen.json::Astronaut": {
-    "slug": "openmoji--1F9D1-200D-1F680",
-    "query": "astronaut"
-  },
-  "theme-67-menschen.json::Pilot": {
-    "slug": "openmoji--1F9D1-200D-2708-FE0F",
-    "query": "pilot"
-  },
-  "theme-67-menschen.json::Bauer": {
-    "slug": "openmoji--1F9D1-200D-1F33E",
-    "query": "farmer"
-  },
-  "theme-67-menschen.json::Mechaniker": {
-    "slug": "openmoji--1F9D1-200D-1F527",
-    "query": "mechanic"
-  },
-  "theme-67-menschen.json::Kellner": {
-    "slug": "openmoji--E185",
-    "query": "barista"
-  },
-  "theme-67-menschen.json::Wächter": {
-    "slug": "openmoji--1F482",
-    "query": "guard"
   },
   "theme-67-menschen.json::Zauberer": {
     "slug": "openmoji--1F9D9",
@@ -1488,12 +1356,8 @@
     "query": "open book"
   },
   "theme-68-schule.json::Heft": {
-    "slug": "o175644-exercise-books",
-    "query": "exercise book "
-  },
-  "theme-68-schule.json::Notizbuch": {
     "slug": "o26776-notebook",
-    "query": "notebook"
+    "query": "o26776-notebook"
   },
   "theme-68-schule.json::Bleistift": {
     "slug": "openmoji--270F",
@@ -1528,8 +1392,8 @@
     "query": "calculator"
   },
   "theme-68-schule.json::Computer": {
-    "slug": "openmoji--1F5A5",
-    "query": "desktop computer"
+    "slug": "o169398-desktop-computer",
+    "query": "o169398-desktop-computer"
   },
   "theme-68-schule.json::Laptop": {
     "slug": "openmoji--1F4BB",
@@ -1550,10 +1414,6 @@
   "theme-68-schule.json::Landkarte": {
     "slug": "o137005-portugal-map",
     "query": "road map"
-  },
-  "theme-68-schule.json::Aktentasche": {
-    "slug": "openmoji--1F4BC",
-    "query": "briefcase"
   },
   "theme-68-schule.json::Rucksack": {
     "slug": "openmoji--1F392",
@@ -1579,10 +1439,6 @@
     "slug": "openmoji--1F69B",
     "query": "articulated lorry"
   },
-  "theme-69-fahrzeuge-strasse.json::Lieferwagen": {
-    "slug": "openmoji--1F69A",
-    "query": "delivery truck"
-  },
   "theme-69-fahrzeuge-strasse.json::Bus": {
     "slug": "openmoji--1F68C",
     "query": "bus"
@@ -1607,10 +1463,6 @@
     "slug": "openmoji--1F3CD",
     "query": "motorcycle"
   },
-  "theme-69-fahrzeuge-strasse.json::Motorroller": {
-    "slug": "openmoji--1F6F5",
-    "query": "motor scooter"
-  },
   "theme-69-fahrzeuge-strasse.json::Fahrrad": {
     "slug": "openmoji--1F6B2",
     "query": "bicycle"
@@ -1626,18 +1478,6 @@
   "theme-69-fahrzeuge-strasse.json::Rollschuh": {
     "slug": "openmoji--1F6FC",
     "query": "roller skate"
-  },
-  "theme-69-fahrzeuge-strasse.json::Jeep": {
-    "slug": "openmoji--1F699",
-    "query": "sport utility vehicle"
-  },
-  "theme-69-fahrzeuge-strasse.json::Pick-up": {
-    "slug": "openmoji--1F6FB",
-    "query": "pickup truck"
-  },
-  "theme-69-fahrzeuge-strasse.json::Wohnmobil": {
-    "slug": "openmoji--1F690",
-    "query": "minibus"
   },
   "theme-69-fahrzeuge-strasse.json::Kutsche": {
     "slug": "o261054-carriage",
@@ -1667,10 +1507,6 @@
     "slug": "openmoji--E344",
     "query": "wheelbarrow"
   },
-  "theme-70-baustelle.json::Kelle": {
-    "slug": "openmoji--E346",
-    "query": "trowel"
-  },
   "theme-70-baustelle.json::Leiter": {
     "slug": "openmoji--1FA9C",
     "query": "ladder"
@@ -1694,10 +1530,6 @@
   "theme-70-baustelle.json::Kabel": {
     "slug": "openmoji--E1CB",
     "query": "cable"
-  },
-  "theme-70-baustelle.json::Ölfass": {
-    "slug": "openmoji--1F6E2",
-    "query": "oil drum"
   },
   "theme-70-baustelle.json::Zahnrad": {
     "slug": "openmoji--2699",
@@ -1763,10 +1595,6 @@
     "slug": "openmoji--1F682",
     "query": "locomotive"
   },
-  "theme-71-zuege.json::Diesellok": {
-    "slug": "openmoji--1F6F2",
-    "query": "diesel locomotive"
-  },
   "theme-71-zuege.json::Straßenbahn": {
     "slug": "openmoji--1F68A",
     "query": "tram"
@@ -1779,17 +1607,9 @@
     "slug": "openmoji--1F688",
     "query": "light rail"
   },
-  "theme-71-zuege.json::Einschienenbahn": {
-    "slug": "openmoji--1F69D",
-    "query": "monorail"
-  },
   "theme-71-zuege.json::Seilbahn": {
     "slug": "openmoji--1F6A1",
     "query": "aerial tramway"
-  },
-  "theme-71-zuege.json::Bergbahn": {
-    "slug": "openmoji--1F69E",
-    "query": "mountain railway"
   },
   "theme-71-zuege.json::Bahnhof": {
     "slug": "openmoji--1F689",
@@ -1827,10 +1647,6 @@
     "slug": "openmoji--1F69F",
     "query": "suspension railway"
   },
-  "theme-71-zuege.json::Straßenbahnwagen": {
-    "slug": "openmoji--1F68B",
-    "query": "tram car"
-  },
   "theme-72-schiffe.json::Schiff": {
     "slug": "openmoji--1F6A2",
     "query": "ship"
@@ -1839,25 +1655,9 @@
     "slug": "openmoji--26F5",
     "query": "sailboat"
   },
-  "theme-72-schiffe.json::Motorboot": {
-    "slug": "openmoji--1F6E5",
-    "query": "motor boat"
-  },
   "theme-72-schiffe.json::Kanu": {
     "slug": "openmoji--1F6F6",
     "query": "canoe"
-  },
-  "theme-72-schiffe.json::Ruderboot": {
-    "slug": "openmoji--1F6A3",
-    "query": "person rowing boat"
-  },
-  "theme-72-schiffe.json::Fähre": {
-    "slug": "openmoji--26F4",
-    "query": "ferry"
-  },
-  "theme-72-schiffe.json::Passagierschiff": {
-    "slug": "openmoji--1F6F3",
-    "query": "passenger ship"
   },
   "theme-72-schiffe.json::U-Boot": {
     "slug": "openmoji--E21A",
@@ -1875,10 +1675,6 @@
     "slug": "openmoji--1F6DF",
     "query": "ring buoy"
   },
-  "theme-72-schiffe.json::Schnellboot": {
-    "slug": "openmoji--1F6A4",
-    "query": "speedboat"
-  },
   "theme-72-schiffe.json::Windsurfen": {
     "slug": "openmoji--E189",
     "query": "windsurfing"
@@ -1888,8 +1684,8 @@
     "query": "fishing pole"
   },
   "theme-72-schiffe.json::Angelhaken": {
-    "slug": "twemoji--1fa9d",
-    "query": "hook"
+    "slug": "o167073-fish-hook",
+    "query": "o167073-fish-hook"
   },
   "theme-72-schiffe.json::Eisberg": {
     "slug": "openmoji--E2C0",
@@ -1898,10 +1694,6 @@
   "theme-72-schiffe.json::Taucherbrille": {
     "slug": "openmoji--1F93F",
     "query": "diving mask"
-  },
-  "theme-72-schiffe.json::Schnorchel": {
-    "slug": "openmoji--E14F",
-    "query": "snorkling"
   },
   "theme-72-schiffe.json::Muschel": {
     "slug": "openmoji--1F41A",
@@ -1926,10 +1718,6 @@
   "theme-73-flugzeuge.json::Rakete": {
     "slug": "openmoji--1F680",
     "query": "rocket"
-  },
-  "theme-73-flugzeuge.json::Raumfähre": {
-    "slug": "openmoji--E20B",
-    "query": "space shuttle"
   },
   "theme-73-flugzeuge.json::Satellit": {
     "slug": "openmoji--1F6F0",
@@ -1979,18 +1767,6 @@
     "slug": "openmoji--E1D2",
     "query": "drone"
   },
-  "theme-73-flugzeuge.json::Pilot": {
-    "slug": "openmoji--1F9D1-200D-2708-FE0F",
-    "query": "pilot"
-  },
-  "theme-73-flugzeuge.json::Abflug": {
-    "slug": "openmoji--1F6EB",
-    "query": "airplane departure"
-  },
-  "theme-73-flugzeuge.json::Militärflugzeug": {
-    "slug": "openmoji--1F6E6",
-    "query": "up-pointing military airplane"
-  },
   "theme-74-wetter.json::Sonne": {
     "slug": "openmoji--2600",
     "query": "sun"
@@ -2002,10 +1778,6 @@
   "theme-74-wetter.json::Regen": {
     "slug": "openmoji--1F327",
     "query": "cloud with rain"
-  },
-  "theme-74-wetter.json::Regenschauer": {
-    "slug": "openmoji--1F326",
-    "query": "sun behind rain cloud"
   },
   "theme-74-wetter.json::Gewitter": {
     "slug": "openmoji--1F329",
@@ -2035,10 +1807,6 @@
     "slug": "openmoji--1F308",
     "query": "rainbow"
   },
-  "theme-74-wetter.json::Hagel": {
-    "slug": "openmoji--1F9CA",
-    "query": "ice"
-  },
   "theme-74-wetter.json::Temperatur": {
     "slug": "twemoji--1f321",
     "query": "thermometer"
@@ -2060,12 +1828,8 @@
     "query": "boot"
   },
   "theme-74-wetter.json::Wetterfahne": {
-    "slug": "o245618-rooster-weather-vane",
-    "query": "weather vane "
-  },
-  "theme-74-wetter.json::Wetterstation": {
-    "slug": "openmoji--1F4E1",
-    "query": "satellite antenna"
+    "slug": "o233955-weather-vane",
+    "query": "o233955-weather-vane"
   },
   "theme-74-wetter.json::Wassertropfen": {
     "slug": "openmoji--1F4A7",
@@ -2271,10 +2035,6 @@
     "slug": "o218581-saxophone-band",
     "query": "band"
   },
-  "theme-77-musik.json::Sänger": {
-    "slug": "openmoji--1F9D1-200D-1F3A4",
-    "query": "singer"
-  },
   "theme-77-musik.json::Tanz": {
     "slug": "openmoji--1F9D1-200D-1FA70",
     "query": "ballet dancer"
@@ -2282,10 +2042,6 @@
   "theme-77-musik.json::Orchester": {
     "slug": "o959-marching-band",
     "query": "band"
-  },
-  "theme-77-musik.json::Schelle": {
-    "slug": "openmoji--1F514",
-    "query": "bell"
   },
   "theme-78-sport.json::Ball": {
     "slug": "openmoji--26BD",
@@ -2363,10 +2119,6 @@
     "slug": "openmoji--1F94F",
     "query": "flying disc"
   },
-  "theme-78-sport.json::Bogenschießen": {
-    "slug": "openmoji--1F3F9",
-    "query": "bow and arrow"
-  },
   "theme-79-spielzeug.json::Teddybär": {
     "slug": "openmoji--1F9F8",
     "query": "teddy bear"
@@ -2382,10 +2134,6 @@
   "theme-79-spielzeug.json::Roboter": {
     "slug": "openmoji--1F916",
     "query": "robot"
-  },
-  "theme-79-spielzeug.json::Drache": {
-    "slug": "twemoji--1fa81",
-    "query": "kite"
   },
   "theme-79-spielzeug.json::Dinosaurier": {
     "slug": "openmoji--1F996",
@@ -2440,12 +2188,8 @@
     "query": "treasure chest"
   },
   "theme-79-spielzeug.json::Maske": {
-    "slug": "openmoji--E145",
-    "query": "guy fawkes mask"
-  },
-  "theme-79-spielzeug.json::Malkasten": {
-    "slug": "openmoji--1F3A8",
-    "query": "artist palette"
+    "slug": "o23306-yellow-venetian-mask",
+    "query": "o23306-yellow-venetian-mask"
   },
   "theme-59-suesses.json::Obstkuchen": {
     "slug": "openmoji--1F967",
@@ -2479,10 +2223,6 @@
     "slug": "o181862-red-toothbrush-and-tube",
     "query": "toothpaste"
   },
-  "theme-72-schiffe.json::Hafenbecken": {
-    "slug": "o11442-dock-drawing",
-    "query": "dock"
-  },
   "theme-74-wetter.json::Schneeflocke": {
     "slug": "twemoji--2744",
     "query": "snowflake"
@@ -2511,10 +2251,6 @@
     "slug": "mdi--jump-rope",
     "query": "jump-rope"
   },
-  "theme-79-spielzeug.json::Baukasten": {
-    "slug": "o214574-four-stacked-block-toys",
-    "query": "lego-brick"
-  },
   "theme-79-spielzeug.json::Schaukel": {
     "slug": "o216037-black-and-white-swing",
     "query": "swing"
@@ -2522,10 +2258,6 @@
   "theme-58-essen-trinken.json::Müsli": {
     "slug": "o8216-breakfast-bowl",
     "query": "cereal"
-  },
-  "theme-60-kueche.json::Kessel": {
-    "slug": "mdi--kettle",
-    "query": "kettle"
   },
   "theme-60-kueche.json::Mixer": {
     "slug": "mdi--blender",
@@ -2542,10 +2274,6 @@
   "theme-67-menschen.json::Hexe": {
     "slug": "o288292-cute-halloween-witch-girl",
     "query": "witch"
-  },
-  "theme-69-fahrzeuge-strasse.json::Schulbus": {
-    "slug": "o19619-yellow-school-bus",
-    "query": "bus"
   },
   "theme-71-zuege.json::Güterzug": {
     "slug": "o202273-brown-coal-wagon",
@@ -2595,10 +2323,6 @@
     "slug": "o237396-lake-scenery",
     "query": "o237396-lake-scenery"
   },
-  "theme-78-sport.json::Boxen": {
-    "slug": "openmoji--1F94A",
-    "query": "boxing glove"
-  },
   "theme-79-spielzeug.json::Buntstift": {
     "slug": "openmoji--1F58D",
     "query": "crayon"
@@ -2608,8 +2332,8 @@
     "query": "o21982-paper-plane"
   },
   "theme-57-gemuese.json::Lauch": {
-    "slug": "mdi--leek",
-    "query": "leek"
+    "slug": "o240179-green-leek",
+    "query": "o240179-green-leek"
   },
   "theme-60-kueche.json::Kühlschrank": {
     "slug": "o169564-white-fridge",
@@ -2742,5 +2466,53 @@
   "theme-65-koerper.json::Skelett": {
     "slug": "o196393-skeleton-karte",
     "query": "o196393-skeleton-karte"
+  },
+  "theme-58-essen-trinken.json::Nudel": {
+    "slug": "openmoji--1F35D",
+    "query": "spaghetti"
+  },
+  "theme-55-krabbeltiere.json::Grashüpfer": {
+    "slug": "openmoji--1F997",
+    "query": "cricket"
+  },
+  "theme-65-koerper.json::Magen": {
+    "slug": "openmoji--E313",
+    "query": "stomach"
+  },
+  "theme-79-spielzeug.json::Drachen": {
+    "slug": "twemoji--1fa81",
+    "query": "kite"
+  },
+  "theme-67-menschen.json::Pirat": {
+    "slug": "openmoji--E18C",
+    "query": "pirate male"
+  },
+  "theme-67-menschen.json::Prinzessin": {
+    "slug": "openmoji--1F478",
+    "query": "princess"
+  },
+  "theme-67-menschen.json::Prinz": {
+    "slug": "openmoji--1F934",
+    "query": "prince"
+  },
+  "theme-67-menschen.json::Superheld": {
+    "slug": "openmoji--1F9B8",
+    "query": "superhero"
+  },
+  "theme-67-menschen.json::Vampir": {
+    "slug": "openmoji--1F9DB",
+    "query": "vampire"
+  },
+  "theme-67-menschen.json::Riese": {
+    "slug": "openmoji--1F479",
+    "query": "ogre"
+  },
+  "theme-67-menschen.json::Ninja": {
+    "slug": "openmoji--1F977",
+    "query": "ninja"
+  },
+  "theme-67-menschen.json::Engel": {
+    "slug": "openmoji--1F47C",
+    "query": "angel"
   }
 }

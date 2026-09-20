@@ -3,7 +3,7 @@
   "themeName": "Wetter",
   "language": "de",
   "version": 1,
-  "entryCount": 22,
+  "entryCount": 19,
   "imageMode": "per-entry-svg",
   "entries": [
     {
@@ -37,23 +37,13 @@
       "editorType": "nature"
     },
     {
-      "word": "Regenschauer",
-      "article": "der",
-      "plural": "Regenschauer",
-      "pluralWithArticle": "die Regenschauer",
-      "accusativeSentence": "Das Kind sieht den Regenschauer.",
-      "dativeSentence": "Bei dem Regenschauer bleibt das Kind zu Hause.",
-      "imageIndex": 3,
-      "editorType": "nature"
-    },
-    {
       "word": "Gewitter",
       "article": "das",
       "plural": "Gewitter",
       "pluralWithArticle": "die Gewitter",
       "accusativeSentence": "Das Kind fürchtet das Gewitter.",
       "dativeSentence": "Bei dem Gewitter bleibt das Kind zu Hause.",
-      "imageIndex": 4,
+      "imageIndex": 3,
       "editorType": "nature"
     },
     {
@@ -63,7 +53,7 @@
       "pluralWithArticle": "die Blitze",
       "accusativeSentence": "Das Kind sieht den Blitz.",
       "dativeSentence": "Bei dem Blitz zählt das Kind bis drei.",
-      "imageIndex": 5,
+      "imageIndex": 4,
       "editorType": "nature"
     },
     {
@@ -73,7 +63,7 @@
       "pluralWithArticle": "die Schneeflocken",
       "accusativeSentence": "Das Kind fängt die Schneeflocke.",
       "dativeSentence": "Die Kälte kommt von der Schneeflocke.",
-      "imageIndex": 6,
+      "imageIndex": 5,
       "editorType": "nature"
     },
     {
@@ -83,7 +73,7 @@
       "pluralWithArticle": "",
       "accusativeSentence": "Das Kind freut sich über den Schnee.",
       "dativeSentence": "Bei dem Schnee zieht das Kind Handschuhe an.",
-      "imageIndex": 7,
+      "imageIndex": 6,
       "editorType": "nature"
     },
     {
@@ -93,7 +83,7 @@
       "pluralWithArticle": "die Winde",
       "accusativeSentence": "Das Kind spürt den Wind.",
       "dativeSentence": "Bei dem Wind fliegt der Drachen hoch.",
-      "imageIndex": 8,
+      "imageIndex": 7,
       "editorType": "nature"
     },
     {
@@ -103,7 +93,7 @@
       "pluralWithArticle": "die Stürme",
       "accusativeSentence": "Das Kind hört den Sturm.",
       "dativeSentence": "Bei dem Sturm bleibt das Kind zu Hause.",
-      "imageIndex": 9,
+      "imageIndex": 8,
       "editorType": "nature"
     },
     {
@@ -113,7 +103,7 @@
       "pluralWithArticle": "die Nebel",
       "accusativeSentence": "Das Kind sieht den Nebel.",
       "dativeSentence": "Bei dem Nebel fährt der Bus langsam.",
-      "imageIndex": 10,
+      "imageIndex": 9,
       "editorType": "nature"
     },
     {
@@ -123,17 +113,7 @@
       "pluralWithArticle": "die Regenbogen",
       "accusativeSentence": "Das Kind fotografiert den Regenbogen.",
       "dativeSentence": "Das Kind träumt von dem Regenbogen.",
-      "imageIndex": 11,
-      "editorType": "nature"
-    },
-    {
-      "word": "Hagel",
-      "article": "der",
-      "plural": "",
-      "pluralWithArticle": "",
-      "accusativeSentence": "Das Kind fürchtet den Hagel.",
-      "dativeSentence": "Bei dem Hagel bleibt das Kind im Haus.",
-      "imageIndex": 12,
+      "imageIndex": 10,
       "editorType": "nature"
     },
     {
@@ -143,7 +123,7 @@
       "pluralWithArticle": "die Temperaturen",
       "accusativeSentence": "Das Kind misst die Temperatur.",
       "dativeSentence": "Das Kind erzählt von der Temperatur.",
-      "imageIndex": 13,
+      "imageIndex": 11,
       "editorType": "nature"
     },
     {
@@ -153,7 +133,7 @@
       "pluralWithArticle": "die Sonnenaufgänge",
       "accusativeSentence": "Das Kind fotografiert den Sonnenaufgang.",
       "dativeSentence": "Das Kind erzählt von dem Sonnenaufgang.",
-      "imageIndex": 14,
+      "imageIndex": 12,
       "editorType": "nature"
     },
     {
@@ -163,7 +143,7 @@
       "pluralWithArticle": "die Sonnenuntergänge",
       "accusativeSentence": "Das Kind beobachtet den Sonnenuntergang.",
       "dativeSentence": "Das Kind erzählt von dem Sonnenuntergang.",
-      "imageIndex": 15,
+      "imageIndex": 13,
       "editorType": "nature"
     },
     {
@@ -173,7 +153,7 @@
       "pluralWithArticle": "die Schirme",
       "accusativeSentence": "Das Kind öffnet den Schirm.",
       "dativeSentence": "Das Kind geht mit dem Schirm.",
-      "imageIndex": 16,
+      "imageIndex": 14,
       "editorType": "nature"
     },
     {
@@ -183,7 +163,7 @@
       "pluralWithArticle": "die Regenjacken",
       "accusativeSentence": "Das Kind sucht die Regenjacke.",
       "dativeSentence": "Das Kind geht mit der Regenjacke.",
-      "imageIndex": 17,
+      "imageIndex": 15,
       "editorType": "nature"
     },
     {
@@ -193,7 +173,7 @@
       "pluralWithArticle": "die Gummistiefel",
       "accusativeSentence": "Das Kind trägt den Gummistiefel.",
       "dativeSentence": "Das Kind läuft mit dem Gummistiefel.",
-      "imageIndex": 18,
+      "imageIndex": 16,
       "editorType": "nature"
     },
     {
@@ -203,17 +183,7 @@
       "pluralWithArticle": "die Wetterfahnen",
       "accusativeSentence": "Das Kind sieht die Wetterfahne.",
       "dativeSentence": "Auf der Wetterfahne sitzt ein Hahn.",
-      "imageIndex": 19,
-      "editorType": "nature"
-    },
-    {
-      "word": "Wetterstation",
-      "article": "die",
-      "plural": "Wetterstationen",
-      "pluralWithArticle": "die Wetterstationen",
-      "accusativeSentence": "Der Mann baut die Wetterstation auf.",
-      "dativeSentence": "Die Daten kommen von der Wetterstation.",
-      "imageIndex": 20,
+      "imageIndex": 17,
       "editorType": "nature"
     },
     {
@@ -223,7 +193,7 @@
       "pluralWithArticle": "die Wassertropfen",
       "accusativeSentence": "Das Kind fängt den Wassertropfen.",
       "dativeSentence": "Das Licht bricht in dem Wassertropfen.",
-      "imageIndex": 21,
+      "imageIndex": 18,
       "editorType": "nature"
     }
   ]

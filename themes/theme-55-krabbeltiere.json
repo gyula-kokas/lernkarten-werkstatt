@@ -3,7 +3,7 @@
   "themeName": "Insekten und Kriechtiere",
   "language": "de",
   "version": 1,
-  "entryCount": 20,
+  "entryCount": 19,
   "imageMode": "per-entry-svg",
   "entries": [
     {
@@ -57,12 +57,12 @@
       "editorType": "animal"
     },
     {
-      "word": "Grille",
-      "article": "die",
-      "plural": "Grillen",
-      "pluralWithArticle": "die Grillen",
-      "accusativeSentence": "Das Kind hört die Grille zirpen.",
-      "dativeSentence": "Der Garten gehört der Grille.",
+      "word": "Grashüpfer",
+      "article": "der",
+      "plural": "Grashüpfer",
+      "pluralWithArticle": "die Grashüpfer",
+      "accusativeSentence": "Das Kind fängt den Grashüpfer.",
+      "dativeSentence": "Das Kind schaut dem Grashüpfer zu.",
       "imageIndex": 5,
       "editorType": "animal"
     },
@@ -194,16 +194,6 @@
       "accusativeSentence": "Das Kind entdeckt die Raupe auf dem Blatt.",
       "dativeSentence": "Aus der Raupe wird ein Schmetterling.",
       "imageIndex": 18,
-      "editorType": "animal"
-    },
-    {
-      "word": "Monarchfalter",
-      "article": "der",
-      "plural": "Monarchfalter",
-      "pluralWithArticle": "die Monarchfalter",
-      "accusativeSentence": "Das Kind fotografiert den Monarchfalter.",
-      "dativeSentence": "Das Kind schaut dem Monarchfalter zu.",
-      "imageIndex": 19,
       "editorType": "animal"
     }
   ]

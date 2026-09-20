@@ -473,10 +473,6 @@
       "Das Kind beobachtet die Robbe.",
       "Der Fisch gehört der Robbe."
     ],
-    "Tropenfisch": [
-      "Das Kind sieht den Tropenfisch.",
-      "Das Aquarium gehört dem Tropenfisch."
-    ],
     "Angelrute": [
       "Das Kind nimmt die Angelrute.",
       "Der Vater angelt mit der Angelrute."
@@ -488,14 +484,6 @@
     "Auster": [
       "Das Kind findet die Auster.",
       "Die Perle gehört der Auster."
-    ],
-    "Beluga": [
-      "Das Kind sieht die Beluga.",
-      "Die Flosse gehört der Beluga."
-    ],
-    "Pottwal": [
-      "Das Kind bestaunt den Pottwal.",
-      "Die Flosse gehört dem Pottwal."
     ]
   }
 }

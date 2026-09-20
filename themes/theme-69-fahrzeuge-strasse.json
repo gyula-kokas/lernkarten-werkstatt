@@ -3,7 +3,7 @@
   "themeName": "Fahrzeuge auf der Straße",
   "language": "de",
   "version": 1,
-  "entryCount": 24,
+  "entryCount": 18,
   "imageMode": "per-entry-svg",
   "entries": [
     {
@@ -27,33 +27,13 @@
       "editorType": "vehicle"
     },
     {
-      "word": "Lieferwagen",
-      "article": "der",
-      "plural": "Lieferwagen",
-      "pluralWithArticle": "die Lieferwagen",
-      "accusativeSentence": "Der Mann belädt den Lieferwagen.",
-      "dativeSentence": "Die Pakete sind in dem Lieferwagen.",
-      "imageIndex": 2,
-      "editorType": "vehicle"
-    },
-    {
       "word": "Bus",
       "article": "der",
       "plural": "Busse",
       "pluralWithArticle": "die Busse",
       "accusativeSentence": "Das Kind nimmt den Bus.",
       "dativeSentence": "Das Kind fährt mit dem Bus.",
-      "imageIndex": 3,
-      "editorType": "vehicle"
-    },
-    {
-      "word": "Schulbus",
-      "article": "der",
-      "plural": "Schulbusse",
-      "pluralWithArticle": "die Schulbusse",
-      "accusativeSentence": "Das Kind sieht den Schulbus.",
-      "dativeSentence": "Der Rucksack liegt in dem Schulbus.",
-      "imageIndex": 4,
+      "imageIndex": 2,
       "editorType": "vehicle"
     },
     {
@@ -63,7 +43,7 @@
       "pluralWithArticle": "die Taxis",
       "accusativeSentence": "Die Frau ruft das Taxi.",
       "dativeSentence": "Die Frau fährt mit dem Taxi.",
-      "imageIndex": 5,
+      "imageIndex": 3,
       "editorType": "vehicle"
     },
     {
@@ -73,7 +53,7 @@
       "pluralWithArticle": "die Polizeiautos",
       "accusativeSentence": "Das Kind sieht das Polizeiauto.",
       "dativeSentence": "Die Polizei fährt mit dem Polizeiauto.",
-      "imageIndex": 6,
+      "imageIndex": 4,
       "editorType": "vehicle"
     },
     {
@@ -83,7 +63,7 @@
       "pluralWithArticle": "die Feuerwehrautos",
       "accusativeSentence": "Das Kind hört das Feuerwehrauto.",
       "dativeSentence": "Die Feuerwehr fährt mit dem Feuerwehrauto.",
-      "imageIndex": 7,
+      "imageIndex": 5,
       "editorType": "vehicle"
     },
     {
@@ -93,7 +73,7 @@
       "pluralWithArticle": "die Krankenwagen",
       "accusativeSentence": "Das Kind sieht den Krankenwagen.",
       "dativeSentence": "Der Arzt fährt mit dem Krankenwagen.",
-      "imageIndex": 8,
+      "imageIndex": 6,
       "editorType": "vehicle"
     },
     {
@@ -103,17 +83,7 @@
       "pluralWithArticle": "die Motorräder",
       "accusativeSentence": "Der Mann fährt das Motorrad.",
       "dativeSentence": "Der Mann fährt mit dem Motorrad.",
-      "imageIndex": 9,
-      "editorType": "vehicle"
-    },
-    {
-      "word": "Motorroller",
-      "article": "der",
-      "plural": "Motorroller",
-      "pluralWithArticle": "die Motorroller",
-      "accusativeSentence": "Das Mädchen sieht den Motorroller.",
-      "dativeSentence": "Das Mädchen fährt mit dem Motorroller.",
-      "imageIndex": 10,
+      "imageIndex": 7,
       "editorType": "vehicle"
     },
     {
@@ -123,7 +93,7 @@
       "pluralWithArticle": "die Fahrräder",
       "accusativeSentence": "Das Kind putzt das Fahrrad.",
       "dativeSentence": "Das Kind fährt mit dem Fahrrad.",
-      "imageIndex": 11,
+      "imageIndex": 8,
       "editorType": "vehicle"
     },
     {
@@ -133,7 +103,7 @@
       "pluralWithArticle": "die Tretroller",
       "accusativeSentence": "Das Kind nimmt den Tretroller.",
       "dativeSentence": "Das Kind fährt mit dem Tretroller.",
-      "imageIndex": 12,
+      "imageIndex": 9,
       "editorType": "vehicle"
     },
     {
@@ -143,7 +113,7 @@
       "pluralWithArticle": "die Skateboards",
       "accusativeSentence": "Das Kind probiert das Skateboard.",
       "dativeSentence": "Das Kind fährt mit dem Skateboard.",
-      "imageIndex": 13,
+      "imageIndex": 10,
       "editorType": "vehicle"
     },
     {
@@ -153,37 +123,7 @@
       "pluralWithArticle": "die Rollschuhe",
       "accusativeSentence": "Das Kind sucht den Rollschuh.",
       "dativeSentence": "Das Kind fährt mit dem Rollschuh.",
-      "imageIndex": 14,
-      "editorType": "vehicle"
-    },
-    {
-      "word": "Jeep",
-      "article": "der",
-      "plural": "Jeeps",
-      "pluralWithArticle": "die Jeeps",
-      "accusativeSentence": "Der Mann wäscht den Jeep.",
-      "dativeSentence": "Der Mann fährt mit dem Jeep.",
-      "imageIndex": 15,
-      "editorType": "vehicle"
-    },
-    {
-      "word": "Pick-up",
-      "article": "der",
-      "plural": "Pick-ups",
-      "pluralWithArticle": "die Pick-ups",
-      "accusativeSentence": "Der Mann belädt den Pick-up.",
-      "dativeSentence": "Das Holz liegt auf dem Pick-up.",
-      "imageIndex": 16,
-      "editorType": "vehicle"
-    },
-    {
-      "word": "Wohnmobil",
-      "article": "das",
-      "plural": "Wohnmobile",
-      "pluralWithArticle": "die Wohnmobile",
-      "accusativeSentence": "Die Familie packt das Wohnmobil.",
-      "dativeSentence": "Die Familie fährt mit dem Wohnmobil.",
-      "imageIndex": 17,
+      "imageIndex": 11,
       "editorType": "vehicle"
     },
     {
@@ -193,7 +133,7 @@
       "pluralWithArticle": "die Kutschen",
       "accusativeSentence": "Das Kind sieht die Kutsche.",
       "dativeSentence": "Die Familie fährt mit der Kutsche.",
-      "imageIndex": 18,
+      "imageIndex": 12,
       "editorType": "vehicle"
     },
     {
@@ -203,7 +143,7 @@
       "pluralWithArticle": "die Traktoren",
       "accusativeSentence": "Der Bauer fährt den Traktor.",
       "dativeSentence": "Der Bauer fährt mit dem Traktor.",
-      "imageIndex": 19,
+      "imageIndex": 13,
       "editorType": "vehicle"
     },
     {
@@ -213,7 +153,7 @@
       "pluralWithArticle": "die Einkaufswagen",
       "accusativeSentence": "Die Frau schiebt den Einkaufswagen.",
       "dativeSentence": "Die Milch liegt in dem Einkaufswagen.",
-      "imageIndex": 21,
+      "imageIndex": 14,
       "editorType": "vehicle"
     },
     {
@@ -223,7 +163,7 @@
       "pluralWithArticle": "die Autobahnen",
       "accusativeSentence": "Der Fahrer kennt die Autobahn.",
       "dativeSentence": "Der Fahrer wartet auf der Autobahn.",
-      "imageIndex": 22,
+      "imageIndex": 15,
       "editorType": "vehicle"
     },
     {
@@ -233,7 +173,7 @@
       "pluralWithArticle": "die Ampeln",
       "accusativeSentence": "Der Fahrer sieht die Ampel.",
       "dativeSentence": "Der Fahrer wartet bei der Ampel.",
-      "imageIndex": 23,
+      "imageIndex": 16,
       "editorType": "vehicle"
     },
     {
@@ -243,7 +183,7 @@
       "pluralWithArticle": "die Verkehrsschilder",
       "accusativeSentence": "Der Fahrer sieht das Verkehrsschild.",
       "dativeSentence": "Der Fahrer wartet bei dem Verkehrsschild.",
-      "imageIndex": 24,
+      "imageIndex": 17,
       "editorType": "vehicle"
     }
   ]

@@ -24,7 +24,7 @@ kann.
 **Nichts installieren.** Es genügt ein Browser (Firefox, Chrome, Edge, Safari).
 
 1. Auf der [Release-Seite](https://github.com/gyula-kokas/lernkarten-werkstatt/releases/latest)
-   die Datei **`lernkarten-alle-themes.html`** herunterladen (rund 35 MB).
+   die Datei **`lernkarten-alle-themes.html`** herunterladen (rund 33 MB).
 2. Die Datei doppelklicken – sie öffnet sich im Browser wie eine Webseite.
 3. Oben rechts zwischen **📄 Drucken** und **🎮 Spielen** wählen.
 

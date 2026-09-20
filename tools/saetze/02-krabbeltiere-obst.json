@@ -21,10 +21,6 @@
       "Das Kind zeigt den Marienkäfer.",
       "Das Kind schaut dem Marienkäfer zu."
     ],
-    "Grille": [
-      "Das Kind hört die Grille zirpen.",
-      "Der Garten gehört der Grille."
-    ],
     "Spinne": [
       "Das Kind entdeckt die Spinne in der Ecke.",
       "Das Netz gehört der Spinne."
@@ -77,9 +73,9 @@
       "Das Kind entdeckt die Raupe auf dem Blatt.",
       "Aus der Raupe wird ein Schmetterling."
     ],
-    "Monarchfalter": [
-      "Das Kind fotografiert den Monarchfalter.",
-      "Das Kind schaut dem Monarchfalter zu."
+    "Grashüpfer": [
+      "Das Kind fängt den Grashüpfer.",
+      "Das Kind schaut dem Grashüpfer zu."
     ]
   },
   "obst": {
@@ -303,10 +299,6 @@
       "Das Kind kocht den Reis.",
       "Die Soße schmeckt mit dem Reis."
     ],
-    "Nudeln": [
-      "Das Kind probiert die Nudeln.",
-      "Die Soße schmeckt mit der Nudeln."
-    ],
     "Pizza": [
       "Das Kind teilt die Pizza.",
       "Der Käse schmilzt auf der Pizza."
@@ -370,6 +362,10 @@
     "Pasta": [
       "Das Kind kocht die Pasta.",
       "Die Soße schwimmt auf der Pasta."
+    ],
+    "Nudel": [
+      "Das Kind isst die Nudel.",
+      "Die Soße tropft von der Nudel."
     ]
   },
   "suesses": {
@@ -409,10 +405,6 @@
       "Das Kind knabbert das Popcorn.",
       "Der Zucker klebt auf dem Popcorn."
     ],
-    "Waffel": [
-      "Das Kind backt die Waffel.",
-      "Der Puderzucker liegt auf der Waffel."
-    ],
     "Pfannkuchen": [
       "Das Kind isst den Pfannkuchen.",
       "Die Marmelade liegt auf dem Pfannkuchen."
@@ -444,10 +436,6 @@
     "Pudding": [
       "Das Kind mag den Pudding.",
       "Der Löffel steckt in dem Pudding."
-    ],
-    "Bagel": [
-      "Das Kind belegt den Bagel.",
-      "Der Käse liegt auf dem Bagel."
     ],
     "Glückskeks": [
       "Das Kind öffnet den Glückskeks.",

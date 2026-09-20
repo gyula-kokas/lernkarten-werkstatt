@@ -9,10 +9,6 @@
       "Das Kind beobachtet den Lastwagen.",
       "Der Fahrer fährt mit dem Lastwagen."
     ],
-    "Lieferwagen": [
-      "Der Mann belädt den Lieferwagen.",
-      "Die Pakete sind in dem Lieferwagen."
-    ],
     "Bus": [
       "Das Kind nimmt den Bus.",
       "Das Kind fährt mit dem Bus."
@@ -37,10 +33,6 @@
       "Der Mann fährt das Motorrad.",
       "Der Mann fährt mit dem Motorrad."
     ],
-    "Motorroller": [
-      "Das Mädchen sieht den Motorroller.",
-      "Das Mädchen fährt mit dem Motorroller."
-    ],
     "Fahrrad": [
       "Das Kind putzt das Fahrrad.",
       "Das Kind fährt mit dem Fahrrad."
@@ -60,18 +52,6 @@
     "Rollstuhl": [
       "Der Pfleger schiebt den Rollstuhl.",
       "Der Opa fährt mit dem Rollstuhl."
-    ],
-    "Jeep": [
-      "Der Mann wäscht den Jeep.",
-      "Der Mann fährt mit dem Jeep."
-    ],
-    "Pick-up": [
-      "Der Mann belädt den Pick-up.",
-      "Das Holz liegt auf dem Pick-up."
-    ],
-    "Wohnmobil": [
-      "Die Familie packt das Wohnmobil.",
-      "Die Familie fährt mit dem Wohnmobil."
     ],
     "Kutsche": [
       "Das Kind sieht die Kutsche.",
@@ -109,10 +89,6 @@
       "Der Fahrer sucht den Parkplatz.",
       "Das Auto steht auf dem Parkplatz."
     ],
-    "Schulbus": [
-      "Das Kind sieht den Schulbus.",
-      "Der Rucksack liegt in dem Schulbus."
-    ],
     "Quad": [
       "Der Mann fährt das Quad.",
       "Der Mann fährt mit dem Quad."
@@ -134,10 +110,6 @@
     "Schubkarre": [
       "Der Maurer schiebt die Schubkarre.",
       "Der Sand liegt in der Schubkarre."
-    ],
-    "Kelle": [
-      "Der Maurer nimmt die Kelle.",
-      "Der Maurer arbeitet mit der Kelle."
     ],
     "Leiter": [
       "Der Maler trägt die Leiter.",
@@ -162,10 +134,6 @@
     "Kabel": [
       "Der Elektriker verlegt das Kabel.",
       "Der Strom fließt in dem Kabel."
-    ],
-    "Ölfass": [
-      "Der Arbeiter rollt das Ölfass.",
-      "Das Öl ist in dem Ölfass."
     ],
     "Zahnrad": [
       "Der Mechaniker dreht das Zahnrad.",
@@ -245,10 +213,6 @@
       "Das Kind fotografiert die Dampflok.",
       "Der Rauch kommt aus der Dampflok."
     ],
-    "Diesellok": [
-      "Das Kind hört die Diesellok.",
-      "Der Lärm kommt von der Diesellok."
-    ],
     "Straßenbahn": [
       "Die Frau nimmt die Straßenbahn.",
       "Die Frau fährt mit der Straßenbahn."
@@ -261,17 +225,9 @@
       "Das Kind sieht die Hochbahn.",
       "Das Kind fährt mit der Hochbahn."
     ],
-    "Einschienenbahn": [
-      "Die Familie nimmt die Einschienenbahn.",
-      "Die Familie fährt mit der Einschienenbahn."
-    ],
     "Seilbahn": [
       "Die Familie nimmt die Seilbahn.",
       "Die Familie fährt mit der Seilbahn."
-    ],
-    "Bergbahn": [
-      "Der Wanderer nimmt die Bergbahn.",
-      "Der Wanderer fährt mit der Bergbahn."
     ],
     "Bahnhof": [
       "Das Kind sucht den Bahnhof.",
@@ -317,10 +273,6 @@
       "Die Frau nimmt den Trolleybus.",
       "Die Frau fährt mit dem Trolleybus."
     ],
-    "Straßenbahnwagen": [
-      "Das Kind sieht den Straßenbahnwagen.",
-      "Die Fahrgäste sitzen in dem Straßenbahnwagen."
-    ],
     "Güterzug": [
       "Das Kind sieht den Güterzug.",
       "Der Sand liegt in dem Güterzug."
@@ -343,25 +295,9 @@
       "Das Kind malt das Segelboot.",
       "Die Familie fährt mit dem Segelboot."
     ],
-    "Motorboot": [
-      "Der Mann tankt das Motorboot.",
-      "Der Mann fährt mit dem Motorboot."
-    ],
     "Kanu": [
       "Das Kind nimmt das Kanu.",
       "Das Kind fährt mit dem Kanu."
-    ],
-    "Ruderboot": [
-      "Der Mann mietet das Ruderboot.",
-      "Der Mann fährt mit dem Ruderboot."
-    ],
-    "Fähre": [
-      "Die Familie nimmt die Fähre.",
-      "Die Familie fährt mit der Fähre."
-    ],
-    "Passagierschiff": [
-      "Das Kind sieht das Passagierschiff.",
-      "Die Gäste schlafen in dem Passagierschiff."
     ],
     "U-Boot": [
       "Das Kind malt das U-Boot.",
@@ -378,10 +314,6 @@
     "Rettungsring": [
       "Der Matrose wirft den Rettungsring.",
       "Der Matrose hält sich an dem Rettungsring fest."
-    ],
-    "Schnellboot": [
-      "Der Mann sieht das Schnellboot.",
-      "Der Mann fährt mit dem Schnellboot."
     ],
     "Windsurfen": [
       "Der Mann übt das Windsurfen.",
@@ -402,14 +334,6 @@
     "Taucherbrille": [
       "Das Kind setzt die Taucherbrille auf.",
       "Das Kind taucht mit der Taucherbrille."
-    ],
-    "Schnorchel": [
-      "Das Kind nimmt den Schnorchel.",
-      "Das Kind atmet mit dem Schnorchel."
-    ],
-    "Hafenbecken": [
-      "Der Mann zeigt das Hafenbecken.",
-      "Die Boote liegen in dem Hafenbecken."
     ],
     "Muschel": [
       "Das Kind sammelt die Muschel.",
@@ -444,10 +368,6 @@
     "Rakete": [
       "Das Kind malt die Rakete.",
       "Die Astronauten fliegen mit der Rakete."
-    ],
-    "Raumfähre": [
-      "Das Kind sieht die Raumfähre.",
-      "Die Astronauten fliegen mit der Raumfähre."
     ],
     "Satellit": [
       "Der Techniker steuert den Satelliten.",
@@ -497,21 +417,9 @@
       "Der Mann steuert die Drohne.",
       "Der Mann filmt mit der Drohne."
     ],
-    "Pilot": [
-      "Das Kind grüßt den Piloten.",
-      "Das Flugzeug gehört dem Piloten."
-    ],
     "Wolke": [
       "Das Kind beobachtet die Wolke.",
       "Die Sonne steckt hinter der Wolke."
-    ],
-    "Abflug": [
-      "Die Familie wartet auf den Abflug.",
-      "Die Familie ist aufgeregt bei dem Abflug."
-    ],
-    "Militärflugzeug": [
-      "Der Mann fotografiert das Militärflugzeug.",
-      "Der Pilot fliegt mit dem Militärflugzeug."
     ]
   }
 }

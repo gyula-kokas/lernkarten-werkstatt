@@ -3,7 +3,7 @@
   "themeName": "Werkzeug und Garten",
   "language": "de",
   "version": 1,
-  "entryCount": 25,
+  "entryCount": 24,
   "imageMode": "per-entry-svg",
   "entries": [
     {
@@ -117,23 +117,13 @@
       "editorType": "object"
     },
     {
-      "word": "Kelle",
-      "article": "die",
-      "plural": "Kellen",
-      "pluralWithArticle": "die Kellen",
-      "accusativeSentence": "Das Kind nimmt die Kelle.",
-      "dativeSentence": "Der Maurer arbeitet mit der Kelle.",
-      "imageIndex": 11,
-      "editorType": "object"
-    },
-    {
       "word": "Axt",
       "article": "die",
       "plural": "Äxte",
       "pluralWithArticle": "die Äxte",
       "accusativeSentence": "Der Mann schärft die Axt.",
       "dativeSentence": "Der Mann hackt mit der Axt.",
-      "imageIndex": 12,
+      "imageIndex": 11,
       "editorType": "object"
     },
     {
@@ -143,7 +133,7 @@
       "pluralWithArticle": "die Drähte",
       "accusativeSentence": "Der Mann biegt den Draht.",
       "dativeSentence": "Der Zaun hängt an dem Draht.",
-      "imageIndex": 13,
+      "imageIndex": 12,
       "editorType": "object"
     },
     {
@@ -153,7 +143,7 @@
       "pluralWithArticle": "die Seile",
       "accusativeSentence": "Das Kind zieht das Seil.",
       "dativeSentence": "Das Kind springt mit dem Seil.",
-      "imageIndex": 14,
+      "imageIndex": 13,
       "editorType": "object"
     },
     {
@@ -163,7 +153,7 @@
       "pluralWithArticle": "die Ketten",
       "accusativeSentence": "Der Mann ölt die Kette.",
       "dativeSentence": "Das Fahrrad hängt an der Kette.",
-      "imageIndex": 15,
+      "imageIndex": 14,
       "editorType": "object"
     },
     {
@@ -173,7 +163,7 @@
       "pluralWithArticle": "die Magnete",
       "accusativeSentence": "Das Kind nimmt den Magneten.",
       "dativeSentence": "Die Schraube klebt an dem Magneten.",
-      "imageIndex": 16,
+      "imageIndex": 15,
       "editorType": "object"
     },
     {
@@ -183,7 +173,7 @@
       "pluralWithArticle": "die Lupen",
       "accusativeSentence": "Das Kind benutzt die Lupe.",
       "dativeSentence": "Das Kind schaut mit der Lupe.",
-      "imageIndex": 17,
+      "imageIndex": 16,
       "editorType": "object"
     },
     {
@@ -193,7 +183,7 @@
       "pluralWithArticle": "die Taschenlampen",
       "accusativeSentence": "Das Kind nimmt die Taschenlampe.",
       "dativeSentence": "Das Kind leuchtet mit der Taschenlampe.",
-      "imageIndex": 18,
+      "imageIndex": 17,
       "editorType": "object"
     },
     {
@@ -203,7 +193,7 @@
       "pluralWithArticle": "die Batterien",
       "accusativeSentence": "Das Kind wechselt die Batterie.",
       "dativeSentence": "Der Strom kommt aus der Batterie.",
-      "imageIndex": 19,
+      "imageIndex": 18,
       "editorType": "object"
     },
     {
@@ -213,7 +203,7 @@
       "pluralWithArticle": "die Stecker",
       "accusativeSentence": "Das Kind zieht den Stecker.",
       "dativeSentence": "Der Strom kommt aus dem Stecker.",
-      "imageIndex": 20,
+      "imageIndex": 19,
       "editorType": "object"
     },
     {
@@ -223,7 +213,7 @@
       "pluralWithArticle": "die Pinsel",
       "accusativeSentence": "Das Kind hält den Pinsel.",
       "dativeSentence": "Das Kind malt mit dem Pinsel.",
-      "imageIndex": 21,
+      "imageIndex": 20,
       "editorType": "object"
     },
     {
@@ -233,7 +223,7 @@
       "pluralWithArticle": "die Gießkannen",
       "accusativeSentence": "Das Kind nimmt die Gießkanne.",
       "dativeSentence": "Das Kind gießt mit der Gießkanne.",
-      "imageIndex": 22,
+      "imageIndex": 21,
       "editorType": "object"
     },
     {
@@ -243,7 +233,7 @@
       "pluralWithArticle": "die Zangen",
       "accusativeSentence": "Der Mann braucht die Zange.",
       "dativeSentence": "Der Mann zieht mit der Zange.",
-      "imageIndex": 23,
+      "imageIndex": 22,
       "editorType": "object"
     },
     {
@@ -253,7 +243,7 @@
       "pluralWithArticle": "die Feilen",
       "accusativeSentence": "Der Mann nimmt die Feile.",
       "dativeSentence": "Der Mann arbeitet mit der Feile.",
-      "imageIndex": 24,
+      "imageIndex": 23,
       "editorType": "object"
     }
   ]

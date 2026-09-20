@@ -13,10 +13,6 @@
       "Das Kind hört den Regen.",
       "Bei dem Regen bleibt das Kind zu Hause."
     ],
-    "Regenschauer": [
-      "Das Kind sieht den Regenschauer.",
-      "Bei dem Regenschauer bleibt das Kind zu Hause."
-    ],
     "Gewitter": [
       "Das Kind fürchtet das Gewitter.",
       "Bei dem Gewitter bleibt das Kind zu Hause."
@@ -44,10 +40,6 @@
     "Regenbogen": [
       "Das Kind fotografiert den Regenbogen.",
       "Das Kind träumt von dem Regenbogen."
-    ],
-    "Hagel": [
-      "Das Kind fürchtet den Hagel.",
-      "Bei dem Hagel bleibt das Kind im Haus."
     ],
     "Glatteis": [
       "Das Kind fürchtet das Glatteis.",
@@ -84,10 +76,6 @@
     "Wetterfahne": [
       "Das Kind sieht die Wetterfahne.",
       "Auf der Wetterfahne sitzt ein Hahn."
-    ],
-    "Wetterstation": [
-      "Der Mann baut die Wetterstation auf.",
-      "Die Daten kommen von der Wetterstation."
     ],
     "Schneefall": [
       "Das Kind beobachtet den Schneefall.",
@@ -387,10 +375,6 @@
       "Die Familie besucht das Konzert.",
       "Die Familie erzählt von dem Konzert."
     ],
-    "Sänger": [
-      "Das Publikum hört den Sänger.",
-      "Das Lied gefällt dem Sänger."
-    ],
     "Tanz": [
       "Das Kind übt den Tanz.",
       "Die Musik gehört zu dem Tanz."
@@ -398,10 +382,6 @@
     "Orchester": [
       "Die Familie hört das Orchester.",
       "Das Konzert gefällt dem Orchester."
-    ],
-    "Schelle": [
-      "Das Kind schüttelt die Schelle.",
-      "Das Kind klingelt mit der Schelle."
     ],
     "Metronom": [
       "Die Lehrerin stellt das Metronom auf.",
@@ -501,14 +481,6 @@
       "Das Kind wirft das Frisbee.",
       "Das Kind spielt mit dem Frisbee."
     ],
-    "Bogenschießen": [
-      "Das Kind lernt das Bogenschießen.",
-      "Das Kind erzählt von dem Bogenschießen."
-    ],
-    "Boxen": [
-      "Der Junge lernt das Boxen.",
-      "Der Junge erzählt von dem Boxen."
-    ],
     "Schach": [
       "Der Opa lernt das Schach.",
       "Der Opa erzählt von dem Schach."
@@ -551,10 +523,6 @@
       "Das Kind programmiert den Roboter.",
       "Das Kind spielt mit dem Roboter."
     ],
-    "Drache": [
-      "Das Kind malt den Drachen.",
-      "Das Kind erzählt von dem Drachen."
-    ],
     "Dinosaurier": [
       "Das Kind kennt den Dinosaurier.",
       "Das Kind träumt von dem Dinosaurier."
@@ -562,10 +530,6 @@
     "Dino": [
       "Das Kind malt den Dino.",
       "Das Kind spielt mit dem Dino."
-    ],
-    "Baukasten": [
-      "Das Kind öffnet den Baukasten.",
-      "Die Steine liegen in dem Baukasten."
     ],
     "Puzzle": [
       "Das Kind legt das Puzzle.",
@@ -627,10 +591,6 @@
       "Das Kind öffnet das Geschenk.",
       "Das Band hängt an dem Geschenk."
     ],
-    "Malkasten": [
-      "Das Kind öffnet den Malkasten.",
-      "Die Farbe liegt in dem Malkasten."
-    ],
     "Buntstift": [
       "Das Kind spitzt den Buntstift.",
       "Das Kind malt mit dem Buntstift."
@@ -638,6 +598,10 @@
     "Papierflieger": [
       "Das Kind faltet den Papierflieger.",
       "Das Kind spielt mit dem Papierflieger."
+    ],
+    "Drachen": [
+      "Das Kind lässt den Drachen steigen.",
+      "Das Kind spielt mit dem Drachen."
     ]
   }
 }

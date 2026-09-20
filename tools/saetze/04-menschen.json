@@ -81,10 +81,6 @@
       "Der Arzt röntgt den Knochen.",
       "Der Hund knabbert an dem Knochen."
     ],
-    "Bauch": [
-      "Das Kind hält den Bauch.",
-      "Das Essen liegt in dem Bauch."
-    ],
     "Rücken": [
       "Das Kind massiert den Rücken.",
       "Der Rucksack hängt auf dem Rücken."
@@ -164,28 +160,16 @@
     "Wirbel": [
       "Die Ärztin tastet den Wirbel ab.",
       "Der Druck liegt auf dem Wirbel."
+    ],
+    "Magen": [
+      "Das Brot füllt den Magen.",
+      "Die Wärme tut dem Magen gut."
     ]
   },
   "gesundheit": {
-    "Arzt": [
-      "Das Kind besucht den Arzt.",
-      "Das Kind gibt dem Arzt die Hand."
-    ],
-    "Ärztin": [
-      "Das Kind fragt die Ärztin.",
-      "Das Kind vertraut der Ärztin."
-    ],
     "Krankenhaus": [
       "Die Familie besucht das Krankenhaus.",
       "Das Kind liegt in dem Krankenhaus."
-    ],
-    "Krankenschwester": [
-      "Das Kind grüßt die Krankenschwester.",
-      "Das Kind dankt der Krankenschwester."
-    ],
-    "Krankenpfleger": [
-      "Das Kind fragt den Krankenpfleger.",
-      "Das Kind dankt dem Krankenpfleger."
     ],
     "Spritze": [
       "Das Kind fürchtet die Spritze.",
@@ -269,81 +253,9 @@
       "Die Mutter füttert das Baby.",
       "Die Windel gehört dem Baby."
     ],
-    "Schüler": [
-      "Die Lehrerin lobt den Schüler.",
-      "Die Aufgabe gefällt dem Schüler."
-    ],
-    "Lehrer": [
-      "Die Klasse fragt den Lehrer.",
-      "Die Kreide gehört dem Lehrer."
-    ],
     "Familie": [
       "Das Kind liebt die Familie.",
       "Das Haus gehört der Familie."
-    ],
-    "Polizist": [
-      "Das Kind fragt den Polizisten.",
-      "Das Kind dankt dem Polizisten."
-    ],
-    "Feuerwehrmann": [
-      "Das Kind ruft den Feuerwehrmann.",
-      "Das Kind winkt dem Feuerwehrmann zu."
-    ],
-    "Koch": [
-      "Das Kind sieht den Koch in der Küche.",
-      "Die Suppe schmeckt dem Koch."
-    ],
-    "Friseur": [
-      "Der Mann besucht den Friseur.",
-      "Das Kind winkt dem Friseur zu."
-    ],
-    "Maler": [
-      "Das Kind beobachtet den Maler.",
-      "Der Pinsel gehört dem Maler."
-    ],
-    "Sänger": [
-      "Das Publikum hört den Sänger.",
-      "Das Lied gefällt dem Sänger."
-    ],
-    "Wissenschaftler": [
-      "Das Kind besucht den Wissenschaftler.",
-      "Das Experiment gelingt dem Wissenschaftler."
-    ],
-    "Techniker": [
-      "Die Firma ruft den Techniker.",
-      "Der Koffer gehört dem Techniker."
-    ],
-    "Richter": [
-      "Das Gericht hört den Richter.",
-      "Der Hammer gehört dem Richter."
-    ],
-    "Detektiv": [
-      "Das Kind bewundert den Detektiv.",
-      "Der Fall gefällt dem Detektiv."
-    ],
-    "Astronaut": [
-      "Das Kind fotografiert den Astronauten.",
-      "Die Rakete gehört dem Astronauten."
-    ],
-    "Pilot": [
-      "Das Kind grüßt den Piloten.",
-      "Das Flugzeug gehört dem Piloten."
-    ],
-    "Bauer": [
-      "Das Kind besucht den Bauern.",
-      "Der Traktor gehört dem Bauern."
-    ],
-    "Mechaniker": [
-      "Der Mann holt den Mechaniker.",
-      "Das Werkzeug gehört dem Mechaniker."
-    ],
-    "Kellner": [
-      "Das Kind ruft den Kellner.",
-      "Das Trinkgeld gehört dem Kellner."
-    ],
-    "Wächter": [
-      "Der Hund begleitet den Wächter.",
-      "Der Schlüssel gehört dem Wächter."
     ],
     "Zauberer": [
       "Das Publikum bejubelt den Zauberer.",
@@ -411,10 +323,6 @@
       "Das Kind beschreibt das Heft.",
       "Die Hausaufgabe steht in dem Heft."
     ],
-    "Notizbuch": [
-      "Das Kind öffnet das Notizbuch.",
-      "Das Kind schreibt in dem Notizbuch."
-    ],
     "Bleistift": [
       "Das Kind spitzt den Bleistift.",
       "Das Kind schreibt mit dem Bleistift."
@@ -470,10 +378,6 @@
     "Landkarte": [
       "Das Kind faltet die Landkarte auf.",
       "Der Weg steht auf der Landkarte."
-    ],
-    "Aktentasche": [
-      "Der Lehrer trägt die Aktentasche.",
-      "Die Hefte sind in der Aktentasche."
     ],
     "Rucksack": [
       "Das Kind packt den Rucksack.",

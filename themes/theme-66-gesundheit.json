@@ -3,29 +3,9 @@
   "themeName": "Gesund und krank",
   "language": "de",
   "version": 1,
-  "entryCount": 20,
+  "entryCount": 16,
   "imageMode": "per-entry-svg",
   "entries": [
-    {
-      "word": "Arzt",
-      "article": "der",
-      "plural": "Ärzte",
-      "pluralWithArticle": "die Ärzte",
-      "accusativeSentence": "Das Kind besucht den Arzt.",
-      "dativeSentence": "Das Kind gibt dem Arzt die Hand.",
-      "imageIndex": 0,
-      "editorType": "object"
-    },
-    {
-      "word": "Ärztin",
-      "article": "die",
-      "plural": "Ärztinnen",
-      "pluralWithArticle": "die Ärztinnen",
-      "accusativeSentence": "Das Kind fragt die Ärztin.",
-      "dativeSentence": "Das Kind vertraut der Ärztin.",
-      "imageIndex": 1,
-      "editorType": "object"
-    },
     {
       "word": "Krankenhaus",
       "article": "das",
@@ -33,27 +13,7 @@
       "pluralWithArticle": "die Krankenhäuser",
       "accusativeSentence": "Die Familie besucht das Krankenhaus.",
       "dativeSentence": "Das Kind liegt in dem Krankenhaus.",
-      "imageIndex": 2,
-      "editorType": "object"
-    },
-    {
-      "word": "Krankenschwester",
-      "article": "die",
-      "plural": "Krankenschwestern",
-      "pluralWithArticle": "die Krankenschwestern",
-      "accusativeSentence": "Das Kind grüßt die Krankenschwester.",
-      "dativeSentence": "Das Kind dankt der Krankenschwester.",
-      "imageIndex": 3,
-      "editorType": "object"
-    },
-    {
-      "word": "Krankenpfleger",
-      "article": "der",
-      "plural": "Krankenpfleger",
-      "pluralWithArticle": "die Krankenpfleger",
-      "accusativeSentence": "Das Kind fragt den Krankenpfleger.",
-      "dativeSentence": "Das Kind dankt dem Krankenpfleger.",
-      "imageIndex": 4,
+      "imageIndex": 0,
       "editorType": "object"
     },
     {
@@ -63,7 +23,7 @@
       "pluralWithArticle": "die Spritzen",
       "accusativeSentence": "Das Kind fürchtet die Spritze.",
       "dativeSentence": "Das Kind zittert vor der Spritze.",
-      "imageIndex": 5,
+      "imageIndex": 1,
       "editorType": "object"
     },
     {
@@ -73,7 +33,7 @@
       "pluralWithArticle": "die Medikamente",
       "accusativeSentence": "Das Kind nimmt das Medikament.",
       "dativeSentence": "Die Ärztin hilft dem Kind mit dem Medikament.",
-      "imageIndex": 6,
+      "imageIndex": 2,
       "editorType": "object"
     },
     {
@@ -83,7 +43,7 @@
       "pluralWithArticle": "die Tabletten",
       "accusativeSentence": "Das Kind schluckt die Tablette.",
       "dativeSentence": "Das Wasser hilft bei der Tablette.",
-      "imageIndex": 7,
+      "imageIndex": 3,
       "editorType": "object"
     },
     {
@@ -93,7 +53,7 @@
       "pluralWithArticle": "die Pflaster",
       "accusativeSentence": "Das Kind klebt das Pflaster auf.",
       "dativeSentence": "Die Wunde heilt unter dem Pflaster.",
-      "imageIndex": 8,
+      "imageIndex": 4,
       "editorType": "object"
     },
     {
@@ -103,7 +63,7 @@
       "pluralWithArticle": "die Verbände",
       "accusativeSentence": "Die Ärztin wickelt den Verband.",
       "dativeSentence": "Das Bein steckt in dem Verband.",
-      "imageIndex": 9,
+      "imageIndex": 5,
       "editorType": "object"
     },
     {
@@ -113,7 +73,7 @@
       "pluralWithArticle": "die Thermometer",
       "accusativeSentence": "Das Kind benutzt das Thermometer.",
       "dativeSentence": "Die Ärztin misst mit dem Thermometer.",
-      "imageIndex": 10,
+      "imageIndex": 6,
       "editorType": "object"
     },
     {
@@ -123,7 +83,7 @@
       "pluralWithArticle": "die Fieberthermometer",
       "accusativeSentence": "Das Kind holt das Fieberthermometer.",
       "dativeSentence": "Die Mutter misst mit dem Fieberthermometer.",
-      "imageIndex": 11,
+      "imageIndex": 7,
       "editorType": "object"
     },
     {
@@ -133,7 +93,7 @@
       "pluralWithArticle": "die Stethoskope",
       "accusativeSentence": "Die Ärztin nimmt das Stethoskop.",
       "dativeSentence": "Die Ärztin hört mit dem Stethoskop.",
-      "imageIndex": 12,
+      "imageIndex": 8,
       "editorType": "object"
     },
     {
@@ -143,7 +103,7 @@
       "pluralWithArticle": "die Rollstühle",
       "accusativeSentence": "Der Mann schiebt den Rollstuhl.",
       "dativeSentence": "Der Opa sitzt in dem Rollstuhl.",
-      "imageIndex": 13,
+      "imageIndex": 9,
       "editorType": "object"
     },
     {
@@ -153,7 +113,7 @@
       "pluralWithArticle": "die Krücken",
       "accusativeSentence": "Der Mann nimmt die Krücke.",
       "dativeSentence": "Der Mann geht mit der Krücke.",
-      "imageIndex": 14,
+      "imageIndex": 10,
       "editorType": "object"
     },
     {
@@ -163,7 +123,7 @@
       "pluralWithArticle": "die Röntgenbilder",
       "accusativeSentence": "Die Ärztin zeigt das Röntgenbild.",
       "dativeSentence": "Der Knochen ist auf dem Röntgenbild.",
-      "imageIndex": 15,
+      "imageIndex": 11,
       "editorType": "object"
     },
     {
@@ -173,7 +133,7 @@
       "pluralWithArticle": "die Verbandkästen",
       "accusativeSentence": "Der Lehrer öffnet den Verbandkasten.",
       "dativeSentence": "Das Pflaster liegt in dem Verbandkasten.",
-      "imageIndex": 16,
+      "imageIndex": 12,
       "editorType": "object"
     },
     {
@@ -183,7 +143,7 @@
       "pluralWithArticle": "die Schutzmasken",
       "accusativeSentence": "Die Ärztin trägt die Schutzmaske.",
       "dativeSentence": "Das Gesicht steckt in der Schutzmaske.",
-      "imageIndex": 17,
+      "imageIndex": 13,
       "editorType": "object"
     },
     {
@@ -193,7 +153,7 @@
       "pluralWithArticle": "die Infusionen",
       "accusativeSentence": "Die Schwester hängt die Infusion auf.",
       "dativeSentence": "Das Medikament läuft aus der Infusion.",
-      "imageIndex": 18,
+      "imageIndex": 14,
       "editorType": "object"
     },
     {
@@ -203,7 +163,7 @@
       "pluralWithArticle": "die Arztkittel",
       "accusativeSentence": "Die Ärztin trägt den Arztkittel.",
       "dativeSentence": "Das Stethoskop steckt in dem Arztkittel.",
-      "imageIndex": 19,
+      "imageIndex": 15,
       "editorType": "object"
     }
   ]

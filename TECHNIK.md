@@ -60,8 +60,8 @@ Piper de_DE-thorsten-high (CC0 1.0, 22,05 kHz, LENGTH_SCALE 1.12)
 | `/*__THEMES_JSON__*/ []` | im Hauptskript, in `const BUILTIN_THEMES = …` | Themes mit Bildern |
 | `/*__EMBEDDED_TTS__*/ {"mode":"none"}` | `<script id="ttsData" type="application/json">` **am Ende des Body** | `audioByText` mit MP3-Daten-URLs |
 
-**Der Ton bleibt immer am Dateiende.** Eine fertige Datei ist ~35 MB (10 MB Bilder,
-26 MB MP3 als base64). Browser lesen eine `file://`-Datei sequenziell mit nur
+**Der Ton bleibt immer am Dateiende.** Eine fertige Datei ist ~34 MB (9 MB Bilder,
+24 MB MP3 als base64). Browser lesen eine `file://`-Datei sequenziell mit nur
 wenigen MB/s; deshalb entscheidet die Lage der Bytes, wann man etwas sieht:
 
 | Anordnung | Karten sichtbar | Ton fertig |
@@ -154,8 +154,8 @@ nicht kaputtmachen darf:
   Druck `visible`). `passeKartenAn()` misst Blatt für Blatt, die sichtbaren sofort,
   den Rest in `requestIdleCallback`; `kartenFertig()` muss vor `window.print()`
   abgewartet werden.
-- **Ein Wort = eine Karte.** 53 Wörter stehen in zwei Themen (686 Einträge, aber
-  nur 633 verschiedene Wörter); `gemischteWoerter()` entdoppelt.
+- **Ein Wort = eine Karte.** 50 Wörter stehen in zwei Themen (629 Einträge, aber
+  nur 579 verschiedene Wörter); `gemischteWoerter()` entdoppelt.
 - **Rückmeldung** (✓/✗) sitzt als Plakette *neben* der Karte in der Zelle, damit
   sie in jedem Raster 11 px bleibt; im Druck gibt es sie nicht.
 - Die Info-Box (`#about`) ist für Lernende, Eltern und Lehrer geschrieben — keine

@@ -3,7 +3,7 @@
   "themeName": "Tiere im Wasser",
   "language": "de",
   "version": 1,
-  "entryCount": 19,
+  "entryCount": 16,
   "imageMode": "per-entry-svg",
   "entries": [
     {
@@ -157,43 +157,13 @@
       "editorType": "animal"
     },
     {
-      "word": "Tropenfisch",
-      "article": "der",
-      "plural": "Tropenfische",
-      "pluralWithArticle": "die Tropenfische",
-      "accusativeSentence": "Das Kind sieht den Tropenfisch.",
-      "dativeSentence": "Das Aquarium gehört dem Tropenfisch.",
-      "imageIndex": 15,
-      "editorType": "animal"
-    },
-    {
       "word": "Auster",
       "article": "die",
       "plural": "Austern",
       "pluralWithArticle": "die Austern",
       "accusativeSentence": "Das Kind findet die Auster.",
       "dativeSentence": "Die Perle gehört der Auster.",
-      "imageIndex": 16,
-      "editorType": "animal"
-    },
-    {
-      "word": "Beluga",
-      "article": "die",
-      "plural": "Belugas",
-      "pluralWithArticle": "die Belugas",
-      "accusativeSentence": "Das Kind sieht die Beluga.",
-      "dativeSentence": "Die Flosse gehört der Beluga.",
-      "imageIndex": 17,
-      "editorType": "animal"
-    },
-    {
-      "word": "Pottwal",
-      "article": "der",
-      "plural": "Pottwale",
-      "pluralWithArticle": "die Pottwale",
-      "accusativeSentence": "Das Kind bestaunt den Pottwal.",
-      "dativeSentence": "Die Flosse gehört dem Pottwal.",
-      "imageIndex": 18,
+      "imageIndex": 15,
       "editorType": "animal"
     }
   ]

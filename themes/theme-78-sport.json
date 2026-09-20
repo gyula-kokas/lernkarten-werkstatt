@@ -3,7 +3,7 @@
   "themeName": "Spiel und Sport",
   "language": "de",
   "version": 1,
-  "entryCount": 25,
+  "entryCount": 23,
   "imageMode": "per-entry-svg",
   "entries": [
     {
@@ -234,26 +234,6 @@
       "accusativeSentence": "Das Kind wirft das Frisbee.",
       "dativeSentence": "Das Kind spielt mit dem Frisbee.",
       "imageIndex": 22,
-      "editorType": "object"
-    },
-    {
-      "word": "Bogenschießen",
-      "article": "das",
-      "plural": "Bogenschießen",
-      "pluralWithArticle": "die Bogenschießen",
-      "accusativeSentence": "Das Kind lernt das Bogenschießen.",
-      "dativeSentence": "Das Kind erzählt von dem Bogenschießen.",
-      "imageIndex": 23,
-      "editorType": "object"
-    },
-    {
-      "word": "Boxen",
-      "article": "das",
-      "plural": "",
-      "pluralWithArticle": "",
-      "accusativeSentence": "Der Junge lernt das Boxen.",
-      "dativeSentence": "Der Junge erzählt von dem Boxen.",
-      "imageIndex": 24,
       "editorType": "object"
     }
   ]

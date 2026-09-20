@@ -78,12 +78,6 @@
           "plate"
         ],
         [
-          "Kessel",
-          "kettle",
-          null,
-          "mdi"
-        ],
-        [
           "Mixer",
           "blender",
           null,
@@ -295,7 +289,9 @@
         ],
         [
           "Wäscheklammer",
-          "clamp"
+          "o175599-clothes-peg",
+          null,
+          "clipsafari"
         ],
         [
           "Waschbecken",
@@ -387,10 +383,6 @@
           "gardening gloves"
         ],
         [
-          "Kelle",
-          "trowel"
-        ],
-        [
           "Axt",
           "axe"
         ],
@@ -447,10 +439,6 @@
         [
           "Wasserwaage",
           "spirit level"
-        ],
-        [
-          "Pflasterstein",
-          "brick"
         ]
       ]
     },
@@ -481,7 +469,9 @@
         ],
         [
           "Socke",
-          "socks"
+          "o213977-gray-sock",
+          null,
+          "clipsafari"
         ],
         [
           "Schuh",
@@ -517,7 +507,9 @@
         ],
         [
           "Handschuh",
-          "gloves"
+          "o105559-gray-glove",
+          null,
+          "clipsafari"
         ],
         [
           "Krawatte",
@@ -544,10 +536,6 @@
           "bikini"
         ],
         [
-          "Kimono",
-          "kimono"
-        ],
-        [
           "Shorts",
           "shorts"
         ],
@@ -571,6 +559,71 @@
     }
   ],
   "_gestrichen": {
-    "Espressokanne": "Prüfung 2026-09: Gerät kaum bekannt, Wort zu selten"
+    "Espressokanne": "Prüfung 2026-09: Gerät kaum bekannt, Wort zu selten",
+    "Tropenfisch": "Prüfung 2 (Sept. 2026), Wunsch des Prüfers",
+    "Beluga": "Prüfung 2 (Sept. 2026), Wunsch des Prüfers",
+    "Pottwal": "Prüfung 2 (Sept. 2026), Wunsch des Prüfers",
+    "Monarchfalter": "Prüfung 2 (Sept. 2026), Wunsch des Prüfers",
+    "Bagel": "Prüfung 2 (Sept. 2026), Wunsch des Prüfers",
+    "Kessel": "Prüfung 2 (Sept. 2026), Wunsch des Prüfers",
+    "Kimono": "Prüfung 2 (Sept. 2026), Wunsch des Prüfers",
+    "Notizbuch": "Prüfung 2 (Sept. 2026), Wunsch des Prüfers",
+    "Aktentasche": "Prüfung 2 (Sept. 2026), Wunsch des Prüfers",
+    "Lieferwagen": "Prüfung 2 (Sept. 2026), Wunsch des Prüfers",
+    "Schulbus": "Prüfung 2 (Sept. 2026), Wunsch des Prüfers",
+    "Motorroller": "Prüfung 2 (Sept. 2026), Wunsch des Prüfers",
+    "Jeep": "Prüfung 2 (Sept. 2026), Wunsch des Prüfers",
+    "Pick-up": "Prüfung 2 (Sept. 2026), Wunsch des Prüfers",
+    "Wohnmobil": "Prüfung 2 (Sept. 2026), Wunsch des Prüfers",
+    "Kelle": "Prüfung 2 (Sept. 2026), Wunsch des Prüfers",
+    "Ölfass": "Prüfung 2 (Sept. 2026), Wunsch des Prüfers",
+    "Einschienenbahn": "Prüfung 2 (Sept. 2026), Wunsch des Prüfers",
+    "Bergbahn": "Prüfung 2 (Sept. 2026), Wunsch des Prüfers",
+    "Straßenbahnwagen": "Prüfung 2 (Sept. 2026), Wunsch des Prüfers",
+    "Passagierschiff": "Prüfung 2 (Sept. 2026), Wunsch des Prüfers",
+    "Fähre": "Prüfung 2 (Sept. 2026), Wunsch des Prüfers",
+    "Hafenbecken": "Prüfung 2 (Sept. 2026), Wunsch des Prüfers",
+    "Raumfähre": "Prüfung 2 (Sept. 2026), Wunsch des Prüfers",
+    "Abflug": "Prüfung 2 (Sept. 2026), Wunsch des Prüfers",
+    "Militärflugzeug": "Prüfung 2 (Sept. 2026), Wunsch des Prüfers",
+    "Regenschauer": "Prüfung 2 (Sept. 2026), Wunsch des Prüfers",
+    "Wetterstation": "Prüfung 2 (Sept. 2026), Wunsch des Prüfers",
+    "Schelle": "Prüfung 2 (Sept. 2026), Wunsch des Prüfers",
+    "Bogenschießen": "Prüfung 2 (Sept. 2026), Wunsch des Prüfers",
+    "Boxen": "Prüfung 2 (Sept. 2026), Wunsch des Prüfers",
+    "Baukasten": "Prüfung 2 (Sept. 2026), Wunsch des Prüfers",
+    "Malkasten": "Prüfung 2 (Sept. 2026), Wunsch des Prüfers",
+    "Schüler": "Beruf: der Artikel hängt an der Person (Mann/Frau), nicht am Beruf",
+    "Lehrer": "Beruf: der Artikel hängt an der Person (Mann/Frau), nicht am Beruf",
+    "Polizist": "Beruf: der Artikel hängt an der Person (Mann/Frau), nicht am Beruf",
+    "Feuerwehrmann": "Beruf: der Artikel hängt an der Person (Mann/Frau), nicht am Beruf",
+    "Koch": "Beruf: der Artikel hängt an der Person (Mann/Frau), nicht am Beruf",
+    "Friseur": "Beruf: der Artikel hängt an der Person (Mann/Frau), nicht am Beruf",
+    "Maler": "Beruf: der Artikel hängt an der Person (Mann/Frau), nicht am Beruf",
+    "Sänger": "Beruf: der Artikel hängt an der Person (Mann/Frau), nicht am Beruf",
+    "Wissenschaftler": "Beruf: der Artikel hängt an der Person (Mann/Frau), nicht am Beruf",
+    "Techniker": "Beruf: der Artikel hängt an der Person (Mann/Frau), nicht am Beruf",
+    "Richter": "Beruf: der Artikel hängt an der Person (Mann/Frau), nicht am Beruf",
+    "Detektiv": "Beruf: der Artikel hängt an der Person (Mann/Frau), nicht am Beruf",
+    "Astronaut": "Beruf: der Artikel hängt an der Person (Mann/Frau), nicht am Beruf",
+    "Pilot": "Beruf: der Artikel hängt an der Person (Mann/Frau), nicht am Beruf",
+    "Bauer": "Beruf: der Artikel hängt an der Person (Mann/Frau), nicht am Beruf",
+    "Mechaniker": "Beruf: der Artikel hängt an der Person (Mann/Frau), nicht am Beruf",
+    "Kellner": "Beruf: der Artikel hängt an der Person (Mann/Frau), nicht am Beruf",
+    "Wächter": "Beruf: der Artikel hängt an der Person (Mann/Frau), nicht am Beruf",
+    "Arzt": "Beruf: der Artikel hängt an der Person (Mann/Frau), nicht am Beruf",
+    "Ärztin": "Beruf: der Artikel hängt an der Person (Mann/Frau), nicht am Beruf",
+    "Krankenschwester": "Beruf: der Artikel hängt an der Person (Mann/Frau), nicht am Beruf",
+    "Krankenpfleger": "Beruf: der Artikel hängt an der Person (Mann/Frau), nicht am Beruf",
+    "Hagel": "Bild zeigte kein eindeutiges Motiv, kein passendes Bild gefunden",
+    "Waffel": "Bild zeigte kein eindeutiges Motiv, kein passendes Bild gefunden",
+    "Diesellok": "nur eine Lokomotive nötig (Prüferwunsch)",
+    "Schnorchel": "Bild war mit dem der Taucherbrille identisch",
+    "Motorboot": "Artikel richtet sich nach „Boot“ – die Verbindung davor ist beliebig",
+    "Ruderboot": "Artikel richtet sich nach „Boot“ – die Verbindung davor ist beliebig",
+    "Schnellboot": "Artikel richtet sich nach „Boot“ – die Verbindung davor ist beliebig",
+    "Pflasterstein": "doppelt: „Ziegelstein“ hat dasselbe Bild (brick) – nur ein Wort pro Bild",
+    "Schach": "kein eigenes Bild: „chess pawn“ gehört zur Schachfigur",
+    "Sicherheitsweste": "doppelt: „Warnweste“ zeigt dasselbe Kleidungsstück"
   }
 }

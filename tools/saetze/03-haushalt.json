@@ -69,10 +69,6 @@
       "Das Kind nimmt den Trinkhalm.",
       "Das Kind trinkt mit dem Trinkhalm."
     ],
-    "Kessel": [
-      "Das Kind stellt den Kessel auf den Herd.",
-      "Das Wasser kocht in dem Kessel."
-    ],
     "Mixer": [
       "Die Mutter benutzt den Mixer.",
       "Die Mutter mixt den Saft mit dem Mixer."
@@ -323,10 +319,6 @@
       "Der Mann schiebt den Rasenmäher.",
       "Der Mann mäht mit dem Rasenmäher."
     ],
-    "Kelle": [
-      "Das Kind nimmt die Kelle.",
-      "Der Maurer arbeitet mit der Kelle."
-    ],
     "Axt": [
       "Der Mann schärft die Axt.",
       "Der Mann hackt mit der Axt."
@@ -476,10 +468,6 @@
     "Bikini": [
       "Das Mädchen trägt den Bikini.",
       "Das Mädchen liegt in dem Bikini."
-    ],
-    "Kimono": [
-      "Die Frau trägt den Kimono.",
-      "Die Frau geht in dem Kimono."
     ],
     "Laufshirt": [
       "Das Kind trägt das Laufshirt.",

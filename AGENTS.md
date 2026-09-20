@@ -106,8 +106,8 @@ themes/*.json  →  [editor edits, image-library/selections.json]  →  selected
   `/*__EMBEDDED_TTS__*/ {"mode":"none"}` (inside the
   `<script id="ttsData" type="application/json">` block **at the end of the body**).
   Each marker must appear **exactly once**.
-  - **The audio stays at the end of the file, always.** A built card file is ~35 MB
-    (10 MB pictures in the theme JSON, 26 MB MP3 as base64). Chromium reads a `file://`
+  - **The audio stays at the end of the file, always.** A built card file is ~34 MB
+    (9 MB pictures in the theme JSON, 24 MB MP3 as base64). Chromium reads a `file://`
     document sequentially at only a few MB/s, so where the bytes sit decides when the
     learner sees something: with the themes first, the parser reaches the main script
     after ~10 MB and the sheets appear after **3.5 s** while the audio is still
@@ -193,9 +193,9 @@ themes/*.json  →  [editor edits, image-library/selections.json]  →  selected
   sheets as all words need* (mixed) or to the number of themes (per-theme). `gedrucktText()`
   shows pages, grid, order and how many words reach paper. Raster and order are remembered in
   `localStorage` (`ded-druck-v1`).
-- **One word = one card.** 53 words exist in two decks (Ameise in *Wald und Wiese* **and*
+- **One word = one card.** 50 words exist in two decks (Ameise in *Wald und Wiese* **and**
   *Insekten und Kriechtiere*, Sonne in *Wetter* and *Flugzeuge und Weltall*, Traktor in
-  *Bauernhof* and *Fahrzeuge* …) — 686 entries, but only **633 distinct words**. The mixed
+  *Bauernhof* and *Fahrzeuge* …) — 629 entries, but only **579 distinct words**. The mixed
   print and the game therefore draw from `gemischteWoerter(ids)`, which keeps the first
   occurrence per case-folded `word`; the same helper feeds the counters
   (`begriffsZahl()`, `auswahlText()`, `gedrucktText()`, `updatePageCountDefault()`), so
@@ -221,7 +221,7 @@ themes/*.json  →  [editor edits, image-library/selections.json]  →  selected
   - pictures live in `bildPool` and are attached by `setzeBilder()` to the `.pic`
     placeholders (`data-bild` is deleted once filled) — a card that already carries its
     picture is skipped, so pictures are parsed once per session.
-  Moving 633 cards plus laying out the visible sheets now costs ~0.2–0.4 s of blocking work
+  Moving 579 cards plus laying out the visible sheets now costs ~0.2–0.4 s of blocking work
   (was ~2 s, one long task). Never go back to `pagesElement.innerHTML = worksheet(...)` for
   the mixed order.
 - **Only visible sheets are computed.** `.page` uses `content-visibility:auto`

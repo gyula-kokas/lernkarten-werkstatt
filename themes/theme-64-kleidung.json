@@ -3,7 +3,7 @@
   "themeName": "Kleidung",
   "language": "de",
   "version": 1,
-  "entryCount": 23,
+  "entryCount": 22,
   "imageMode": "per-entry-svg",
   "entries": [
     {
@@ -217,23 +217,13 @@
       "editorType": "object"
     },
     {
-      "word": "Kimono",
-      "article": "der",
-      "plural": "Kimonos",
-      "pluralWithArticle": "die Kimonos",
-      "accusativeSentence": "Die Frau trägt den Kimono.",
-      "dativeSentence": "Die Frau geht in dem Kimono.",
-      "imageIndex": 21,
-      "editorType": "object"
-    },
-    {
       "word": "Weste",
       "article": "die",
       "plural": "Westen",
       "pluralWithArticle": "die Westen",
       "accusativeSentence": "Der Vater nimmt die Weste.",
       "dativeSentence": "Der Vater arbeitet in der Weste.",
-      "imageIndex": 22,
+      "imageIndex": 21,
       "editorType": "object"
     }
   ]
